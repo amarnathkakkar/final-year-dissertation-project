@@ -1,0 +1,53 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Jaramillo-Alc\'{a}zar and Luj\'{a}n-Mora(2017)]{MarketResearchPaper}
+Angel Jaramillo-Alc\'{a}zar and Sergio Luj\'{a}n-Mora.
+\newblock Mobile serious games: An accessibility assessment for people with
+  visual impairments.
+\newblock In \emph{Proceedings of the 5th International Conference on
+  Technological Ecosystems for Enhancing Multiculturality}, TEEM 2017, pages
+  66:1--66:6, New York, NY, USA, 2017. ACM.
+\newblock ISBN 978-1-4503-5386-1.
+\newblock \doi{10.1145/3144826.3145416}.
+\newblock URL \url{http://doi.acm.org/10.1145/3144826.3145416}.
+
+\bibitem[Mar()]{MarketResearch}
+Serious game market worth \$5,448.82 million by 2020.
+\newblock
+  \url{https://www.marketsandmarkets.com/PressReleases/serious-game.asp}.
+\newblock Accessed: 2018-12-08.
+
+\bibitem[Susi et~al.(2007)Susi, Johannesson, and Backlund]{Susi2416}
+Tarja Susi, Mikael Johannesson, and Per Backlund.
+\newblock Serious games : An overview.
+\newblock Technical Report HS-IKI-TR-07-001, University of Skövde, School of
+  Humanities and Informatics, 2007.
+
+\bibitem[Zyda(2005)]{Zyda2005}
+M.~Zyda.
+\newblock From visual simulation to virtual reality to games.
+\newblock \emph{Computer}, 38\penalty0 (9):\penalty0 25--32, Sept 2005.
+\newblock ISSN 0018-9162.
+\newblock \doi{10.1109/MC.2005.297}.
+
+\bibitem[Ten()]{TennisForTwo}
+The first video game?
+\newblock \url{https://www.bnl.gov/about/history/firstvideo.php}.
+\newblock Accessed: 2018-12-06.
+
+\bibitem[Bar()]{Barton1970}
+\emph{9th Symposium, April 17-19, 1970.} National Gaming Council. Envirometrics
+  and Scientific Resources Corp.
+
+\bibitem[Koster and Wright(2004)]{Koster2004}
+Raph Koster and Will Wright.
+\newblock \emph{A Theory of Fun for Game Design}.
+\newblock Paraglyph Press, 2004.
+\newblock ISBN 1932111972.
+
+\end{thebibliography}

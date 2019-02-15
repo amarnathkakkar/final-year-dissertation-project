@@ -1,19 +1,13 @@
 $( document ).ready(function() {
-	
 	var cnv, ctx;
 	var consolecnv, consolectx;
-
+	var textEditor, editor;
 	var canvasOffset, offsetX, offsetY;
-	
 	//var canvasWidth = window.outerWidth/1.4;
 	var canvasHeight = window.outerHeight/1.4;
 	var canvasWidth	 = canvasHeight;
-
-
 	var timeWhenGameStarted = Date.now();
-
-	var frameCount = 0;
-
+	var frameCount;
 
 	drawMap = function() {
 	  	cnv = document.createElement('canvas');
@@ -22,49 +16,79 @@ $( document ).ready(function() {
 	  	consolecnv = document.createElement('canvas');
 	  	consolectx = consolecnv.getContext("2d");
 		
-
+		
+	  	cnv.setAttribute('id','mapCanvas')
 		cnv.width  = canvasWidth;
 	  	cnv.height = canvasHeight;
 	  	cnv.style.position = 'absolute';
 	  	cnv.style.margin = 'auto';
-	  	cnv.style.left = window.outerWidth/2.65 - canvasWidth*0.1 + 'px';
+	  	cnv.style.left = window.outerWidth/2.75 - canvasWidth*0.1 + 'px';
 	  	cnv.style.top = 0;
 	  	cnv.style.bottom = 0;
 	  	cnv.style.right = 0;
 
 
-	  	cnv.style.border = '10px solid #000000';
-	  	cnv.style.backgroundColor = '#d9d9d9';
+	  	cnv.style.border = '1px solid #EFF0D1';
+	  	cnv.style.backgroundColor = '#EFF0D1';
 
-	
+
+		consolecnv.setAttribute('id','consoleCanvas')
 		consolecnv.width = canvasHeight*0.8;
 		consolecnv.height = canvasHeight;
 		consolecnv.style.position = 'absolute';
 		consolecnv.style.margin = 'auto';
-		consolecnv.style.right = window.outerWidth/2.65 + canvasWidth*0.1 + 'px';
+		consolecnv.style.right = window.outerWidth/2.75 + canvasWidth*0.1 + 'px';
 	  	consolecnv.style.top = 0;
 	  	consolecnv.style.bottom = 0;
 	  	consolecnv.style.left = 0;
 
-		consolecnv.style.border = '10px solid #00802b'
+		consolecnv.style.border = '1px solid #EFF0D1'
 		consolecnv.style.backgroundColor = '#000000';
 	
 		document.getElementById('container').appendChild(cnv);
 	  	document.getElementById('container').appendChild(consolecnv);
 	  	
 
-	  	canvasOffset = $('#cnv').offset();
-    	//offsetX = canvasOffset.left;
-		//offsetY = canvasOffset.top;
 
+	  	//<div id="editor">
+	    //  function foo(items) {
+	    //  var x = "All this is syntax highlighted";
+	    //  return x;
+	    //  }
+	    //</div>
+
+	  	//var textEditor = document.getElementById('editor');
+
+
+	  	var textEditor = document.createElement('editor');
+	  	textEditor.setAttribute('id','editor')
+		textEditor.innerHTML = "Tutorial;";
+		textEditor.style.position = 'absolute';
+		textEditor.style.margin = 'auto';
+		textEditor.style.width = consolecnv.width + 'px';
+		textEditor.style.height = consolecnv.height + 'px';
+	  	textEditor.style.top = 0;
+		textEditor.style.right = consolecnv.style.right;
+	  	textEditor.style.bottom = 0;
+	  	textEditor.style.left = 0;
+		textEditor.style.border = '1px solid #EFF0D1'
+
+		document.getElementById('container').appendChild(textEditor);
+
+		var editor = ace.edit('editor');
+      	editor.session.setMode('ace/mode/javascript');
+      	editor.setTheme("ace/theme/gob");
+
+
+      	
+      	
+
+      	//editor.on('blur', function(){
+      	//	alert(editor.getValue())
+      	//})
 	}
 
-
 	drawMap();
-
-
-	//ctx.globalAlpha = 1;
-
 
 	var entityList = {}; //create a list of enemies
 	var Player = { //define our Player
@@ -76,10 +100,12 @@ $( document ).ready(function() {
 		hp:100,
 		width:20,
 		height:20,
-		color:'green'
+		color:'#77BA99',
+		pressingDown:false,
+		pressingUp:false,
+		pressingLeft:false,
+		pressingRight:false
 	}
-
-
 
 	createEntity = function(id, x, y, spdx, spdy, width, height) {
 		
@@ -92,18 +118,14 @@ $( document ).ready(function() {
 			id:id,
 			width:width,
 			height:height,
-			color:'red'
+			color:'#D33F49'
 		}
 
 		entityList[id] = entity;
-
 	}
 
-
-
-	cnv.addEventListener('mousemove', mouseMoveOver, false);
-
 	function mouseMoveOver(ev) {
+		/*
 		var mouseX, mouseY;
 
 		// Get the mouse position relative to the <canvas> element
@@ -129,11 +151,8 @@ $( document ).ready(function() {
 
 		Player.x = mouseX - Player.width/2;
 		Player.y = mouseY - Player.height/2;
-
+		*/
 	}
-
-
-
 
 	updateEntityPosition = function(entity) {
 		entity.x += entity.spdx;
@@ -148,8 +167,6 @@ $( document ).ready(function() {
 		} 
 	}
 
-
-
 	drawEntity = function(entity) {
 		ctx.save();
 		ctx.fillStyle = entity.color;
@@ -157,26 +174,17 @@ $( document ).ready(function() {
 		ctx.restore();
 	}
 
-
-
 	updateEntity = function(entity) {
 		updateEntityPosition(entity);
 		drawEntity(entity);
 	}
-
-
-
 
 	getDistanceBetweenEntities = function(entity1, entity2) {
 		var xDist = entity1.x - entity2.x;
 		var yDist = entity1.y - entity2.y;
 
 		return Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2))
-
 	}
-
-
-
 
 	checkCollisionRectRect = function(rect1, rect2) {
 		return rect1.x <= rect2.x + rect2.width
@@ -184,9 +192,6 @@ $( document ).ready(function() {
 			&& rect1.y <= rect2.y + rect2.height
 			&& rect2.y <= rect1.y + rect1.height;
 	}
-
-
-
 
 	checkCollisionEntity = function(entity1, entity2) { //returns true or false
 		var rect1 = {
@@ -206,9 +211,6 @@ $( document ).ready(function() {
 
 		return checkCollisionRectRect(rect1, rect2);
 	}
-
-
-
 
 	update = function() {
 		ctx.clearRect(0, 0, canvasWidth, canvasHeight);
@@ -236,14 +238,13 @@ $( document ).ready(function() {
 			startNewGame();
 		}
 
-
+		updatePlayerPosition();
 		drawEntity(Player);
 		ctx.save();
-		ctx.fillStyle = 'green';
+		ctx.fillStyle = '#77BA99';
 		ctx.fillText('Hp: ' + Player.hp, 0, 10);
 		ctx.restore();
 	}
-
 
 	startNewGame = function() {
 		Player.hp = 100;
@@ -265,7 +266,49 @@ $( document ).ready(function() {
 		createEntity(id, x, y, spdx, spdy, width, height);
 	}
 
-	startNewGame();
 
+
+	document.onkeydown = function(event) {
+		if(event.keyCode == 38) 
+			Player.pressingUp = true;
+		if(event.keyCode == 40)
+			Player.pressingDown = true;
+		if(event.keyCode == 37)
+			Player.pressingLeft = true;
+		if(event.keyCode == 39)
+			Player.pressingRight = true;
+	}
+
+
+	document.onkeyup = function(event) {
+		if(event.keyCode == 38) 
+			Player.pressingUp = false;
+		if(event.keyCode == 40)
+			Player.pressingDown = false;
+		if(event.keyCode == 37)
+			Player.pressingLeft = false;
+		if(event.keyCode == 39)
+			Player.pressingRight = false;
+	}
+
+
+	updatePlayerPosition = function() {
+		if(Player.pressingUp) 
+			Player.y -= 10;
+		if(Player.pressingDown)
+			Player.y += 10;
+		if(Player.pressingLeft)
+			Player.x -= 10;
+		if(Player.pressingRight)
+			Player.x += 10;
+	}
+
+
+	createEvents = function() {
+		cnv.addEventListener('mousemove', mouseMoveOver, false);
+	}
+
+	createEvents();
+	startNewGame();
 	setInterval(update, 40);
 });

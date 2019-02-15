@@ -1,0 +1,3 @@
+[submodule "Game Application/Game"]
+	path = Game Application/Game
+	url = https://github.com/ajaxorg/ace-builds.git

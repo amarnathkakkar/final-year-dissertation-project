@@ -1,4 +1,5 @@
 var player, entityList = {}, bulletList = {};
+var bufferedActionsArray = [];
 
 
 Entity = function(type, id, x, y, spdx, spdy, width, height, color) {
@@ -34,7 +35,7 @@ Entity = function(type, id, x, y, spdx, spdy, width, height, color) {
 	self.draw = function() {
 		ctx.save();
 		ctx.shadowColor='black';
-		ctx.shadowBlur=10;
+		ctx.shadowBlur=30;
 		ctx.fillStyle = self.color;
 		ctx.fillRect(self.x-self.width/2, self.y-self.height/2, self.width, self.height);
 		ctx.restore();
@@ -93,26 +94,40 @@ Player = function() {
 			player.y = canvasHeight - player.height/2 - mapTileHeight/2;
 	}
 
-	self.move = function(input) {
-		if(input == 'right') 
-			player.x += mapTileWidth;
-		if(input == 'left')
-			player.x -= mapTileWidth;
-		if(input == 'up') 
-			player.y -= mapTileHeight;
-		if(input == 'down')
-			player.y += mapTileHeight;
+
+	self.doAction = function (input) {
+
+		if(input[1] == 'move') {
+			if(input[0] == 'right') 
+				player.x += mapTileWidth;
+			if(input[0] == 'left')
+				player.x -= mapTileWidth;
+			if(input[0] == 'up') 
+				player.y -= mapTileHeight;
+			if(input[0] == 'down')
+				player.y += mapTileHeight;
+		}
+		else if(input[1] == 'shoot') {
+			if(input[0] == 'right') 
+				generateBullet(0);
+			if(input[0] == 'left')
+				generateBullet(180);
+			if(input[0] == 'up') 
+				generateBullet(270);
+			if(input[0] == 'down')
+				generateBullet(90);
+
+		}
+
 	}
 
+	self.move = function(input) {
+		bufferedActionsArray.push([input, 'move']);
+	}
+
+
 	self.shoot = function(input) {
-		if(input == 'right') 
-			generateBullet(0);
-		if(input == 'left')
-			generateBullet(180);
-		if(input == 'up') 
-			generateBullet(270);
-		if(input == 'down')
-			generateBullet(90);
+		bufferedActionsArray.push([input, 'shoot']);
 	}
 
 
@@ -173,8 +188,11 @@ createBullet = function(id, x, y, spdx, spdy, width, height) {
 	var super_update = self.update;
 	self.update = function() {
 		super_update();
+		
 		self.timer++
+
 		var toRemove = false;
+
 		if (self.timer > mapTileWidth/5) {
 			toRemove = true;
 		}
@@ -183,6 +201,7 @@ createBullet = function(id, x, y, spdx, spdy, width, height) {
 			var isColliding = bulletList[self.id].checkCollision(entityList[key2]);
 			if(isColliding) {
 				toRemove = true;
+				score += 100;
 				delete entityList[key2];
 				break;
 			}

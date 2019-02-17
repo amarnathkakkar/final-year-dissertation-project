@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-
+	//const async = window.async;
+	
 	createEvents = function() {
 		
 		document.onkeydown = function(event) {
@@ -27,35 +28,22 @@ $( document ).ready(function() {
 		}
 	}
 
-
 	compileCode = function() {
 		eval(editor.getValue())
+
+
+
+		async.eachLimit(bufferedActionsArray, 1, function(el, callback) {
+			setTimeout( () =>  {
+				player.doAction(el);
+				callback();
+			}, 1000);
+		    
+		}, function(err) {
+			console.log('done')
+			bufferedActionsArray = [];
+		})
 	}
-
-
-	//drawLevelLines = function() {
-	//	//map style
-	//	for (i = mapTileWidth; i < canvasWidth; i += mapTileWidth) {
-	//		ctx.save();
-	//		ctx.moveTo(0, i);
-	//		ctx.fillStyle = 'red';
-	//		ctx.lineTo(canvasWidth, i);
-	//		ctx.stroke();
-	//		ctx.restore();
-//
-//	//	}
-//
-//
-//	//	for (i = mapTileHeight; i < canvasHeight; i += mapTileHeight) {
-//	//		ctx.save();
-//	//		ctx.moveTo(i, 0);
-//	//		ctx.fillStyle = 'red';
-//	//		ctx.lineTo(i,canvasHeight);
-//	//		ctx.stroke();
-//	//		ctx.restore();
-//	//	
-//	//	}
-	//}
 
 	update = function() {
 		ctx.clearRect(0, 0, canvasWidth, canvasHeight);
@@ -65,7 +53,7 @@ $( document ).ready(function() {
 		frameCount++;
 		score++;
 
-		if (frameCount % 10000 == 0) {
+		if (frameCount % 100 == 0) {
 			generateRandomEnemy();
 		}
 

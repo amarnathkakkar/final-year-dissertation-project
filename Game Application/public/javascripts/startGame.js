@@ -17,5 +17,6 @@ function startNewGame() {
 	score = 0;
 	entityList = {};
 	bulletList = {};
+	bufferedActionsArray = [];
 	generateRandomEnemy();
 }

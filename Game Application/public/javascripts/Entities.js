@@ -430,7 +430,7 @@ Bullet = function(id, x, y, spdx, spdy, width, height) {
 				var isColliding = Bullet.list[self.id].checkCollision(Enemy.list[key2]);
 				if(isColliding) {
 					toRemove = true;
-					score += 100;
+					score += 500;
 					delete Enemy.list[key2];
 					break;
 				}

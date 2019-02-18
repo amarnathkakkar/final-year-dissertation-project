@@ -1,5 +1,5 @@
 var timeWhenGameStarted = Date.now();
-var score = 0;
+var score = 10000;
 
 function endGame() {
 	var timeSurvived = Date.now() - timeWhenGameStarted;
@@ -14,9 +14,10 @@ function startNewGame() {
 	player.hp = 100;
 	timeWhenGameStarted = Date.now();
 	frameCount = 0;
-	score = 0;
+	score = 10000;
 	Enemy.list = {};
 	Bullet.list = {};
 	Player.bufferedActionsArray = [];
-	Enemy.generateRandom();
+	Enemy(1, canvasWidth/2, Math.ceil(canvasHeight/2), 0, 0, 40, 40); //for demo purposes
+	//Enemy.generateRandom();
 }

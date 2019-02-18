@@ -58,12 +58,16 @@ $( document ).ready(function() {
 
 		ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 		
-		//Maps.current.draw();
+		Maps.current.draw();
 
 		//drawLevelLines();
 
 		frameCount++;
-		score++;
+
+		if (score > 0) {
+			score--;
+		}
+		
 
 		if (frameCount % 100 == 0) {
 		//	Enemy.generateRandom();
@@ -123,14 +127,36 @@ $( document ).ready(function() {
 		self.image.src = imgSrc;
 
 		self.draw = function() {
-			ctx.drawImage(self.image,
-				0,0, self.image.width, self.image.height,
-				0,0, canvasWidth, canvasHeight);
+			
+			ctx.save();
+			ctx.moveTo(0,14*tileSize);
+			// End point (180,47)
+			ctx.lineTo(canvasWidth,14*tileSize);
+			// Make the line visible
+			ctx.stroke();
+
+			ctx.moveTo(0,24*tileSize);
+			// End point (180,47)
+			ctx.lineTo(canvasWidth,24*tileSize);
+			// Make the line visible
+			ctx.stroke();
+
+			
+			ctx.fillStyle = "#D33F49";
+			ctx.fillRect(canvasWidth-40, canvasHeight/2 -25, 40, 60);
+			ctx.fillStyle = "white";
+			ctx.fillText('Exit', canvasWidth-29, canvasHeight/2 + 5);
+
+			ctx.restore();
+
+		//	ctx.drawImage(self.image,
+		//		0,0, self.image.width, self.image.height,
+		//		0,0, canvasWidth, canvasHeight);
 		}
 		return self;
 	}
 
-	Maps.current = Maps('level1', 'images/map.png',
+	Maps.current = Maps('tutorial', 'images/map.png',
 	[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 	 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 	 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],

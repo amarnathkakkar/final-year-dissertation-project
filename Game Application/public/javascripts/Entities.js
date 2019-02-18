@@ -1,8 +1,6 @@
-var player, entityList = {}, bulletList = {};
-var bufferedActionsArray = [];
+var player;
 
-
-Entity = function(type, id, x, y, spdx, spdy, width, height, color) {
+Entity = function(type, id, x, y, spdx, spdy, width, height, img) {
 	var self = { 
 		type:type,
 		id:id,
@@ -12,7 +10,7 @@ Entity = function(type, id, x, y, spdx, spdy, width, height, color) {
 		spdy:spdy,
 		width:width,
 		height:height,
-		color:color,
+		img:img
 	}
 
 	self.update = function(entity) {
@@ -34,10 +32,33 @@ Entity = function(type, id, x, y, spdx, spdy, width, height, color) {
 
 	self.draw = function() {
 		ctx.save();
-		ctx.shadowColor='black';
-		ctx.shadowBlur=30;
-		ctx.fillStyle = self.color;
-		ctx.fillRect(self.x-self.width/2, self.y-self.height/2, self.width, self.height);
+		
+		var x = self.x-self.width/2;
+		var y = self.y-self.height/2
+		//ctx.drawImage(self.img, x, y);
+
+
+		var frameWidth = self.img.width/3;
+		var frameHeight = self.img.height/4;
+
+		var directionMod = 3; //looking right
+		if(self.y < self.futureY)
+			directionMod = 2; //down
+		else if(self.x > self.futureX)
+			directionMod = 1; //left
+		else if (self.y > self.futureY)
+			directionMod = 0; //up
+		else 
+			directionMod = 3;
+
+		ctx.drawImage(self.img,
+			0, directionMod*frameHeight, frameWidth, frameHeight,
+			x, y, self.width, self.height);
+
+		//ctx.shadowColor='black';
+		//ctx.shadowBlur=30;
+		//ctx.fillStyle = self.color;
+		//ctx.fillRect(self.x-self.width/2, self.y-self.height/2, self.width, self.height);
 		ctx.restore();
 	}
 
@@ -70,28 +91,123 @@ Entity = function(type, id, x, y, spdx, spdy, width, height, color) {
 }
 
 Player = function() {
-	var self = Entity('player','myId', mapTileWidth/2,canvasHeight/2 + mapTileHeight/2,30,10,25,25,'#77BA99');
+	var self = Entity('player','myId', mapTileWidth/2,canvasHeight/2 + mapTileHeight/2,30,10,30,38,Img.player);
 
 	
 	self.updatePosition = function() {
-		//if(player.y < player.futureY)
-		//	player.y += mapTileHeight/10;
-		//if(player.y > player.futureY) 
-		//	player.y -= mapTileHeight/10;
-		//if(player.x > player.futureX)
-		//	player.x -= mapTileWidth/10;
-		//if(player.x < player.futureX)
-		//	player.x += mapTileWidth/10;
+
+
+		var oldX = self.x;
+		var oldY = self.y;
+
+
+		var rBumper = {x:self.x + self.width/2, y:self.y};
+		var lBumper = {x:self.x - self.width/2, y:self.y};
+		var tBumper = {x:self.x, y:self.y - self.height/2};
+		var bBumper = {x:self.x, y:self.y + self.height/2};
+
+
+
+		if(self.y < self.futureY){
+			if(Maps.current.isPositionWall(bBumper)) {
+				self.x = oldX;
+				self.y = oldY;
+				self.futureX = self.x;
+				self.futureY = self.y;
+			} else {
+				self.y += Math.round( (mapTileHeight/10) * 10 ) / 10;
+				self.y = Math.round(self.y);
+			}
+		}
+		if(self.y > self.futureY) {
+			if (Maps.current.isPositionWall(tBumper)) {
+				self.x = oldX;
+				self.y = oldY;
+				self.futureX = self.x;
+				self.futureY = self.y;
+			} else {
+				self.y -= Math.round( (mapTileHeight/10) * 10 ) / 10;
+				self.y = Math.round(self.y);
+			}
+		}
+		if(self.x > self.futureX) {
+			if (Maps.current.isPositionWall(lBumper)) {
+				self.x = oldX;
+				self.y = oldY;
+				self.futureX = self.x;
+				self.futureY = self.y;
+			} else {
+				self.x -= Math.round( (mapTileWidth/10) * 10 ) / 10;
+				self.x = Math.round(self.x);
+			}
+		}
+		if(self.x < self.futureX) {
+			if(Maps.current.isPositionWall(rBumper)) {
+				self.x = oldX;
+				self.y = oldY;
+				self.futureX = self.x;
+				self.futureY = self.y;
+			} else {
+				self.x += (mapTileWidth/10);
+				self.x = Math.round(self.x);
+			}
+		}
 	
 
-		if(player.x < player.width/2 + mapTileWidth/2)
-			player.x = player.width/2 + mapTileWidth/2;
-		if(player.x > canvasWidth - player.width/2 - mapTileWidth/2)
-			player.x = canvasWidth - player.width/2 - mapTileWidth/2;
-		if(player.y < player.height/2 + mapTileHeight/2)
-			player.y = player.height/2 + mapTileHeight/2;
-		if(player.y > canvasHeight - player.height/2 - mapTileHeight/2)
-			player.y = canvasHeight - player.height/2 - mapTileHeight/2;
+		if(self.x < self.width/2) {
+			self.x = self.width/2;
+			self.futureX = self.x;
+		}
+		if(self.x > canvasWidth - self.width/2) {
+			self.x = canvasWidth - self.width/2;
+			self.futureX = self.x;
+		}
+		if(self.y < self.height/2) {
+			self.y = self.height/2 ;
+			self.futureY = self.y;
+		}
+		if(self.y > canvasHeight - self.height/2) {
+			self.y = canvasHeight - self.height/2;
+			self.futureY = self.y;
+		}
+
+	}
+
+	self.spriteAnimCounter = 0;
+
+	self.draw = function() {
+		ctx.save();
+		
+		var x = self.x-self.width/2;
+		var y = self.y-self.height/2
+		//ctx.drawImage(self.img, x, y);
+
+
+		var frameWidth = self.img.width/4;
+		var frameHeight = self.img.height/4;
+
+		var directionMod = 3; //looking right
+		if(self.y < self.futureY)
+			directionMod = 0; //down
+		else if(self.x > self.futureX)
+			directionMod = 2; //left
+		else if (self.y > self.futureY)
+			directionMod = 1; //up
+		else 
+			directionMod = 3;
+
+
+		var walkingMod = Math.floor(self.spriteAnimCounter % 4); //1,2,3
+
+		ctx.drawImage(self.img,
+			walkingMod*frameWidth, directionMod*frameHeight, frameWidth, frameHeight,
+			x, y, self.width, self.height);
+
+		//ctx.shadowColor='black';
+		//ctx.shadowBlur=30;
+		//ctx.fillStyle = self.color;
+		//ctx.fillRect(self.x-self.width/2, self.y-self.height/2, self.width, self.height);
+		ctx.restore();
 	}
 
 
@@ -99,41 +215,47 @@ Player = function() {
 
 		if(input[1] == 'move') {
 			if(input[0] == 'right') 
-				player.x += mapTileWidth;
+				self.futureX += mapTileWidth;
 			if(input[0] == 'left')
-				player.x -= mapTileWidth;
+				self.futureX -= mapTileWidth;
 			if(input[0] == 'up') 
-				player.y -= mapTileHeight;
+				self.futureY -= mapTileHeight;
 			if(input[0] == 'down')
-				player.y += mapTileHeight;
+				self.futureY += mapTileHeight;
 		}
 		else if(input[1] == 'shoot') {
 			if(input[0] == 'right') 
-				generateBullet(0);
+				Bullet.generate(0);
 			if(input[0] == 'left')
-				generateBullet(180);
+				Bullet.generate(180);
 			if(input[0] == 'up') 
-				generateBullet(270);
+				Bullet.generate(270);
 			if(input[0] == 'down')
-				generateBullet(90);
+				Bullet.generate(90);
 
 		}
 
 	}
 
 	self.move = function(input) {
-		bufferedActionsArray.push([input, 'move']);
+		Player.bufferedActionsArray.push([input, 'move']);
 	}
 
 
 	self.shoot = function(input) {
-		bufferedActionsArray.push([input, 'shoot']);
+		Player.bufferedActionsArray.push([input, 'shoot']);
 	}
 
 
 	var super_update = self.update;
 	self.update = function() {
 		super_update();
+
+		if(self.x != self.futureX || self.y != self.futureY) {
+			self.spriteAnimCounter += 0.2;
+		}
+		
+
 		if (self.hp <= 0) {
 			endGame();
 			startNewGame();
@@ -147,43 +269,146 @@ Player = function() {
 	self.pressingLeft = false;
 	self.pressingRight = false;
 
-	//self.futureX = self.x;
-	//self.futureY = self.y;
+	self.futureX = self.x;
+	self.futureY = self.y;
 	
 	return self;
 }
 
-createEnemy = function(id, x, y, spdx, spdy, width, height) {
-	var self = Entity('enemy',id,x,y,spdx,spdy,width,height,'#D33F49');
+Player.bufferedActionsArray = [];
+
+Enemy = function(id, x, y, spdx, spdy, width, height) {
+	var self = Entity('enemy',id,x,y,spdx,spdy,width,height,Img.enemy);
 	
+	self.spriteAnimCounter = 0;
+
+
+
+
+	self.updatePosition = function() {
+		
+		var oldX = self.x;
+		var oldY = self.y;
+
+		var rBumper = {x:self.x + self.width/2, y:self.y};
+		var lBumper = {x:self.x - self.width/2, y:self.y};
+		var tBumper = {x:self.x, y:self.y - self.height/2};
+		var bBumper = {x:self.x, y:self.y + self.height/2};
+
+
+		self.x += self.spdx;
+		self.y += self.spdy;
+
+		if (self.x >= canvasWidth || self.x <= 0 ) {
+		 //|| Maps.current.isPositionWall(rBumper) || Maps.current.isPositionWall(lBumper)) {
+			self.spdx = -self.spdx;
+		} 
+		if (self.y >= canvasHeight || self.y <= 0) {
+		 //|| Maps.current.isPositionWall(tBumper) || Maps.current.isPositionWall(bBumper)) {
+			self.spdy = -self.spdy;
+		} 
+
+		
+		
+		//if(Maps.current.isPositionWall(self)) {
+		//	self.x = oldX;
+		//	self.y = oldY;
+		//}
+	}
+
+
+
+
+
+
+	self.draw = function() {
+		ctx.save();
+		
+		var x = self.x-self.width/2;
+		var y = self.y-self.height/2
+		//ctx.drawImage(self.img, x, y);
+
+
+		var frameWidth = self.img.width/4;
+		var frameHeight = self.img.height/4;
+
+		var directionMod = 1; //looking right
+		if(self.spdy > 0)
+			directionMod = 0; //down
+		else if(self.x < 0)
+			directionMod = 3; //left
+		else if (self.y < 0)
+			directionMod = 2; //up
+		else 
+			directionMod = 3;
+
+
+		var walkingMod = Math.floor(self.spriteAnimCounter % 4); //1,2,3
+
+		ctx.drawImage(self.img,
+			walkingMod*frameWidth, directionMod*frameHeight, frameWidth, frameHeight,
+			x, y, self.width, self.height);
+
+		//ctx.shadowColor='black';
+		//ctx.shadowBlur=30;
+		//ctx.fillStyle = self.color;
+		//ctx.fillRect(self.x-self.width/2, self.y-self.height/2, self.width, self.height);
+		ctx.restore();
+	}
+
+
+
 	var super_update = self.update;
 	self.update = function() {
+
 		super_update();
+		
+		self.spriteAnimCounter += 0.2;
+		
 		var isColliding = player.checkCollision(self);
 		if(isColliding) {
 			player.hp = player.hp - 10;
 		}
-	}//console.log(getDistanceBetweenEntities(player, entityList[key]));
+	}//console.log(getDistanceBetweenEntities(player, Enemy.list[key]));
 	
 
-	entityList[id] = self;
+	Enemy.list[id] = self;
 }
 
-generateRandomEnemy = function() {
+Enemy.list = {};
+
+Enemy.generateRandom = function() {
 	var id = Math.random();
 	var x = Math.random()*canvasWidth;
 	var y = Math.random()*canvasHeight;
 	var spdx = 5 + Math.random()*5;
 	var spdy = 5 + Math.random()*5;
-	var width = 10 + Math.random()*30;
-	var height = 10 + Math.random()*30;
+	var width = 40;
+	var height = 40;
 
-	createEnemy(id, x, y, spdx, spdy, width, height);
+	Enemy(id, x, y, spdx, spdy, width, height);
 }
 
-createBullet = function(id, x, y, spdx, spdy, width, height) {
-	var self = Entity('bullet',id,x,y,spdx,spdy,width,height,'#D7C0D0');
+Bullet = function(id, x, y, spdx, spdy, width, height) {
+	var self = Entity('bullet',id,x,y,spdx,spdy,width,height,Img.bullet);
 
+	self.draw = function() {
+		ctx.save();
+		
+		var x = self.x-self.width/2;
+		var y = self.y-self.height/2
+		//ctx.drawImage(self.img, x, y);
+
+		ctx.drawImage(self.img,
+			0, 0, self.img.width, self.img.height,
+			x, y, self.width, self.height);
+
+		//ctx.shadowColor='black';
+		//ctx.shadowBlur=30;
+		//ctx.fillStyle = self.color;
+		//ctx.fillRect(self.x-self.width/2, self.y-self.height/2, self.width, self.height);
+		ctx.restore();
+	}
 
 	var super_update = self.update;
 	self.update = function() {
@@ -193,39 +418,52 @@ createBullet = function(id, x, y, spdx, spdy, width, height) {
 
 		var toRemove = false;
 
-		if (self.timer > mapTileWidth/5) {
-			toRemove = true;
-		}
-		
-		for (var key2 in entityList) {
-			var isColliding = bulletList[self.id].checkCollision(entityList[key2]);
-			if(isColliding) {
+
+		for (var key in Bullet.list) {
+			var b = Bullet.list[key];
+
+			if (self.timer > mapTileWidth/5) {
 				toRemove = true;
-				score += 100;
-				delete entityList[key2];
-				break;
 			}
+
+			for (var key2 in Enemy.list) {
+				var isColliding = Bullet.list[self.id].checkCollision(Enemy.list[key2]);
+				if(isColliding) {
+					toRemove = true;
+					score += 100;
+					delete Enemy.list[key2];
+					break;
+				}
+			}
+
+			if(Maps.current.isPositionWall(b)) {
+				toRemove = true;
+			}
+
 		}
+
 		if(toRemove)
-			delete bulletList[self.id];
+			delete Bullet.list[self.id];
 	}
 
 	self.timer = 0;
 
-	bulletList[id] = self;
+	Bullet.list[id] = self;
 }
 
-generateBullet = function(angle) {
+Bullet.list = {};
+
+Bullet.generate = function(angle) {
 	var id = Math.random();
 	var x = player.x;
 	var y = player.y;
-	var width = 10;
-	var height = 10;
+	var width = 22;
+	var height = 22;
 	var angle = angle;
 	var spdx = Math.cos(angle/180*Math.PI)*5;
 	var spdy = Math.sin(angle/180*Math.PI)*5;
 
-	createBullet(id, x, y, spdx, spdy, width, height);
+	Bullet(id, x, y, spdx, spdy, width, height);
 }
 
 checkCollisionRectRect = function(rect1, rect2) {

@@ -1,13 +1,17 @@
 var cnv, ctx;
 var textEditor, editor;
 var btn;
-var canvasHeight = window.outerHeight/1.4;
+var canvasHeight = (window.outerHeight/1.4);
 var canvasWidth	 = canvasHeight;
-var mapTileHeight = canvasHeight/10;
-var mapTileWidth = canvasWidth/10;
+var mapTileHeight = Math.round(  (Math.floor(canvasHeight/10) ) / 10) * 10; 
+var mapTileWidth = Math.round(  (Math.floor(canvasWidth/10) ) / 10) * 10; 
+
+console.log(canvasHeight);
 //var consolecnv, consolectx;
 //var canvasOffset, offsetX, offsetY;
 //var canvasWidth = window.outerWidth/1.4;
+
+var Img = {};
 
 drawMap = function() {
   	cnv = document.createElement('canvas');
@@ -23,7 +27,11 @@ drawMap = function() {
   	cnv.style.bottom = 0;
   	cnv.style.right = 0;
   	cnv.style.border = '1px dashed #EFF0D1';
+  	//cnv.style['z-index'] = 0;
   	//cnv.style.backgroundColor = '#EFF0D1';
+
+  	canvasHeight = cnv.height;
+  	canvasWidth = cnv.width;
 
 	document.getElementById('container').appendChild(cnv);
 
@@ -81,4 +89,14 @@ drawMap = function() {
 	btn.addEventListener('click', (event) => {
 	  compileCode();
 	});
+
+
+	Img.player = new Image();
+	Img.player.src = 'images/player.png';
+	Img.enemy = new Image();
+	Img.enemy.src = 'images/enemy.png';
+	Img.bullet = new Image();
+	Img.bullet.src = 'images/bullet.png';
+	Img.map = new Image()
+	Img.map.src = 'images/map.png';
 }

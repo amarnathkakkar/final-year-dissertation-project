@@ -7,16 +7,16 @@ function endGame() {
 }
 
 function startNewGame() {
-	player.x = mapTileWidth/2;
-	player.y = canvasHeight/2 + mapTileHeight/2;
+	player.x = player.width/2;
+	player.y = Math.ceil(canvasHeight/2);
 	player.futureX = player.x;
 	player.futureY = player.y;
 	player.hp = 100;
 	timeWhenGameStarted = Date.now();
 	frameCount = 0;
 	score = 0;
-	entityList = {};
-	bulletList = {};
-	bufferedActionsArray = [];
-	generateRandomEnemy();
+	Enemy.list = {};
+	Bullet.list = {};
+	Player.bufferedActionsArray = [];
+	Enemy.generateRandom();
 }

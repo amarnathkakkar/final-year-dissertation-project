@@ -1,39 +1,45 @@
-var timeWhenGameStarted = Date.now();
 var levelScore = 0; //current level score
 var totalScore = 0; //aggregate score from all completed levels
-var levelTutorial = true, levelOne = false, levelTwo = false, levelThree = false; //as levels get completed, higher levels are set to true
+var currentLevel = 0; //0 for tutorial, 1,..,n represeting levelOne, ... levelN respectively
 var mapGridSize = 50; //The n by n 2D matrix represented by Maps.current.grid
 var gridTileSize = canvasHeight/mapGridSize; //needs to be according to grid size and canvas size
 
 
-
 function endGame() {
-	var timeSurvived = Date.now() - timeWhenGameStarted;
 	console.log('Score:  ' + levelScore + ' points');
+}
+
+function nextLevel() {
+	currentLevel++;
 	totalScore += levelScore;
+	startLevel();
+}
+
+function restartLevel() {
+	startLevel();
 }
 
 function startLevel() {
-	timeWhenGameStarted = Date.now();
 	frameCount = 0;
 	Enemy.list = {};
 	Bullet.list = {};
 	Player.bufferedActionsArray = [];
 
-	if (levelThree) {
+	if (currentLevel == 3) {
 
-	} else if (levelTwo) {
+	} else if (currentLevel == 2) {
 
-	} else if (levelOne) {
+	} else if (currentLevel == 1) {
 
-	} else if (levelTutorial) {
+	} else if (currentLevel == 0) {
 		loadTutorial();
 	}
 }
 
+//sets the map grid, player stats and player and enemy positions
 function loadTutorial() {
 
-	Maps.current = Maps('levelTutorial', 'images/map.png',
+	Maps.current = Maps(currentLevel, 'images/map.png',
 	[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 	 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 	 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],

@@ -268,8 +268,7 @@ Player = function() {
 		
 
 		if (self.hp <= 0) {
-			endGame();
-			startLevel();
+			restartLevel();
 		}
 	}
 
@@ -361,7 +360,7 @@ Enemy = function(id, x, y, spdx, spdy, width, height) {
 
 		super_update();
 		
-		self.spriteAnimCounter += 0.05;
+		self.spriteAnimCounter += 0.1;
 		
 		var isColliding = player.checkCollision(self);
 		if(isColliding) {

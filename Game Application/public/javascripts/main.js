@@ -1,20 +1,26 @@
 $( document ).ready(function() {
-	
 
 	compileCode = function() {
 		eval(editor.getValue())
 
+		async.eachLimit(Player.bufferedActionsArray, 1, 
 
+			function(el, callback) {
 
-		async.eachLimit(Player.bufferedActionsArray, 1, function(el, callback) {
-			setTimeout( () =>  {
-				player.doAction(el);
-				callback();
-			}, 900);
-		    
-		}, function(err) {
-			Player.bufferedActionsArray = [];
-		})
+				setTimeout( () =>  {
+					if (Player.bufferedActionsArray.length == 0) {
+						callback();
+					}
+					else {
+						player.doAction(el);
+						callback();
+					}
+				}, 900);
+			    
+			}, function(err) {
+				Player.bufferedActionsArray = [];
+			}
+		)
 	}
 
 	Maps = function(id, imgSrc, grid) {
@@ -41,8 +47,7 @@ $( document ).ready(function() {
 		    //exit tile reached
 		    if (pnt.type == 'player' && self.grid[gridY][gridX] == '2') {
 		    	//levelOne = true;
-				endGame();
-				startLevel();
+				nextLevel();
 			}
 		    else {
 			    return self.grid[gridY][gridX];
@@ -103,13 +108,13 @@ $( document ).ready(function() {
 
 		    ctx.restore();
 
-		    if (self.id == 'levelThree') {
+		    if (self.id == 3) {
 		      self.drawLevelThree();
-		    } else if (self.id == 'levelTwo') {
+		    } else if (self.id == 2) {
 		      self.drawLevelTwo();
-		    } else if (self.id == 'levelOne') {
+		    } else if (self.id == 1) {
 		      self.drawLevelOne();
-		    } else if (self.id == 'levelTutorial') {
+		    } else if (self.id == 0) {
 		      self.drawTutorial();
 		    }
 	  	}

@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 	
-	var tileSize = 14; //needs to be according to grid size and canvas size
 
 	compileCode = function() {
 		eval(editor.getValue())
@@ -22,19 +21,19 @@ $( document ).ready(function() {
 	  	var self = {
 		    id:id,
 		    image:new Image(),
-		    width:grid[0].length * tileSize,
-		    height:grid.length * tileSize,
+		    width:grid[0].length * gridTileSize,
+		    height:grid.length * gridTileSize,
 		    grid:grid
 	  	}
 
 	  	self.isPositionWall = function(pnt) {
-		    var gridX = Math.floor(pnt.x/tileSize);
-		    var gridY = Math.floor(pnt.y/tileSize);
+		    var gridX = Math.floor(pnt.x/gridTileSize);
+		    var gridY = Math.floor(pnt.y/gridTileSize);
 
-		    if(gridX < 0 || gridX >= self.grid[0].length) {
+		    if(gridX < 0 || gridX > self.grid[0].length) {
 		      return true;
 		    }
-		    if(gridY < 0 || gridY >= self.grid.length) {
+		    if(gridY < 0 || gridY > self.grid.length) {
 		      return true;
 		    }
 		    return self.grid[gridY][gridX];
@@ -45,6 +44,16 @@ $( document ).ready(function() {
 	  	self.drawTutorial = function() {
 		    ctx.save();
 
+		    //level walls
+		    ctx.lineWidth = 5;
+		    ctx.beginPath();
+		    ctx.moveTo(0, mapTileHeight*6);
+		    ctx.lineTo(canvasWidth, mapTileHeight*6);
+		    ctx.moveTo(0, mapTileHeight*4);
+		    ctx.lineTo(canvasWidth, mapTileHeight*4);
+		    ctx.stroke();
+
+		    //level exit tile
 		    ctx.fillStyle = "#D33F49";
 		    ctx.fillRect(canvasWidth-40, canvasHeight/2 -25, 40, 60);
 		    ctx.fillStyle = "white";
@@ -69,21 +78,19 @@ $( document ).ready(function() {
 	  	self.draw = function () {
 		    ctx.save();
 		    
-		    ctx.globalAlpha = 0.01;
+		    ctx.globalAlpha = 0.15;
 		    ctx.strokeStyle = "#b3b3b3";
-
+		    ctx.beginPath();
 		    for (var y=1; y < 10; y++) {
 		      ctx.moveTo(0, ((y/10) * canvasHeight) );
 		      ctx.lineTo(canvasWidth, ((y/10) * canvasHeight) );
-		      ctx.stroke();
 		    }
-
 		    for (var x=1; x < 10; x++) {
 		      ctx.moveTo(((x/10) * canvasWidth), 0 );
 		      ctx.lineTo(((x/10) * canvasWidth), canvasHeight );
-		      ctx.stroke();
 		    }
-		    
+		    ctx.stroke();
+
 		    ctx.restore();
 
 		    if (self.id == 'levelThree') {

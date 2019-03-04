@@ -91,7 +91,7 @@ Entity = function(type, id, x, y, spdx, spdy, width, height, img) {
 }
 
 Player = function() {
-	var self = Entity('player','myId', mapTileWidth/2,canvasHeight/2 + mapTileHeight/2,30,10,30,38,Img.player);
+	var self = Entity('player','myId', mapTileWidth/2,canvasHeight/2 + mapTileHeight/2,30,10,35,35,Img.player);
 
 	
 	self.movePixelsY = Math.round((mapTileHeight/20) * 10) / 10;
@@ -260,7 +260,7 @@ Player = function() {
 		super_update();
 
 		if(self.x != self.futureX || self.y != self.futureY) {
-			self.spriteAnimCounter += 0.2;
+			self.spriteAnimCounter += 0.1;
 		}
 		
 
@@ -325,9 +325,9 @@ Enemy = function(id, x, y, spdx, spdy, width, height) {
 		var directionMod = 1; //looking right
 		if(self.spdy > 0)
 			directionMod = 0; //down
-		else if(self.x < 0)
+		else if(self.spdx < 0)
 			directionMod = 3; //left
-		else if (self.y < 0)
+		else if (self.spdy < 0)
 			directionMod = 2; //up
 		else 
 			directionMod = 3;
@@ -351,7 +351,7 @@ Enemy = function(id, x, y, spdx, spdy, width, height) {
 
 		super_update();
 		
-		self.spriteAnimCounter += 0.2;
+		self.spriteAnimCounter += 0.05;
 		
 		var isColliding = player.checkCollision(self);
 		if(isColliding) {
@@ -383,10 +383,22 @@ Bullet = function(id, x, y, spdx, spdy, width, height) {
 		ctx.save();
 		
 		var x = self.x-self.width/2;
-		var y = self.y-self.height/2
+		var y = self.y-self.height/2;
+		var frameWidth = self.img.width;
+		var frameHeight = self.img.height/4;
+
+		var directionMod; 
+		if(self.spdy > 0)
+			directionMod = 3;
+		else if(self.spdx < 0)
+			directionMod = 2;
+		else if (self.spdy < 0)
+			directionMod = 1;
+		else 
+			directionMod = 0;
 
 		ctx.drawImage(self.img,
-			0, 0, self.img.width, self.img.height,
+			0, directionMod*frameHeight, frameWidth, frameHeight,
 			x, y, self.width, self.height);
 
 		ctx.restore();
@@ -419,7 +431,9 @@ Bullet = function(id, x, y, spdx, spdy, width, height) {
 			}
 
 			if(Maps.current.isPositionWall(b)) {
-				toRemove = true;
+				//toRemove = true;
+				self.spdx = -self.spdx;
+				self.spdy = -self.spdy;
 			}
 
 		}
@@ -442,8 +456,8 @@ Bullet.generate = function(angle) {
 	var width = 22;
 	var height = 22;
 	var angle = angle;
-	var spdx = Math.cos(angle/180*Math.PI)*5;
-	var spdy = Math.sin(angle/180*Math.PI)*5;
+	var spdx = Math.round(Math.cos(angle/180*Math.PI)*5);
+	var spdy = Math.round(Math.sin(angle/180*Math.PI)*5);
 
 	Bullet(id, x, y, spdx, spdy, width, height);
 }

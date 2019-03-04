@@ -105,10 +105,10 @@ Player = function() {
 		var oldY = self.y;
 
 
-		var rBumper = {x:self.x + self.width/2, y:self.y};
-		var lBumper = {x:self.x - self.width/2, y:self.y};
-		var tBumper = {x:self.x, y:self.y - self.height/2};
-		var bBumper = {x:self.x, y:self.y + self.height/2};
+		var rBumper = {type:self.type, x:self.x + self.width/2, y:self.y};
+		var lBumper = {type:self.type, x:self.x - self.width/2, y:self.y};
+		var tBumper = {type:self.type, x:self.x, y:self.y - self.height/2};
+		var bBumper = {type:self.type, x:self.x, y:self.y + self.height/2};
 
 
 
@@ -206,6 +206,9 @@ Player = function() {
 
 
 		var walkingMod = Math.floor(self.spriteAnimCounter % 4); //1,2,3
+
+		ctx.shadowColor='black';
+		ctx.shadowBlur=15;
 
 		ctx.drawImage(self.img,
 			walkingMod*frameWidth, directionMod*frameHeight, frameWidth, frameHeight,
@@ -316,8 +319,6 @@ Enemy = function(id, x, y, spdx, spdy, width, height) {
 		
 		var x = self.x-self.width/2;
 		var y = self.y-self.height/2
-		//ctx.drawImage(self.img, x, y);
-
 
 		var frameWidth = self.img.width/4;
 		var frameHeight = self.img.height/4;
@@ -333,16 +334,25 @@ Enemy = function(id, x, y, spdx, spdy, width, height) {
 			directionMod = 3;
 
 
+		ctx.shadowColor='black';
+
 		var walkingMod = Math.floor(self.spriteAnimCounter % 4); //1,2,3
+
+		if (walkingMod == 0) 
+			ctx.shadowBlur=6;
+		else if (walkingMod == 1)
+			ctx.shadowBlur=5;
+		else if (walkingMod == 2)
+			ctx.shadowBlur = 6;
+		else
+			ctx.shadowBlur = 7;		
+		
 
 		ctx.drawImage(self.img,
 			walkingMod*frameWidth, directionMod*frameHeight, frameWidth, frameHeight,
 			x, y, self.width, self.height);
 
-		//ctx.shadowColor='black';
-		//ctx.shadowBlur=30;
-		//ctx.fillStyle = self.color;
-		//ctx.fillRect(self.x-self.width/2, self.y-self.height/2, self.width, self.height);
+		
 		ctx.restore();
 	}
 
@@ -396,6 +406,9 @@ Bullet = function(id, x, y, spdx, spdy, width, height) {
 			directionMod = 1;
 		else 
 			directionMod = 0;
+
+		ctx.shadowColor='black';
+		ctx.shadowBlur=5;
 
 		ctx.drawImage(self.img,
 			0, directionMod*frameHeight, frameWidth, frameHeight,

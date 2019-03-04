@@ -36,7 +36,19 @@ $( document ).ready(function() {
 		    if(gridY < 0 || gridY > self.grid.length) {
 		      return true;
 		    }
-		    return self.grid[gridY][gridX];
+
+
+		    //exit tile reached
+		    if (pnt.type == 'player' && self.grid[gridY][gridX] == '2') {
+		    	//levelOne = true;
+				endGame();
+				startLevel();
+			}
+		    else {
+			    return self.grid[gridY][gridX];
+		    }
+
+
 	  	}
 
 	  	self.image.src = imgSrc;
@@ -54,10 +66,8 @@ $( document ).ready(function() {
 		    ctx.stroke();
 
 		    //level exit tile
-		    ctx.fillStyle = "#D33F49";
-		    ctx.fillRect(canvasWidth-40, canvasHeight/2 -25, 40, 60);
-		    ctx.fillStyle = "white";
-		    ctx.fillText('Exit', canvasWidth-29, canvasHeight/2 + 5);
+		    ctx.fillStyle = "#990000";
+		    ctx.fillRect(canvasWidth-mapTileWidth, mapTileHeight*5, mapTileWidth, mapTileHeight - ctx.lineWidth/2);
 
 		    ctx.restore();
 	  	}

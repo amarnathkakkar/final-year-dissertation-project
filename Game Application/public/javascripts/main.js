@@ -123,7 +123,6 @@ $( document ).ready(function() {
 	}
 
 	update = function() {
-
 		ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
 		Maps.current.draw();

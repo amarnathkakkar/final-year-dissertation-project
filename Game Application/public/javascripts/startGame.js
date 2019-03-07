@@ -15,15 +15,12 @@ function nextLevel() {
 	startLevel();
 }
 
-function restartLevel() {
-	startLevel();
-}
-
-function startLevel() {
+function createLevel() {
 	frameCount = 0;
 	Enemy.list = {};
 	Bullet.list = {};
 	Player.bufferedActionsArray = [];
+	player.hp = 100;
 
 	if (currentLevel == 3) {
 
@@ -34,6 +31,15 @@ function startLevel() {
 	} else if (currentLevel == 0) {
 		loadTutorial();
 	}
+}
+
+function restartLevel() {
+	createLevel();
+}
+
+function startLevel() {
+	levelScore = 10000;
+	createLevel();
 }
 
 //sets the map grid, player stats and player and enemy positions
@@ -91,8 +97,6 @@ function loadTutorial() {
 	 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 	 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]])
 
-	player.hp = 100;
-	levelScore = 10000;
 
 	player.x = mapTileWidth/2;
 	player.y = mapTileHeight*5 + mapTileHeight/2;

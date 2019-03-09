@@ -149,9 +149,10 @@ $( document ).ready(function() {
 
 		ctx.save();
 
+		levelDisplay.innerHTML =  '<span style="font-size: 14px">Current Level: '+currentLevel+'/6</font>'
 		ctx.fillStyle = '#aad4bf';
-		ctx.font = "13px Courier";
-		ctx.fillText('Score: ' + levelScore, canvasWidth/2 - 35, 15); //change to show on level completion
+		ctx.font = "13px Helvetica Neue";
+		ctx.fillText('Score: ' + levelScore, 4.1*mapTileWidth, 15);
 		ctx.fillText('Hp: ' + player.hp, 5, 15);
 
 		ctx.restore();

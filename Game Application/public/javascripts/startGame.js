@@ -1,17 +1,10 @@
 var levelScore = 0; //current level score
-var totalScore = 0; //aggregate score from all completed levels
 var currentLevel = 0; //0 for tutorial, 1,..,n represeting levelOne, ... levelN respectively
 var mapGridSize = 50; //The n by n 2D matrix represented by Maps.current.grid
 var gridTileSize = canvasHeight/mapGridSize; //needs to be according to grid size and canvas size
 
-
-function endGame() {
-	console.log('Score:  ' + levelScore + ' points');
-}
-
 function nextLevel() {
 	currentLevel++;
-	totalScore += levelScore;
 	startLevel();
 }
 
@@ -38,7 +31,7 @@ function restartLevel() {
 }
 
 function startLevel() {
-	levelScore = 10000;
+	levelScore += 10000;
 	createLevel();
 }
 

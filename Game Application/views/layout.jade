@@ -1,16 +1,27 @@
 doctype html
 html
   head
-    title Mystery Maze
+    title Joe's Programming Adventure
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
     script(src='https://code.jquery.com/jquery-3.3.1.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js', type='text/javascript', charset='utf-8')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/async/2.6.2/async.js')
-    script(src='/javascripts/loadMap.js')
-    script(src='/javascripts/startGame.js')
+    script(src='/javascripts/Canvas.js')
+    script(src='/javascripts/createLevel.js')
     script(src='/javascripts/Entities.js')
-    script(src='/javascripts/main.js')
+    script(src='/javascripts/ifLogic.js')
+    script(src='/javascripts/Map.js')
+    script(src='/javascripts/Main.js')
   body
     link(rel='stylesheet', href='/stylesheets/style.css')
     #container(style='position:fixed; height:100%; width:100%; top:0; left:0; background:#262730;')
+    // Modal content
+    #tutModal.instructModal
+      .instructModal-content
+        .modal-header
+          h4.modal-title Instructions
+          span.instructClose ×
+        .modal-body
+        .modal-footer
+          button.btn.btn-default(type='button', data-dismiss='modal') Next

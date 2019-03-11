@@ -7,6 +7,68 @@ a {
   color: #00B7FF;
 }
 
+.instructModal {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.instructModal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 40%;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #77BA99;
+  color: white;
+}
+
+.modal-body {padding: 16px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #77BA99;
+  color: white;
+}
+
+.btn.btn-default {
+  color: white;
+  float: right;
+}
+.btn.btn-default:hover,
+.btn.btn-default:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.instructClose {
+  color: #fefefe;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.instructClose:hover,
+.instructClose:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -39,7 +101,6 @@ a {
   font-weight: bold;
   position: absolute;
   right: 20px;
-  top: 10px;
 }
 
 .closeBtn:hover,

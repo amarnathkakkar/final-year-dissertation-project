@@ -72,37 +72,37 @@ createCanvas = function() {
 
 
   //button when clicked should display a pop-up with game instructions
-  instructBtn = document.createElement('button');
-  instructBtn.innerHTML = '<span style="font-size: 14px">Instructions</font>';
-  instructBtn.setAttribute('id','instructionButton');
-  instructBtn.setAttribute('class','btn btn-secondary');
+  helpBtn = document.createElement('button');
+  helpBtn.innerHTML = '<span style="font-size: 14px">Help</font>';
+  helpBtn.setAttribute('id','helpButton');
+  helpBtn.setAttribute('class','btn btn-secondary');
 
-  instructBtn.style.position = 'absolute';
-  instructBtn.style.top = '15px';
-  instructBtn.style.left = '10px';
-  document.getElementById('container').appendChild(instructBtn);
+  helpBtn.style.position = 'absolute';
+  helpBtn.style.top = '15px';
+  helpBtn.style.left = '10px';
+  document.getElementById('container').appendChild(helpBtn);
 
-  instructBtn.addEventListener('click', (event) => {
-    instructModal.style.display = 'block';
+  helpBtn.addEventListener('click', (event) => {
+    helpModal.style.display = 'block';
   });
 
-  //creating the popup to display instructions, when instructBtn clicked
-  instructModal = document.createElement('div');
-  instructModal.setAttribute('id','instructModal');
-  instructModal.setAttribute('class','modal');
-  document.getElementById('container').appendChild(instructModal);
+  //creating the popup to display instructions, when helpBtn clicked
+  helpModal = document.createElement('div');
+  helpModal.setAttribute('id','helpModal');
+  helpModal.setAttribute('class','modal');
+  document.getElementById('container').appendChild(helpModal);
 
-  instructContent = document.createElement('div');
-  instructContent.setAttribute('class', 'modal-content');
-  instructModal.appendChild(instructContent);
+  helpContent = document.createElement('div');
+  helpContent.setAttribute('class', 'modal-content');
+  helpModal.appendChild(helpContent);
 
-  instructClose = document.createElement('span');
-  instructClose.setAttribute('class', 'closeBtn')
-  instructClose.innerHTML = '&times;'
-  instructContent.appendChild(instructClose);
+  helpClose = document.createElement('span');
+  helpClose.setAttribute('class', 'closeBtn')
+  helpClose.innerHTML = '&times;'
+  helpContent.appendChild(helpClose);
 
-  instructText = document.createElement('p');
-  instructText.innerHTML = "<span style='color: grey;'>" +
+  helpText = document.createElement('p');
+  helpText.innerHTML = "<span style='color: grey;'>" +
   "<h5>Goals:</h5>" + 
   "<br>Get Joe to the red exit tile to help him escape, avoiding or shooting the enemies in the way.</br>" +
   "<br>Use the functions below in <span style='color: #66b28c;'>'for'</span> loops and <span style='color: #538cc6;'>'if'</span> statements to help Joe.</br>" + 
@@ -121,18 +121,18 @@ createCanvas = function() {
   "<br>Dying to a bat = -2000 points</br>" + 
   "<br>You can use the reset button in the top right corner to reset the current level. This does not reset the level score." +
   "</span>";
-  instructContent.appendChild(instructText);
+  helpContent.appendChild(helpText);
 
   var span = document.getElementsByClassName("closeBtn")[0];
 
   span.onclick = function() {
-    instructModal.style.display = "none";
+    helpModal.style.display = "none";
   }
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
-    if (event.target == instructModal) {
-      instructModal.style.display = "none";
+    if (event.target == helpModal) {
+      helpModal.style.display = "none";
     }
   }
 
@@ -151,6 +151,7 @@ createCanvas = function() {
 
   resetBtn.addEventListener('click', (event) => {
     restartLevel();
+    alert('Level Restarted');
   });
 
 
@@ -158,6 +159,7 @@ createCanvas = function() {
   levelDisplay = document.createElement('button');
   levelDisplay.setAttribute('id','levelDisplayBtn');
   levelDisplay.setAttribute('class','btn btn-outline-secondary');
+  levelDisplay.innerHTML =  '<span style="font-size: 14px">Current Level: 0/7</font>'
 
   levelDisplay.style.position = 'absolute';
   levelDisplay.style.top = '15px';

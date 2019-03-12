@@ -100,10 +100,19 @@ createCanvas = function() {
   helpClose.innerHTML = '&times;'
   helpContent.appendChild(helpClose);
 
+  //helpFooter = document.createElement('div');
+  //helpFooter.setAttribute('class', 'helpmodal-footer');
+  //helpContent.appendChild(helpFooter);
+
+  //helpFooterBtn = document.createElement('button');
+  //helpFooterBtn.setAttribute('class', 'btn btn-default');
+  //helpFooterBtn.innerHTML = 'Next';
+  //helpFooter.appendChild(helpFooterBtn);
+
   helpText = document.createElement('p');
   helpText.innerHTML = "<span style='color: grey;'>" +
   "<strong>Goals:</strong>" + 
-  "<br><br>Get Joe to the red exit tile to help him escape, avoiding or shooting the enemies in the way.</br>" +
+  "<br><br>Get Joe to the red exit tile to help him escape whilst shooting the enemies in the way.</br>" +
   "<br>Use the functions below in <span style='color: #66b28c;'>'for'</span> loops and <span style='color: #538cc6;'>'if'</span> statements to help you.</br>" + 
   "<br><strong>Functions:</strong></br>" + 
   "<br><span style='color: #66b28c;'>player.move('left/right/up/down');</span></br>" + 
@@ -118,7 +127,9 @@ createCanvas = function() {
   "<br>Complete all mazes as fast as you can to score maximum points.</br>" +
   "<br>Shooting a bat = +1000 points</br>" + 
   "<br>Dying to a bat = -2000 points</br>" + 
-  "<br>Use the Reset button in the top right, to reset Joe back to his intial position." +
+  "<br><strong>Extra:</strong></br>" + 
+  "<br>Use the Reset button in the top right of the page to reset Joe back to his intial position.</br>" +
+  "<br>The current level can be seen at the top of the page." +
   "</span>";
   helpContent.appendChild(helpText);
 
@@ -180,12 +191,12 @@ createCanvas = function() {
 
 function tempAlert (msg,duration) {
     var el = document.createElement("div");
-    el.setAttribute("style","position:absolute;top:48%;left:44%;background-color:black;");
-    el.innerHTML = '<span style="font-size: 20px; color: green;">' + msg + '</font>';
+    el.setAttribute("style","position:absolute;top:15%;left:60%;background-color:black;");
+    el.innerHTML = '<span style="font-size: 18px; color: green;">' + msg + '</font>';
     setTimeout(
       function(){
         el.parentNode.removeChild(el);
       }
       , duration);
-    document.body.appendChild(el);
+    document.getElementById('container').appendChild(el);
 }

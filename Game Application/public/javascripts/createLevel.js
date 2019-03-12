@@ -7,7 +7,6 @@ var firstTutorial, firstOne, firstTwo, firstThree, firstFour, firstFive, firstSi
 var numberOfLevels = 7;
 
 endGame = function () {
-	editor.setValue("");
 	alert('game ended');
 	startGame();
 }
@@ -599,6 +598,7 @@ tutorialPopups = function () {
 	var span = document.getElementsByClassName("instructClose")[0];
 	var tutBody = document.getElementsByClassName("modal-body")[0];
 	var tutContent = document.getElementsByClassName("instructModal-content")[0];
+	var modalTitle = document.getElementsByClassName("modal-title")[0];
 
 	if (firstTutorial) {
 		tutModal.style.display = "block";
@@ -607,9 +607,10 @@ tutorialPopups = function () {
 
 	tutText = document.createElement('p');
 	tutBody.appendChild(tutText);
+	modalTitle.innerHTML = 'Welcome!';
 	tutText.innerHTML = "<span style='color: grey;'>" +
-		"Welcome to Joe's Programming Adventure!<br>" +
-		"<br><br> Press <b>Next</b> to continue</br>" +
+		"To Joe's Programming Adventure!<br>" +
+		"<br><br> Press <b>Next</b> for instructions.</br>" +
 		"</span>";
 	
 
@@ -627,10 +628,10 @@ tutorialPopups = function () {
 		if (btnClicked == 1) {
     		tutContent.style.position= 'absolute';
     		tutContent.style.left = '5%';
-
+    		modalTitle.innerHTML = 'Instructions';
 			tutText.innerHTML = "<span style='color: grey;'>" +
 			"On the right hand side of the screen, you can see Joe in a dungeon.<br>" +
-			"<br>At the top of the dungeon, you ca see Joe's <b>hitpoints</b> and <b>Score</b>.</br>" +
+			"<br>At the top of the dungeon, you can see Joe's <b>hitpoints</b> and <b>Score</b>.</br>" +
 			"<br><b>The aim is to get Joe to the red tile, using a set of commands to control him</b>.</br>" + 
 			"<br>The faster you complete the dungeon, the more points you achieve.</br>" + 
 			"<br><br> Press <b>Next</b> to continue</br>" +
@@ -655,7 +656,8 @@ tutorialPopups = function () {
 			"</span>";
 		} 
 		else if (btnClicked == 3) {
-			tutContent.style.position= 'initial';
+			tutContent.style.position= 'relative';
+			tutContent.style.left = '0%';
 
 			tutText.innerHTML = "<span style='color: grey;'>" +
 			"<b>The goal is to use for loops and if statements along with the commands</b>.</br>" +
@@ -665,7 +667,8 @@ tutorialPopups = function () {
 			"</span>";
 		} 
 		else if (btnClicked == 4) {
-			tutContent.style.position= 'initial';
+			tutContent.style.position= 'relative';
+			tutContent.style.left = '0%';
 
 			tutText.innerHTML = "<span style='color: grey;'>" +
 			"The proramming language this game accepts is <b>JavaScript</b>.</br>" +

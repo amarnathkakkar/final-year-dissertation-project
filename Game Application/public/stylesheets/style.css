@@ -9,9 +9,8 @@ a {
 
 .instructModal {
   display: none;
-  position: fixed; /* Stay in place */
+  position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -21,8 +20,12 @@ a {
 
 .instructModal-content {
   background-color: #fefefe;
+  position: relative;
   margin: auto;
-  padding: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 40%;
 }
 
@@ -30,6 +33,9 @@ a {
   padding: 2px 16px;
   background-color: #77BA99;
   color: white;
+  border-bottom: 0px solid #dee2e6;
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
 }
 
 .modal-body {padding: 16px 16px;}
@@ -38,6 +44,9 @@ a {
   padding: 2px 16px;
   background-color: #77BA99;
   color: white;
+  border-top: 0px solid #dee2e6;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
 }
 
 .btn.btn-default {
@@ -67,13 +76,18 @@ a {
 
 
 
+.helpmodal-footer {
+  padding: 2px 16px;
+  background-color: #77BA99;
+  color: white;
+}
+
 
 
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  padding-top: 100px; /* Location of the box */
+  position: absolute; /* Stay in place */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -86,7 +100,12 @@ a {
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
+  position: relative;
   margin: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   padding: 20px;
   border: 1px solid #888;
   width: 50%;

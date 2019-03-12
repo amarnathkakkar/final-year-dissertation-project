@@ -4,19 +4,16 @@ $( document ).ready(function() {
 		eval(editor.getValue())
 
 		async.eachLimit(Player.bufferedActionsArray, 1, 
-
 			function(el, callback) {
-
 				setTimeout( () =>  {
 					if (Player.bufferedActionsArray.length == 0) {
-						callback();
+						return;
 					}
 					else {
 						player.doAction(el);
 						callback();
 					}
 				}, 900);
-			    
 			}, function(err) {
 				Player.bufferedActionsArray = [];
 			}

@@ -51,7 +51,6 @@ createCanvas = function() {
   editor.session.setMode('ace/mode/javascript');
   editor.setTheme("ace/theme/gob");
 
-
   //creating button at the bottom on IDE to compile code inside IDE
   btn = document.createElement('button');
   btn.innerHTML = '<span style="font-size: 14px">Run</font>';
@@ -103,9 +102,9 @@ createCanvas = function() {
 
   helpText = document.createElement('p');
   helpText.innerHTML = "<span style='color: grey;'>" +
-  "<h5>Goals:</h5>" + 
-  "<br>Get Joe to the red exit tile to help him escape, avoiding or shooting the enemies in the way.</br>" +
-  "<br>Use the functions below in <span style='color: #66b28c;'>'for'</span> loops and <span style='color: #538cc6;'>'if'</span> statements to help Joe.</br>" + 
+  "<strong>Goals:</strong>" + 
+  "<br><br>Get Joe to the red exit tile to help him escape, avoiding or shooting the enemies in the way.</br>" +
+  "<br>Use the functions below in <span style='color: #66b28c;'>'for'</span> loops and <span style='color: #538cc6;'>'if'</span> statements to help you.</br>" + 
   "<br><strong>Functions:</strong></br>" + 
   "<br><span style='color: #66b28c;'>player.move('left/right/up/down');</span></br>" + 
   "<small>(Takes one argument) Moves Joe one tile left, right, up or down from his current position</small>" + 
@@ -119,7 +118,7 @@ createCanvas = function() {
   "<br>Complete all mazes as fast as you can to score maximum points.</br>" +
   "<br>Shooting a bat = +1000 points</br>" + 
   "<br>Dying to a bat = -2000 points</br>" + 
-  "<br>You can use the reset button in the top right corner to reset the current level. This does not reset the level score." +
+  "<br>Use the Reset button in the top right, to reset Joe back to his intial position." +
   "</span>";
   helpContent.appendChild(helpText);
 
@@ -151,7 +150,7 @@ createCanvas = function() {
 
   resetBtn.addEventListener('click', (event) => {
     restartLevel();
-    alert('Level Restarted');
+    tempAlert('Level Restarted', 1000);
   });
 
 
@@ -159,7 +158,7 @@ createCanvas = function() {
   levelDisplay = document.createElement('button');
   levelDisplay.setAttribute('id','levelDisplayBtn');
   levelDisplay.setAttribute('class','btn btn-outline-secondary');
-  levelDisplay.innerHTML =  '<span style="font-size: 14px">Current Level: 0/7</font>'
+  levelDisplay.innerHTML =  '<span style="font-size: 14px">Current Level: 0/Calculating...</font>'
 
   levelDisplay.style.position = 'absolute';
   levelDisplay.style.top = '15px';
@@ -177,4 +176,16 @@ createCanvas = function() {
 	Img.bullet.src = 'images/bullet.png';
 	Img.map = new Image()
 	Img.map.src = 'images/map.png';
+}
+
+function tempAlert (msg,duration) {
+    var el = document.createElement("div");
+    el.setAttribute("style","position:absolute;top:48%;left:44%;background-color:black;");
+    el.innerHTML = '<span style="font-size: 20px; color: green;">' + msg + '</font>';
+    setTimeout(
+      function(){
+        el.parentNode.removeChild(el);
+      }
+      , duration);
+    document.body.appendChild(el);
 }

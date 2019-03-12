@@ -201,7 +201,7 @@ Player = function() {
 			directionMod = 2; //left
 		else if (self.y > self.futureY)
 			directionMod = 1; //up
-		else 
+		else if (self.x < self.futureX)
 			directionMod = 3;
 
 
@@ -290,28 +290,23 @@ Enemy = function(id, x, y, spdx, spdy, width, height) {
 		var oldX = self.x;
 		var oldY = self.y;
 
-		var rBumper = {x:self.x + self.width/2, y:self.y};
-		var lBumper = {x:self.x - self.width/2, y:self.y};
-		var tBumper = {x:self.x, y:self.y - self.height/2};
-		var bBumper = {x:self.x, y:self.y + self.height/2};
-
-
 		self.x += self.spdx;
 		self.y += self.spdy;
 
-		if (self.x >= canvasWidth || self.x <= 0 ) {
-		 //|| Maps.current.isPositionWall(rBumper) || Maps.current.isPositionWall(lBumper)) {
+		var rBumper = {x:self.x + self.width/4, y:self.y};
+		var lBumper = {x:self.x - self.width/4, y:self.y};
+		var tBumper = {x:self.x, y:self.y - self.height/4};
+		var bBumper = {x:self.x, y:self.y + self.height/4};
+
+		if (self.x >= canvasWidth || self.x <= 0 
+		 || Maps.current.isPositionWall(rBumper) || Maps.current.isPositionWall(lBumper)) {
 			self.spdx = -self.spdx;
 		} 
-		if (self.y >= canvasHeight || self.y <= 0) {
-		 //|| Maps.current.isPositionWall(tBumper) || Maps.current.isPositionWall(bBumper)) {
+		if (self.y >= canvasHeight || self.y <= 0
+		 || Maps.current.isPositionWall(tBumper) || Maps.current.isPositionWall(bBumper)) {
 			self.spdy = -self.spdy;
 		} 
 
-		//if(Maps.current.isPositionWall(self)) {
-		//	self.x = oldX;
-		//	self.y = oldY;
-		//}
 	}
 
 	self.draw = function() {
@@ -323,15 +318,15 @@ Enemy = function(id, x, y, spdx, spdy, width, height) {
 		var frameWidth = self.img.width/4;
 		var frameHeight = self.img.height/4;
 
-		var directionMod = 1; //looking right
+		var directionMod = 3; //looking right
 		if(self.spdy > 0)
 			directionMod = 0; //down
 		else if(self.spdx < 0)
 			directionMod = 3; //left
 		else if (self.spdy < 0)
 			directionMod = 2; //up
-		else 
-			directionMod = 3;
+		else if (self.spdx > 0)
+			directionMod = 1;
 
 
 		ctx.shadowColor='black';

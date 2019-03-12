@@ -21,8 +21,13 @@ Maps = function(id, imgSrc, grid) {
 
 	    //exit tile reached
 	    if (pnt.type == 'player' && self.grid[gridY][gridX] == '2') {
-	    	//levelOne = true;
-			nextLevel();
+			
+	    	if (self.id == numberOfLevels) {
+				endGame();
+	    	}
+			else {
+				nextLevel();
+			}
 		}
 	    else {
 		    return self.grid[gridY][gridX];
@@ -76,18 +81,146 @@ Maps = function(id, imgSrc, grid) {
   	}
 
   	self.drawLevelThree = function() {
+  		ctx.save();
+
+	    //level walls
+	    ctx.lineWidth = 5;
+	    ctx.beginPath();
+	    ctx.moveTo(0, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*2, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*2, mapTileHeight*4);
+	    ctx.lineTo(0, mapTileHeight*4);
+	    ctx.stroke();
+
+	    //level exit tile
+	    ctx.fillStyle = "#990000";
+	    ctx.fillRect(mapTileWidth, mapTileHeight*4  + ctx.lineWidth/2, mapTileWidth - ctx.lineWidth/2, mapTileHeight  - ctx.lineWidth/2);
+
+	    ctx.restore();
   	}
 
   	self.drawLevelFour = function() {
+  		ctx.save();
+
+	    //level walls
+	    ctx.lineWidth = 5;
+	    ctx.beginPath();
+	    ctx.moveTo(0, mapTileHeight*9);
+	    ctx.lineTo(mapTileWidth*4, mapTileHeight*9);
+	    ctx.lineTo(mapTileWidth*4, mapTileHeight*7);
+	    ctx.lineTo(mapTileWidth*7, mapTileHeight*7);
+	    ctx.lineTo(mapTileWidth*7, mapTileHeight*5);
+	    ctx.lineTo(mapTileWidth*9, mapTileHeight*5);
+	    ctx.lineTo(mapTileWidth*9, mapTileHeight*6);
+	    ctx.lineTo(canvasWidth, mapTileHeight*6);
+	    ctx.moveTo(0, mapTileHeight*8);
+	    ctx.lineTo(mapTileWidth*3, mapTileHeight*8);
+	    ctx.lineTo(mapTileWidth*3, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*6, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*6, mapTileHeight*4);
+	    ctx.lineTo(canvasWidth, mapTileHeight*4);
+	    ctx.stroke();
+
+	    //level exit tile
+	    ctx.fillStyle = "#990000";
+	    ctx.fillRect(mapTileWidth*9 + ctx.lineWidth/2, mapTileHeight*5, mapTileWidth - ctx.lineWidth/2, mapTileHeight  - ctx.lineWidth/2);
+
+	    ctx.restore();
   	}
 
   	self.drawLevelFive = function() {
+  		ctx.save();
+
+	    //level walls
+	    ctx.lineWidth = 5;
+	    ctx.beginPath();
+	    ctx.moveTo(0, mapTileHeight*5);
+	    ctx.lineTo(canvasWidth, mapTileHeight*5);
+	    ctx.moveTo(0, mapTileHeight*6);
+	    ctx.lineTo(canvasWidth, mapTileHeight*6);
+	    ctx.stroke();
+
+	    //level exit tile
+	    ctx.fillStyle = "#990000";
+	    ctx.fillRect(canvasWidth-mapTileWidth, mapTileHeight*5 + ctx.lineWidth/2, mapTileWidth, mapTileHeight - ctx.lineWidth);
+
+	    ctx.restore();
   	}
 
   	self.drawLevelSix = function() {
+  		ctx.save();
+
+	    //level walls
+	    ctx.lineWidth = 5;
+	    ctx.beginPath();
+	    ctx.moveTo(0, mapTileHeight*4);
+	    ctx.lineTo(mapTileWidth*8, mapTileHeight*4);
+	    ctx.lineTo(mapTileWidth*8, mapTileHeight*5);
+	    ctx.lineTo(canvasWidth, mapTileHeight*5);
+	    ctx.moveTo(0, mapTileHeight*7);
+	    ctx.lineTo(mapTileWidth*8, mapTileHeight*7);
+	    ctx.lineTo(mapTileWidth*8, mapTileHeight*6);
+	    ctx.lineTo(canvasWidth, mapTileHeight*6);
+	    ctx.moveTo(mapTileWidth*3, mapTileHeight*5);
+	    ctx.lineTo(mapTileWidth*4, mapTileHeight*5);
+	    ctx.lineTo(mapTileWidth*4, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*3, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*3, mapTileHeight*5);
+	    ctx.stroke();
+
+	    //level exit tile
+	    ctx.fillStyle = "#990000";
+	    ctx.fillRect(canvasWidth-mapTileWidth, mapTileHeight*5 + ctx.lineWidth/2, mapTileWidth, mapTileHeight - ctx.lineWidth);
+
+	    ctx.restore();
   	}
 
   	self.drawLevelSeven = function() {
+  		ctx.save();
+
+	    //level walls
+	    ctx.lineWidth = 5;
+	    ctx.beginPath();
+
+	    ctx.moveTo(0, mapTileHeight);
+	    ctx.lineTo(mapTileWidth*3, mapTileHeight);
+	    ctx.lineTo(mapTileWidth*3, mapTileHeight*3);
+	    ctx.lineTo(mapTileWidth*2, mapTileHeight*3);
+	    ctx.lineTo(mapTileWidth*2, mapTileHeight*4);
+	    ctx.lineTo(mapTileWidth*8, mapTileHeight*4);
+	    ctx.lineTo(mapTileWidth*8, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*10, mapTileHeight*6);
+
+		ctx.moveTo(mapTileWidth*6, mapTileHeight*5);
+		ctx.lineTo(mapTileWidth*7, mapTileHeight*5);
+		ctx.lineTo(mapTileWidth*7, mapTileHeight*7);
+		ctx.lineTo(mapTileWidth*6, mapTileHeight*7);
+		ctx.lineTo(mapTileWidth*6, mapTileHeight*5);
+
+
+		ctx.moveTo(mapTileWidth*8, mapTileHeight*7)
+		ctx.lineTo(mapTileWidth*9, mapTileHeight*7);
+		ctx.lineTo(mapTileWidth*9, mapTileHeight*8);
+
+
+	    ctx.moveTo(0, mapTileHeight*2);
+	    ctx.lineTo(mapTileWidth*2, mapTileHeight*2);
+	    ctx.lineTo(mapTileWidth*1, mapTileHeight*2);
+	    ctx.lineTo(mapTileWidth*1, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*5, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*5, mapTileHeight*8);
+	    ctx.lineTo(mapTileWidth*8, mapTileHeight*8);
+	    ctx.lineTo(mapTileWidth*8, mapTileHeight*9);
+	    ctx.lineTo(mapTileWidth*10, mapTileHeight*9);
+	    
+
+	    ctx.stroke();
+
+	    //level exit tile
+	    ctx.fillStyle = "#990000";
+	    ctx.fillRect(canvasWidth-mapTileWidth, mapTileHeight*8, mapTileWidth, mapTileHeight - ctx.lineWidth/2);
+
+	    ctx.restore();
   	}
 
   	//draws map layout that exists in every level map

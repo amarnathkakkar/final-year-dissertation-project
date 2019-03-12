@@ -39,8 +39,6 @@ enemyPosition = function (direction) {
 				&& y > b.y - halvedMapTileHeight 
 				&& y < b.y + halvedMapTileHeight) {
 					return true;
-			} else {
-				return false;
 			}
 		}
 		else if (direction == 'left') {
@@ -49,8 +47,6 @@ enemyPosition = function (direction) {
 				&& y > b.y - halvedMapTileHeight 
 				&& y < b.y + halvedMapTileHeight) {
 					return true;
-			} else {
-				return false;
 			}
 		}
 		else if (direction == 'up') {
@@ -59,8 +55,6 @@ enemyPosition = function (direction) {
 				&& x > b.x - halvedMapTileWidth 
 				&& x < b.x + halvedMapTileWidth) {
 					return true;
-			} else {
-				return false;
 			}
 		}
 		else if (direction == 'down') {
@@ -69,8 +63,6 @@ enemyPosition = function (direction) {
 				&& x > b.x - halvedMapTileWidth 
 				&& x < b.x + halvedMapTileWidth) {
 					return true;
-			} else {
-				return false;
 			}
 		}
 	}

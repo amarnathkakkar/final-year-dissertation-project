@@ -50,7 +50,7 @@ $( document ).ready(function() {
 
 		ctx.save();
 
-		levelDisplay.innerHTML =  '<span style="font-size: 14px">Current Level: '+currentLevel+'/7</font>'
+		levelDisplay.innerHTML =  '<span style="font-size: 14px">Current Level: '+currentLevel+'/' + numberOfLevels + '</font>'
 		ctx.fillStyle = '#aad4bf';
 		ctx.font = "13px Helvetica Neue";
 		ctx.fillText('Score: ' + levelScore, 4.1*mapTileWidth, 15);
@@ -61,6 +61,6 @@ $( document ).ready(function() {
 	
 	createCanvas();
   	player = Player();
-	startLevel();
+	startGame();
 	setInterval(update, 40);
 });

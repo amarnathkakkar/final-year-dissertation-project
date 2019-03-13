@@ -6,13 +6,36 @@ var btnClicked;
 var firstTutorial, firstOne, firstTwo, firstThree, firstFour, firstFive, firstSix, firstSeven;
 var numberOfLevels = 7;
 
+var tutModal,btn,span,tutText,tutContent,modalTitle;
+
 endGame = function () {
-	alert('game ended');
-	startGame();
+	tutModal.style.display = "block";
+	tutContent.style.position= 'relative';
+	modalTitle.innerHTML = 'Congratulations!';
+	tutText.innerHTML = "<span style='color: grey;'>" +
+		"You helped Joe escape!!!<br>" +
+		"<br>Your Final Score is: " + levelScore + "</br>" +
+		"</span>";
+
+	btn.innerHTML = "Play again";
+	span.innerHTML = "";
+
+
+	player.x = mapTileWidth/2 + mapTileWidth*9;		//Testing
+	player.y = mapTileHeight*8 + mapTileHeight/2;
+
+	btn.onclick = function() {
+		tutModal.style.display = "none";
+		editor.setValue("Tutorial;");
+		startGame();
+	}
 }
 
 nextLevel = function() {
 	currentLevel++;
+	
+	//currentLevel = 7; //testing purposes
+
 	levelScore += 10000;
 	createLevel();
 }
@@ -110,6 +133,11 @@ loadLevelSeven = function () {
 	 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 	 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]])
 
+
+	//player.x = mapTileWidth/2 + mapTileWidth*9;		//Testing
+	//player.y = mapTileHeight*7 + mapTileHeight/2;
+
+
 	player.x = mapTileWidth/2;
 	player.y = mapTileHeight*1 + mapTileHeight/2;
 	player.futureX = player.x;
@@ -119,7 +147,6 @@ loadLevelSeven = function () {
 	Enemy(Math.random(), mapTileWidth*7 + mapTileWidth/2, mapTileHeight*5 + mapTileHeight/2, 0, 0, 32, 32);
 	Enemy(Math.random(), mapTileWidth*8 + mapTileWidth/2, mapTileHeight*7 + mapTileHeight/2, 0, 0, 32, 32);
 	Enemy(Math.random(), mapTileWidth*1 + mapTileWidth/2, mapTileHeight*3 + mapTileHeight/2, 0, 0, 32, 32);
-	//Enemy(Math.random(), mapTileWidth*6 + mapTileWidth/2, mapTileHeight*5 + mapTileHeight/2, 1, 3, 32, 32);
 
 	if (firstSeven) {
 		editor.setValue("//Create your own code.");
@@ -457,7 +484,7 @@ loadLevelTwo = function() {
 	player.futureY = player.y;
 
 	if (firstTwo) {
-		editor.setValue("//Try running the code to see what happens.\n//And then press Reset in the top right\n//to reset Joe's position.\n\nfor(var x=1; x<2; x++) {\n    player.move('up');\n}\n\nplayer.move('up');\n\nfor(var y=0; y<5; y++) {\n    player.move('right');\n}");
+		editor.setValue("//Try running the code to see what happens.\n//And then press Reset in the top right\n//to reset Joe's position.\n\nfor(var x=1; x<2; x++) {\n    player.move('up');\n}\n\nplayer.move('up');\n\nfor(var y=0; y>6; y++) {\n    player.move('right');\n}");
 		firstTwo = false;
 	}
 }
@@ -593,30 +620,30 @@ loadTutorial = function() {
 }
 
 tutorialPopups = function () {
-	var tutModal = document.getElementById('tutModal');
-	var btn = document.getElementsByClassName("btn btn-default")[0];
-	var span = document.getElementsByClassName("instructClose")[0];
-	var tutBody = document.getElementsByClassName("modal-body")[0];
-	var tutContent = document.getElementsByClassName("instructModal-content")[0];
-	var modalTitle = document.getElementsByClassName("modal-title")[0];
+	tutModal = document.getElementById('tutModal');
+	btn = document.getElementsByClassName("btn btn-default")[0];
+	span = document.getElementsByClassName("instructClose")[0];
+	tutText = document.getElementsByClassName("modal-body")[0];
+	tutContent = document.getElementsByClassName("instructModal-content")[0];
+	modalTitle = document.getElementsByClassName("modal-title")[0];
+
 
 	if (firstTutorial) {
 		tutModal.style.display = "block";
 		firstTutorial = false;
 	}
 
-	tutText = document.createElement('p');
-	tutBody.appendChild(tutText);
 	modalTitle.innerHTML = 'Welcome!';
 	tutText.innerHTML = "<span style='color: grey;'>" +
 		"To Joe's Programming Adventure!<br>" +
 		"<br><br> Press <b>Next</b> for instructions.</br>" +
 		"</span>";
-	
+	btn.innerHTML = "Next";
+	span.innerHTML = "x";
+
 
 	// When the user clicks on <span> (x), close the modal
 	span.onclick = function() {
-		tutText.innerHTML = "";
 		tutModal.style.display = "none";
 		tutContent.style.position= 'initial';
 		editor.setValue("//Tutorial. (This is a comment and will not \n//be executed)\n\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');");
@@ -671,13 +698,14 @@ tutorialPopups = function () {
 			tutContent.style.left = '0%';
 
 			tutText.innerHTML = "<span style='color: grey;'>" +
-			"The proramming language this game accepts is <b>JavaScript</b>.</br>" +
+			"The programming language you will be learning and writing in, is <b>JavaScript</b>.</br>" +
 			"<br>As you go along, you will be introduced to for loops and if statements.</br>" +
 			"<br>The levels will either require you to <b>fill in some code</b>, <b>debug some code</b> or <b>write your own</b>.</br>" +
 			"<br>If you need help, the console provides some feedback, and the Help button contains useful information.</br>" +
 			"<br>Once you click Next, the console will have code to complete this level. Just press Run.</br>" +
-			"<br><br>Press <b>Next</b> to close this window.</br>" +
+			"<br><br>Press <b>Finish</b> to close this window.</br>" +
 			"</span>";
+			btn.innerHTML = "Finish";
 		} 
 		else {
 			span.onclick();

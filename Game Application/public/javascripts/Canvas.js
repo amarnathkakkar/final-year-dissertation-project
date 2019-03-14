@@ -22,7 +22,7 @@ createCanvas = function() {
   cnv.style.top = 0;
   cnv.style.bottom = 0;
   cnv.style.right = 0;
-  cnv.style.border = '1px dashed #EFF0D1';
+  cnv.style.border = '1px dashed white';
 
   canvasHeight = cnv.height;
   canvasWidth = cnv.width;
@@ -43,7 +43,7 @@ createCanvas = function() {
 	textEditor.style.right = window.outerWidth/2.76 + canvasWidth*0.1 + 'px';
   textEditor.style.bottom = 0;
   textEditor.style.left = 0;
-	textEditor.style.border = '1px solid #EFF0D1'
+	textEditor.style.border = '1px solid white'
 
 	document.getElementById('container').appendChild(textEditor);
 
@@ -117,24 +117,24 @@ createCanvas = function() {
   "<li>Use the functions below in <span style='color: #66b28c;'>'for'</span> loops and <span style='color: #538cc6;'>'if'</span> statements to help you.</li></ul>" + 
   "<strong>Functions:</strong></br>" + 
   "<ul><br><li><b>player.move('left/right/up/down');</li></b>" + 
-  "<small>(Takes one argument) Moves Joe one tile left, right, up or down from his current position</small></br>" + 
+  "<small>(Takes one argument) You move one tile left, right, up or down from your current position</small></br>" + 
   "<b><li>player.shoot('left/right/up/down');</li></b>" +
-  "<small>(Takes one argument) Joe shoots left, right, up or down from his current position</small>" +
+  "<small>(Takes one argument) You shoot left, right, up or down from your current position</small>" +
   "<br><li><span style='color: #538cc6;'><b>wallPosition('left/right/up/down');</b></span></li>" +
-  "<small>(Takes one argument) Returns True if there is a wall left, right, up or down next to Joe, else False</small>" +
+  "<small>(Takes one argument) Returns True if there is a wall left, right, up or down next to you, else False</small>" +
   "<br><li><span style='color: #538cc6;'><b>enemyPosition('left/right/up/down');</b></span></li>" +
-  "<small>(Takes one argument) Returns True if there is an enemy 1 tile left, right, up or down from Joe, else False</small></ul>" +
+  "<small>(Takes one argument) Returns True if there is an enemy 1 tile left, right, up or down from you, else False</small></ul>" +
   "<strong>Format:</strong></br>" + 
   "<br><ul><li><span style='color: #66b28c;'>for (declare variable; condition to be met; increment or decrement)</span></li>" +
-  "<small>E.g. for (var x=0; x<10; x++) - increases x by 1 for each loop</small></br>" +
+  "<small>E.g. for (var x=0; x<10; x++) { code } - executes code if condition is met, and then increases x by 1 for each loop</small></br>" +
   "<li><span style='color: #538cc6;'>if (condition) { code }</span></li>" +
-  "<small>E.g. if ( enemyPosition('right') ) { player.shoot('right') }</small></br></ul>" +
+  "<small>E.g. if ( enemyPosition('right') ) { player.shoot('right') } - if enemyPosition returns true, then player will shoot.</small></br></ul>" +
   "<strong>Scoring:</strong></br>" + 
   "<ul><br><li>Complete all mazes as fast as you can to score maximum points.</li>" +
   "<li>Shooting a bat = +1000 points</li>" + 
   "<li>Dying to a bat = -2000 points</br></li></ul>" + 
   "<strong>Extra:</strong></br>" + 
-  "<ul><br><li>Use the Reset button in the top right of the page to reset Joe back to his intial position.</br></li>" +
+  "<ul><br><li>Use the Reset button in the top right of the screen to reset your character back to his intial position.</br></li>" +
   "<li>The current level can be seen at the top of the page.</li><ul>" +
   "</span>";
   helpContent.appendChild(helpText);

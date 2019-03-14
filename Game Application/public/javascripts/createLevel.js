@@ -12,10 +12,8 @@ endGame = function () {
 	tutModal.style.display = "block";
 	tutContent.style.position= 'relative';
 	modalTitle.innerHTML = 'Congratulations!';
-	tutText.innerHTML = "<span style='color: grey;'>" +
-		"You Escaped and Won!<br>" +
-		"<br>Your Final Score is: " + levelScore + "</br>" +
-		"</span>";
+	tutText.innerHTML = "You Escaped and Won!<br>" +
+		"<br>Your Final Score is: " + levelScore + "</br>";
 
 	btn.innerHTML = "Play again";
 	span.innerHTML = "";
@@ -699,11 +697,9 @@ tutorialPopups = function () {
 	}
 
 	modalTitle.innerHTML = 'Welcome';
-	tutText.innerHTML = "<span style='color: grey;'>" +
-		"To Programmer's Dungeon!<br>" +
+	tutText.innerHTML = "To Programmer's Dungeon!<br>" +
 		"</br>The aim of the game is to teach you about, and how to use <b>for loops</b> and <b>if statements</b>.<br>" +
-		"<br><br> Press <b>Next</b> for instructions or <b>X</b> to skip.</br>" +
-		"</span>";
+		"<br><br> Press <b>Next</b> for instructions or <b>X</b> to skip.";
 	btn.innerHTML = "Next";
 	span.innerHTML = "x";
 
@@ -721,48 +717,41 @@ tutorialPopups = function () {
 		if (btnClicked == 1) {
     		tutContent.style.position= 'absolute';
     		tutContent.style.left = '5%';
+
     		modalTitle.innerHTML = 'Instructions';
-			tutText.innerHTML = "<span style='color: grey;'>" +
-			"On the right hand side of the screen, you can see the map with your character in between two black lines. These represent the walls of the dungeon and you cannot walk past them.<br>" +
+			tutText.innerHTML = "On the right hand side of the screen, you can see the map with your character in between two black lines. These represent the walls of the dungeon and you cannot walk past them.<br>" +
 			"<br>At the top of the dungeon screen, you can see your <b>hitpoints</b> and <b>score</b>.</br>" +
-			"<br><b>The aim</b> is to get your character to the red tile and escape, by using a set of commands to control him.</br>" + 
+			"<br><b>The aim</b> is to get your character to the red tile to escape, by using a set of commands to control him.</br>" + 
 			"<br>There are " +numberOfLevels+ " levels after this tutorial. The <b>current level</b> is displayed at the top of the screen.</br>" +
-			"<br><br> Press <b>Next</b> to continue</br>" +
-			"</span>";
+			"<br><br> Press <b>Next</b> to continue";
 		} 
 		else if (btnClicked == 2) {
     		tutContent.style.left = '48%';
 
-			tutText.innerHTML = "<span style='color: grey;'>" +
-			"On the left hand side of the screen is the console. Here you write commands to control your character.<br>" +
+			tutText.innerHTML = "On the left hand side of the screen is the console. Here you write commands to control your character.<br>" +
 			"<br><b>Your objective</b> is to use the functions that you will be slowly introduced to, to create and write code to help your character escape." +
 			"<br><br>You can view these functions at any time by pressing <b>Help</b> in the top left corner of your screen." +
 			"<br><br>Once happy with your code, press <b>Run</b> at the bottom of the console to execute it. If you fail to reach the exit, modify your code and press <b>Reset Level</b> in the top right corner to try again." +
 			"<br><br>You can also find a summary of the rules and scoring system by pressing help.</br>" +
-			"<br><br>Press <b>Next</b> to continue.</br>" +
-			"</span>";
+			"<br><br>Press <b>Next</b> to continue.";
 		} 
 		else if (btnClicked == 3) {
 			tutContent.style.position= 'relative';
 			tutContent.style.left = '0%';
 
-			tutText.innerHTML = "<span style='color: grey;'>" +
-			"<b>The goal</b> is to use the functions that you will learn, with for loops and if statements." +
+			tutText.innerHTML = "<b>The goal</b> is to use the functions that you will learn, with for loops and if statements." +
 			"<br><br>You will be learning and writing in the programming language <b>JavaScript</b>.</br>" +
 			"<br>As you go along, you will be introduced to for loops and if statements, however <b>help</b> can be obtained by pressing help at any time. The console sidebar also provides feedback on certain bugs in your code.</br>" +
-			"<br><br>Press <b>Next</b> to continue.</br>" +
-			"</span>";
+			"<br><br>Press <b>Next</b> to continue.";
 			btn.innerHTML = "Next";
 		} 
 		else if (btnClicked == 4) {
 			tutContent.style.position= 'relative';
 			tutContent.style.left = '0%';
 
-			tutText.innerHTML = "<span style='color: grey;'>" +
-			"The levels will require you to either <b>fill in incomplete code</b>, <b>debug some code</b> or <b>write your own</b>.</br>" +
+			tutText.innerHTML ="The levels will require you to either <b>fill in incomplete code</b>, <b>debug some code</b> or <b>write your own</b>.</br>" +
 			"<br>Once you click Finish, the console will have the code to complete the tutorial. You only need to press run.</br>" +
-			"<br><br>Press <b>Finish</b> to close this window.</br>" +
-			"</span>";
+			"<br><br>Press <b>Finish</b> to close this window.";
 			btn.innerHTML = "Finish";
 		} 
 		else {

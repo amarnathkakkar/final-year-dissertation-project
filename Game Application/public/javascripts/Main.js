@@ -50,7 +50,7 @@ $( document ).ready(function() {
 		levelDisplay.innerHTML =  '<span style="font-size: 14px">Current Level: '+currentLevel+'/' + numberOfLevels + '</font>'
 		ctx.fillStyle = '#aad4bf';
 		ctx.font = "13px Helvetica Neue";
-		ctx.fillText('Score: ' + levelScore, 4.1*mapTileWidth, 15);
+		ctx.fillText('Score: ' + levelScore, 4.5*mapTileWidth, 15);
 		ctx.fillText('Hp: ' + player.hp, 5, 15);
 
 		ctx.restore();

@@ -181,6 +181,37 @@ Maps = function(id, imgSrc, grid) {
 	    //level walls
 	    ctx.lineWidth = 5;
 	    ctx.beginPath();
+	    ctx.moveTo(0, mapTileHeight*9);
+	    ctx.lineTo(mapTileWidth*2, mapTileHeight*9);
+	    ctx.lineTo(mapTileWidth*2, mapTileHeight*8);
+	    ctx.lineTo(mapTileWidth*4, mapTileHeight*8);
+	    ctx.lineTo(mapTileWidth*4, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*7, mapTileHeight*6);
+	    ctx.lineTo(mapTileWidth*7, mapTileHeight*3);
+	    ctx.lineTo(canvasWidth, mapTileHeight*3);
+	    ctx.moveTo(0, mapTileHeight*8);
+	    ctx.lineTo(mapTileWidth*1, mapTileHeight*8);
+	    ctx.lineTo(mapTileWidth*1, mapTileHeight*7);
+	    ctx.lineTo(mapTileWidth*3, mapTileHeight*7);
+	    ctx.lineTo(mapTileWidth*3, mapTileHeight*5);
+	    ctx.lineTo(mapTileWidth*6, mapTileHeight*5);
+	    ctx.lineTo(mapTileWidth*6, mapTileHeight*2);
+	    ctx.lineTo(canvasWidth, mapTileHeight*2);
+	    ctx.stroke();
+
+	    //level exit tile
+	    ctx.fillStyle = "#990000";
+	    ctx.fillRect(mapTileWidth*9, mapTileHeight*2 + ctx.lineWidth/2, mapTileWidth - ctx.lineWidth/2, mapTileHeight  - ctx.lineWidth);
+
+	    ctx.restore();
+  	}
+
+  	self.drawLevelEight = function() {
+  		ctx.save();
+
+	    //level walls
+	    ctx.lineWidth = 5;
+	    ctx.beginPath();
 
 	    ctx.moveTo(0, mapTileHeight);
 	    ctx.lineTo(mapTileWidth*3, mapTileHeight);
@@ -242,7 +273,9 @@ Maps = function(id, imgSrc, grid) {
 
 	    ctx.restore();
 
-	    if (self.id == 7) {
+	    if (self.id == 8) {
+	    	self.drawLevelEight();
+	    } else if (self.id == 7) {
 	    	self.drawLevelSeven();
 	    } else if (self.id == 6) {
 	    	self.drawLevelSix();

@@ -140,10 +140,10 @@ loadLevelEight = function () {
 	player.futureX = player.x;
 	player.futureY = player.y;
 
-	Enemy(Math.random(), mapTileWidth*2 + mapTileWidth/2, mapTileHeight*4 + mapTileHeight/2, 0, 0, 32, 32);
-	Enemy(Math.random(), mapTileWidth*7 + mapTileWidth/2, mapTileHeight*5 + mapTileHeight/2, 0, 0, 32, 32);
-	Enemy(Math.random(), mapTileWidth*8 + mapTileWidth/2, mapTileHeight*7 + mapTileHeight/2, 0, 0, 32, 32);
-	Enemy(Math.random(), mapTileWidth*1 + mapTileWidth/2, mapTileHeight*3 + mapTileHeight/2, 0, 0, 32, 32);
+	Enemy(Math.random(), mapTileWidth*2 + mapTileWidth/2, mapTileHeight*4 + mapTileHeight/2, 1, 2, 32, 32);
+	Enemy(Math.random(), mapTileWidth*7 + mapTileWidth/2, mapTileHeight*5 + mapTileHeight/2, 2, 1, 32, 32);
+	Enemy(Math.random(), mapTileWidth*8 + mapTileWidth/2, mapTileHeight*7 + mapTileHeight/2, 3, 2, 32, 32);
+	Enemy(Math.random(), mapTileWidth*1 + mapTileWidth/2, mapTileHeight*3 + mapTileHeight/2, 3, 2, 32, 32);
 
 	if (firstEight) {
 		editor.setValue("//Create your own code.\n\n");
@@ -212,7 +212,7 @@ loadLevelSeven = function() {
 	player.futureY = player.y;
 
 	if (firstSeven) {
-		editor.setValue("//Complete the nested for loops.\n\n//Note: the variable var a, defined in the\n//for () is useable inside the for loop\n\nfor (var a=1; a<5; a++) {\n\n    for () {\n        player.move('right');\n    }\n    for () {\n       player.move('up');\n    }\n\n}");
+		editor.setValue("//Complete the nested for loops.\n\n//Note: the variable var a, defined in the\n//for () is useable inside the for loop\n\nfor (var a=1; a<5; a++) {\n\n    for (; <a; ) {\n        player.move('right');\n    }\n    for (; <a; ) {\n       player.move('up');\n    }\n\n}");
 		firstSeven = false;
 	}
 } //complete nested for
@@ -349,7 +349,7 @@ loadLevelFive = function () {
 	Enemy(Math.random(), mapTileWidth*5 + mapTileWidth/2, mapTileHeight*5 + mapTileHeight/2, 0, 0, 32, 32);
 
 	if (firstFive) {
-		editor.setValue("//Create a for loop with an if statement.\n//Check help for the list of functions.\n\n");
+		editor.setValue("//Create a for loop with an if statement\n//inside the for loop.\n//Check help for the list of functions.\n\n");
 		firstFive = false;
 	}
 } //create own simple for if

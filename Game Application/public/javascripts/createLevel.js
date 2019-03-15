@@ -140,10 +140,10 @@ loadLevelEight = function () {
 	player.futureX = player.x;
 	player.futureY = player.y;
 
-	Enemy(Math.random(), mapTileWidth*2 + mapTileWidth/2, mapTileHeight*4 + mapTileHeight/2, 1, 2, 32, 32);
-	Enemy(Math.random(), mapTileWidth*7 + mapTileWidth/2, mapTileHeight*5 + mapTileHeight/2, 2, 1, 32, 32);
-	Enemy(Math.random(), mapTileWidth*8 + mapTileWidth/2, mapTileHeight*7 + mapTileHeight/2, 3, 2, 32, 32);
-	Enemy(Math.random(), mapTileWidth*1 + mapTileWidth/2, mapTileHeight*3 + mapTileHeight/2, 3, 2, 32, 32);
+	Enemy(Math.random(), mapTileWidth*2 + mapTileWidth/2, mapTileHeight*4 + mapTileHeight/2, 0, 0, 32, 32);
+	Enemy(Math.random(), mapTileWidth*7 + mapTileWidth/2, mapTileHeight*5 + mapTileHeight/2, 0, 0, 32, 32);
+	Enemy(Math.random(), mapTileWidth*8 + mapTileWidth/2, mapTileHeight*7 + mapTileHeight/2, 0, 0, 32, 32);
+	Enemy(Math.random(), mapTileWidth*1 + mapTileWidth/2, mapTileHeight*3 + mapTileHeight/2, 0, 0, 32, 32);
 
 	if (firstEight) {
 		editor.setValue("//Create your own code.\n\n");

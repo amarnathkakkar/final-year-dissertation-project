@@ -91,7 +91,7 @@ Entity = function(type, id, x, y, spdx, spdy, width, height, img) {
 }
 
 Player = function() {
-	var self = Entity('player','myId', mapTileWidth/2,canvasHeight/2 + mapTileHeight/2,30,10,35,35,Img.player);
+	var self = Entity('player','myId', mapTileWidth/2,canvasHeight/2 + mapTileHeight/2,30,10,35/500*canvasWidth,35/500*canvasHeight,Img.player);
 
 	
 	self.movePixelsY = Math.round((mapTileHeight/20) * 10) / 10;

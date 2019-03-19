@@ -19,10 +19,7 @@ a {
 }
 
 .instructModal-content {
-  background-color: black;
-  background-image: radial-gradient(
-    rgba(0, 150, 0, 0.75), black 120%
-  );
+  background-color: #0b0b0b;
   position: relative;
   margin: auto;
   top: 50%;
@@ -35,18 +32,22 @@ a {
 
 .modal-header {
   padding: 2px 16px;
-  color: white;
+  color: #03EE03;
   font: 1.3rem Inconsolata, monospace;
   border: 0px solid #dee2e6;
   border-top-left-radius: 0rem;
   border-top-right-radius: 0rem;
 }
 
-.modal-body {padding: 16px 16px; color: white; font: 0.9rem Inconsolata, monospace;}
+.modal-body {
+  padding: 16px 16px; 
+  color: #03EE03; 
+  font: 0.9rem Inconsolata, monospace;
+}
 
 .modal-footer {
   padding: 0px 16px;
-  color: white;
+  color: #03EE03;
   font: 1.3rem Inconsolata, monospace;
   border-top: 0px solid #dee2e6;
   border-bottom-right-radius: 0rem;
@@ -54,18 +55,18 @@ a {
 }
 
 .btn.btn-default {
-  color: white;
+  color: #03EE03;
   float: right;
 }
 .btn.btn-default:hover,
 .btn.btn-default:focus {
-  color: #000;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
 .instructClose {
-  color: #fefefe;
+  color: white;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -73,7 +74,7 @@ a {
 
 .instructClose:hover,
 .instructClose:focus {
-  color: #000;
+  color: red;
   text-decoration: none;
   cursor: pointer;
 }

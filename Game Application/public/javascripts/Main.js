@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
 		async.eachLimit(Player.bufferedActionsArray, 1, 
 			function(el, callback) {
-				setTimeout( () =>  {
+				setTimeout( function() {
 					if (Player.bufferedActionsArray.length == 0) {
 						return;
 					}

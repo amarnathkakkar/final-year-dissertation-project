@@ -5,6 +5,7 @@ var gridTileSize = canvasHeight/mapGridSize; //needs to be according to grid siz
 var btnClicked;
 var firstTutorial, firstOne, firstTwo, firstThree, firstFour, firstFive, firstSix, firstSeven, firstEight;
 var numberOfLevels = 8;
+var playerInitialX, playerInitialY;
 
 var tutModal,btn,span,tutText,tutContent,modalTitle;
 
@@ -675,12 +676,25 @@ loadTutorial = function() {
 	 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
 	 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]])
 
+	playerInitialX = mapTileWidth/2;
+	playerInitialY = mapTileHeight*4 + mapTileHeight/2
 
-	player.x = mapTileWidth/2;
-	player.y = mapTileHeight*4 + mapTileHeight/2;
+	player.x = playerInitialX;
+	player.y = playerInitialY;
 	player.futureX = player.x;
 	player.futureY = player.y;
 } //auto completed
+
+
+
+function typeWriter(msg, textOutput, index) {
+	if (index < msg.length) {
+    	textOutput.innerHTML += msg.charAt(index);
+    	index++;
+    	setTimeout(typeWriter(msg, textOutput, index), 900);
+  	}
+}
+
 
 tutorialPopups = function () {
 	tutModal = document.getElementById('tutModal');
@@ -696,10 +710,17 @@ tutorialPopups = function () {
 		firstTutorial = false;
 	}
 
+
 	modalTitle.innerHTML = 'Welcome';
 	tutText.innerHTML = "To Programmer's Dungeon!<br>" +
 		"</br>The aim of the game is to teach you about, and how to use <b>for loops</b> and <b>if statements</b>.<br>" +
 		"<br><br> Press <b>Next</b> for instructions or <b>X</b> to skip.";
+
+
+	//typeWriter("To Programmer's Dungeon!<br>" +
+	//	"</br>The aim of the game is to teach you about, and how to use <b>for loops</b> and <b>if statements</b>.<br>" +
+	//	"<br><br> Press <b>Next</b> for instructions or <b>X</b> to skip.", tutText, 0)
+
 	btn.innerHTML = "Next";
 	span.innerHTML = "x";
 
@@ -708,7 +729,7 @@ tutorialPopups = function () {
 	span.onclick = function() {
 		tutModal.style.display = "none";
 		tutContent.style.position= 'initial';
-		editor.setValue("//Tutorial. (This is a comment and will not \n//be executed)\n\n//Useful information will be given through\n//comments.\n\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');");
+		editor.setValue("//Tutorial (This is a comment and will not \n//be executed)\n\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');");
 	}
 
 	btn.onclick = function() {
@@ -722,16 +743,17 @@ tutorialPopups = function () {
 			tutText.innerHTML = "On the right hand side of the screen, you can see the map with your character in between two black lines. These represent the walls of the dungeon and you cannot walk past them.<br>" +
 			"<br>At the top of the dungeon screen, you can see your <b>hitpoints</b> and <b>score</b>.</br>" +
 			"<br><b>The aim</b> is to get your character to the red tile to escape, by using a set of commands to control him.</br>" + 
-			"<br>There are " +numberOfLevels+ " levels after this tutorial. The <b>current level</b> is displayed at the top of the screen.</br>" +
 			"<br><br> Press <b>Next</b> to continue";
 		} 
 		else if (btnClicked == 2) {
     		tutContent.style.left = '48%';
+    		editor.setValue("//Tutorial (This is a comment and will not \n//be executed)")
 
 			tutText.innerHTML = "On the left hand side of the screen is the console. Here you write commands to control your character.<br>" +
 			"<br><b>Your objective</b> is to use the functions that you will be slowly introduced to, to create and write code to help your character escape." +
 			"<br><br>You can view these functions at any time by pressing <b>Help</b> in the top left corner of your screen." +
 			"<br><br>Once happy with your code, press <b>Run</b> at the bottom of the console to execute it. If you fail to reach the exit, modify your code and press <b>Reset Level</b> in the top right corner to try again." +
+			"<br><br>Useful information will be given through comments. These are marked with a '//'." +
 			"<br><br>You can also find a summary of the rules and scoring system by pressing help.</br>" +
 			"<br><br>Press <b>Next</b> to continue.";
 		} 
@@ -750,6 +772,7 @@ tutorialPopups = function () {
 			tutContent.style.left = '0%';
 
 			tutText.innerHTML ="The levels will require you to either <b>fill in incomplete code</b>, <b>debug some code</b> or <b>write your own</b>.</br>" +
+			"<br>The <b>current level</b> is displayed at the top of the screen.</br>" +
 			"<br>Once you click Finish, the console will have the code to complete the tutorial. You only need to press run.</br>" +
 			"<br><br>Press <b>Finish</b> to close this window.";
 			btn.innerHTML = "Finish";
@@ -760,3 +783,5 @@ tutorialPopups = function () {
 
 	}
 }
+
+

@@ -65,7 +65,7 @@ createCanvas = function() {
 
   textEditor.appendChild(btn);
 
-	btn.addEventListener('click', (event) => {
+	btn.addEventListener('click', function(event) {
 	  compileCode();
 	});
 
@@ -81,7 +81,7 @@ createCanvas = function() {
   helpBtn.style.left = '10px';
   document.getElementById('container').appendChild(helpBtn);
 
-  helpBtn.addEventListener('click', (event) => {
+  helpBtn.addEventListener('click', function(event) {
     helpModal.style.display = 'block';
   });
 
@@ -165,7 +165,7 @@ createCanvas = function() {
 
   document.getElementById('container').appendChild(resetBtn);
 
-  resetBtn.addEventListener('click', (event) => {
+  resetBtn.addEventListener('click', function(event) {
     restartLevel();
     tempAlert('Level Restarted', 1000);
   });

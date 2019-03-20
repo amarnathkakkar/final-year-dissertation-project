@@ -100,15 +100,6 @@ createCanvas = function() {
   helpClose.innerHTML = '&times;'
   helpContent.appendChild(helpClose);
 
-  //helpFooter = document.createElement('div');
-  //helpFooter.setAttribute('class', 'helpmodal-footer');
-  //helpContent.appendChild(helpFooter);
-
-  //helpFooterBtn = document.createElement('button');
-  //helpFooterBtn.setAttribute('class', 'btn btn-default');
-  //helpFooterBtn.innerHTML = 'Next';
-  //helpFooter.appendChild(helpFooterBtn);
-
   helpText = document.createElement('p');
   helpText.style.margin = '0rem';
   helpText.innerHTML = "<span style='color: grey;'>" +
@@ -167,7 +158,7 @@ createCanvas = function() {
 
   resetBtn.addEventListener('click', function(event) {
     restartLevel();
-    tempAlert('Level Restarted', 1000);
+    tempAlert('Level Reset', 1000);
   });
 
 

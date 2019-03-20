@@ -32,7 +32,7 @@ a {
 
 .modal-header {
   padding: 2px 16px;
-  color: #03EE03;
+  color: #b3feb3;
   font: 1.3rem Inconsolata, monospace;
   border: 0px solid #dee2e6;
   border-top-left-radius: 0rem;
@@ -46,7 +46,7 @@ a {
 }
 
 .modal-footer {
-  padding: 0px 16px;
+  padding: 0px 0px;
   color: #03EE03;
   font: 1.3rem Inconsolata, monospace;
   border-top: 0px solid #dee2e6;
@@ -55,18 +55,18 @@ a {
 }
 
 .btn.btn-default {
-  color: #03EE03;
+  color: #1c1cfd;
   float: right;
 }
 .btn.btn-default:hover,
 .btn.btn-default:focus {
-  color: white;
+  color: #9a9afe;
   text-decoration: none;
   cursor: pointer;
 }
 
 .instructClose {
-  color: white;
+  color: red;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -74,19 +74,10 @@ a {
 
 .instructClose:hover,
 .instructClose:focus {
-  color: red;
+  color: #ff9999;
   text-decoration: none;
   cursor: pointer;
 }
-
-
-
-.helpmodal-footer {
-  padding: 2px 16px;
-  background-color: #77BA99;
-  color: white;
-}
-
 
 
 /* The Modal (background) */

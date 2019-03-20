@@ -13,8 +13,11 @@ endGame = function () {
 	tutModal.style.display = "block";
 	tutContent.style.position= 'relative';
 	modalTitle.innerHTML = 'Congratulations!';
-	tutText.innerHTML = "You Escaped and Won!<br>" +
-		"<br>Your Final Score is: " + levelScore + "</br>";
+
+	typewriter.typeNewMsg("You Escaped and Won!<br><br>" +
+		"<br><br>Your Final Score is: " + levelScore)
+
+	typewriter.type();
 
 	btn.innerHTML = "Play again";
 	span.innerHTML = "";
@@ -147,7 +150,7 @@ loadLevelEight = function () {
 	Enemy(Math.random(), mapTileWidth*1 + mapTileWidth/2, mapTileHeight*3 + mapTileHeight/2, 0, 0, 32, 32);
 
 	if (firstEight) {
-		editor.setValue("//Create your own code.\n\n");
+		editor.setValue("//Create your own Code!\n\n");
 		firstEight = false;
 	}
 } //create own
@@ -213,7 +216,7 @@ loadLevelSeven = function() {
 	player.futureY = player.y;
 
 	if (firstSeven) {
-		editor.setValue("//Complete the nested for loops.\n\n//Note: the variable var a, defined in the\n//for () is useable inside the for loop\n\nfor (var a=1; a<5; a++) {\n\n    for (; <a; ) {\n        player.move('right');\n    }\n    for (; <a; ) {\n       player.move('up');\n    }\n\n}");
+		editor.setValue("//Complete the Code!\n\n\n//Note: the variable var a, defined in the\n//for statement can be used within the code.\n\nfor (var a; a; a) {\n\n    for (; <a; ) {\n        player.move('right');\n    }\n    for (; <a; ) {\n       player.move('up');\n    }\n\n}");
 		firstSeven = false;
 	}
 } //complete nested for
@@ -282,7 +285,7 @@ loadLevelSix = function () {
 	Enemy(Math.random(), mapTileWidth*4 + mapTileWidth/2, mapTileHeight*6 + mapTileHeight/2, 0, 0, 32, 32);
 
 	if (firstSix) {
-		editor.setValue("//Press Run to see what happens, then Reset.\n\n//You can add multiple conditions to an 'if'\n//statement by adding the && operator.\n\n//Debug the following code:\n\nfor (var i=7; i>=1; i--) {\n\n    if (enemyPosition('right')) {\n        player.shoot('right');\n    }\n\n\n    if (wallPosition('right')) {\n        player.move('up');\n    }\n    else if (\n        wallPosition('right') &&\n        wallPosition('up')\n    ) {\n        player.move('down');\n    }\n\n\n    player.move('right');\n\n}");
+		editor.setValue("//Debug the Code! Press Run to see what\n//happens and then Reset.\n\n\n//You can add multiple conditions to an 'if'\n//statement by adding the && operator.\n\nfor (var i=15; i>0; i--) {\n\n    if (enemyPosition('right')) {\n        player.shoot('right');\n    }\n\n\n    if (wallPosition('right')) {\n        player.move('up');\n    }\n    else if (\n        wallPosition('right') &&\n        wallPosition('up')\n    ) {\n        player.move('down');\n    }\n\n\n    player.move('right');\n\n}");
 		firstSix = false;
 	}
 } //debug intermediate for if else if
@@ -350,7 +353,7 @@ loadLevelFive = function () {
 	Enemy(Math.random(), mapTileWidth*5 + mapTileWidth/2, mapTileHeight*5 + mapTileHeight/2, 0, 0, 32, 32);
 
 	if (firstFive) {
-		editor.setValue("//Create a for loop with an if statement\n//inside the for loop.\n//Check help for the list of functions.\n\n");
+		editor.setValue("//Create some Code:\n//Create a 'for' loop with an 'if' statement\n//inside the loop.\n\n//Check help for the list of functions.\n\n");
 		firstFive = false;
 	}
 } //create own simple for if
@@ -416,7 +419,7 @@ loadLevelFour = function () {
 	player.futureY = player.y;
 
 	if (firstFour) {
-		editor.setValue("//If the condition in an 'if' statement\n//evaluates to false, then 'else' is\n//executed instead.\n\n//Complete the following code:\n\nfor (var i=0; i<; i) {\n\n    player.move('right');\n\n    if (wallPosition('')) {\n\n        if (wallPosition('')) {\n            player.move('down');\n        }\n        else {\n            player.move('up');\n        }\n\n    }\n\n}");
+		editor.setValue("//Complete the Code!\n\n\n//If an 'if' condition evaluates to false,\n//then the 'else' is executed instead.\n\nfor (var i; i; i) {\n\n    player.move('');\n\n    if (wallPosition('right')) {\n\n        if (wallPosition('up')) {\n            player.move('');\n        }\n        else {\n            player.move('');\n        }\n\n    }\n\n}");
 		firstFour = false;
 	}//fill in for if
 } //complete in for if else
@@ -482,7 +485,7 @@ loadLevelThree = function () {
 	player.futureY = player.y;
 
 	if (firstThree) {
-		editor.setValue("//Complete the following code, placing one\n//player.move() command in each 'if' statement.\n\n//Format:\n//if(condition) { code }\n\n//'if' statements execute the code within them\n//if the condition evaluates to True\n\nif ( wallPosition('down') ) {\n    \n}\nif ( wallPosition('right') ) {\n    \n}");
+		editor.setValue("//Complete the Code:\n//Place one player.move() command in each 'if'\n//statement.\n\n\n\n//if format:\n//if(condition) { code }\n\n//if condition evaluates to true, execute code\n\nif ( wallPosition('down') ) {\n    \n}\nif ( wallPosition('right') ) {\n    \n}");
 		firstThree = false;
 	}
 } //complete in if
@@ -548,7 +551,7 @@ loadLevelTwo = function() {
 	player.futureY = player.y;
 
 	if (firstTwo) {
-		editor.setValue("//Try running the code to see what happens,\n//then press Reset in the top right corner.\n\n//There are 3 bugs/issues with this code.\n\nfor(var x=1; x<2; x++) {\n    player.move('up');\n}\n\nplayer.move('up');\n\nfor(var y=0; y>6; y++) {\n    player.move('right');\n}");
+		editor.setValue("//Complete the Code! Press Help for the\n//definition of for statements.\n\n\nfor(var x=; x<; x) {\n    player.move('right');\n}\n\nplayer.move('');\n\nfor(var y=; y>; y) {\n    player.move('right');\n}");
 		firstTwo = false;
 	}
 } //debug for
@@ -614,7 +617,7 @@ loadLevelOne = function() {
 	player.futureY = player.y;
 
 	if (firstOne) {
-		editor.setValue("//Place an appropriate command within\n//the 'for' loop (between the { }).\n\n//Format:\n//for(declare a variable; condition to be met;\n//increment or decrement value each cycle)\n\n//The 'for' loop below will repeat 9 times.\n\nfor(var i=0; i<9; i=i+1) {\n    \n}");
+		editor.setValue("//Complete the Code! Press Help for the list\n//of player functions.\n\n\n\n//for format:\n//for(initialization; termination; increment)\n\n//i++ increments the value of i by 1.\n\nfor(var i=0; i<9; i++) {\n    \n}");
 		firstOne = false;
 	}
 } //complete in for
@@ -685,17 +688,6 @@ loadTutorial = function() {
 	player.futureY = player.y;
 } //auto completed
 
-
-
-function typeWriter(msg, textOutput, index) {
-	if (index < msg.length) {
-    	textOutput.innerHTML += msg.charAt(index);
-    	index++;
-    	setTimeout(typeWriter(msg, textOutput, index), 900);
-  	}
-}
-
-
 tutorialPopups = function () {
 	tutModal = document.getElementById('tutModal');
 	btn = document.getElementsByClassName("btn btn-default")[0];
@@ -710,26 +702,22 @@ tutorialPopups = function () {
 		firstTutorial = false;
 	}
 
-
 	modalTitle.innerHTML = 'Welcome';
-	tutText.innerHTML = "To Programmer's Dungeon!<br>" +
-		"</br>The aim of the game is to teach you about, and how to use <b>for loops</b> and <b>if statements</b>.<br>" +
-		"<br><br> Press <b>Next</b> for instructions or <b>X</b> to skip.";
 
+	typewriter = setupTypewriter(tutText, "To Programmer's Dungeon!<br><br>" +
+		"<br><br>The aim of the game is to teach you about, and how to use <b>for loops</b> and <b>if statements</b>.<br><br>" +
+		"<br><br>Press <b>Next</b> for instructions or <b>X</b> to skip.");
 
-	//typeWriter("To Programmer's Dungeon!<br>" +
-	//	"</br>The aim of the game is to teach you about, and how to use <b>for loops</b> and <b>if statements</b>.<br>" +
-	//	"<br><br> Press <b>Next</b> for instructions or <b>X</b> to skip.", tutText, 0)
+	typewriter.type();
 
 	btn.innerHTML = "Next";
 	span.innerHTML = "x";
-
 
 	// When the user clicks on <span> (x), close the modal
 	span.onclick = function() {
 		tutModal.style.display = "none";
 		tutContent.style.position= 'initial';
-		editor.setValue("//Tutorial (This is a comment and will not \n//be executed)\n\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');");
+		editor.setValue("//Tutorial. This is a comment and will not \n//be executed.\n\n\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');\nplayer.move('right');");
 	}
 
 	btn.onclick = function() {
@@ -740,41 +728,54 @@ tutorialPopups = function () {
     		tutContent.style.left = '5%';
 
     		modalTitle.innerHTML = 'Instructions';
-			tutText.innerHTML = "On the right hand side of the screen, you can see the map with your character in between two black lines. These represent the walls of the dungeon and you cannot walk past them.<br>" +
-			"<br>At the top of the dungeon screen, you can see your <b>hitpoints</b> and <b>score</b>.</br>" +
-			"<br><b>The aim</b> is to get your character to the red tile to escape, by using a set of commands to control him.</br>" + 
-			"<br><br> Press <b>Next</b> to continue";
+
+			typewriter.typeNewMsg("On the right hand side of the screen, you can see the map with your character in between two black lines. These represent the walls of the dungeon and you cannot walk past them.<br><br>" +
+			"<br><br>At the top of the dungeon screen, you can see your <b>hitpoints</b> and <b>score</b>.<br><br>" +
+			"<br><br><b>The aim</b> is to get your character to the red tile to escape, by using a set of commands to control him.<br><br>" + 
+			"<br><br>Press <b>Next</b> to continue.");
+
+			typewriter.type();
+
+
 		} 
 		else if (btnClicked == 2) {
     		tutContent.style.left = '48%';
     		editor.setValue("//Tutorial (This is a comment and will not \n//be executed)")
 
-			tutText.innerHTML = "On the left hand side of the screen is the console. Here you write commands to control your character.<br>" +
-			"<br><b>Your objective</b> is to use the functions that you will be slowly introduced to, to create and write code to help your character escape." +
-			"<br><br>You can view these functions at any time by pressing <b>Help</b> in the top left corner of your screen." +
-			"<br><br>Once happy with your code, press <b>Run</b> at the bottom of the console to execute it. If you fail to reach the exit, modify your code and press <b>Reset Level</b> in the top right corner to try again." +
-			"<br><br>Useful information will be given through comments. These are marked with a '//'." +
-			"<br><br>You can also find a summary of the rules and scoring system by pressing help.</br>" +
-			"<br><br>Press <b>Next</b> to continue.";
+			typewriter.typeNewMsg("On the left hand side of the screen is the console. Here you write commands to control your character.<br><br>" +
+			"<br><br><b>Your objective</b> is to use the functions that you will be slowly introduced to, to create and write code to help your character escape.<br><br>" +
+			"<br><br>You can view these functions at any time by pressing <b>Help</b> in the top left corner of your screen.<br><br>" +
+			"<br><br>Once happy with your code, press <b>Run</b> at the bottom of the console to execute it. If you fail to reach the exit, modify your code and press <b>Reset Level</b> in the top right corner to try again.<br><br>" +
+			"<br><br>Useful information will be given through comments. These are marked with a '//'.<br><br>" +
+			"<br><br>You can also find a summary of the rules and scoring system by pressing help.<br><br>" +
+			"<br><br>Press <b>Next</b> to continue.");
+
+			typewriter.type();
 		} 
 		else if (btnClicked == 3) {
 			tutContent.style.position= 'relative';
 			tutContent.style.left = '0%';
 
-			tutText.innerHTML = "<b>The goal</b> is to use the functions that you will learn, with for loops and if statements." +
-			"<br><br>You will be learning and writing in the programming language <b>JavaScript</b>.</br>" +
-			"<br>As you go along, you will be introduced to for loops and if statements, however <b>help</b> can be obtained by pressing help at any time. The console sidebar also provides feedback on certain bugs in your code.</br>" +
-			"<br><br>Press <b>Next</b> to continue.";
+			typewriter.typeNewMsg("<b>The goal</b> is to use the functions that you will learn, with for loops and if statements.<br><br>" +
+			"<br><br>You will be learning and writing in the programming language <b>JavaScript</b>.<br><br>" +
+			"<br><br>As you go along, you will be introduced to for loops and if statements, however <b>help</b> can be obtained by pressing help at any time. The console sidebar also provides feedback on certain bugs in your code.<br><br>" +
+			"<br><br>Press <b>Next</b> to continue.");
+
+			typewriter.type();
+
 			btn.innerHTML = "Next";
 		} 
 		else if (btnClicked == 4) {
 			tutContent.style.position= 'relative';
 			tutContent.style.left = '0%';
 
-			tutText.innerHTML ="The levels will require you to either <b>fill in incomplete code</b>, <b>debug some code</b> or <b>write your own</b>.</br>" +
-			"<br>The <b>current level</b> is displayed at the top of the screen.</br>" +
-			"<br>Once you click Finish, the console will have the code to complete the tutorial. You only need to press run.</br>" +
-			"<br><br>Press <b>Finish</b> to close this window.";
+			typewriter.typeNewMsg("The levels will require you to either <b>fill in incomplete code</b>, <b>debug some code</b> or <b>write your own</b>.<br><br>" +
+			"<br><br>The <b>current level</b> is displayed at the top of the screen.<br><br>" +
+			"<br><br>Once you click Finish, the console will have the code to complete the tutorial. You only need to press run.<br><br>" +
+			"<br><br>Press <b>Finish</b> to close this window.");
+
+			typewriter.type();
+
 			btn.innerHTML = "Finish";
 		} 
 		else {
@@ -784,4 +785,83 @@ tutorialPopups = function () {
 	}
 }
 
+function setupTypewriter(object, msg) {
+    var HTML = msg;
 
+    object.innerHTML = "";
+
+    var cursorPosition = 0,
+        tag = "",
+        writingTag = false,
+        tagOpen = false,
+        typeSpeed = 50,
+    	tempTypeSpeed = 0;
+
+    var type = function() {
+ 
+    	if (cursorPosition >= HTML.length) {
+            return;
+        }
+
+        if (writingTag === true) {
+            tag += HTML[cursorPosition];
+        }
+
+        if (HTML[cursorPosition] === "<") {
+            tempTypeSpeed = 0;
+            if (tagOpen) {
+                tagOpen = false;
+                writingTag = true;
+            } else {
+                tag = "";
+                tagOpen = true;
+                writingTag = true;
+                tag += HTML[cursorPosition];
+            }
+        }
+        if (!writingTag && tagOpen) {
+            tag.innerHTML += HTML[cursorPosition];
+        }
+        if (!writingTag && !tagOpen) {
+            if (HTML[cursorPosition] === " ") {
+                tempTypeSpeed = 0;
+            }
+            else {
+                tempTypeSpeed = typeSpeed;
+            }
+            object.innerHTML += HTML[cursorPosition];
+        }
+        if (writingTag === true && HTML[cursorPosition] === ">") {
+            tempTypeSpeed = typeSpeed;
+            writingTag = false;
+            if (tagOpen) {
+                var newSpan = document.createElement("span");
+                object.appendChild(newSpan);
+                newSpan.innerHTML = tag;
+                tag = newSpan.firstChild;
+            }
+        }
+
+        cursorPosition += 1;
+        if (cursorPosition < HTML.length) {
+            setTimeout(type, tempTypeSpeed);
+        }
+
+    };
+
+    var typeNewMsg = function(msg) {
+    	
+    	HTML = msg;
+    	object.innerHTML = "";
+    	cursorPosition = 0,
+    	tag = "",
+    	writingTag = false,
+    	tagOpen = false;
+
+    };
+
+    return {
+        type: type,
+        typeNewMsg: typeNewMsg
+    };
+}

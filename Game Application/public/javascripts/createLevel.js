@@ -6,7 +6,6 @@ var btnClicked;
 var firstTutorial, firstOne, firstTwo, firstThree, firstFour, firstFive, firstSix, firstSeven, firstEight;
 var numberOfLevels = 8;
 var playerInitialX, playerInitialY;
-
 var tutModal,btn,span,tutText,tutContent,modalTitle;
 
 endGame = function () {

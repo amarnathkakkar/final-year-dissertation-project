@@ -1,26 +1,97 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Jaramillo-Alc\'{a}zar and Luj\'{a}n-Mora(2017)]{MarketResearchPaper}
-Angel Jaramillo-Alc\'{a}zar and Sergio Luj\'{a}n-Mora.
-\newblock Mobile serious games: An accessibility assessment for people with
-  visual impairments.
-\newblock In \emph{Proceedings of the 5th International Conference on
-  Technological Ecosystems for Enhancing Multiculturality}, TEEM 2017, pages
-  66:1--66:6, New York, NY, USA, 2017. ACM.
-\newblock ISBN 978-1-4503-5386-1.
-\newblock \doi{10.1145/3144826.3145416}.
-\newblock URL \url{http://doi.acm.org/10.1145/3144826.3145416}.
-
-\bibitem[Mar()]{MarketResearch}
-Serious game market worth \$5,448.82 million by 2020.
+\bibitem[vga()]{vgamesResearch}
+2018 global games market report.
 \newblock
-  \url{https://www.marketsandmarkets.com/PressReleases/serious-game.asp}.
-\newblock Accessed: 2018-12-08.
+  \url{https://resources.newzoo.com/hubfs/Reports/Newzoo_2018_Global_Games_Market_Report_Light.pdf?}
+\newblock Accessed: 2019-03-21.
+
+\bibitem[his()]{historyVideoGames}
+Tennis for two.
+\newblock \url{https://www.sunysb.edu/libspecial/videogames/tennis.html}.
+\newblock Accessed: 2019-03-21.
+
+\bibitem[Ten()]{TennisForTwo}
+The first video game?
+\newblock \url{https://www.bnl.gov/about/history/firstvideo.php}.
+\newblock Accessed: 2018-12-06.
+
+\bibitem[Postigo(2003)]{Hector2003}
+Hector Postigo.
+\newblock From pong to planet quake: Post-industrial transitions from leisure
+  to work.
+\newblock \emph{Information, communication and society.}, 6\penalty0
+  (4):\penalty0 593--607, 2003.
+\newblock ISSN 1369-118X.
+
+\bibitem[Lowood(2009)]{Lowood2009}
+Henry Lowood.
+\newblock Videogames in computer space: The complex history of pong.
+\newblock \emph{IEEE annals of the history of computing}, 31\penalty0
+  (3):\penalty0 5--19, 2009.
+\newblock ISSN 1058-6180.
+
+\bibitem[Williams(2003)]{Dmitri2003}
+Dmitri Williams.
+\newblock The video game lightning rod.
+\newblock \emph{Information, communication and society.}, 6\penalty0
+  (4):\penalty0 523--550, 2003.
+\newblock ISSN 1369-118X.
+
+\bibitem[H~Cummings(2007)]{Cummings07}
+Alastair H~Cummings.
+\newblock The evolution of game controllers and control schemes and their
+  effect on their games.
+\newblock In \emph{The 17th Annual University of Southampton Multimedia Systems
+  Conference}, 2007.
+
+\bibitem[Stone(2001)]{vrhaptics}
+Robert~J. Stone.
+\newblock Haptic feedback: a brief history from telepresence to virtual
+  reality.
+\newblock In Stephen Brewster and Roderick Murray-Smith, editors, \emph{Haptic
+  Human-Computer Interaction}, pages 1--16, Berlin, Heidelberg, 2001. Springer
+  Berlin Heidelberg.
+\newblock ISBN 978-3-540-44589-0.
+
+\bibitem[Michael and Chen(2005)]{Michael2005}
+David~R. Michael and Sandra~L. Chen.
+\newblock \emph{Serious Games: Games That Educate, Train, and Inform}.
+\newblock Muska \& Lipman/Premier-Trade, 2005.
+\newblock ISBN 1592006221.
+
+\bibitem[Zyda(2005)]{Zyda2005}
+M.~Zyda.
+\newblock From visual simulation to virtual reality to games.
+\newblock \emph{Computer}, 38\penalty0 (9):\penalty0 25--32, Sept 2005.
+\newblock ISSN 0018-9162.
+\newblock \doi{10.1109/MC.2005.297}.
+
+\bibitem[Susi et~al.(2007)Susi, Johannesson, and Backlund]{Johann2015}
+Tarja Susi, Mikael Johannesson, and Per Backlund.
+\newblock Serious games : An overview.
+\newblock Technical Report HS-IKI-TR-07-001, University of Sk{\"o}vde, School
+  of Humanities and Informatics, 2007.
+
+\bibitem[Apt(1970)]{apt1970}
+Clark~C Apt.
+\newblock Serious games: The art and science of games that simulate life in
+  industry, government and education.
+\newblock \emph{New York, NY: Viking}, 1970.
+
+\bibitem[Song and Zhang(2008)]{song2008}
+Minzhu Song and Sujing Zhang.
+\newblock Efm: A model for educational game design.
+\newblock In Zhigeng Pan, Xiaopeng Zhang, Abdennour El~Rhalibi, Woontack Woo,
+  and Yi~Li, editors, \emph{Technologies for E-Learning and Digital
+  Entertainment}, pages 509--517, Berlin, Heidelberg, 2008. Springer Berlin
+  Heidelberg.
+\newblock ISBN 978-3-540-69736-7.
 
 \bibitem[Roblyer and Doering(2013)]{Roblyer2013}
 M.~D. Roblyer and Aaron~H. Doering.
@@ -35,19 +106,6 @@ M.~D. Roblyer and Aaron~H. Doering.
 Atsusi Hirumi, Bob Appelman, Lloyd Rieber, and Richard~Van Eck.
 \newblock Preparing instructional designers for game-based learning: Part 1.
 \newblock \emph{TechTrends}, 54\penalty0 (3):\penalty0 27--37, 05 2010.
-
-\bibitem[Susi et~al.(2007)Susi, Johannesson, and Backlund]{Susi2416}
-Tarja Susi, Mikael Johannesson, and Per Backlund.
-\newblock Serious games : An overview.
-\newblock Technical Report HS-IKI-TR-07-001, University of Sk{\"o}vde, School
-  of Humanities and Informatics, 2007.
-
-\bibitem[Zyda(2005)]{Zyda2005}
-M.~Zyda.
-\newblock From visual simulation to virtual reality to games.
-\newblock \emph{Computer}, 38\penalty0 (9):\penalty0 25--32, Sept 2005.
-\newblock ISSN 0018-9162.
-\newblock \doi{10.1109/MC.2005.297}.
 
 \bibitem[Koster and Wright(2004)]{Koster2004}
 Raph Koster and Will Wright.

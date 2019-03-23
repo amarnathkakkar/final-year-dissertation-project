@@ -1,4 +1,4 @@
-\begin{thebibliography}{18}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -83,29 +83,6 @@ Clark~C Apt.
 \newblock Serious games: The art and science of games that simulate life in
   industry, government and education.
 \newblock \emph{New York, NY: Viking}, 1970.
-
-\bibitem[Song and Zhang(2008)]{song2008}
-Minzhu Song and Sujing Zhang.
-\newblock Efm: A model for educational game design.
-\newblock In Zhigeng Pan, Xiaopeng Zhang, Abdennour El~Rhalibi, Woontack Woo,
-  and Yi~Li, editors, \emph{Technologies for E-Learning and Digital
-  Entertainment}, pages 509--517, Berlin, Heidelberg, 2008. Springer Berlin
-  Heidelberg.
-\newblock ISBN 978-3-540-69736-7.
-
-\bibitem[Roblyer and Doering(2013)]{Roblyer2013}
-M.~D. Roblyer and Aaron~H. Doering.
-\newblock \emph{Integrating Educational Technology into Teaching: Pearson New
-  International Edition:}.
-\newblock Pearson Education, 08 2013.
-\newblock ISBN 9781292035291.
-\newblock URL \url{https://www.dawsonera.com:443/abstract/9781292035291}.
-
-\bibitem[Hirumi et~al.(2010)Hirumi, Appelman, Rieber, and
-  Eck]{AtsusiHirumi2010}
-Atsusi Hirumi, Bob Appelman, Lloyd Rieber, and Richard~Van Eck.
-\newblock Preparing instructional designers for game-based learning: Part 1.
-\newblock \emph{TechTrends}, 54\penalty0 (3):\penalty0 27--37, 05 2010.
 
 \bibitem[Koster and Wright(2004)]{Koster2004}
 Raph Koster and Will Wright.

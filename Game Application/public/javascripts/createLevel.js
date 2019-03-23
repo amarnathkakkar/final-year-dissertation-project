@@ -149,7 +149,7 @@ loadLevelEight = function () {
 	Enemy(Math.random(), mapTileWidth*1 + mapTileWidth/2, mapTileHeight*3 + mapTileHeight/2, 0, 0, 32, 32);
 
 	if (firstEight) {
-		editor.setValue("//Create your own Code!\n\n");
+		editor.setValue("//Create your own code! (you can reset as many\n//times as you want)\n\n");
 		firstEight = false;
 	}
 } //create own
@@ -215,7 +215,7 @@ loadLevelSeven = function() {
 	player.futureY = player.y;
 
 	if (firstSeven) {
-		editor.setValue("//Complete the Code!\n\n\n//Note: the variable var a, defined in the\n//for statement can be used within the code.\n\nfor (var a; a; a) {\n\n    for (; <a; ) {\n        player.move('right');\n    }\n    for (; <a; ) {\n       player.move('up');\n    }\n\n}");
+		editor.setValue("//Complete the code:\n\n\n//Note: the variable var a, defined in the\n//for statement can be used within its loop.\n\nfor (var a; a; a) {\n\n    for (; <a; ) {\n        player.move('right');\n    }\n    for (; <a; ) {\n       player.move('up');\n    }\n\n}");
 		firstSeven = false;
 	}
 } //complete nested for
@@ -284,7 +284,7 @@ loadLevelSix = function () {
 	Enemy(Math.random(), mapTileWidth*4 + mapTileWidth/2, mapTileHeight*6 + mapTileHeight/2, 0, 0, 32, 32);
 
 	if (firstSix) {
-		editor.setValue("//Debug the Code! Press Run to see what\n//happens and then Reset.\n\n\n//You can add multiple conditions to an 'if'\n//statement by adding the && operator.\n\nfor (var i=15; i>0; i--) {\n\n    if (enemyPosition('right')) {\n        player.shoot('right');\n    }\n\n\n    if (wallPosition('right')) {\n        player.move('up');\n    }\n    else if (\n        wallPosition('right') &&\n        wallPosition('up')\n    ) {\n        player.move('down');\n    }\n\n\n    player.move('right');\n\n}");
+		editor.setValue("//Debug the code: Press Run to see what\n//happens and then Reset.\n\n\n//You can add multiple conditions to an 'if'\n//statement by adding the && operator.\n\nfor (var i=15; i>0; i--) {\n\n    if (enemyPosition('right')) {\n        player.shoot('right');\n    }\n\n\n    if (wallPosition('right')) {\n        player.move('up');\n    }\n    else if (\n        wallPosition('right') &&\n        wallPosition('up')\n    ) {\n        player.move('down');\n    }\n\n\n    player.move('right');\n\n}");
 		firstSix = false;
 	}
 } //debug intermediate for if else if
@@ -352,7 +352,7 @@ loadLevelFive = function () {
 	Enemy(Math.random(), mapTileWidth*5 + mapTileWidth/2, mapTileHeight*5 + mapTileHeight/2, 0, 0, 32, 32);
 
 	if (firstFive) {
-		editor.setValue("//Create some Code:\n//Create a 'for' loop with an 'if' statement\n//inside the loop.\n\n//Check help for the list of functions.\n\n");
+		editor.setValue("//Create some code:\n//Create a 'for' loop with an 'if' statement\n//inside the loop.\n\n//Check help for the list of functions.\n\n");
 		firstFive = false;
 	}
 } //create own simple for if
@@ -418,7 +418,7 @@ loadLevelFour = function () {
 	player.futureY = player.y;
 
 	if (firstFour) {
-		editor.setValue("//Complete the Code!\n\n\n//If an 'if' condition evaluates to false,\n//then the 'else' is executed instead.\n\nfor (var i; i; i) {\n\n    player.move('');\n\n    if (wallPosition('right')) {\n\n        if (wallPosition('up')) {\n            player.move('');\n        }\n        else {\n            player.move('');\n        }\n\n    }\n\n}");
+		editor.setValue("//Complete the code: (press reset level if\n//you don't reach the exit)\n\n\n//If an 'if' condition evaluates to false,\n//then the 'else' is executed instead.\n\nfor (var i; i; i) {\n\n    player.move('');\n\n    if (wallPosition('right')) {\n\n        if (wallPosition('up')) {\n            player.move('');\n        }\n        else {\n            player.move('');\n        }\n\n    }\n\n}");
 		firstFour = false;
 	}//fill in for if
 } //complete in for if else
@@ -484,7 +484,7 @@ loadLevelThree = function () {
 	player.futureY = player.y;
 
 	if (firstThree) {
-		editor.setValue("//Complete the Code:\n//Place one player.move() command in each 'if'\n//statement.\n\n\n\n//if format:\n//if(condition) { code }\n\n//if condition evaluates to true, execute code\n\nif ( wallPosition('down') ) {\n    \n}\nif ( wallPosition('right') ) {\n    \n}");
+		editor.setValue("//Complete the code:\n\n\n//if format:\n//if(condition) { code }\n\n//if condition evaluates to true, execute code\n\nif ( wallPosition('down') ) {\n    \n}\nif ( wallPosition('right') ) {\n    \n}");
 		firstThree = false;
 	}
 } //complete in if
@@ -550,7 +550,7 @@ loadLevelTwo = function() {
 	player.futureY = player.y;
 
 	if (firstTwo) {
-		editor.setValue("//Complete the Code! Press Help for the\n//definition of for statements.\n\n\nfor(var x=; x<; x) {\n    player.move('right');\n}\n\nplayer.move('');\n\nfor(var y=; y>; y) {\n    player.move('right');\n}");
+		editor.setValue("//Complete the code: (press help for the\n//format of a for statement).\n\n\nfor(var x=; x<; x) {\n    player.move('right');\n}\n\nplayer.move('');\n\nfor(var y=; y>; y) {\n    player.move('right');\n}");
 		firstTwo = false;
 	}
 } //debug for
@@ -616,7 +616,7 @@ loadLevelOne = function() {
 	player.futureY = player.y;
 
 	if (firstOne) {
-		editor.setValue("//Complete the Code! Press Help for the list\n//of player functions.\n\n\n\n//for format:\n//for(initialization; termination; increment)\n\n//i++ increments the value of i by 1.\n\nfor(var i=0; i<9; i++) {\n    \n}");
+		editor.setValue("//Complete the code:\n//Place an appropriate function within\n//the for loop (if stuck, press help).\n\n\n\n//for format:\n//for(initialization; termination; increment)\n\n//i++ increments the value of i by 1.\n\nfor(var i=0; i<9; i++) {\n    \n}");
 		firstOne = false;
 	}
 } //complete in for
@@ -741,8 +741,8 @@ tutorialPopups = function () {
     		tutContent.style.left = '48%';
     		editor.setValue("//Tutorial (This is a comment and will not \n//be executed)")
 
-			typewriter.typeNewMsg("On the left hand side you will see the console. Here you will use functions like player.move() and player.shoot() to control your character.<br><br>" +
-			"<br><br>You can view these functions at any time by pressing <b>Help</b> in the top left corner of your screen. " +
+			typewriter.typeNewMsg("On the left hand side you will see the console. Here you will use functions like player.move() and player.shoot() to control your character. You will be slowly introduced to two more functions.<br><br>" +
+			"<br><br>You can view all these functions at any time by pressing <b>Help</b> in the top left corner of your screen. " +
 			"You will also find a summary of the rules and scoring system there.<br><br>" +
 			"<br><br>When you are ready to execute your code press <b>Run</b> at the bottom of the console. " +
 			"If you fail to reach the exit, modify your code, press <b>Reset Level</b> in the top right corner of your screen and try again.<br><br>" +		 
@@ -755,9 +755,10 @@ tutorialPopups = function () {
 			tutContent.style.position= 'relative';
 			tutContent.style.left = '0%';
 
-			typewriter.typeNewMsg("You will be <b>introduced</b> to various for loops and if statements as you progress. " +
-			"<b>Help</b> also provides information on them.<br><br>" +
-			"<br><br>You will be learning and writing code in the programming language <b>JavaScript</b>.<br><br>" +			
+			typewriter.typeNewMsg("You will also be <b>introduced</b> to various for loops and if statements as you progress. " +
+			"<b>Help</b> will also provide information on them.<br><br>" +
+			"<br><br>The <b>aim</b> of the game is for you to use the player functions with for loops and if statements to help your character escape.<br><br>" +			
+			"<br><br>The programming language you will be learning and writing code in is <b>JavaScript</b>.<br><br>" +			
 			"<br><br>Press <b>Next</b> to continue.");
 
 			typewriter.type();
@@ -768,9 +769,9 @@ tutorialPopups = function () {
 			tutContent.style.position= 'relative';
 			tutContent.style.left = '0%';
 
-			typewriter.typeNewMsg("The levels will require either to <b>complete unfinished code</b>, <b>debug code</b> or <b>write your own code</b>.<br><br>" +
+			typewriter.typeNewMsg("The levels will require either to <b>complete unfinished code</b>, <b>debug code</b> or <b>write your own</b>.<br><br>" +
 			"<br><br>The <b>current level</b> is displayed at the top of your screen.<br><br>" +
-			"<br><br>You will be given the code to complete the tutorial.<br><br>" +
+			"<br><br>You will be given the code to complete the tutorial. You only need to press Run<br><br>" +
 			"<br><br>Press <b>Finish</b> to close this window.");
 
 			typewriter.type();

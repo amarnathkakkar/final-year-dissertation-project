@@ -107,13 +107,13 @@ createCanvas = function() {
   "<ul><br><li>Get to the red exit tile to escape, shooting any enemies in the way.</li>" +
   "<li>Use the functions below in <span style='color: #66b28c;'>'for'</span> loops and <span style='color: #538cc6;'>'if'</span> statements to help you.</li></ul>" + 
   "<strong>Functions:</strong></br>" + 
-  "<ul><br><li><b>player.move('left/right/up/down');</li></b>" + 
+  "<ul><br><li><b>player.move('left/right/up/down')</li></b>" + 
   "<small>(Takes one argument) You move one tile left, right, up or down from your current position</small></br>" + 
-  "<b><li>player.shoot('left/right/up/down');</li></b>" +
+  "<b><li>player.shoot('left/right/up/down')</li></b>" +
   "<small>(Takes one argument) You shoot left, right, up or down from your current position</small>" +
-  "<br><li><span style='color: #538cc6;'><b>wallPosition('left/right/up/down');</b></span></li>" +
+  "<br><li><span style='color: #538cc6;'><b>wallPosition('left/right/up/down')</b></span></li>" +
   "<small>(Takes one argument) Returns True if there is a wall left, right, up or down next to you, else False</small>" +
-  "<br><li><span style='color: #538cc6;'><b>enemyPosition('left/right/up/down');</b></span></li>" +
+  "<br><li><span style='color: #538cc6;'><b>enemyPosition('left/right/up/down')</b></span></li>" +
   "<small>(Takes one argument) Returns True if there is an enemy 1 tile left, right, up or down from you, else False</small></ul>" +
   "<strong>Format:</strong></br>" + 
   "<br><ul><li><span style='color: #66b28c;'>for (declare variable; condition to be met; increment or decrement)</span></li>" +

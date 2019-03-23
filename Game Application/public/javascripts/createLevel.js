@@ -704,7 +704,7 @@ tutorialPopups = function () {
 	modalTitle.innerHTML = 'Welcome';
 
 	typewriter = setupTypewriter(tutText, "To Programmer's Dungeon!<br><br>" +
-		"<br><br>The aim of the game is to teach you about, and how to use <b>for loops</b> and <b>if statements</b>.<br><br>" +
+		"<br><br>Where you will learn about <b>iteration</b> and <b>conditional statements</b>.<br><br>" +
 		"<br><br>Press <b>Next</b> for instructions or <b>X</b> to skip.");
 
 	typewriter.type();
@@ -728,9 +728,9 @@ tutorialPopups = function () {
 
     		modalTitle.innerHTML = 'Instructions';
 
-			typewriter.typeNewMsg("On the right hand side of the screen, you can see the map with your character in between two black lines. These represent the walls of the dungeon and you cannot walk past them.<br><br>" +
-			"<br><br>At the top of the dungeon screen, you can see your <b>hitpoints</b> and <b>score</b>.<br><br>" +
-			"<br><br><b>The aim</b> is to get your character to the red tile to escape, by using a set of commands to control him.<br><br>" + 
+			typewriter.typeNewMsg("On the right hand side you will see your player inside the dungeon. <b>Your aim</b> is to get him to the red exit tile to help him escape.<br><br>" +
+			"<br><br>The black lines represent the walls of the dungeon and you cannot walk through them.<br><br>" +
+			"<br><br>Your <b>Hitpoints</b> and <b>Score</b> are displayed at the top of the map.<br><br>" +
 			"<br><br>Press <b>Next</b> to continue.");
 
 			typewriter.type();
@@ -741,12 +741,12 @@ tutorialPopups = function () {
     		tutContent.style.left = '48%';
     		editor.setValue("//Tutorial (This is a comment and will not \n//be executed)")
 
-			typewriter.typeNewMsg("On the left hand side of the screen is the console. Here you write commands to control your character.<br><br>" +
-			"<br><br><b>Your objective</b> is to use the functions that you will be slowly introduced to, to create and write code to help your character escape.<br><br>" +
-			"<br><br>You can view these functions at any time by pressing <b>Help</b> in the top left corner of your screen.<br><br>" +
-			"<br><br>Once happy with your code, press <b>Run</b> at the bottom of the console to execute it. If you fail to reach the exit, modify your code and press <b>Reset Level</b> in the top right corner to try again.<br><br>" +
-			"<br><br>Useful information will be given through comments. These are marked with a '//'.<br><br>" +
-			"<br><br>You can also find a summary of the rules and scoring system by pressing help.<br><br>" +
+			typewriter.typeNewMsg("On the left hand side you will see the console. Here you will use functions like player.move() and player.shoot() to control your character.<br><br>" +
+			"<br><br>You can view these functions at any time by pressing <b>Help</b> in the top left corner of your screen. " +
+			"You will also find a summary of the rules and scoring system there.<br><br>" +
+			"<br><br>When you are ready to execute your code press <b>Run</b> at the bottom of the console. " +
+			"If you fail to reach the exit, modify your code, press <b>Reset Level</b> in the top right corner of your screen and try again.<br><br>" +		 
+			"<br><br>Important information will be given through comments which are marked with '//'.<br><br>" +
 			"<br><br>Press <b>Next</b> to continue.");
 
 			typewriter.type();
@@ -755,9 +755,9 @@ tutorialPopups = function () {
 			tutContent.style.position= 'relative';
 			tutContent.style.left = '0%';
 
-			typewriter.typeNewMsg("<b>The goal</b> is to use the functions that you will learn, with for loops and if statements.<br><br>" +
-			"<br><br>You will be learning and writing in the programming language <b>JavaScript</b>.<br><br>" +
-			"<br><br>As you go along, you will be introduced to for loops and if statements, however <b>help</b> can be obtained by pressing help at any time. The console sidebar also provides feedback on certain bugs in your code.<br><br>" +
+			typewriter.typeNewMsg("You will be <b>introduced</b> to various for loops and if statements as you progress. " +
+			"<b>Help</b> also provides information on them.<br><br>" +
+			"<br><br>You will be learning and writing code in the programming language <b>JavaScript</b>.<br><br>" +			
 			"<br><br>Press <b>Next</b> to continue.");
 
 			typewriter.type();
@@ -768,9 +768,9 @@ tutorialPopups = function () {
 			tutContent.style.position= 'relative';
 			tutContent.style.left = '0%';
 
-			typewriter.typeNewMsg("The levels will require you to either <b>fill in incomplete code</b>, <b>debug some code</b> or <b>write your own</b>.<br><br>" +
-			"<br><br>The <b>current level</b> is displayed at the top of the screen.<br><br>" +
-			"<br><br>Once you click Finish, the console will have the code to complete the tutorial. You only need to press run.<br><br>" +
+			typewriter.typeNewMsg("The levels will require either to <b>complete unfinished code</b>, <b>debug code</b> or <b>write your own code</b>.<br><br>" +
+			"<br><br>The <b>current level</b> is displayed at the top of your screen.<br><br>" +
+			"<br><br>You will be given the code to complete the tutorial.<br><br>" +
 			"<br><br>Press <b>Finish</b> to close this window.");
 
 			typewriter.type();

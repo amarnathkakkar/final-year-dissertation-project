@@ -1,110 +1,273 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{33}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\providecommand{\urlprefix}{Available from: }
+\providecommand{\urldateprefix}{Accessed }
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
 
-\bibitem[vga()]{vgamesResearch}
-2018 global games market report.
+\bibitem[{Abt(1970)}]{abt1970}
+\bibinfo{author}{Abt, C.C.}, \bibinfo{year}{1970}.
+\newblock \bibinfo{title}{Serious games: The art and science of games that
+  simulate life in industry, government and education}.
+\newblock \emph{\bibinfo{journal}{New York, NY: Viking}}.
+
+\bibitem[{ACM-IEEE(2013)}]{acm}
+\bibinfo{author}{ACM-IEEE}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Computer science curricula 2013}.
 \newblock
-  \url{https://resources.newzoo.com/hubfs/Reports/Newzoo_2018_Global_Games_Market_Report_Light.pdf?}
-\newblock Accessed: 2019-03-21.
+  \bibinfo{howpublished}{\url{https://www.acm.org/binaries/content/assets/education/cs2013_web_final.pdf}}.
+\newblock \bibinfo{note}{Accessed: 2019-04-02}.
 
-\bibitem[his()]{historyVideoGames}
-Tennis for two.
-\newblock \url{https://www.sunysb.edu/libspecial/videogames/tennis.html}.
-\newblock Accessed: 2019-03-21.
+\bibitem[{Agal, Devija and Dave(2010)}]{agal2010}
+\bibinfo{author}{Agal, S.}, \bibinfo{author}{Devija, P.} and
+  \bibinfo{author}{Dave, P.D.K.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Can e-learning replace the traditional classroom? a
+  case study at a private college in udaipur}.
+\newblock \emph{\bibinfo{journal}{AISHWARYA RESEARCH COMMUNICATION}},
+  \bibinfo{volume}{Vol 2}, pp.\bibinfo{pages}{173--178}.
 
-\bibitem[Ten()]{TennisForTwo}
-The first video game?
-\newblock \url{https://www.bnl.gov/about/history/firstvideo.php}.
-\newblock Accessed: 2018-12-06.
+\bibitem[{Barnes et~al.(2007)Barnes, Richter, Powell, Chaffin and
+  Godwin}]{Barnes2007}
+\bibinfo{author}{Barnes, T.}, \bibinfo{author}{Richter, H.},
+  \bibinfo{author}{Powell, E.}, \bibinfo{author}{Chaffin, A.} and
+  \bibinfo{author}{Godwin, A.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Game2learn: Building cs1 learning games for
+  retention}.
+\newblock \emph{\bibinfo{journal}{SIGCSE Bull.}} [Online],
+  \bibinfo{volume}{39}(\bibinfo{number}{3}), pp.\bibinfo{pages}{121--125}.
+\newblock \urlprefix\url{https://doi.org/10.1145/1269900.1268821}.
 
-\bibitem[Postigo(2003)]{Hector2003}
-Hector Postigo.
-\newblock From pong to planet quake: Post-industrial transitions from leisure
-  to work.
-\newblock \emph{Information, communication and society.}, 6\penalty0
-  (4):\penalty0 593--607, 2003.
-\newblock ISSN 1369-118X.
+\bibitem[{Boyle, Connolly and Hainey(2011)}]{Boyle2011}
+\bibinfo{author}{Boyle, E.}, \bibinfo{author}{Connolly, T.M.} and
+  \bibinfo{author}{Hainey, T.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{The role of psychology in understanding the impact of
+  computer games}.
+\newblock \emph{\bibinfo{journal}{Entertainment Computing}} [Online],
+  \bibinfo{volume}{2}(\bibinfo{number}{2}), pp.\bibinfo{pages}{69 -- 74}.
+\newblock \bibinfo{note}{Serious Games Development and Applications}.
+\newblock
+  \urlprefix\url{https://doi.org/https://doi.org/10.1016/j.entcom.2010.12.002}.
 
-\bibitem[Lowood(2009)]{Lowood2009}
-Henry Lowood.
-\newblock Videogames in computer space: The complex history of pong.
-\newblock \emph{IEEE annals of the history of computing}, 31\penalty0
-  (3):\penalty0 5--19, 2009.
-\newblock ISSN 1058-6180.
+\bibitem[{Clark(2007)}]{clark2007}
+\bibinfo{author}{Clark, R.E.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Learning from serious games? arguments, evidence, and
+  research suggestions}.
+\newblock \emph{\bibinfo{journal}{Educational Technology}} [Online],
+  \bibinfo{volume}{47}(\bibinfo{number}{3}), pp.\bibinfo{pages}{56--59}.
+\newblock \urlprefix\url{http://www.jstor.org/stable/44429512}.
 
-\bibitem[Williams(2003)]{Dmitri2003}
-Dmitri Williams.
-\newblock The video game lightning rod.
-\newblock \emph{Information, communication and society.}, 6\penalty0
-  (4):\penalty0 523--550, 2003.
-\newblock ISSN 1369-118X.
+\bibitem[{Concannon, Flynn and Campbell(2005)}]{Concannon2005}
+\bibinfo{author}{Concannon, F.}, \bibinfo{author}{Flynn, A.} and
+  \bibinfo{author}{Campbell, M.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{What campus-based students think about the quality
+  and benefits of e-learning}.
+\newblock \emph{\bibinfo{journal}{British Journal of Educational Technology}}
+  [Online], \bibinfo{volume}{36}(\bibinfo{number}{3}),
+  pp.\bibinfo{pages}{501--512}.
+\newblock
+  \eprint{https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-8535.2005.00482.x},
+  \urlprefix\url{https://doi.org/10.1111/j.1467-8535.2005.00482.x}.
 
-\bibitem[H~Cummings(2007)]{Cummings07}
-Alastair H~Cummings.
-\newblock The evolution of game controllers and control schemes and their
-  effect on their games.
-\newblock In \emph{The 17th Annual University of Southampton Multimedia Systems
-  Conference}, 2007.
+\bibitem[{Djaouti et~al.(2011)Djaouti, Alvarez, Jessel and Rampnoux}]{Jean}
+\bibinfo{author}{Djaouti, D.}, \bibinfo{author}{Alvarez, J.},
+  \bibinfo{author}{Jessel, J.P.} and \bibinfo{author}{Rampnoux, O.},
+  \bibinfo{year}{2011}.
+\newblock \emph{\bibinfo{title}{Origins of serious games}} [Online],
+  \bibinfo{address}{London}: \bibinfo{publisher}{Springer London},
+  pp.\bibinfo{pages}{25--43}.
+\newblock \urlprefix\url{https://doi.org/10.1007/978-1-4471-2161-9_3}.
 
-\bibitem[Stone(2001)]{vrhaptics}
-Robert~J. Stone.
-\newblock Haptic feedback: a brief history from telepresence to virtual
-  reality.
-\newblock In Stephen Brewster and Roderick Murray-Smith, editors, \emph{Haptic
-  Human-Computer Interaction}, pages 1--16, Berlin, Heidelberg, 2001. Springer
-  Berlin Heidelberg.
-\newblock ISBN 978-3-540-44589-0.
+\bibitem[{The First Video Game?(n.d.)Ten}]{TennisForTwo}
+\bibinfo{title}{The first video game?}, n.d.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.bnl.gov/about/history/firstvideo.php}}.
+\newblock \bibinfo{note}{Accessed: 2018-12-06}.
 
-\bibitem[Michael and Chen(2005)]{Michael2005}
-David~R. Michael and Sandra~L. Chen.
-\newblock \emph{Serious Games: Games That Educate, Train, and Inform}.
-\newblock Muska \& Lipman/Premier-Trade, 2005.
-\newblock ISBN 1592006221.
+\bibitem[{Garris, Ahlers and Driskell(2002)}]{Driskell2002}
+\bibinfo{author}{Garris, R.}, \bibinfo{author}{Ahlers, R.} and
+  \bibinfo{author}{Driskell, J.E.}, \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{Games, motivation, and learning: A research and
+  practice model}.
+\newblock \emph{\bibinfo{journal}{Simulation \& Gaming}} [Online],
+  \bibinfo{volume}{33}(\bibinfo{number}{4}), pp.\bibinfo{pages}{441--467}.
+\newblock \eprint{https://doi.org/10.1177/1046878102238607},
+  \urlprefix\url{https://doi.org/10.1177/1046878102238607}.
 
-\bibitem[Zyda(2005)]{Zyda2005}
-M.~Zyda.
-\newblock From visual simulation to virtual reality to games.
-\newblock \emph{Computer}, 38\penalty0 (9):\penalty0 25--32, Sept 2005.
-\newblock ISSN 0018-9162.
-\newblock \doi{10.1109/MC.2005.297}.
+\bibitem[{Granic, Lobel and Engels(2014)}]{Granic2014}
+\bibinfo{author}{Granic, I.}, \bibinfo{author}{Lobel, A.} and
+  \bibinfo{author}{Engels, R.C.M.E.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{The benefits of playing video games.}
+\newblock \emph{\bibinfo{journal}{American psychologist.}},
+  \bibinfo{volume}{69}(\bibinfo{number}{1}), pp.\bibinfo{pages}{66--78}.
 
-\bibitem[Susi et~al.(2007)Susi, Johannesson, and Backlund]{Johann2015}
-Tarja Susi, Mikael Johannesson, and Per Backlund.
-\newblock Serious games : An overview.
-\newblock Technical Report HS-IKI-TR-07-001, University of Sk{\"o}vde, School
-  of Humanities and Informatics, 2007.
+\bibitem[{Gunasekaran, McNeil and Shaul(2002)}]{Gunasekaran2002}
+\bibinfo{author}{Gunasekaran, A.}, \bibinfo{author}{McNeil, R.D.} and
+  \bibinfo{author}{Shaul, D.}, \bibinfo{year}{2002}.
+\newblock \bibinfo{title}{E‐learning: research and applications}.
+\newblock \emph{\bibinfo{journal}{Industrial and commercial training.}},
+  \bibinfo{volume}{34}(\bibinfo{number}{2}), pp.\bibinfo{pages}{44--53}.
 
-\bibitem[Apt(1970)]{apt1970}
-Clark~C Apt.
-\newblock Serious games: The art and science of games that simulate life in
-  industry, government and education.
-\newblock \emph{New York, NY: Viking}, 1970.
+\bibitem[{H~Cummings(2007)}]{Cummings07}
+\bibinfo{author}{H~Cummings, A.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{The evolution of game controllers and control schemes
+  and their effect on their games}.
+\newblock \emph{\bibinfo{booktitle}{The 17th annual university of southampton
+  multimedia systems conference}}.
 
-\bibitem[Koster and Wright(2004)]{Koster2004}
-Raph Koster and Will Wright.
-\newblock \emph{A Theory of Fun for Game Design}.
-\newblock Paraglyph Press, 2004.
-\newblock ISBN 1932111972.
+\bibitem[{Hertz(2010)}]{Hertz2010}
+\bibinfo{author}{Hertz, M.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{What do "cs1" and "cs2" mean? investigating
+  differences in the early courses}.
+\newblock pp.\bibinfo{pages}{199--203}.
+\newblock \urlprefix\url{https://doi.org/10.1145/1734263.1734335}.
 
-\bibitem[Barnes et~al.(2007)Barnes, Richter, Powell, Chaffin, and
-  Godwin]{Barnes2007}
-Tiffany Barnes, Heather Richter, Eve Powell, Amanda Chaffin, and Alex Godwin.
-\newblock Game2learn: Building cs1 learning games for retention.
-\newblock \emph{SIGCSE Bull.}, 39\penalty0 (3):\penalty0 121--125, June 2007.
-\newblock ISSN 0097-8418.
-\newblock \doi{10.1145/1269900.1268821}.
-\newblock URL \url{http://doi.acm.org/10.1145/1269900.1268821}.
+\bibitem[{Interview: Warren Robinett(n.d.)War}]{Warren}
+\bibinfo{title}{Interview: Warren robinett}, n.d.
+\newblock
+  \bibinfo{howpublished}{\url{https://dadgum.com/halcyon/BOOK/ROBINETT.HTM}}.
+\newblock \bibinfo{note}{Accessed: 2019-03-24}.
 
-\bibitem[Garris et~al.(2002)Garris, Ahlers, and Driskell]{Driskell2002}
-Rosemary Garris, Robert Ahlers, and James~E. Driskell.
-\newblock Games, motivation, and learning: A research and practice model.
-\newblock \emph{Simulation \& Gaming}, 33\penalty0 (4):\penalty0 441--467,
-  2002.
-\newblock \doi{10.1177/1046878102238607}.
-\newblock URL \url{https://doi.org/10.1177/1046878102238607}.
+\bibitem[{Koster and Wright(2004)}]{Koster2004}
+\bibinfo{author}{Koster, R.} and \bibinfo{author}{Wright, W.},
+  \bibinfo{year}{2004}.
+\newblock \emph{\bibinfo{title}{A theory of fun for game design}}.
+\newblock \bibinfo{publisher}{Paraglyph Press}.
+
+\bibitem[{Koulouri, Lauria and Macredie(2014)}]{Koulouri2014}
+\bibinfo{author}{Koulouri, T.}, \bibinfo{author}{Lauria, S.} and
+  \bibinfo{author}{Macredie, R.D.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Teaching introductory programming: A quantitative
+  evaluation of different approaches}.
+\newblock \emph{\bibinfo{journal}{Trans. Comput. Educ.}} [Online],
+  \bibinfo{volume}{14}(\bibinfo{number}{4}), pp.\bibinfo{pages}{26:1--26:28}.
+\newblock \urlprefix\url{https://doi.org/10.1145/2662412}.
+
+\bibitem[{Lee and Ko(2015)}]{Lee2015}
+\bibinfo{author}{Lee, M.J.} and \bibinfo{author}{Ko, A.J.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Comparing the effectiveness of online learning
+  approaches on cs1 learning outcomes} [Online].
+\newblock \emph{\bibinfo{booktitle}{Proceedings of the eleventh annual
+  international conference on international computing education research}}.
+  \bibinfo{address}{New York, NY, USA}: \bibinfo{publisher}{ACM}, ICER '15,
+  pp.\bibinfo{pages}{237--246}.
+\newblock \urlprefix\url{https://doi.org/10.1145/2787622.2787709}.
+
+\bibitem[{Lowood(2009)}]{Lowood2009}
+\bibinfo{author}{Lowood, H.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Videogames in computer space: The complex history of
+  pong}.
+\newblock \emph{\bibinfo{journal}{IEEE annals of the history of computing}},
+  \bibinfo{volume}{31}(\bibinfo{number}{3}), pp.\bibinfo{pages}{5--19}.
+
+\bibitem[{Michael and Chen(2005)}]{Michael2005}
+\bibinfo{author}{Michael, D.R.} and \bibinfo{author}{Chen, S.L.},
+  \bibinfo{year}{2005}.
+\newblock \emph{\bibinfo{title}{Serious games: Games that educate, train, and
+  inform}}.
+\newblock \bibinfo{publisher}{Muska \& Lipman/Premier-Trade}.
+
+\bibitem[{Newzoo(2018)}]{vgamesResearch}
+\bibinfo{author}{Newzoo}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{2018 global games market report} [Online].
+\newblock [Online].
+\newblock
+  \urlprefix\url{https://resources.newzoo.com/hubfs/Reports/Newzoo_2018_Global_Games_Market_Report_Light.pdf?}
+
+\bibitem[{O'Neil, Wainess and Baker(2005)}]{neil2005}
+\bibinfo{author}{O'Neil, H.F.}, \bibinfo{author}{Wainess, R.} and
+  \bibinfo{author}{Baker, E.L.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Classification of learning outcomes: evidence from
+  the computer games literature}.
+\newblock \emph{\bibinfo{journal}{The Curriculum Journal}} [Online],
+  \bibinfo{volume}{16}(\bibinfo{number}{4}), pp.\bibinfo{pages}{455--474}.
+\newblock \eprint{https://doi.org/10.1080/09585170500384529},
+  \urlprefix\url{https://doi.org/10.1080/09585170500384529}.
+
+\bibitem[{Ritterfeld and Weber(2006)}]{ritterfeld2006}
+\bibinfo{author}{Ritterfeld, U.} and \bibinfo{author}{Weber, R.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Video games for entertainment and education}.
+\newblock \emph{\bibinfo{journal}{Playing Video Games: Motives, Responses, and
+  Consequences}}, pp.\bibinfo{pages}{399--413}.
+
+\bibitem[{Robins, Rountree and Rountree(2003)}]{Robins2003}
+\bibinfo{author}{Robins, A.}, \bibinfo{author}{Rountree, J.} and
+  \bibinfo{author}{Rountree, N.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Learning and teaching programming: A review and
+  discussion}.
+\newblock \emph{\bibinfo{journal}{Computer science education.}},
+  \bibinfo{volume}{13}(\bibinfo{number}{2}), pp.\bibinfo{pages}{137--172}.
+
+\bibitem[{Ryan, Rigby and Przybylski(2006)}]{Ryan2006}
+\bibinfo{author}{Ryan, R.M.}, \bibinfo{author}{Rigby, C.S.} and
+  \bibinfo{author}{Przybylski, A.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{The motivational pull of video games: A
+  self-determination theory approach}.
+\newblock \emph{\bibinfo{journal}{Motivation and Emotion}} [Online],
+  \bibinfo{volume}{30}(\bibinfo{number}{4}), pp.\bibinfo{pages}{344--360}.
+\newblock \urlprefix\url{https://doi.org/10.1007/s11031-006-9051-8}.
+
+\bibitem[{Sherry et~al.(2006)Sherry, Greenberg, Lucas and Lachlan}]{sherry2006}
+\bibinfo{author}{Sherry, J.}, \bibinfo{author}{Greenberg, B.},
+  \bibinfo{author}{Lucas, K.} and \bibinfo{author}{Lachlan, K.},
+  \bibinfo{year}{2006}.
+\newblock \emph{\bibinfo{title}{Video game uses and gratifications as
+  predictors of use and game preference}}, vol.~\bibinfo{volume}{8},
+  pp.\bibinfo{pages}{213--224}.
+
+\bibitem[{Stone(2001)}]{vrhaptics}
+\bibinfo{author}{Stone, R.J.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Haptic feedback: a brief history from telepresence to
+  virtual reality}.
+\newblock In: \bibinfo{editor}{S.~Brewster} and
+  \bibinfo{editor}{R.~Murray-Smith}, eds. \emph{\bibinfo{booktitle}{Haptic
+  human-computer interaction}}. \bibinfo{address}{Berlin, Heidelberg}:
+  \bibinfo{publisher}{Springer Berlin Heidelberg}, pp.\bibinfo{pages}{1--16}.
+
+\bibitem[{Susi, Johannesson and Backlund(2007)}]{Johann2015}
+\bibinfo{author}{Susi, T.}, \bibinfo{author}{Johannesson, M.} and
+  \bibinfo{author}{Backlund, P.}, \bibinfo{year}{2007}.
+\newblock \emph{\bibinfo{title}{Serious games : An overview}}.
+\newblock \bibinfo{institution}{University of Sk{\"o}vde, School of Humanities
+  and Informatics}, \bibinfo{publisher}{Institutionen f{\"o}r kommunikation och
+  information} (IKI Technical Reports, \bibinfo{number}{HS-IKI-TR-07-001}).
+
+\bibitem[{Tennis for Two(n.d.)his}]{historyVideoGames}
+\bibinfo{title}{Tennis for two}, n.d.
+\newblock
+  \bibinfo{howpublished}{\url{https://www.sunysb.edu/libspecial/videogames/tennis.html}}.
+\newblock \bibinfo{note}{Accessed: 2019-03-21}.
+
+\bibitem[{Wilkinson(2016)}]{Wilkinson2016}
+\bibinfo{author}{Wilkinson, P.}, \bibinfo{year}{2016}.
+\newblock \emph{\bibinfo{title}{A brief history of serious games}} [Online],
+  \bibinfo{address}{Cham}: \bibinfo{publisher}{Springer International
+  Publishing}, pp.\bibinfo{pages}{17--41}.
+\newblock \urlprefix\url{https://doi.org/10.1007/978-3-319-46152-6_2}.
+
+\bibitem[{Williams(2003)}]{Dmitri2003}
+\bibinfo{author}{Williams, D.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{The video game lightning rod}.
+\newblock \emph{\bibinfo{journal}{Information, communication and society.}},
+  \bibinfo{volume}{6}(\bibinfo{number}{4}), pp.\bibinfo{pages}{523--550}.
+
+\bibitem[{Zhang et~al.(2004)Zhang, Zhao, Zhou and Nunamaker}]{Zhang2004}
+\bibinfo{author}{Zhang, D.}, \bibinfo{author}{Zhao, J.L.},
+  \bibinfo{author}{Zhou, L.} and \bibinfo{author}{Nunamaker, Jr., J.F.},
+  \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Can e-learning replace classroom learning?}
+\newblock \emph{\bibinfo{journal}{Commun. ACM}} [Online],
+  \bibinfo{volume}{47}(\bibinfo{number}{5}), pp.\bibinfo{pages}{75--79}.
+\newblock \urlprefix\url{https://doi.org/10.1145/986213.986216}.
+
+\bibitem[{Zyda(2005)}]{Zyda2005}
+\bibinfo{author}{Zyda, M.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{From visual simulation to virtual reality to games}.
+\newblock \emph{\bibinfo{journal}{Computer}},
+  \bibinfo{volume}{38}(\bibinfo{number}{9}), pp.\bibinfo{pages}{25--32}.
+\newblock \urlprefix\url{https://doi.org/10.1109/MC.2005.297}.
 
 \end{thebibliography}

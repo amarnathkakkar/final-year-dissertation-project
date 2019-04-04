@@ -758,7 +758,7 @@ tutorialPopups = function () {
 			typewriter.typeNewMsg("You will also be <b>introduced</b> to various for loops and if statements as you progress. " +
 			"<b>Help</b> will also provide information on them.<br><br>" +
 			"<br><br>The <b>aim</b> of the game is for you to use the player functions with for loops and if statements to help your character escape.<br><br>" +			
-			"<br><br>The programming language you will be learning and writing code in is <b>JavaScript</b>.<br><br>" +			
+			"<br><br>The programming language you will be learning and writing code in is <b>JavaScript</b>. No previous knowledge is required.<br><br>" +			
 			"<br><br>Press <b>Next</b> to continue.");
 
 			typewriter.type();

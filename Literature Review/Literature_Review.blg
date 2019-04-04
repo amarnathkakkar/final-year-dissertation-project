@@ -1,54 +1,53 @@
 This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Literature_Review.aux
-The style file: unsrtnat.bst
-Illegal, another \bibstyle command---line 102 of file Literature_Review.aux
- : \bibstyle
- :          {plain}
-I'm skipping whatever remains of this command
+The style file: bathx.bst
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: litreview.bib
-Warning--empty year in vgamesResearch
-Warning--empty year in historyVideoGames
-Warning--empty year in TennisForTwo
-You've used 15 entries,
-            2481 wiz_defined-function locations,
-            669 strings with 7039 characters,
-and the built_in function-call counts, 4989 in all, are:
-= -- 458
-> -- 162
-< -- 11
-+ -- 76
-- -- 46
-* -- 337
-:= -- 769
-add.period$ -- 59
-call.type$ -- 15
-change.case$ -- 28
-chr.to.int$ -- 15
-cite$ -- 21
-duplicate$ -- 276
-empty$ -- 512
-format.name$ -- 62
-if$ -- 1087
+Warning--can't use both author and editor fields in Jean
+Warning--empty booktitle in Hertz2010
+Warning--empty journal in vgamesResearch
+Warning--missing publisher in sherry2006
+Warning--can't use both author and editor fields in Wilkinson2016
+You've used 33 entries,
+            5153 wiz_defined-function locations,
+            1151 strings with 13421 characters,
+and the built_in function-call counts, 27079 in all, are:
+= -- 2785
+> -- 799
+< -- 1
++ -- 319
+- -- 270
+* -- 2299
+:= -- 3516
+add.period$ -- 115
+call.type$ -- 33
+change.case$ -- 247
+chr.to.int$ -- 34
+cite$ -- 41
+duplicate$ -- 1921
+empty$ -- 2273
+format.name$ -- 327
+if$ -- 6020
 int.to.chr$ -- 1
-int.to.str$ -- 16
-missing$ -- 13
-newline$ -- 96
-num.names$ -- 38
-pop$ -- 140
+int.to.str$ -- 1
+missing$ -- 284
+newline$ -- 189
+num.names$ -- 122
+pop$ -- 544
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 204
 quote$ -- 0
-skip$ -- 156
+skip$ -- 1302
 stack$ -- 0
-substring$ -- 179
-swap$ -- 38
-text.length$ -- 2
+substring$ -- 1035
+swap$ -- 1320
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 99
-warning$ -- 3
-while$ -- 38
+type$ -- 410
+warning$ -- 5
+while$ -- 181
 width$ -- 0
-write$ -- 220
-(There was 1 error message)
+write$ -- 479
+(There were 5 warnings)

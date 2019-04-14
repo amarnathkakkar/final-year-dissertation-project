@@ -4,50 +4,53 @@ The top-level auxiliary file: Literature_Review.aux
 The style file: bathx.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: litreview.bib
+Warning--I didn't find a database entry for ""
+Warning--can't use both author and editor fields in Botturi2009
 Warning--can't use both author and editor fields in Jean
+Warning--empty journal in feurzeig1969
 Warning--empty booktitle in Hertz2010
 Warning--empty journal in vgamesResearch
 Warning--missing publisher in sherry2006
 Warning--can't use both author and editor fields in Wilkinson2016
-You've used 33 entries,
+You've used 52 entries,
             5153 wiz_defined-function locations,
-            1151 strings with 13421 characters,
-and the built_in function-call counts, 27079 in all, are:
-= -- 2785
-> -- 799
+            1294 strings with 17731 characters,
+and the built_in function-call counts, 42429 in all, are:
+= -- 4363
+> -- 1232
 < -- 1
-+ -- 319
-- -- 270
-* -- 2299
-:= -- 3516
-add.period$ -- 115
-call.type$ -- 33
-change.case$ -- 247
-chr.to.int$ -- 34
-cite$ -- 41
-duplicate$ -- 1921
-empty$ -- 2273
-format.name$ -- 327
-if$ -- 6020
++ -- 489
+- -- 417
+* -- 3580
+:= -- 5551
+add.period$ -- 179
+call.type$ -- 52
+change.case$ -- 379
+chr.to.int$ -- 53
+cite$ -- 61
+duplicate$ -- 3021
+empty$ -- 3549
+format.name$ -- 512
+if$ -- 9413
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 284
-newline$ -- 189
-num.names$ -- 122
-pop$ -- 544
+missing$ -- 442
+newline$ -- 291
+num.names$ -- 200
+pop$ -- 808
 preamble$ -- 1
-purify$ -- 204
+purify$ -- 318
 quote$ -- 0
-skip$ -- 1302
+skip$ -- 2051
 stack$ -- 0
-substring$ -- 1035
-swap$ -- 1320
+substring$ -- 1668
+swap$ -- 2090
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 410
-warning$ -- 5
-while$ -- 181
+type$ -- 653
+warning$ -- 7
+while$ -- 300
 width$ -- 0
-write$ -- 479
-(There were 5 warnings)
+write$ -- 745
+(There were 8 warnings)

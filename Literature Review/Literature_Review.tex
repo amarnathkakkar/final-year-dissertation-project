@@ -189,6 +189,8 @@
     
 \usepackage{url}
 
+\usepackage[official]{eurosym}
+
 
 %\title{
 %Development an Educational Game to Teach SQL Programming
@@ -335,6 +337,19 @@ To be written.
 \mainmatter
 
 \chapter{Introduction}
+
+%use Breuer2010 to define game
+%Platform: Personal Computer
+%Subject Matter: Programming fundamentals - Iterative and Conditional Control Structures
+%Learning Goals: Programming skills
+%Learning Principles: Trial and Error
+%Target Audience: First year university students
+%Interaction Mode: Single Player
+%Application Area: Academic Learning
+%Controls/Interfaces: Mouse & Keyboard
+%Common Gaming Tags: 2D Maze Adventure
+
+
 \afterpage{\blankpage}
 
 \chapter{Literature Review}
@@ -359,19 +374,7 @@ To be written.
 %\subsection{Game Design Elements}
 %\section{Existing Methods for Teaching SQL}
 %\section{Summary}
-\section{Teaching Programming Fundamentals}
 
-In 1978, ACM Computing Curricula used the terms "CS1" and "CS2" to designate the first two courses in the introductory sequence of a computer science undergraduate course. CS1 described introducing students to programming fundamentals and CS2 to teaching data abstraction/data structures. The general principles of CS1 and CS2 have continued, but through the past years, the concepts covered in these courses have changed. The most recent curriculum by ACM-IEEE was created in 2013 \citep{Hertz2010}. This curriculum notes that the "vast majority of introductory courses are programming-focused, in which students learn about concepts in computer science (e.g., abstraction, decomposition, etc.) through the explicit tasks of learning a given programming language and building software artifacts". The curriculum considers 'conditional and iterative control structures' as fundamental programming concepts \citep{acm}. Thus these concepts are likely be taught as a part of CS1 or introductory programming units. %CS course guidelines
-
-%Computer Science departments in the UK and USA report declining enrollment and high attrition rates on their degree programs. Student attrition is exacerbated during and between the first and second years of these programs. These high attrition rates are associated with considerable failure rates in introductory programming courses. The changes to the computing industry associated with, inter alia, new technologies, and the problems associated with learning to program, have led to Higher Education Institutions facing the pressing need to rethink their CS curricula, with special attention given to redesigning the CS1 course.
-
-\citeauthor{Koulouri2014} bring together literature and summarise, that, the complexity of teaching introductory programming, which includes the topics; iteration and conditional statements, is widely acknowledged among educators. Novice programmers have difficulty in tracing (a method of mentally simulating the execution of the code before compiling), reading and understanding pieces of code and fail to grasp basic programming principles and routines. The overhead of learning the syntax and semantics of a language at the same time, and difficulties in combining new and previous knowledge and developing their general problem-solving skills, all add to the complexity of learning how to program \citep{Koulouri2014}. Therefore careful consideration will be taken to reduce these problems, with efforts to; introducing programming concepts at a reasonable pace, and making the game fun and enjoyable to keep the user motivated. %Problems with teaching introductory programming to novices.
-
-Introductory programming courses at University commonly entail, a structured course based on lectures and practical laboratory work, and a curriculum focused largely on programming knowledge - particularly relating to the features of the programming language being taught and how to use them. \citeauthor{Robins2003} suggest that this approach is popular, due to the important role of such programming knowledge in programming and the sheer volume and detail of language related features that can be covered \citep{Robins2003}.
-
-Another method for learning programming fundamentals, which has become increasingly popular, are online resources. These resources include; tutorial websites such as Codeacademy and Khan Academy, which have accumulated millions of users; block-based programming environments such as Scratch and Alice, which provide creative visual environments, and educational games \citep{Lee2015}. 
-
-In comparison, traditional face-to-face classroom learning, centers on instructors who have control over class content and the learning process, whereas, online learning, offers a learner-centered, self-paced learning environment. Online resources are also time and location flexible and provide unlimited access to learners \citep{Zhang2004}. On the other hand, whilst there are many benefits to online learning, there are doubts over its effectiveness \citep{Zhang2004}. Online learning should not replace traditional forms of learning \citep{Zhang2004, Gunasekaran2002, agal2010}, however using online learning to complement the learning process in academia, could improve the quality of the learners education \citep{Concannon2005, Zhang2004}.
 
 \section{Video Games}
 
@@ -383,7 +386,9 @@ In comparison, traditional face-to-face classroom learning, centers on instructo
 
 The video games industry has grown very rapidly in recent years, and is expected to continue to grow. The current value of the market is predicted as \$150 billion USD and is expected to reach \$180 billion by 2022 \citep{vgamesResearch}. In 2006, video games were considered as one of the most popular forms of entertainment in the United States \citep{sherry2006, ritterfeld2006}. Now video games can be considered a popular form of entertainment globally.
 
-A video game can be defined as "a mental contest, played with a computer according to certain rules for amusement, recreation, or winning a stake" \citep{Zyda2005}.
+%At one time, particu- larly in the 1970s, the term video games meant ?games played in a video arcade.?
+
+\citeauthor{Botturi2009} claimed that video games in the 1970s meant "games that were playeable in amusement arcades" \citep{Botturi2009}. Since then, a video game can be defined as "a mental contest, played with a computer according to certain rules for amusement, recreation, or winning a stake" \citep{Zyda2005}.
 
 %Military applications have dominated the market, but civil applications are expected to grow [8][9]. UAV have already proved to be successful in field operations however, further research can enable UAV?s to be used in intelligence gathering, such as stealth and combat operations [34].
 
@@ -391,9 +396,9 @@ A video game can be defined as "a mental contest, played with a computer accordi
 
 %The interest in UAV?s has been observed since 1916, when the first modern unmanned aircraft was invented, Hewitt?s UAV. This was a result of Sperry?s work, on the flight stabilisation using gyroscope devices, which provided flight stabilisation [11]. This attracted the interest of the US Navy however, due to technical difficulties the research and work in automatic planes was lost. In 1933 the Royal Navy Queen bee?s target drone was operated for the first time and the potential of UAV?s was understood, but it still required perfection of remote operations. Reginald Denny then developed the successful target drone RP-2, during WWII using radio control [12].
 
-The earliest documented predecessor to video games was observed in 1948, when the "Cathode-Ray Tube Amusement Device" was patented. The amusement device, required players to overlay pictures of targets such as airplanes in front of the screen \citep{TennisForTwo}.
+The earliest documented predecessor to video games was observed in 1948, when the "Cathode-Ray Tube Amusement Device" was patented. The amusement device, required players to overlay pictures of targets such as airplanes in front of the screen \citep{thefirstvideogame}.
 
-10 years later, physicist William A. Higinbotham was credited for creating the first video game; attempting to display his research at an exhibition, he anticipated that his display would not generate any interest, so he conceptualised and created 'Tennis for Two' \citep{historyVideoGames}. Tennis for Two was created using an analog computer with an oscilloscope for a screen. It was the first game to display motion and allow multiple players to play together \citep{TennisForTwo}. 
+10 years later, physicist William A. Higinbotham was credited for creating the first video game; attempting to display his research at an exhibition, he anticipated that his display would not generate any interest, so he conceptualised and created 'Tennis for Two' \citep{TennisForTwo}. Tennis for Two was created using an analog computer with an oscilloscope for a screen. It was the first game to display motion and allow multiple players to play together \citep{thefirstvideogame}. 
 
 %Computer games are defined as games that are played on Personal Computers, and video games as games played using a television and a games console \cite{Cummings07}.
 
@@ -408,15 +413,13 @@ In the late 1980s, video games became a mainstream media industry \citep{Dmitri2
 
 \subsection{Impacts}
 
-Initially the majority of research on the effects of playing games focused on the negative impacts; the potential harm related to violence, addiction and depression. But more recently studies have looked into their potential benefits \citep{Granic2014, Boyle2011, Ryan2006}.
 
-Games provide a learning environment. Players first learn the rules of the game and the controls, then use this newly acquired knowledge to complete objectives and/or pass levels. In most games, the objectives get harder to reach as you progress, in turn testing the players knowledge and skill, and requiring increasingly complex solutions. Vygotsky claims that in these situations, progress is made when learners are presented with tasks which are just beyond their current level of ability \cite{}.
+Initially, the majority of research on the effects of playing video games focused on the negative impacts, such as the potential aggression, addiction and depression from 'gaming'. But recently, researchers have argued that a more balanced perspective is needed \citep{Granic2014}. Studies have now also argued against the potential correlation between aggression and violent video games \citep{Ferguson2007}. Playing video games has also been linked to an increase in  perceptual, cognitive, behavioural, affective and motivational abilities \citep{Connolly2012}.
 
-The research on the impacts of games is vast, so for the purpose of this dissertation, we will look at the benefits and drawbacks of educational games, which will be covered later on.
 
 \subsection{Uses}
 
-Video games now are used for a wide variety reasons, including in the following industries; military, government, education, corporate and healthcare, and also entertainment. The former set of industries for which games are created, that are not simply for entertainment, fall under the term 'Serious Games' \citep{Johann2015}.
+Video games are now used for a wide variety reasons. They are becoming ever more important in the global education and training market. Aside from entertainment, they are being used in: military, government, education, corporate and healthcare \citep{Johann2015}.
 
 %Many attempts to pinpoint the creation of the very first video game have been made. However, the creation of the first modern video game is commonly dated to 1958. first video game ever invented was developed by a physicist William Higinbotham, in 1958. The game was called 'Tennis for Two'. The design and concept was conjured up from an instructional book the inventor was reading at the time \cite{TennisForTwo}.
 
@@ -432,19 +435,17 @@ Video games now are used for a wide variety reasons, including in the following 
 
 \section{Educational Games}
 
-Educational games form a subset of serious games \citep{Michael2005, Zyda2005}. The market value of serious games industry in 2010, was predicted as 1.5 billion EUR. The study of serious games become an established academic field, evidenced by the founding of The Serious Games Institute at Coventry University in 2007 \citep{Wilkinson2016}.
+The term 'Serious Game' can be used to describe an educational game; that is a game that has an educational purpose and is not intended to be played primarily for entertainment \citep[see][]{abt1970}. 
+
+Serious games became an established academic field of study in 2007, by the founding of The Serious Games Institute \citep{Wilkinson2016}. The market value of the serious games industry in 2016 was predicted at \$1.5 billion USD, and is predicted to reach \$9 billion in 2023 \citep{alliedmarketresearch}.
 
 \subsection{Definition}
 
-Research into the literature on serious games available online, reveals that there are many definitions for the term 'Serious Game' \citep{Johann2015}. 
+There is currently no singleton definition for term 'Serious Game'. \citeauthor{Johann2015} argue that, groups and individuals define the term depending on their perspectives and interests, and that there are a wide variety of groups and individuals focusing on different issues \citep{Johann2015}. The first recorded definition of the term was set out in 1970 by \citeauthor{abt1970} \citep{Wilkinson2016}, who defined it as follows: "Games that have an explicit and carefully thought-out educational purpose, and are not intended to be played primarily for amusement. This does not mean that serious games are not, or should not be, entertaining." \citep{abt1970}. In \citeyear{Michael2005}, \citeauthor{Michael2005} re-interpret this definition to "Games that do not have entertainment, enjoyment or fun as their primary objective" \citep{Michael2005}. Thus suggesting that serious games are not limited to only educational purposes. The commonly agreed upon definition closely matches the definition by \citeauthor{Michael2005} \citep[see][]{Johann2015}.
 
-We start with an early definition by \citeauthor{abt1970}, who is often credited with coining the term \citep{Wilkinson2016}, in \citeyear{abt1970}, as follows: "Games that have an explicit and carefully thought-out educational purpose, and are not intended to be played primarily for amusement", but argues that this does not mean that serious games are not, or should not, be entertaining \citep{abt1970}. In \citeyear{Michael2005}, \citeauthor{Michael2005} re-interpret this definition to "Games that do not have entertainment, enjoyment or fun as their primary objective" \citep{Michael2005}. This makes the definition a lot broader compared to \citeauthor{abt1970}s.
+In the same year \citeauthor{Michael2005} defined the term, \citeauthor{Zyda2005} provided his own. There is however a contradiction between these two definitions \citep{Johann2015}. Whilst \citeauthor{Michael2005} say that serious games should not have entertainment or fun as their primary objective, \citeauthor{Zyda2005} says that the entertainment component of the game should come first, and that the story of the game is more important than the pedagogy \citep{Zyda2005}. His definition is as follows: "a mental contest, played with a computer in accordance with specific rules, that uses entertainment to further government or corporate training, education, health, public policy, and strategic communication objectives" \citep{Zyda2005}. However this definition also suggests that serious games can only be digital \citep{Jean}. 
 
-On the other hand in \citeyear{Zyda2005}, a thorough definition provided by \citeauthor{Zyda2005}, "a mental contest, played with a computer in accordance with specific rules, that uses entertainment to further government or corporate training, education, health, public policy, and strategic communication objectives". He argues that the story is more important than the pedagogy and that the entertainment component should come first \citep{Zyda2005}. Thus there is contradiction between the definitions by \citeauthor{Michael2005} and by \citeauthor{Zyda2005}. The latter definition also reduces the scope of serious games to just digital games \citep{Jean}. Although, most agree that serious games are (digital) games used for purposes other than mere entertainment \citep{Johann2015}.
-
-%\citeauthor{Johann2015} note that there can be difficulties defining the term "serious game" as its constituent terms; "serious" and "game" seem to be mutually exclusive. "Serious" is intended to reflect the purpose of the game and has no bearing on the content of the game itself. Whereas there are difficulties to defining the term "game" \cite{Johann2015}.
-
-However, for the purpose of this dissertation we will use the definition provided by \citeauthor{abt1970}, and work entertainment into the primary purpose of the game - to teach.
+For the purpose of this dissertation, I will use the definition provided by \citeauthor{abt1970} and work entertainment around the primary purpose of the game - to teach.
 
 %"Educational game" is still a newly emerging thing in our country, and there is no explicit definition nowadays. Narrowly speaking, educational game refers to the integration of education and game, and the education effect naturally generated from the process of playing games, in other words, it means "a type of computer game software which generates education effect through interest" \cite{song2008}
 
@@ -475,54 +476,151 @@ However, for the purpose of this dissertation we will use the definition provide
 
 \subsection{History}
 
-Educational games can be digital or non-digital \citep{Jean}, and have arguably existed since the 7th century. Among the oldest war games is the board game 'Chaturgana', argued by historians to be the precursor to chess. The aim of the game was to allow officers to become better planners for battles. More recently, created at the start of the 20th century was 'Landlord's Game', a precusor to monopoly. It was designed to illustrate the dangers of capitalist approaches to land taxes and property renting \citep{Wilkinson2016}. Thus games that teach or further knowledge on a specific topic, are not new.
+Educational games have arguably existed since the 7th century. Among the oldest is the board game 'Chaturgana', which is argued by historians to be the precursor to chess \citep{Wilkinson2016}. The aim of the game was to teach officers to become better planners for battles \citep{Wilkinson2016}. Another board game created more recently - in the 20th century was 'Landlord's Game'; a precursor to monopoly. It was designed to illustrate the dangers of capitalist approaches to land taxes and property renting \citep{Wilkinson2016}. So we can see that, games designed to educate, have existed for a long time.
 
-Digital educational games began being developed in the early 1970s. One of the most famous ancestors, 'Oregan's Trail' created in 1971, was created as a text-based game, and is still popular today \citep{Jean}. 'BASIC Programming' another game, developed in 1979, had the aim of teaching users basic programming concepts \citep{Warren}.
 
+%The interest in UAV?s has been observed since 1916, when the first modern unmanned aircraft was invented, Hewitt?s UAV. This was a result of Sperry?s work, on the flight stabilisation using gyroscope devices, which provided flight stabilisation [11]. This attracted the interest of the US Navy however, due to technical difficulties the research and work in automatic planes was lost. In 1933 the Royal Navy Queen bee?s target drone was operated for the first time and the potential of UAV?s was understood, but it still required perfection of remote operations. Reginald Denny then developed the successful target drone RP-2, during WWII using radio control [12].
+
+%During the Cold war, the development in reconnaissance missions increased and the first recon- naissance UAV was developed, called the MQM-57 Falconer [13]. Not long after, the Ryan Model 147 was launched, which was the first unmanned aircraft which is known as an UAV today. In conclusion, the importance and usefulness of UAV was demonstrated over the years and is now being further researched, focusing on longer endurance UAV?s and MAV?s [12].
+
+%Interest in flying wing designs for both UAV?s and larger scale civil applications, are now being revisited.
+
+The interest in digital educational games, has been observed since 1967, when the first educational program was developed, 'Logo Programming' \citep{hayes2008} . Logo programming was an environment that allowed players to utilise the programming language LOGO in order to learn mathematics \citep{feurzeig1969}. Logo became popular among schools in the US \citep{lehrer1986}. It also became a key part in educational games and educational strategies research \citep{hayes2008}. 
+
+Academic interest that games that could be used could be used for purposes other than mere entertainment, was first noted in \citeyear{abt1970} by \citeauthor{abt1970}, in his book \textit{Serious Games} \citep{Breuer2010}. The rise in digital games around this time created an opportunity for developing serious games \citep{Wilkinson2016}. 
+
+However, serious games did not gain much traction until 2002, when a game developed by the US army, became hugely popular. 'America's Army' was developed as a training and recruitment game for the military. It is now considered as the forefront of modern serious games \citep{Zyda2005, Wilkinson2016}. In conclusion the potential of using games as educational tools has been demonstrated for a long time, and is now being further researched and developed, focusing on training and education in a number of different industries \citep{Wilkinson2016}.
+
+%In 1971, 'The Oregon Trail' was released. The Oregon Trail was created by history teachers, to cover American history in 1848 \citep{Jean}. This game became hugely popular, and now has several sequels and spinoffs. The rise in arcade games and home consoles around this time, created an opportunity for developing serious games \citep{Wilkinson2016}.
+
+ 
 %Learning in games appears indisputable considering recent studies, but when it comes to the question of what and how players learn through playing games, controversial answers can be found \citep{Mitgutsch}.
 
-Around this same time, the power and potential of computer games for education and training was beginning to be uncovered \citep{neil2005}. Computer games were hypothesised to provide multiple benefits, such as: 
+%Around this same time, the power and potential of computer games for education and training was beginning to be uncovered \citep{neil2005}. Computer games were hypothesised to provide multiple benefits, such as: 
 
-\begin{itemize}
-\item Complex and diverse approaches to learning processes and outcomes
-\item Interactivity
-\item Ability to address cognitive as well as affective learning issues
-\item Motivation for learning
-\end{itemize}
+%\begin{itemize}
+%\item Complex and diverse approaches to learning processes and outcomes
+%\item Interactivity
+%\item Ability to address cognitive as well as affective learning issues
+%\item Motivation for learning
+%\end{itemize}
 
 %America's Army
 %\subsection{Benefits}
 
 
-Computer games are defined as games that are played on Personal Computers, and video games as games played using a television and a games console \citep{Cummings07}.
+%Computer games are defined as games that are played on Personal Computers, and video games as games played using a television and a games console \citep{Cummings07}.
 
-In 1958, Tennis for Two was created using an analog computer and oscilloscope for a screen. Four years later, Spacewar was developed using a digital minicomputer and a cathode-ray tube as the display, making it one of the first computer games. In 1972, Computer space and Pong were among the first video games. They were played on televisions placed in upright cabinets, and this paved the look and feel for future arcade games \citep{TennisForTwo, Lowood2009}.
+%In 1958, Tennis for Two was created using an analog computer and oscilloscope for a screen. Four years later, Spacewar was developed using a digital minicomputer and a cathode-ray tube as the display, making it one of the first computer games. In 1972, Computer space and Pong were among the first video games. They were played on televisions placed in upright cabinets, and this paved the look and feel for future arcade games \citep{TennisForTwo, Lowood2009}.
 
-Computer games separated from video games in the early 1990s. Since then, 3D home consoles like the Sony Playstation and the Sega Saturn have been introduced. Some innovations to consoles include; touchscreen and motion control \citep{Cummings07}. Recently, we have seen the development and the use of Virtual Reality consoles for gaming, entertainment and learning \citep{vrhaptics}.
+%Computer games separated from video games in the early 1990s. Since then, 3D home consoles like the Sony Playstation and the Sega Saturn have been introduced. Some innovations to consoles include; touchscreen and motion control \citep{Cummings07}. Recently, we have seen the development and the use of Virtual Reality consoles for gaming, entertainment and learning \citep{vrhaptics}.
 
 \subsection{Benefits}
 
-There are two sides to discussing the benefits of educational games. On one side, researchers claim that the benefits of video games can be translated to educational games to provide better learning, provided that the game design is good \citep{Granic2014}. On the other side, researchers argue that educational games do not facilitate better learning when compared to other instructional methods \citep{clark2007}.
+Serious games have become an interesting area for multidisciplinary academic research \citep{Breuer2010}. There are interests from fields such as psychology, computer science, pedagogy, sociology and cultural studies \citep{Breuer2010}. Many studies have looked into and discussed the benefits of serious games in educational contexts, and I will discuss some of these below.
 
-Analyses show that games promote learning. Games can support the development of a number of different skills; analytical and spatial skills, strategic skills and insight, learning and recollection capabilities, psychomotor skills, visual selective attention.
+\subsubsection{E-learning}
 
-%\subsubsection{Interactivity}
+E-learning can be defined as an approach to teaching and learning, based on the use of electronic media and devices \citep{sangra2012}. Thus, digital educational games can be seen as a type of e-learning.
 
-ELSPA, 2006; Gee, 2005, 2007; Klopfer et al., 2009; Robertson, 2009; Shaffer, 2007
+Educational games have inherent beneficial properties. For instance, they are able to provide information on demand and just in time, and in the context of actual use and people's purposes and goals, something that does not often happen in schools \citep{Gee2003}.
 
-To be written.
+Other properties of e-learning include: ease of accessibility; can be used in absence of teachers or instructors; provide opportunities for relations between learners, helping eliminate the potential of hindering participation; low cost per person served; allows self-pacing - allowing student to study at their own pace; high level of interactivity; ability to use attractive graphics, and is an engaging and entertaining activity \citep{arkorful2015, Girard2013}.
+
+In a study carried out on what university students thought about e-learning, students reported that they expected e-learning to be an integral part of the learning process within higher education \citep{Connolly2012}. Thus the use of an educational game in higher education may not be that alien to students.
+
+%Games are able to provide information on demand and just in time, not out of the contexts of actual use or apart from people's purposes and goals, something that happens too often in schools. People are quite poor at understanding and remembering information they have received out of context or too long before they can make use of it \cite{Gee2003}. 
+
+%Games allow players to be producers and not just consumers. Along with the designer, the player's actions co-create the game world \cite{Gee2003}.
+
+\subsubsection{Learning Through Games}
+
+
+Games can be a great learning environment \citep[see][]{prensky2003, Gee2003}. Despite the vast research on the negative impacts of gaming, playing video games have been argued to foster a host of different skills, such as, visual attention, spatial skills, problem solving skills and creativity \citep{Granic2014}. 
+
+Conventionally when starting out on a new game, players first need to learn the rules and the controls of the game, and then use this newly acquired knowledge to complete objectives or levels. As players progress through the game the objectives require increasingly complex solutions, which in turn tests the player's knowledge and skill. \citeauthor{vygotsky1978} coined the term \textit{the zone of proximal development}, where learning occurs when people are presented with tasks which are just beyond their current level of ability but may require some help to complete \citep{vygotsky1978}.
+
+Today's leaners have grown up immersed in digital technology \citep{Prensky2001}; \citeauthor{Prensky2001} calls this generation of people "Digitial Natives". They have spent long periods of time playing video games \citep{prensky2003}. Today, 2.5 billion people actively play video games worldwide \citep{Statista}, and of these, 57\% are aged between 10 and 35 \citep{Statistanewzoo}. Therefore it seems natural to assume that this generation will be more receptive to computer-based learning \citep{Girard2013}.
+
+According to \citet{Prensky2001}, playing games is a fun and pleasurable activity, and research has shown that fun and enjoyment are an important part of the learning process as learners can be more motivated and willing to learn \citep{Bisson1996, Cordova1996}. Games which also provide an optimal balance of challenge and frustration, leave players in a motivating state to continue to play \citep{Gee2003}.
+
+%This motivational ?sweet spot? balances optimal levels of challenge and frustration with sufficient experiences of success and accomplishment
+
+Evidence of learning through educational games has been demonstrated \citep{Connolly2012, Pieter2013, Girard2013}. However, the effectiveness of educational games is undetermined \citep{Connolly2012, Girard2013}. There are also different viewpoints when it comes to determining their effectiveness. Two such meta-analyses; \citet{Pieter2013} and \citet{Girard2013}, looked at the effectiveness of learning through games, and arrived to different conclusions. These studies are compared in Table \ref{tab:effectivess learning comparison}.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of meta-analyses on the effectiveness of learning through games}
+\label{tab:effectivess learning comparison}
+\begin{tabular}{p{3.4cm} | p{5cm} | p{5cm}}
+       & \textbf{\citet{Pieter2013}}                  & \textbf{\citet{Girard2013}}               \\ \hline
+\textbf{Types of Games}  & Serious games                & Serious games \& video games               
+\\ \hline
+\textbf{Measuring}   & Learning, retention and motivation                   & Learning and engagement              
+\\ \hline
+\textbf{Learning Outcomes}	& Knowledge or skill acquisition 	& Knowledge or skill acquisition
+\\ \hline
+\textbf{Instructional Domain}	& Biology, maths, language or engineering	& Various (including: academic knowledge, cognitive skills, professional knowledge, cancer therapies)
+\\ \hline
+\textbf{Studies Published Between}		& 1990 - 2012		& 2007 - 2011
+\\ \hline
+\textbf{Experimental Design of Studies}		& Posttest or pretest-posttest		& Atleast pretest-posttest
+\\ \hline
+\textbf{Studies Reviewed} & 39                         & 9		                 
+\\ \hline
+\textbf{Age Range of Studied Population} & Wide range                         & 9 - 47		                 
+\\ \hline
+\textbf{Results support effective learning through games} & Yes                         & Undertermined
+\end{tabular}
+\end{table}
+
+
+\citeauthor{Pieter2013} found that serious games were more effective in terms of learning and retention when compared to conventional teaching methods, but not more motivating. Whereas \citeauthor{Girard2013} found that only a few of the games resulted in improved learning, with the others having no difference when compared to traditional methods of teaching. A point to note is that in \citet{Pieter2013}, serious games were compared to lectures, reading, drill and practice, or hypertext learning environments, whilst in \citet{Girard2013}, they were compared to face-to-face lessons, pencil-and-paper studying or no studying at all. The former is a more modern way of teaching, whereas the latter is very limited.
+
+\citeauthor{Pieter2013} evaluated a broad spectrum of studies, whereas \citeauthor{Girard2013} only evaluated randomised control trial studies. \citeauthor{Pieter2013} argued that if they only considered the studies with randomised samples with a pretest-posttest design, similar to \citeauthor{Girard2013} study, the positive effects in favour of serious games may disappear. 
+
+In conclusion, there is a need for more empirical research to determine the effectiveness of serious games, and this is starting to be addressed \citep{Connolly2012}. Though, a number of studies agree that serious games, support learning, and used alongside other instructional methods, can make learning more effective and can improve the learning experience \citep{Pieter2013, Concannon2005, Granic2014}
+
+
+%\citeauthor{Girard2013} evaluated 6 serious games, and of these 6, \citeauthor{Pieter2013} evaluated 3 of them.
+
+
+%\citeauthor{Pieter2013} compared serious games to more modern instructional methods, such as lectures, reading, drill and practice, or hypertext learning environments, whilst \citeauthor{Girard2013} compared them to more traditional methods, such as face-to-face lessons or pencil-and-paper studying.
+
+%\citeauthor{Pieter2013} found that serious games were more effective in terms of learning and retention, but they were not more motivating than conventional instruction methods. This study also measured the effectiveness of using serious games in conjunction with other instructional methods, and this was found to be the most effective means of learning \citep{Pieter2013}.
+
+%Whilst \citeauthor{Girard2013} found that only a few of the games resulted in improved learning, with the others having no difference when compared to traditional methods of teaching. The study concluded that it was impossible to draw any conclusions on the effectiveness of serious games.
+
+
+
+%\citep[see][]{Pieter2013, Girard2013}
+
+
+%However, despite  in a meta-analysis on the effectiveness of serious despite the potential of using games in educational environments, studies do not  \citep{Mitgutsch, Connolly2012}.
+
+%In a meta-analysis on the effectiveness of learning and engagement of games for learning, \citeauthor{Girard2013} covered six serious games and five video games. Finding that 2 out of the 6 supported having a positive impact on learning compared to other types of training or no training, 1 showed no difference and 3 had no beneficial effect on learning \citep{Girard2013}. This study however looked at a small number of serious games. They also could not draw a conclusion about the effectiveness of serious games, arguing that there is a wide variety of types and uses for serious games.
+
+%Analyses show that games promote learning. Games can support the development of a number of different skills; analytical and spatial skills, strategic skills and insight, learning and recollection capabilities, psychomotor skills, visual selective attention.
+
+
+%ELSPA, 2006; Gee, 2005, 2007; Klopfer et al., 2009; Robertson, 2009; Shaffer, 2007
+
+%Kirkpatrick?s four levels for evaluating training
+
+%Baker and Mayer?s CRESST model of learning
 
 %\subsubsection{Engagement}
 
-To be written.
+%Prensky, 2001
 
-%\subsubsection{Learning}
+%Good games operate at the outer and growing edge of a player's competence, remaining challenging, but do-able, which is a very motivating state for human beings \citep{Gee2003}.
 
-Kirkpatrick?s four levels for evaluating training
+%In a meta-analysis conducted by \citeauthor{Connolly2012} on the positive impacts of games, they found that students reported enjoying game-based approaches to learning and that they find them motivating \citep{Connolly2012}.
 
-Baker and Mayer?s CRESST model of learning
+%\subsubsection{Feedback}
 
-To be written.
+%\citeauthor{Gee2008} argued that people learn best from their experiences when they get immediate feedback during those experiences so that they can recognise and assess their errors and see where their expectations have failed \citep{Gee2008}. As an example, Cameron and Dwyer (2005) (as cited in \cite{Connolly2012}) found that including feedback into educational game about the accuracy of users answers, lead to improved performance in terms of knowledge acquisition.
+
 
 \subsection{Examples}
 
@@ -532,7 +630,49 @@ Educational games for teaching computer programming (6)
 
 \subsubsection{Gaming Platforms}
 
+Between 1997 and 2007, roughly 90\% of serious games were developed for personal computers, the other 10\% were made for a number of different home gaming consoles \citep{ratan2009}.
+
+
+
+
+
+
+
+
+\section{Teaching Programming Fundamentals}
+
+In 1978, ACM Computing Curricula used the terms "CS1" and "CS2" to designate the first two courses in the introductory sequence of a computer science undergraduate course. CS1 described introducing students to programming fundamentals and CS2 to teaching data abstraction/data structures. The general principles of CS1 and CS2 have continued, but through the past years, the concepts covered in these courses have changed. The most recent curriculum by ACM-IEEE was created in 2013 \citep{Hertz2010}. This curriculum notes that the "vast majority of introductory courses are programming-focused, in which students learn about concepts in computer science (e.g., abstraction, decomposition, etc.) through the explicit tasks of learning a given programming language and building software artifacts". The curriculum considers 'conditional and iterative control structures' as fundamental programming concepts \citep{acm}. Thus these concepts are likely be taught as a part of CS1 or introductory programming units. %CS course guidelines
+
+%Computer Science departments in the UK and USA report declining enrollment and high attrition rates on their degree programs. Student attrition is exacerbated during and between the first and second years of these programs. These high attrition rates are associated with considerable failure rates in introductory programming courses. The changes to the computing industry associated with, inter alia, new technologies, and the problems associated with learning to program, have led to Higher Education Institutions facing the pressing need to rethink their CS curricula, with special attention given to redesigning the CS1 course.
+
+Conventional introductory programming courses at University are structured courses based on lectures and practical laboratory work, and a curriculum focused largely on programming knowledge - particularly relating to the features of the programming language being taught and how to use them \citep{Robins2003}. \citeauthor{Robins2003} suggest that this approach is popular, due to the important role of such programming knowledge in programming and the sheer volume and detail of language related features that can be covered \citep{Robins2003}.
+
+Another method for learning programming fundamentals which are becoming increasingly popular, are online resources. These resources include; tutorial websites such as Codeacademy and Khan Academy, which have accumulated millions of users; block-based programming environments such as Scratch and Alice, which provide creative visual environments, and educational games \citep{Lee2015}. 
+
+In comparison, traditional methods such as face-to-face or pencil-and-paper teaching \citep{Girard2013}, centers on instructors who have control over class content and the learning process, whereas, online learning, offers a learner-centered, self-paced learning environment. Online resources are also time and location flexible and provide unlimited access to learners \citep{Zhang2004}. On the other hand, whilst there are many benefits to online learning, there are doubts over its effectiveness \citep{Zhang2004}. Some argue that online learning should not replace traditional forms of learning \citep{Zhang2004, Gunasekaran2002, agal2010}, instead it should be used to complement the learning process \citep{Zhang2004} and potentially improving the quality of the learners education \citep{Concannon2005}. Whilst other researchers highlight the great advantages of games over traditional methods \citep{Girard2013}.
+
+%A meta-analysis conducted in 1992, looked at the empirical research on the instructional effectiveness of games to conventional classroom instruction.
+
+In conclusion, there are advantages and disadvantages to both methods of teaching. However, there is a lot of support that games are effective learning tools \citep{Girard2013}.
+
+\subsection{Issues}
+
+The complexity of teaching introductory programming, which includes; iteration and conditional statements, is widely acknowledged among educators \citep{Koulouri2014}. Novice programmers have difficulty in tracing (a method of mentally simulating the execution of the code before compiling), reading and understanding pieces of code and fail to grasp basic programming principles and routines. The overhead of learning the syntax and semantics of a language at the same time, and difficulties in combining new and previous knowledge and developing their general problem-solving skills, all add to the complexity of learning how to program \citep{Koulouri2014}. Therefore careful consideration will be taken to reduce these problems, with efforts to; introducing programming concepts at a reasonable pace, and making the game fun and enjoyable to keep the user motivated. %Problems with teaching introductory programming to novices.
+
+Researchers have proposed guidelines as to what makes good introductory programming units. For example, \citeauthor{Stevenson2006} analysed assignments from textbooks and historical usage to look for students problems, and proposed a criteria as to what would make good programming assignments: (1) be based on real world problems, (2) allow students to generate realistic solution, (3) allow students to focus on current topic(s) within context of a larger problem, (4) be challenging, (5) be interesting, (6) make use of one or more APIs, (7) have multiple levels of challenge and achievement and finally (8) allow for some creativity and innovation \citep{Stevenson2006}.
+
+
+
+
+
+
 \section{Educational Game Design}
+
+When researching the effects and effectiveness of digital games for learning, the importance of enjoyment for/in education needs to be taken into account. This means that when the effectiveness of a serious game is assessed, the question about its entertainment value should always be addressed \citep{Breuer2010}.
+
+Despite the similarities between games and learning, it is not sufficient to just assume that all forms of games are equally suitable for learning and that simply presenting material in a game-like setting will increase the quantity and quality of learning \cite{Breuer2010}.
+
+Given this background, the ideal educational game combines entertainment and learning in a way that the players/learners do not experience the learning part as something external to the game. This idea of ?stealth learning? should inform any approach to designing, using and evaluating (digital) games for prescribed educational aims \cite{Breuer2010}.
 
 The design and production of video games involves aspects of cognitive psychology, computer science, environmental design, and storytelling, to name a few \citep{Koster2004}.
 
@@ -548,7 +688,23 @@ Designing educational games requires a focus that is different from general game
 \label{fig:Input_process_outcome_game_model}
 \end{figure}
 
+
+Pleasure/fun and challenge have been found as some of the key reasons for people playing entertainment games \citep{Connolly2012}.
+
+
+\subsection{History}
+
+In 1980, Thomas W. Malone had begun researching the natural motivational properties of video games. With this work Malone created a set of heuristics based on motivational principles of games to create fun instructional game designs \citep{Malone1987}.  In 1996, Lloyd Rieber Z
+
+%Rieber, and others [100] argued that his fantasy element leads to engagement with the learning content. Here then, in the work of Rieber we have a logical extension of the approach of Malone ? that is the segmenting of ?games? into a set of heuristics that can be used to form Serious Games design.
+
+%This work to unpack, stratify demarcate, or otherwise categorize games into a set of heuristics or design principles to be applied to educational games was a significant focus for researchers at the time [101]. Moreover, when reviewing the modern trends in Serious Games research, it is apparent that this trend has continued ? though the models are now more formalised [38, 102?104]
+
 \subsection{Frameworks}
+
+\subsubsection{Motivational}
+
+\subsubsection{Learning}
 
 To be written.
 
@@ -560,13 +716,22 @@ Game, motivation, and effective learning: An integrated model for educational ga
 
 Serious Games: A New Paradigm for Education?
 
-\subsubsection{Game Genre}
+\subsection{Game Genre}
 
-To be written.
+\citeauthor{Connolly2012} finds that simulation games are one of the most common game genres in serious games, possibly because their use in education is already established \citep{Connolly2012}. Simulation games have the ability to represent real-life situations \citep{Braghirolli2016}. 
+
+https://www.researchgate.net/publication/272166351_A_taxonomy_of_educational_games
+
+To encourage the use of games in learning beyond simulations and puzzles, it is essential to develop a better understanding of the tasks, activities, skills and operations that different kinds of game can offer and examine how these might match desired learning outcomes \citep{Connolly2012}.
+
 
 \subsection{Game Elements}
 
 (CHANGE IT UP) \citeauthor{Barnes2007} ran a project that made University Students create games that would teach basic programming. They carried out evaluations to test participant learning from the game, and made some interesting observations as follows: Clear instructions and game goals must be provided and accessible throughout the game, Learning goals must be clearly tied to in-game feedback that motivates the player (through, e.g. experience points, health), and penalizes guessing, Humor can be a motivation for in-game interaction \citep{Barnes2007}.
+
+rewards remain controversial in education due to their possible negative side effects on individuals motivation, Despite the controversy concerning the use of external rewards in education (Cameron, Pierce, Banko, \& Gear, 2005). badges in the context of a technology-based innovation in an elementary school can enhance learning without undermining motivation \citep{Filsecker2014}.
+ 
+ 
 
 
 \afterpage{\blankpage}
@@ -590,6 +755,9 @@ To be written.
 \afterpage{\blankpage}
 
 \chapter{Future Work}
+
+Here, it is important that not only the final outcomes are assessed, but also that the learning and training process itself is monitored continuously without impairing the playing/learning experiences (e.g. via psycho physiological measurements or automated logs/recordings of player behaviour). This is especially beneficial as it can inform new ways to make learning games more adaptive so that they can always offer help or additional information when the players need it (e.g. when they get stuck at a certain point of a game) \citep{Breuer2010}.
+
 \afterpage{\blankpage}
 
 

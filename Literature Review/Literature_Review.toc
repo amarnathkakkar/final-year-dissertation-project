@@ -1,31 +1,37 @@
 \setstretch {1}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}Literature Review}{2}
-\contentsline {section}{\numberline {2.1}Teaching Programming Fundamentals}{2}
-\contentsline {section}{\numberline {2.2}Video Games}{3}
-\contentsline {subsection}{\numberline {2.2.1}History}{3}
-\contentsline {subsection}{\numberline {2.2.2}Impacts}{4}
-\contentsline {subsection}{\numberline {2.2.3}Uses}{4}
-\contentsline {section}{\numberline {2.3}Educational Games}{5}
-\contentsline {subsection}{\numberline {2.3.1}Definition}{5}
-\contentsline {subsection}{\numberline {2.3.2}History}{5}
-\contentsline {subsection}{\numberline {2.3.3}Benefits}{6}
-\contentsline {subsection}{\numberline {2.3.4}Examples}{7}
-\contentsline {subsubsection}{\numberline {2.3.4.1}Gaming Platforms}{7}
-\contentsline {section}{\numberline {2.4}Educational Game Design}{7}
-\contentsline {subsection}{\numberline {2.4.1}Frameworks}{8}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Game Genre}{8}
-\contentsline {subsection}{\numberline {2.4.2}Game Elements}{8}
-\contentsline {chapter}{\numberline {3}Requirements Specification}{9}
-\contentsline {chapter}{\numberline {4}Design}{10}
-\contentsline {chapter}{\numberline {5}Implementation}{11}
-\contentsline {chapter}{\numberline {6}Testing}{12}
-\contentsline {chapter}{\numberline {7}Results}{13}
-\contentsline {chapter}{\numberline {8}Conclusions}{14}
-\contentsline {chapter}{\numberline {9}Future Work}{15}
-\contentsline {chapter}{Bibliography}{18}
+\contentsline {section}{\numberline {2.1}Video Games}{2}
+\contentsline {subsection}{\numberline {2.1.1}History}{2}
+\contentsline {subsection}{\numberline {2.1.2}Impacts}{3}
+\contentsline {subsection}{\numberline {2.1.3}Uses}{3}
+\contentsline {section}{\numberline {2.2}Educational Games}{3}
+\contentsline {subsection}{\numberline {2.2.1}Definition}{4}
+\contentsline {subsection}{\numberline {2.2.2}History}{4}
+\contentsline {subsection}{\numberline {2.2.3}Benefits}{5}
+\contentsline {subsubsection}{\numberline {2.2.3.1}E-learning}{5}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Learning Through Games}{6}
+\contentsline {subsection}{\numberline {2.2.4}Examples}{8}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Gaming Platforms}{8}
+\contentsline {section}{\numberline {2.3}Teaching Programming Fundamentals}{8}
+\contentsline {subsection}{\numberline {2.3.1}Issues}{9}
+\contentsline {section}{\numberline {2.4}Educational Game Design}{10}
+\contentsline {subsection}{\numberline {2.4.1}History}{11}
+\contentsline {subsection}{\numberline {2.4.2}Frameworks}{11}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Motivational}{11}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Learning}{11}
+\contentsline {subsection}{\numberline {2.4.3}Game Genre}{12}
+\contentsline {subsection}{\numberline {2.4.4}Game Elements}{12}
+\contentsline {chapter}{\numberline {3}Requirements Specification}{13}
+\contentsline {chapter}{\numberline {4}Design}{14}
+\contentsline {chapter}{\numberline {5}Implementation}{15}
+\contentsline {chapter}{\numberline {6}Testing}{16}
+\contentsline {chapter}{\numberline {7}Results}{17}
+\contentsline {chapter}{\numberline {8}Conclusions}{18}
+\contentsline {chapter}{\numberline {9}Future Work}{19}
+\contentsline {chapter}{Bibliography}{24}
 \setcounter {tocdepth}{-1}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{20}
-\contentsline {chapter}{\numberline {B}Screenshots}{21}
-\contentsline {chapter}{\numberline {C}Ethics Checklist}{22}
+\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{26}
+\contentsline {chapter}{\numberline {B}Screenshots}{27}
+\contentsline {chapter}{\numberline {C}Ethics Checklist}{28}

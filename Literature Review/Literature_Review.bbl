@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{54}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{Available from: }
@@ -191,12 +191,6 @@
   \bibinfo{volume}{1}(\bibinfo{number}{1}), pp.\bibinfo{pages}{20--20}.
 \newblock \urlprefix\url{https://doi.org/10.1145/950566.950595}.
 
-\bibitem[{Gee(2008)}]{Gee2008}
-\bibinfo{author}{Gee, J.P.}, \bibinfo{year}{2008}.
-\newblock \bibinfo{title}{Learning and games}.
-\newblock \emph{\bibinfo{journal}{The ecology of games: Connecting youth,
-  games, and learning}}, \bibinfo{volume}{3}, pp.\bibinfo{pages}{21--40}.
-
 \bibitem[{Girard, Ecalle and Magnan(2013)}]{Girard2013}
 \bibinfo{author}{Girard, C.}, \bibinfo{author}{Ecalle, J.} and
   \bibinfo{author}{Magnan, A.}, \bibinfo{year}{2013}.
@@ -277,6 +271,13 @@
 \newblock \emph{\bibinfo{journal}{IEEE annals of the history of computing}},
   \bibinfo{volume}{31}(\bibinfo{number}{3}), pp.\bibinfo{pages}{5--19}.
 
+\bibitem[{Malan and Leitner(2007)}]{malan2007}
+\bibinfo{author}{Malan, D.J.} and \bibinfo{author}{Leitner, H.H.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Scratch for budding computer scientists}.
+\newblock \emph{\bibinfo{journal}{ACM Sigcse Bulletin}},
+  \bibinfo{volume}{39}(\bibinfo{number}{1}), pp.\bibinfo{pages}{223--227}.
+
 \bibitem[{Malone and Lepper(1987)}]{Malone1987}
 \bibinfo{author}{Malone, T.} and \bibinfo{author}{Lepper, M.},
   \bibinfo{year}{1987}.
@@ -327,6 +328,19 @@
 \newblock \emph{\bibinfo{booktitle}{Serious games}}.
 \newblock \bibinfo{publisher}{Routledge}, pp.\bibinfo{pages}{32--46}.
 
+\bibitem[{Resnick et~al.(2009)Resnick, Maloney, Monroy-Hern{\'a}ndez, Rusk,
+  Eastmond, Brennan, Millner, Rosenbaum, Silver, Silverman
+  et~al.}]{resnick2009}
+\bibinfo{author}{Resnick, M.}, \bibinfo{author}{Maloney, J.},
+  \bibinfo{author}{Monroy-Hern{\'a}ndez, A.}, \bibinfo{author}{Rusk, N.},
+  \bibinfo{author}{Eastmond, E.}, \bibinfo{author}{Brennan, K.},
+  \bibinfo{author}{Millner, A.}, \bibinfo{author}{Rosenbaum, E.},
+  \bibinfo{author}{Silver, J.S.}, \bibinfo{author}{Silverman, B.} et~al.,
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Scratch: Programming for all.}
+\newblock \emph{\bibinfo{journal}{Commun. Acm}},
+  \bibinfo{volume}{52}(\bibinfo{number}{11}), pp.\bibinfo{pages}{60--67}.
+
 \bibitem[{Ritterfeld and Weber(2006)}]{ritterfeld2006}
 \bibinfo{author}{Ritterfeld, U.} and \bibinfo{author}{Weber, R.},
   \bibinfo{year}{2006}.
@@ -358,6 +372,11 @@
 \newblock \emph{\bibinfo{title}{Video game uses and gratifications as
   predictors of use and game preference}}, vol.~\bibinfo{volume}{8},
   pp.\bibinfo{pages}{213--224}.
+
+\bibitem[{Statistics(2019)}]{scratchstats}
+\bibinfo{author}{Statistics, S.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{howpublished}{\url{https://scratch.mit.edu/statistics/}}.
+\newblock \bibinfo{note}{Accessed: 2019-04-16}.
 
 \bibitem[{Stevenson and Wagner(2006)}]{Stevenson2006}
 \bibinfo{author}{Stevenson, D.E.} and \bibinfo{author}{Wagner, P.J.},

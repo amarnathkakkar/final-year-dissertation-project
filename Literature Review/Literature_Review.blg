@@ -4,55 +4,64 @@ The top-level auxiliary file: Literature_Review.aux
 The style file: bathx.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: litreview.bib
+Warning--entry type for "Thefirstvideogame" isn't style-file defined
+--line 135 of file litreview.bib
+Warning--entry type for "TennisForTwo" isn't style-file defined
+--line 141 of file litreview.bib
+Warning--entry type for "Statista" isn't style-file defined
+--line 147 of file litreview.bib
+Warning--entry type for "Statistanewzoo" isn't style-file defined
+--line 155 of file litreview.bib
+Warning--entry type for "alliedmarketresearch" isn't style-file defined
+--line 163 of file litreview.bib
+Warning--entry type for "scratchstats" isn't style-file defined
+--line 630 of file litreview.bib
+Warning--entry type for "progplaywebsite" isn't style-file defined
+--line 638 of file litreview.bib
 Warning--can't use both author and editor fields in Botturi2009
 Warning--can't use both author and editor fields in Jean
 Warning--empty journal in feurzeig1969
-Warning--empty booktitle in Hertz2010
 Warning--can't use both volume and number fields in muratet2011
-Warning--empty journal in vgamesResearch
-Warning--empty title in progplaywebsite
-Warning--missing publisher in sherry2006
-Warning--empty title in scratchstats
 Warning--can't use both author and editor fields in Wilkinson2016
 You've used 56 entries,
             5153 wiz_defined-function locations,
-            1317 strings with 18542 characters,
-and the built_in function-call counts, 46095 in all, are:
-= -- 4696
+            1243 strings with 15798 characters,
+and the built_in function-call counts, 45291 in all, are:
+= -- 4552
 > -- 1404
-< -- 2
+< -- 1
 + -- 554
 - -- 478
-* -- 3939
-:= -- 6044
-add.period$ -- 192
+* -- 3778
+:= -- 5959
+add.period$ -- 175
 call.type$ -- 56
-change.case$ -- 418
+change.case$ -- 421
 chr.to.int$ -- 57
-cite$ -- 68
-duplicate$ -- 3263
-empty$ -- 3812
+cite$ -- 63
+duplicate$ -- 3226
+empty$ -- 3782
 format.name$ -- 582
-if$ -- 10170
+if$ -- 9974
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 484
-newline$ -- 310
+missing$ -- 480
+newline$ -- 292
 num.names$ -- 216
-pop$ -- 885
+pop$ -- 949
 preamble$ -- 1
 purify$ -- 352
 quote$ -- 0
-skip$ -- 2221
+skip$ -- 2224
 stack$ -- 0
-substring$ -- 1780
-swap$ -- 2276
-text.length$ -- 2
+substring$ -- 1727
+swap$ -- 2199
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 703
-warning$ -- 10
-while$ -- 322
+type$ -- 721
+warning$ -- 5
+while$ -- 320
 width$ -- 0
-write$ -- 796
-(There were 10 warnings)
+write$ -- 740
+(There were 12 warnings)

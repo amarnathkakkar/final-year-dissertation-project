@@ -247,6 +247,15 @@
   \bibinfo{volume}{14}(\bibinfo{number}{4}), pp.\bibinfo{pages}{26:1--26:28}.
 \newblock \urlprefix\url{https://doi.org/10.1145/2662412}.
 
+\bibitem[{Lee and Ko(2011)}]{lee2011}
+\bibinfo{author}{Lee, M.J.} and \bibinfo{author}{Ko, A.J.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Personifying programming tool feedback improves
+  novice programmers' learning}.
+\newblock \emph{\bibinfo{booktitle}{Proceedings of the seventh international
+  workshop on computing education research}}. \bibinfo{organization}{ACM},
+  pp.\bibinfo{pages}{109--116}.
+
 \bibitem[{Lee and Ko(2015)}]{Lee2015}
 \bibinfo{author}{Lee, M.J.} and \bibinfo{author}{Ko, A.J.},
   \bibinfo{year}{2015}.
@@ -332,18 +341,11 @@
 \newblock \emph{\bibinfo{journal}{Computers in Entertainment (CIE)}},
   \bibinfo{volume}{1}(\bibinfo{number}{1}), pp.\bibinfo{pages}{21--21}.
 
-\bibitem[{Prog\&Play(n.d.)}]{progplaywebsite}
-\bibinfo{author}{Prog\&Play}, n.d.
+\bibitem[{Prog\&Play(2012)}]{progplaywebsite}
+\bibinfo{author}{Prog\&Play}, \bibinfo{year}{2012}.
 \newblock
   \bibinfo{howpublished}{\url{http://progandplay.lip6.fr/index_en.php}}.
 \newblock \bibinfo{note}{Accessed: 2019-04-17}.
-
-\bibitem[{Ratan and Ritterfeld(2009)}]{ratan2009}
-\bibinfo{author}{Ratan, R.A.} and \bibinfo{author}{Ritterfeld, U.},
-  \bibinfo{year}{2009}.
-\newblock \bibinfo{title}{Classifying serious games}.
-\newblock \emph{\bibinfo{booktitle}{Serious games}}.
-\newblock \bibinfo{publisher}{Routledge}, pp.\bibinfo{pages}{32--46}.
 
 \bibitem[{Resnick et~al.(2009)Resnick, Maloney, Monroy-Hern{\'a}ndez, Rusk,
   Eastmond, Brennan, Millner, Rosenbaum, Silver, Silverman

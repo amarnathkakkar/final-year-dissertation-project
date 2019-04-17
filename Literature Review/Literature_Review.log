@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  17 APR 2019 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  17 APR 2019 19:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -894,12 +894,7 @@ ath.jpg>] [1
 
  [6]
 (./Literature_Review.lof
-
-Package natbib Warning: Citation `scratcharticle' on page VII undefined on inpu
-t line 3.
-
-
-Overfull \hbox (11.8571pt too wide) in paragraph at lines 5--5
+Overfull \hbox (11.8571pt too wide) in paragraph at lines 6--6
  [][] \OT1/cmr/m/n/10 Fig-ure []Input-Process-Outcome In-struc-tional Game Mode
 l (Gar-ris, Ahlers and Driskell, 
  []
@@ -958,76 +953,61 @@ File: Scratch-Example.png Graphic file (type png)
 <use Scratch-Example.png>
 Package pdftex.def Info: Scratch-Example.png  used on input line 642.
 (pdftex.def)             Requested size: 296.84094pt x 245.81425pt.
-
-
-Package natbib Warning: Citation `scratcharticle' on page 8 undefined on input 
-line 644.
-
-[8]
+ [8]
 <ProgAndPlay-Example.jpg, id=82, 719.68875pt x 514.17094pt>
 File: ProgAndPlay-Example.jpg Graphic file (type jpg)
 <use ProgAndPlay-Example.jpg>
 Package pdftex.def Info: ProgAndPlay-Example.jpg  used on input line 658.
 (pdftex.def)             Requested size: 296.84094pt x 212.08244pt.
  [9 <./Scratch-Example.png>]
-
-Package natbib Warning: Citation `gidget' on page 10 undefined on input line 66
-7.
-
-
-Package natbib Warning: Citation `gidget' on page 10 undefined on input line 66
-9.
-
-
-Package natbib Warning: Citation `gidget' on page 10 undefined on input line 66
-9.
-
-
-Package natbib Warning: Citation `gidget' on page 10 undefined on input line 66
-9.
-
-[10 <./ProgAndPlay-Example.jpg>] [11] [12]
-<Inputprocessoutcomegamemodel.png, id=97, 644.4075pt x 304.13625pt>
+<Gidget-Example.png, id=87, 927.465pt x 543.02875pt>
+File: Gidget-Example.png Graphic file (type png)
+<use Gidget-Example.png>
+Package pdftex.def Info: Gidget-Example.png  used on input line 676.
+(pdftex.def)             Requested size: 424.06035pt x 248.28821pt.
+ [10 <./ProgAndPlay-Example.jpg>]
+[11 <./Gidget-Example.png>] [12]
+<Inputprocessoutcomegamemodel.png, id=99, 644.4075pt x 304.13625pt>
 File: Inputprocessoutcomegamemodel.png Graphic file (type png)
 <use Inputprocessoutcomegamemodel.png>
 Package pdftex.def Info: Inputprocessoutcomegamemodel.png  used on input line 7
-33.
+45.
 (pdftex.def)             Requested size: 424.06035pt x 200.1458pt.
- [13 <./Inputprocessoutcomegamemodel.png>]
-Overfull \hbox (11.75984pt too wide) in paragraph at lines 761--762
+ [13]
+Overfull \hbox (11.75984pt too wide) in paragraph at lines 773--774
 []\OT1/cmr/m/n/10 Game ob-ject model ver-sion II: a the-o-ret-i-cal frame-work 
 for ed-u-ca-tional game de-vel-op-ment (318) 
  []
 
-[14] [14
+[14 <./Inputprocessoutcomegamemodel.png>] [15] [15
 
 ]
 Chapter 3.
-[15] [15
-
-]
-Chapter 4.
 [16] [16
 
 ]
-Chapter 5.
+Chapter 4.
 [17] [17
 
 ]
-Chapter 6.
+Chapter 5.
 [18] [18
 
 ]
-Chapter 7.
+Chapter 6.
 [19] [19
 
 ]
-Chapter 8.
+Chapter 7.
 [20] [20
 
 ]
+Chapter 8.
+[21] [21
+
+]
 Chapter 9.
-(./Literature_Review.bbl [21] [21
+(./Literature_Review.bbl [22] [22
 
 ]
 Underfull \hbox (badness 1264) in paragraph at lines 67--75
@@ -1047,38 +1027,35 @@ Underfull \hbox (badness 1210) in paragraph at lines 67--75
 r/m/n/10 , Avail-able from: $\OT1/cmtt/m/n/10 https : / / doi . org / 10 .
  []
 
-[22] [23] [24]
-Underfull \hbox (badness 6220) in paragraph at lines 316--321
+[23] [24] [25]
+Underfull \hbox (badness 6220) in paragraph at lines 325--330
 []\OT1/cmr/m/n/10 Newzoo, 2018.  2018 global games mar-ket re-port [On-line].  
 [On-line].  Avail-
  []
 
-[25]) [26] [27
+[26]) [27] [28
 
 ]
 Appendix A.
-[28
-
-]
-Appendix B.
 [29
 
 ]
-Appendix C.
-
-Package natbib Warning: There were undefined citations.
-
+Appendix B.
 [30
+
+]
+Appendix C.
+[31
 
 ] (./Literature_Review.aux) ) 
 Here is how much of TeX's memory you used:
- 9709 strings out of 492649
- 145812 string characters out of 6129621
- 347342 words of memory out of 5000000
- 13344 multiletter control sequences out of 15000+600000
+ 9715 strings out of 492649
+ 145935 string characters out of 6129621
+ 347345 words of memory out of 5000000
+ 13349 multiletter control sequences out of 15000+600000
  8650 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,12n,92p,1098b,415s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,11n,92p,1098b,413s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvip
 s/cm-super/cm-super-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
@@ -1089,10 +1066,10 @@ sfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
 er/sfrm1000.pfb>
-Output written on Literature_Review.pdf (52 pages, 583357 bytes).
+Output written on Literature_Review.pdf (53 pages, 2179669 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 218 PDF objects out of 1000 (max. 8388607)
+ 145 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{Available from: }
@@ -293,6 +293,17 @@
   inform}}.
 \newblock \bibinfo{publisher}{Muska \& Lipman/Premier-Trade}.
 
+\bibitem[{Muratet et~al.(2011)Muratet, Torguet, Viallet and
+  Jessel}]{muratet2011}
+\bibinfo{author}{Muratet, M.}, \bibinfo{author}{Torguet, P.},
+  \bibinfo{author}{Viallet, F.} and \bibinfo{author}{Jessel, J.P.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Experimental feedback on prog\&play: a serious game
+  for programming practice}.
+\newblock \emph{\bibinfo{booktitle}{Computer graphics forum}}.
+  \bibinfo{organization}{Wiley Online Library}, vol.~\bibinfo{volume}{30},
+  pp.\bibinfo{pages}{61--73}.
+
 \bibitem[{Newzoo(2017)}]{Statistanewzoo}
 \bibinfo{author}{Newzoo}, \bibinfo{year}{2017}.
 \newblock \bibinfo{title}{Distribution of video gamers worldwide in 2017, by
@@ -320,6 +331,12 @@
 \newblock \bibinfo{title}{Digital game-based learning}.
 \newblock \emph{\bibinfo{journal}{Computers in Entertainment (CIE)}},
   \bibinfo{volume}{1}(\bibinfo{number}{1}), pp.\bibinfo{pages}{21--21}.
+
+\bibitem[{Prog\&Play(n.d.)}]{progplaywebsite}
+\bibinfo{author}{Prog\&Play}, n.d.
+\newblock
+  \bibinfo{howpublished}{\url{http://progandplay.lip6.fr/index_en.php}}.
+\newblock \bibinfo{note}{Accessed: 2019-04-17}.
 
 \bibitem[{Ratan and Ritterfeld(2009)}]{ratan2009}
 \bibinfo{author}{Ratan, R.A.} and \bibinfo{author}{Ritterfeld, U.},

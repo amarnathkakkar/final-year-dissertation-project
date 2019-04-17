@@ -13,26 +13,26 @@
 \contentsline {subsubsection}{\numberline {2.2.3.2}Learning Through Games}{6}
 \contentsline {subsubsection}{\numberline {2.2.3.3}Effectiveness of Learning Through Games}{6}
 \contentsline {subsection}{\numberline {2.2.4}Examples}{8}
-\contentsline {subsubsection}{\numberline {2.2.4.1}Gaming Platforms}{9}
-\contentsline {section}{\numberline {2.3}Teaching Programming Fundamentals}{9}
-\contentsline {subsection}{\numberline {2.3.1}Issues}{10}
-\contentsline {section}{\numberline {2.4}Educational Game Design}{11}
-\contentsline {subsection}{\numberline {2.4.1}History}{12}
-\contentsline {subsection}{\numberline {2.4.2}Frameworks}{12}
-\contentsline {subsubsection}{\numberline {2.4.2.1}Motivational}{12}
-\contentsline {subsubsection}{\numberline {2.4.2.2}Learning}{12}
-\contentsline {subsection}{\numberline {2.4.3}Game Genre}{13}
-\contentsline {subsection}{\numberline {2.4.4}Game Elements}{13}
-\contentsline {chapter}{\numberline {3}Requirements Specification}{14}
-\contentsline {chapter}{\numberline {4}Design}{15}
-\contentsline {chapter}{\numberline {5}Implementation}{16}
-\contentsline {chapter}{\numberline {6}Testing}{17}
-\contentsline {chapter}{\numberline {7}Results}{18}
-\contentsline {chapter}{\numberline {8}Conclusions}{19}
-\contentsline {chapter}{\numberline {9}Future Work}{20}
-\contentsline {chapter}{Bibliography}{25}
+\contentsline {section}{\numberline {2.3}Teaching Programming Fundamentals}{10}
+\contentsline {subsection}{\numberline {2.3.1}Methods}{11}
+\contentsline {subsection}{\numberline {2.3.2}Issues}{12}
+\contentsline {section}{\numberline {2.4}Educational Game Design}{12}
+\contentsline {subsection}{\numberline {2.4.1}History}{13}
+\contentsline {subsection}{\numberline {2.4.2}Frameworks}{14}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Motivational}{14}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Learning}{14}
+\contentsline {subsection}{\numberline {2.4.3}Game Genre}{14}
+\contentsline {subsection}{\numberline {2.4.4}Game Elements}{14}
+\contentsline {chapter}{\numberline {3}Requirements Specification}{15}
+\contentsline {chapter}{\numberline {4}Design}{16}
+\contentsline {chapter}{\numberline {5}Implementation}{17}
+\contentsline {chapter}{\numberline {6}Testing}{18}
+\contentsline {chapter}{\numberline {7}Results}{19}
+\contentsline {chapter}{\numberline {8}Conclusions}{20}
+\contentsline {chapter}{\numberline {9}Future Work}{21}
+\contentsline {chapter}{Bibliography}{26}
 \setcounter {tocdepth}{-1}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{27}
-\contentsline {chapter}{\numberline {B}Screenshots}{28}
-\contentsline {chapter}{\numberline {C}Ethics Checklist}{29}
+\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{28}
+\contentsline {chapter}{\numberline {B}Screenshots}{29}
+\contentsline {chapter}{\numberline {C}Ethics Checklist}{30}

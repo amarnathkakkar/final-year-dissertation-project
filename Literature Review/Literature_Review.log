@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  18 APR 2019 17:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  18 APR 2019 19:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -966,20 +966,35 @@ File: Gidget-Example.png Graphic file (type png)
 Package pdftex.def Info: Gidget-Example.png  used on input line 678.
 (pdftex.def)             Requested size: 424.06035pt x 248.28821pt.
  [10 <./ProgAndPlay-Example.jpg>]
-[11 <./Gidget-Example.png>] [12] [13]
-<Inputprocessoutcomegamemodel.png, id=102, 644.4075pt x 304.13625pt>
+Overfull \hbox (20.01242pt too wide) in paragraph at lines 700--700
+|[]\OT1/cmr/bx/n/14.4 Teaching Con-di-tional and It-er-a-tive Con-trol Struc-tu
+res| 
+ []
+
+[11 <./Gidget-Example.png>]
+Overfull \hbox (0.34787pt too wide) in paragraph at lines 738--739
+\OT1/cmr/m/n/10 credie, 2014). (Koulouri, Lau-ria and Ma-credie, 2014) car-ried
+ out a 4-year lon-gi-tu-di-nal study. 
+ []
+
+
+Package natbib Warning: Citation `bennedsen2007' on page 12 undefined on input 
+line 740.
+
+[12]
+<Inputprocessoutcomegamemodel.png, id=99, 644.4075pt x 304.13625pt>
 File: Inputprocessoutcomegamemodel.png Graphic file (type png)
 <use Inputprocessoutcomegamemodel.png>
 Package pdftex.def Info: Inputprocessoutcomegamemodel.png  used on input line 7
-49.
+70.
 (pdftex.def)             Requested size: 424.06035pt x 200.1458pt.
- [14 <./Inputprocessoutcomegamemodel.png>]
-Overfull \hbox (11.75984pt too wide) in paragraph at lines 777--778
+ [13 <./Inputprocessoutcomegamemodel.png>]
+Overfull \hbox (11.75984pt too wide) in paragraph at lines 798--799
 []\OT1/cmr/m/n/10 Game ob-ject model ver-sion II: a the-o-ret-i-cal frame-work 
 for ed-u-ca-tional game de-vel-op-ment (318) 
  []
 
-[15] [15
+[14] [15] [15
 
 ]
 Chapter 3.
@@ -1027,6 +1042,9 @@ Appendix B.
 
 ]
 Appendix C.
+
+Package natbib Warning: There were undefined citations.
+
 [31
 
 ] (./Literature_Review.aux) ) 
@@ -1048,7 +1066,7 @@ sfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
 er/sfrm1000.pfb>
-Output written on Literature_Review.pdf (53 pages, 2181489 bytes).
+Output written on Literature_Review.pdf (53 pages, 2179782 bytes).
 PDF statistics:
  218 PDF objects out of 1000 (max. 8388607)
  145 compressed objects within 2 object streams

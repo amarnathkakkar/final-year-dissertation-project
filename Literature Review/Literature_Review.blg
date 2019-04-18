@@ -18,50 +18,54 @@ Warning--entry type for "scratchstats" isn't style-file defined
 --line 630 of file litreview.bib
 Warning--entry type for "progplaywebsite" isn't style-file defined
 --line 638 of file litreview.bib
+Warning--entry type for "wikiversity" isn't style-file defined
+--line 688 of file litreview.bib
+Warning--entry type for "bath" isn't style-file defined
+--line 696 of file litreview.bib
 Warning--can't use both author and editor fields in Botturi2009
 Warning--can't use both author and editor fields in Jean
 Warning--empty journal in feurzeig1969
 Warning--can't use both volume and number fields in muratet2011
 Warning--can't use both author and editor fields in Wilkinson2016
-You've used 56 entries,
+You've used 60 entries,
             5153 wiz_defined-function locations,
-            1243 strings with 15798 characters,
-and the built_in function-call counts, 45291 in all, are:
-= -- 4552
-> -- 1404
+            1263 strings with 16219 characters,
+and the built_in function-call counts, 47944 in all, are:
+= -- 4841
+> -- 1452
 < -- 1
-+ -- 554
-- -- 478
-* -- 3778
-:= -- 5959
-add.period$ -- 175
-call.type$ -- 56
-change.case$ -- 421
-chr.to.int$ -- 57
-cite$ -- 63
-duplicate$ -- 3226
-empty$ -- 3782
-format.name$ -- 582
-if$ -- 9974
++ -- 578
+- -- 494
+* -- 3973
+:= -- 6321
+add.period$ -- 189
+call.type$ -- 60
+change.case$ -- 447
+chr.to.int$ -- 61
+cite$ -- 67
+duplicate$ -- 3424
+empty$ -- 4022
+format.name$ -- 598
+if$ -- 10568
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 480
-newline$ -- 292
-num.names$ -- 216
-pop$ -- 949
+missing$ -- 507
+newline$ -- 314
+num.names$ -- 232
+pop$ -- 989
 preamble$ -- 1
-purify$ -- 352
+purify$ -- 372
 quote$ -- 0
-skip$ -- 2224
+skip$ -- 2357
 stack$ -- 0
-substring$ -- 1727
-swap$ -- 2199
+substring$ -- 1835
+swap$ -- 2323
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 721
+type$ -- 771
 warning$ -- 5
-while$ -- 320
+while$ -- 342
 width$ -- 0
-write$ -- 740
-(There were 12 warnings)
+write$ -- 797
+(There were 14 warnings)

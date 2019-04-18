@@ -14,14 +14,14 @@
 \contentsline {subsubsection}{\numberline {2.2.3.3}Effectiveness of Learning Through Games}{6}
 \contentsline {subsection}{\numberline {2.2.4}Examples}{8}
 \contentsline {section}{\numberline {2.3}Teaching Programming Fundamentals}{11}
-\contentsline {subsection}{\numberline {2.3.1}Iterative and Conditional Control Structures}{11}
-\contentsline {subsection}{\numberline {2.3.2}Methods}{11}
-\contentsline {subsection}{\numberline {2.3.3}Issues}{12}
+\contentsline {subsection}{\numberline {2.3.1}Conditional and Iterative Control Structures}{11}
+\contentsline {subsection}{\numberline {2.3.2}Methods}{12}
+\contentsline {subsection}{\numberline {2.3.3}Issues}{13}
 \contentsline {section}{\numberline {2.4}Educational Game Design}{13}
 \contentsline {subsection}{\numberline {2.4.1}History}{14}
-\contentsline {subsection}{\numberline {2.4.2}Frameworks}{14}
-\contentsline {subsubsection}{\numberline {2.4.2.1}Motivational}{14}
-\contentsline {subsubsection}{\numberline {2.4.2.2}Learning}{14}
+\contentsline {subsection}{\numberline {2.4.2}Frameworks}{15}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Motivational}{15}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Learning}{15}
 \contentsline {subsection}{\numberline {2.4.3}Game Genre}{15}
 \contentsline {subsection}{\numberline {2.4.4}Game Elements}{15}
 \contentsline {chapter}{\numberline {3}Requirements Specification}{16}
@@ -31,9 +31,9 @@
 \contentsline {chapter}{\numberline {7}Results}{20}
 \contentsline {chapter}{\numberline {8}Conclusions}{21}
 \contentsline {chapter}{\numberline {9}Future Work}{22}
-\contentsline {chapter}{Bibliography}{26}
+\contentsline {chapter}{Bibliography}{27}
 \setcounter {tocdepth}{-1}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{28}
-\contentsline {chapter}{\numberline {B}Screenshots}{29}
-\contentsline {chapter}{\numberline {C}Ethics Checklist}{30}
+\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{29}
+\contentsline {chapter}{\numberline {B}Screenshots}{30}
+\contentsline {chapter}{\numberline {C}Ethics Checklist}{31}

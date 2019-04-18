@@ -1,4 +1,4 @@
-\begin{thebibliography}{56}
+\begin{thebibliography}{60}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{Available from: }
@@ -199,13 +199,6 @@
 \newblock \emph{\bibinfo{journal}{Games and Culture}},
   \bibinfo{volume}{3}(\bibinfo{number}{3-4}).
 
-\bibitem[{Hertz(2010)}]{Hertz2010}
-\bibinfo{author}{Hertz, M.}, \bibinfo{year}{2010}.
-\newblock \bibinfo{title}{What do "cs1" and "cs2" mean? investigating
-  differences in the early courses}.
-\newblock \emph{\bibinfo{booktitle}{Proceedings of the 41st acm technical
-  symposium on computer science education}}. pp.\bibinfo{pages}{199--203}.
-
 \bibitem[{Koster and Wright(2004)}]{Koster2004}
 \bibinfo{author}{Koster, R.} and \bibinfo{author}{Wright, W.},
   \bibinfo{year}{2004}.
@@ -242,6 +235,13 @@
 \newblock \bibinfo{title}{Logo as a strategy for developing thinking?}
 \newblock \emph{\bibinfo{journal}{Educational Psychologist}},
   \bibinfo{volume}{21}(\bibinfo{number}{1-2}), pp.\bibinfo{pages}{121--137}.
+
+\bibitem[{Lepp{\"a}nen(2007)}]{leppanen2007}
+\bibinfo{author}{Lepp{\"a}nen, M.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{A context-based enterprise ontology}.
+\newblock \emph{\bibinfo{booktitle}{International conference on business
+  information systems}}. \bibinfo{organization}{Springer},
+  pp.\bibinfo{pages}{273--286}.
 
 \bibitem[{Lowood(2009)}]{Lowood2009}
 \bibinfo{author}{Lowood, H.}, \bibinfo{year}{2009}.
@@ -326,6 +326,13 @@
 \newblock \emph{\bibinfo{journal}{Commun. Acm}},
   \bibinfo{volume}{52}(\bibinfo{number}{11}), pp.\bibinfo{pages}{60--67}.
 
+\bibitem[{Riccardi(1981)}]{riccardi1981}
+\bibinfo{author}{Riccardi, G.A.}, \bibinfo{year}{1981}.
+\newblock \bibinfo{title}{The independence of control structures in abstract
+  programming systems}.
+\newblock \emph{\bibinfo{journal}{Journal of Computer and System Sciences}},
+  \bibinfo{volume}{22}(\bibinfo{number}{2}), pp.\bibinfo{pages}{107--143}.
+
 \bibitem[{Ritterfeld and Weber(2006)}]{ritterfeld2006}
 \bibinfo{author}{Ritterfeld, U.} and \bibinfo{author}{Weber, R.},
   \bibinfo{year}{2006}.
@@ -387,11 +394,31 @@
 \newblock
   \urlprefix\url{https://www.sunysb.edu/libspecial/videogames/tennis.html}.
 
+\bibitem[{Tucker(1991)}]{tucker1991}
+\bibinfo{author}{Tucker, A.B.}, \bibinfo{year}{1991}.
+\newblock \bibinfo{title}{Computing curricula 1991}.
+\newblock \emph{\bibinfo{journal}{Communications of the ACM}},
+  \bibinfo{volume}{34}(\bibinfo{number}{6}), pp.\bibinfo{pages}{68--84}.
+
+\bibitem[{UniversityOfBath(2018)}]{bath}
+\bibinfo{author}{UniversityOfBath}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Department of computer science programme catalogue
+  2018/9} [Online].
+\newblock \bibinfo{note}{Accessed: 2019-04-18}.
+\newblock
+  \urlprefix\url{http://www.bath.ac.uk/catalogues/2018-2019/cm/USCM-AFB06.html}.
+
 \bibitem[{Vygotsky(1978)}]{vygotsky1978}
 \bibinfo{author}{Vygotsky, L.S.}, \bibinfo{year}{1978}.
 \newblock \emph{\bibinfo{title}{Mind in society: The development of higher
   psychological processes}}.
 \newblock \bibinfo{publisher}{Harvard university press}.
+
+\bibitem[{Wikiversity(2019)}]{wikiversity}
+\bibinfo{author}{Wikiversity}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Control structures} [Online].
+\newblock \bibinfo{note}{Accessed: 2019-04-18}.
+\newblock \urlprefix\url{https://en.wikiversity.org/wiki/Control_structures}.
 
 \bibitem[{Wilkinson(2016)}]{Wilkinson2016}
 \bibinfo{author}{Wilkinson, P.}, \bibinfo{year}{2016}.

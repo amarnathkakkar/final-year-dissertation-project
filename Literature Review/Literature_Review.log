@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  18 APR 2019 19:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  23 APR 2019 19:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -893,13 +893,7 @@ ath.jpg>] [1
 \openout4 = `Literature_Review.toc'.
 
  [6]
-(./Literature_Review.lof
-Overfull \hbox (11.8571pt too wide) in paragraph at lines 6--6
- [][] \OT1/cmr/m/n/10 Fig-ure []Input-Process-Outcome In-struc-tional Game Mode
-l (Gar-ris, Ahlers and Driskell, 
- []
-
-)
+(./Literature_Review.lof)
 \tf@lof=\write5
 \openout5 = `Literature_Review.lof'.
 
@@ -951,78 +945,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 577--577
 <Scratch-Example.png, id=77, 250.9375pt x 207.77625pt>
 File: Scratch-Example.png Graphic file (type png)
 <use Scratch-Example.png>
-Package pdftex.def Info: Scratch-Example.png  used on input line 644.
+Package pdftex.def Info: Scratch-Example.png  used on input line 652.
 (pdftex.def)             Requested size: 296.84094pt x 245.81425pt.
  [8]
 <ProgAndPlay-Example.jpg, id=82, 719.68875pt x 514.17094pt>
 File: ProgAndPlay-Example.jpg Graphic file (type jpg)
 <use ProgAndPlay-Example.jpg>
-Package pdftex.def Info: ProgAndPlay-Example.jpg  used on input line 660.
+Package pdftex.def Info: ProgAndPlay-Example.jpg  used on input line 668.
 (pdftex.def)             Requested size: 296.84094pt x 212.08244pt.
  [9 <./Scratch-Example.png>]
-<Gidget-Example.png, id=87, 927.465pt x 543.02875pt>
+<Gidget-Example.png, id=87, 1284.8pt x 658.46pt>
 File: Gidget-Example.png Graphic file (type png)
 <use Gidget-Example.png>
-Package pdftex.def Info: Gidget-Example.png  used on input line 678.
-(pdftex.def)             Requested size: 424.06035pt x 248.28821pt.
+Package pdftex.def Info: Gidget-Example.png  used on input line 686.
+(pdftex.def)             Requested size: 424.06035pt x 217.33266pt.
  [10 <./ProgAndPlay-Example.jpg>]
-Overfull \hbox (20.01242pt too wide) in paragraph at lines 700--700
+Overfull \hbox (20.01242pt too wide) in paragraph at lines 708--708
 |[]\OT1/cmr/bx/n/14.4 Teaching Con-di-tional and It-er-a-tive Con-trol Struc-tu
 res| 
  []
 
-[11 <./Gidget-Example.png>]
-Overfull \hbox (0.34787pt too wide) in paragraph at lines 738--739
-\OT1/cmr/m/n/10 credie, 2014). (Koulouri, Lau-ria and Ma-credie, 2014) car-ried
- out a 4-year lon-gi-tu-di-nal study. 
- []
-
-
-Package natbib Warning: Citation `bennedsen2007' on page 12 undefined on input 
-line 740.
-
-[12]
-<Inputprocessoutcomegamemodel.png, id=99, 644.4075pt x 304.13625pt>
-File: Inputprocessoutcomegamemodel.png Graphic file (type png)
-<use Inputprocessoutcomegamemodel.png>
-Package pdftex.def Info: Inputprocessoutcomegamemodel.png  used on input line 7
-70.
-(pdftex.def)             Requested size: 424.06035pt x 200.1458pt.
- [13 <./Inputprocessoutcomegamemodel.png>]
-Overfull \hbox (11.75984pt too wide) in paragraph at lines 798--799
+[11 <./Gidget-Example.png>] [12]
+Overfull \hbox (11.75984pt too wide) in paragraph at lines 812--813
 []\OT1/cmr/m/n/10 Game ob-ject model ver-sion II: a the-o-ret-i-cal frame-work 
 for ed-u-ca-tional game de-vel-op-ment (318) 
  []
 
-[14] [15] [15
+[13] [14] [14
 
 ]
 Chapter 3.
-[16] [16
+[15] [15
 
 ]
 Chapter 4.
-[17] [17
+[16] [16
 
 ]
 Chapter 5.
-[18] [18
+[17] [17
 
 ]
 Chapter 6.
-[19] [19
+[18] [18
 
 ]
 Chapter 7.
-[20] [20
+[19] [19
 
 ]
 Chapter 8.
-[21] [21
+[20] [20
 
 ]
 Chapter 9.
-(./Literature_Review.bbl [22] [22
+(./Literature_Review.bbl [21] [21
 
 ]
 Underfull \hbox (badness 1838) in paragraph at lines 25--30
@@ -1030,32 +1007,29 @@ Underfull \hbox (badness 1838) in paragraph at lines 25--30
 ].  Ac-cessed: 2019-04-02.
  []
 
-[23] [24] [25] [26]) [27] [28
+[22] [23] [24]) [25] [26
 
 ]
 Appendix A.
-[29
+[27
 
 ]
 Appendix B.
-[30
+[28
 
 ]
 Appendix C.
-
-Package natbib Warning: There were undefined citations.
-
-[31
+[29
 
 ] (./Literature_Review.aux) ) 
 Here is how much of TeX's memory you used:
- 9727 strings out of 492649
- 146137 string characters out of 6129621
- 347473 words of memory out of 5000000
- 13361 multiletter control sequences out of 15000+600000
+ 9706 strings out of 492649
+ 145635 string characters out of 6129621
+ 347259 words of memory out of 5000000
+ 13341 multiletter control sequences out of 15000+600000
  8650 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,12n,92p,1098b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,11n,92p,1098b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvip
 s/cm-super/cm-super-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
@@ -1066,10 +1040,10 @@ sfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
 er/sfrm1000.pfb>
-Output written on Literature_Review.pdf (53 pages, 2179782 bytes).
+Output written on Literature_Review.pdf (51 pages, 847158 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
+ 210 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

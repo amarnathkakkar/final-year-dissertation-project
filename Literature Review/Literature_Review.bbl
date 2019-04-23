@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{Available from: }
@@ -28,14 +28,6 @@
 \newblock
   \urlprefix\url{https://www.acm.org/binaries/content/assets/education/cs2013_web_final.pdf}.
 
-\bibitem[{Agal, Devija and Dave(2010)}]{agal2010}
-\bibinfo{author}{Agal, S.}, \bibinfo{author}{Devija, P.} and
-  \bibinfo{author}{Dave, P.D.K.}, \bibinfo{year}{2010}.
-\newblock \bibinfo{title}{Can e-learning replace the traditional classroom? a
-  case study at a private college in udaipur}.
-\newblock \emph{\bibinfo{journal}{AISHWARYA RESEARCH COMMUNICATION}},
-  \bibinfo{volume}{2}, pp.\bibinfo{pages}{173--178}.
-
 \bibitem[{AlliedMarketResearch(2017)}]{alliedmarketresearch}
 \bibinfo{author}{AlliedMarketResearch}, \bibinfo{year}{2017}.
 \newblock \bibinfo{title}{Serious games market} [Online].
@@ -61,6 +53,13 @@
   retention}.
 \newblock \emph{\bibinfo{journal}{SIGCSE Bull.}},
   \bibinfo{volume}{39}(\bibinfo{number}{3}), pp.\bibinfo{pages}{121--125}.
+
+\bibitem[{Bennedsen and Caspersen(2007)}]{bennedsen2007}
+\bibinfo{author}{Bennedsen, J.} and \bibinfo{author}{Caspersen, M.E.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Failure rates in introductory programming}.
+\newblock \emph{\bibinfo{journal}{AcM SIGcSE Bulletin}},
+  \bibinfo{volume}{39}(\bibinfo{number}{2}), pp.\bibinfo{pages}{32--36}.
 
 \bibitem[{Bisson and Luckner(1996)}]{Bisson1996}
 \bibinfo{author}{Bisson, C.} and \bibinfo{author}{Luckner, J.},
@@ -154,14 +153,6 @@
 \newblock \bibinfo{note}{Accessed: 2018-12-06}.
 \newblock \urlprefix\url{https://www.bnl.gov/about/history/firstvideo.php}.
 
-\bibitem[{Garris, Ahlers and Driskell(2002)}]{Driskell2002}
-\bibinfo{author}{Garris, R.}, \bibinfo{author}{Ahlers, R.} and
-  \bibinfo{author}{Driskell, J.E.}, \bibinfo{year}{2002}.
-\newblock \bibinfo{title}{Games, motivation, and learning: A research and
-  practice model}.
-\newblock \emph{\bibinfo{journal}{Simulation \& Gaming}},
-  \bibinfo{volume}{33}(\bibinfo{number}{4}), pp.\bibinfo{pages}{441--467}.
-
 \bibitem[{Gee(2003)}]{Gee2003}
 \bibinfo{author}{Gee, J.P.}, \bibinfo{year}{2003}.
 \newblock \bibinfo{title}{What video games have to teach us about learning and
@@ -184,13 +175,6 @@
 \newblock \emph{\bibinfo{journal}{American psychologist.}},
   \bibinfo{volume}{69}(\bibinfo{number}{1}), pp.\bibinfo{pages}{66--78}.
 
-\bibitem[{Gunasekaran, McNeil and Shaul(2002)}]{Gunasekaran2002}
-\bibinfo{author}{Gunasekaran, A.}, \bibinfo{author}{McNeil, R.D.} and
-  \bibinfo{author}{Shaul, D.}, \bibinfo{year}{2002}.
-\newblock \bibinfo{title}{E‐learning: research and applications}.
-\newblock \emph{\bibinfo{journal}{Industrial and commercial training.}},
-  \bibinfo{volume}{34}(\bibinfo{number}{2}), pp.\bibinfo{pages}{44--53}.
-
 \bibitem[{Hayes and Games(2008)}]{hayes2008}
 \bibinfo{author}{Hayes, E.R.} and \bibinfo{author}{Games, I.A.},
   \bibinfo{year}{2008}.
@@ -198,12 +182,6 @@
   of current software and strategies}.
 \newblock \emph{\bibinfo{journal}{Games and Culture}},
   \bibinfo{volume}{3}(\bibinfo{number}{3-4}).
-
-\bibitem[{Koster and Wright(2004)}]{Koster2004}
-\bibinfo{author}{Koster, R.} and \bibinfo{author}{Wright, W.},
-  \bibinfo{year}{2004}.
-\newblock \emph{\bibinfo{title}{A theory of fun for game design}}.
-\newblock \bibinfo{publisher}{Paraglyph Press}.
 
 \bibitem[{Koulouri, Lauria and Macredie(2014)}]{Koulouri2014}
 \bibinfo{author}{Koulouri, T.}, \bibinfo{author}{Lauria, S.} and
@@ -256,13 +234,6 @@
 \newblock \bibinfo{title}{Scratch for budding computer scientists}.
 \newblock \emph{\bibinfo{journal}{ACM Sigcse Bulletin}},
   \bibinfo{volume}{39}(\bibinfo{number}{1}), pp.\bibinfo{pages}{223--227}.
-
-\bibitem[{Malone and Lepper(1987)}]{Malone1987}
-\bibinfo{author}{Malone, T.} and \bibinfo{author}{Lepper, M.},
-  \bibinfo{year}{1987}.
-\newblock \bibinfo{title}{Making learning fun : a taxonomic model of intrinsic
-  motivations for learning}.
-\newblock \emph{\bibinfo{journal}{Conative and Affective Process Analysis}}.
 
 \bibitem[{Michael and Chen(2005)}]{Michael2005}
 \bibinfo{author}{Michael, D.R.} and \bibinfo{author}{Chen, S.L.},
@@ -372,15 +343,6 @@
 \newblock \emph{\bibinfo{journal}{International Journal of Sports Marketing and
   Sponsorship}}, \bibinfo{volume}{8}, pp.\bibinfo{pages}{213--224}.
 
-\bibitem[{Stevenson and Wagner(2006)}]{Stevenson2006}
-\bibinfo{author}{Stevenson, D.E.} and \bibinfo{author}{Wagner, P.J.},
-  \bibinfo{year}{2006}.
-\newblock \bibinfo{title}{Developing real-world programming assignments for
-  cs1}.
-\newblock \emph{\bibinfo{booktitle}{Proceedings of the 11th annual sigcse
-  conference on innovation and technology in computer science education}}.
-  \bibinfo{publisher}{ACM}, pp.\bibinfo{pages}{158--162}.
-
 \bibitem[{Susi, Johannesson and Backlund(2007)}]{Johann2015}
 \bibinfo{author}{Susi, T.}, \bibinfo{author}{Johannesson, M.} and
   \bibinfo{author}{Backlund, P.}, \bibinfo{year}{2007}.
@@ -393,12 +355,6 @@
 \newblock \bibinfo{note}{Accessed: 2019-03-21}.
 \newblock
   \urlprefix\url{https://www.sunysb.edu/libspecial/videogames/tennis.html}.
-
-\bibitem[{Tucker(1991)}]{tucker1991}
-\bibinfo{author}{Tucker, A.B.}, \bibinfo{year}{1991}.
-\newblock \bibinfo{title}{Computing curricula 1991}.
-\newblock \emph{\bibinfo{journal}{Communications of the ACM}},
-  \bibinfo{volume}{34}(\bibinfo{number}{6}), pp.\bibinfo{pages}{68--84}.
 
 \bibitem[{UniversityOfBath(2018)}]{bath}
 \bibinfo{author}{UniversityOfBath}, \bibinfo{year}{2018}.
@@ -413,6 +369,14 @@
 \newblock \emph{\bibinfo{title}{Mind in society: The development of higher
   psychological processes}}.
 \newblock \bibinfo{publisher}{Harvard university press}.
+
+\bibitem[{Watson and Li(2014)}]{watson2014}
+\bibinfo{author}{Watson, C.} and \bibinfo{author}{Li, F.W.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Failure rates in introductory programming revisited}.
+\newblock \emph{\bibinfo{booktitle}{Proceedings of the 2014 conference on
+  innovation \& technology in computer science education}}.
+  \bibinfo{organization}{ACM}, pp.\bibinfo{pages}{39--44}.
 
 \bibitem[{Wikiversity(2019)}]{wikiversity}
 \bibinfo{author}{Wikiversity}, \bibinfo{year}{2019}.

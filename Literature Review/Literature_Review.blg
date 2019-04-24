@@ -2,11 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2018)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: Literature_Review.aux
 The style file: bathx.bst
-Case mismatch error between cite keys Watson2014 and watson2014
----line 160 of file Literature_Review.aux
- : \citation{Watson2014
- :                     }
-I'm skipping whatever remains of this command
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: litreview.bib
 Warning--entry type for "Thefirstvideogame" isn't style-file defined
@@ -27,50 +22,53 @@ Warning--entry type for "wikiversity" isn't style-file defined
 --line 688 of file litreview.bib
 Warning--entry type for "bath" isn't style-file defined
 --line 696 of file litreview.bib
+Warning--entry type for "gidgetsite" isn't style-file defined
+--line 721 of file litreview.bib
 Warning--can't use both author and editor fields in Botturi2009
 Warning--can't use both author and editor fields in Jean
 Warning--empty journal in feurzeig1969
+Warning--empty title in gidgetsite
 Warning--can't use both volume and number fields in muratet2011
 Warning--can't use both author and editor fields in Wilkinson2016
-You've used 55 entries,
+You've used 60 entries,
             5153 wiz_defined-function locations,
-            1229 strings with 15397 characters,
-and the built_in function-call counts, 43840 in all, are:
-= -- 4440
-> -- 1308
+            1253 strings with 16026 characters,
+and the built_in function-call counts, 47686 in all, are:
+= -- 4842
+> -- 1416
 < -- 1
-+ -- 523
-- -- 446
-* -- 3624
-:= -- 5782
-add.period$ -- 174
-call.type$ -- 55
-change.case$ -- 410
-chr.to.int$ -- 56
-cite$ -- 62
-duplicate$ -- 3135
-empty$ -- 3689
-format.name$ -- 538
-if$ -- 9671
++ -- 566
+- -- 482
+* -- 3915
+:= -- 6291
+add.period$ -- 192
+call.type$ -- 60
+change.case$ -- 446
+chr.to.int$ -- 61
+cite$ -- 68
+duplicate$ -- 3415
+empty$ -- 4022
+format.name$ -- 583
+if$ -- 10527
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 462
-newline$ -- 289
-num.names$ -- 212
-pop$ -- 892
+missing$ -- 501
+newline$ -- 316
+num.names$ -- 232
+pop$ -- 989
 preamble$ -- 1
-purify$ -- 340
+purify$ -- 369
 quote$ -- 0
-skip$ -- 2154
+skip$ -- 2351
 stack$ -- 0
-substring$ -- 1690
-swap$ -- 2123
+substring$ -- 1832
+swap$ -- 2284
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 706
-warning$ -- 5
-while$ -- 315
+type$ -- 769
+warning$ -- 6
+while$ -- 344
 width$ -- 0
-write$ -- 734
-(There was 1 error message)
+write$ -- 802
+(There were 16 warnings)

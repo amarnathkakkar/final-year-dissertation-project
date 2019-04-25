@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  24 APR 2019 20:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  25 APR 2019 19:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -912,32 +912,32 @@ Chapter 1.
 ]
 Chapter 2.
 [2] [3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 567--567
 []|\OT1/cmr/bx/n/10 Instructional Do-
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 565--566
+Underfull \hbox (badness 2671) in paragraph at lines 567--568
 []|\OT1/cmr/m/n/10 Various (in-clud-ing: aca-demic
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 567--567
+Underfull \hbox (badness 4181) in paragraph at lines 569--569
 []|\OT1/cmr/bx/n/10 Studies Pub-lished
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 569--569
+Underfull \hbox (badness 5446) in paragraph at lines 571--571
 []|\OT1/cmr/bx/n/10 Experimental De-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
 []|\OT1/cmr/bx/n/10 Results sup-port
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
 \OT1/cmr/bx/n/10 ef-fec-tive learn-ing
  []
 
@@ -945,33 +945,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 575--575
 <Scratch-Example.png, id=77, 250.9375pt x 207.77625pt>
 File: Scratch-Example.png Graphic file (type png)
 <use Scratch-Example.png>
-Package pdftex.def Info: Scratch-Example.png  used on input line 650.
+Package pdftex.def Info: Scratch-Example.png  used on input line 652.
 (pdftex.def)             Requested size: 296.84094pt x 245.81425pt.
  [8]
 <ProgAndPlay-Example.jpg, id=82, 719.68875pt x 514.17094pt>
 File: ProgAndPlay-Example.jpg Graphic file (type jpg)
 <use ProgAndPlay-Example.jpg>
-Package pdftex.def Info: ProgAndPlay-Example.jpg  used on input line 666.
+Package pdftex.def Info: ProgAndPlay-Example.jpg  used on input line 668.
 (pdftex.def)             Requested size: 296.84094pt x 212.08244pt.
  [9 <./Scratch-Example.png>]
 <Gidget-Example.png, id=87, 1284.8pt x 658.46pt>
 File: Gidget-Example.png Graphic file (type png)
 <use Gidget-Example.png>
-Package pdftex.def Info: Gidget-Example.png  used on input line 684.
+Package pdftex.def Info: Gidget-Example.png  used on input line 686.
 (pdftex.def)             Requested size: 424.06035pt x 217.33266pt.
  [10 <./ProgAndPlay-Example.jpg>]
-Overfull \hbox (20.01242pt too wide) in paragraph at lines 706--706
+Overfull \hbox (20.01242pt too wide) in paragraph at lines 708--708
 |[]\OT1/cmr/bx/n/14.4 Teaching Con-di-tional and It-er-a-tive Con-trol Struc-tu
 res| 
  []
 
-[11 <./Gidget-Example.png>] [12] [13] [14]
-Overfull \hbox (11.75984pt too wide) in paragraph at lines 855--856
+[11 <./Gidget-Example.png>] [12] [13] [14] [15]
+Overfull \hbox (11.75984pt too wide) in paragraph at lines 856--857
 []\OT1/cmr/m/n/10 Game ob-ject model ver-sion II: a the-o-ret-i-cal frame-work 
 for ed-u-ca-tional game de-vel-op-ment (318) 
  []
 
-[15] [16] [16
+[16] [16
 
 ]
 Chapter 3.
@@ -1023,10 +1023,10 @@ Appendix C.
 
 ] (./Literature_Review.aux) ) 
 Here is how much of TeX's memory you used:
- 9721 strings out of 492649
- 145899 string characters out of 6129621
- 347450 words of memory out of 5000000
- 13356 multiletter control sequences out of 15000+600000
+ 9726 strings out of 492649
+ 145986 string characters out of 6129621
+ 347509 words of memory out of 5000000
+ 13361 multiletter control sequences out of 15000+600000
  8650 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,12n,92p,1098b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1040,7 +1040,7 @@ sfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
 er/sfrm1000.pfb>
-Output written on Literature_Review.pdf (54 pages, 852102 bytes).
+Output written on Literature_Review.pdf (54 pages, 853423 bytes).
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams

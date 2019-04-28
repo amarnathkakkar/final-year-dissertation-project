@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  25 APR 2019 22:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  28 APR 2019 14:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -733,6 +733,15 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box45
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks37
+\labelindent=\skip113
+\enit@outerparindent=\dimen166
+\enit@toks=\toks38
+\enit@inbox=\box46
+\enitdp@description=\count179
+)
 
 LaTeX Warning: Unused global option(s):
     [11.5pt].
@@ -740,26 +749,26 @@ LaTeX Warning: Unused global option(s):
 (./Literature_Review.aux)
 \openout1 = `Literature_Review.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 205.
-LaTeX Font Info:    ... okay on input line 205.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 205.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 205.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 207.
+LaTeX Font Info:    ... okay on input line 207.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 207.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 207.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 205.
+LaTeX Font Info:    ... okay on input line 207.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
@@ -801,17 +810,17 @@ File: fc-english.def 2016/01/12
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count179
-\scratchdimen=\dimen166
-\scratchbox=\box46
-\nofMPsegments=\count180
-\nofMParguments=\count181
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count182
-\MPscratchDim=\dimen167
-\MPnumerator=\count183
-\makeMPintoPDFobject=\count184
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count180
+\scratchdimen=\dimen167
+\scratchbox=\box47
+\nofMPsegments=\count181
+\nofMParguments=\count182
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count183
+\MPscratchDim=\dimen168
+\MPnumerator=\count184
+\makeMPintoPDFobject=\count185
+\everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -860,23 +869,23 @@ e
 ))
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 205.
-Package gensymb Info: Math companion symbols declared on input line 205.
-LaTeX Info: Redefining \degree on input line 205.
-LaTeX Info: Redefining \celsius on input line 205.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 207.
+Package gensymb Info: Math companion symbols declared on input line 207.
+LaTeX Info: Redefining \degree on input line 207.
+LaTeX Info: Redefining \celsius on input line 207.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 205.
-LaTeX Info: Redefining \ohm on input line 205.
-Package gensymb Info: Using \textohm for \ohm on input line 205.
-Package gensymb Info: Using \textmu for \micro on input line 205.
-\AtBeginShipoutBox=\box47
+erthousand on input line 207.
+LaTeX Info: Redefining \ohm on input line 207.
+Package gensymb Info: Using \textohm for \ohm on input line 207.
+Package gensymb Info: Using \textmu for \micro on input line 207.
+\AtBeginShipoutBox=\box48
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 <logobath.jpg, id=1, 215.6055pt x 88.4103pt>
 File: logobath.jpg Graphic file (type jpg)
 <use logobath.jpg>
-Package pdftex.def Info: logobath.jpg  used on input line 217.
+Package pdftex.def Info: logobath.jpg  used on input line 219.
 (pdftex.def)             Requested size: 152.65836pt x 62.6004pt.
 
 [1
@@ -912,32 +921,32 @@ Chapter 1.
 ]
 Chapter 2.
 [2] [3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 567--567
+Underfull \hbox (badness 10000) in paragraph at lines 569--569
 []|\OT1/cmr/bx/n/10 Instructional Do-
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 567--568
+Underfull \hbox (badness 2671) in paragraph at lines 569--570
 []|\OT1/cmr/m/n/10 Various (in-clud-ing: aca-demic
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 569--569
+Underfull \hbox (badness 4181) in paragraph at lines 571--571
 []|\OT1/cmr/bx/n/10 Studies Pub-lished
  []
 
 
-Underfull \hbox (badness 5446) in paragraph at lines 571--571
+Underfull \hbox (badness 5446) in paragraph at lines 573--573
 []|\OT1/cmr/bx/n/10 Experimental De-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 []|\OT1/cmr/bx/n/10 Results sup-port
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 \OT1/cmr/bx/n/10 ef-fec-tive learn-ing
  []
 
@@ -945,22 +954,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 577--577
 <Scratch-Example.png, id=77, 250.9375pt x 207.77625pt>
 File: Scratch-Example.png Graphic file (type png)
 <use Scratch-Example.png>
-Package pdftex.def Info: Scratch-Example.png  used on input line 652.
+Package pdftex.def Info: Scratch-Example.png  used on input line 654.
 (pdftex.def)             Requested size: 296.84094pt x 245.81425pt.
  [8]
 <ProgAndPlay-Example.jpg, id=82, 719.68875pt x 514.17094pt>
 File: ProgAndPlay-Example.jpg Graphic file (type jpg)
 <use ProgAndPlay-Example.jpg>
-Package pdftex.def Info: ProgAndPlay-Example.jpg  used on input line 668.
+Package pdftex.def Info: ProgAndPlay-Example.jpg  used on input line 670.
 (pdftex.def)             Requested size: 296.84094pt x 212.08244pt.
  [9 <./Scratch-Example.png>]
 <Gidget-Example.png, id=87, 1284.8pt x 658.46pt>
 File: Gidget-Example.png Graphic file (type png)
 <use Gidget-Example.png>
-Package pdftex.def Info: Gidget-Example.png  used on input line 686.
+Package pdftex.def Info: Gidget-Example.png  used on input line 688.
 (pdftex.def)             Requested size: 424.06035pt x 217.33266pt.
  [10 <./ProgAndPlay-Example.jpg>]
-Overfull \hbox (20.01242pt too wide) in paragraph at lines 708--708
+Overfull \hbox (20.01242pt too wide) in paragraph at lines 710--710
 |[]\OT1/cmr/bx/n/14.4 Teaching Con-di-tional and It-er-a-tive Con-trol Struc-tu
 res| 
  []
@@ -969,31 +978,31 @@ res|
 
 ]
 Chapter 3.
-[16] [16
+[16] [17] [18] [18
 
 ]
 Chapter 4.
-[17] [17
-
-]
-Chapter 5.
-[18] [18
-
-]
-Chapter 6.
 [19] [19
 
 ]
-Chapter 7.
+Chapter 5.
 [20] [20
 
 ]
-Chapter 8.
+Chapter 6.
 [21] [21
 
 ]
+Chapter 7.
+[22] [22
+
+]
+Chapter 8.
+[23] [23
+
+]
 Chapter 9.
-(./Literature_Review.bbl [22] [22
+(./Literature_Review.bbl [24] [24
 
 ]
 Underfull \hbox (badness 1838) in paragraph at lines 25--30
@@ -1001,43 +1010,44 @@ Underfull \hbox (badness 1838) in paragraph at lines 25--30
 ].  Ac-cessed: 2019-04-02.
  []
 
-[23] [24] [25] [26]) [27] [28
+[25] [26] [27] [28]) [29] [30
 
 ]
 Appendix A.
-[29
+[31
 
 ]
 Appendix B.
-[30
+[32
 
 ]
 Appendix C.
-[31
+[33
 
 ] (./Literature_Review.aux) ) 
 Here is how much of TeX's memory you used:
- 9726 strings out of 492649
- 145986 string characters out of 6129621
- 347509 words of memory out of 5000000
- 13361 multiletter control sequences out of 15000+600000
- 8650 words of font info for 31 fonts, out of 8000000 for 9000
+ 10002 strings out of 492649
+ 150678 string characters out of 6129621
+ 353593 words of memory out of 5000000
+ 13632 multiletter control sequences out of 15000+600000
+ 9009 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,11n,92p,1098b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,12n,92p,1098b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvip
 s/cm-super/cm-super-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm1000.pfb>
-Output written on Literature_Review.pdf (53 pages, 854020 bytes).
+c/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-su
+per/sfrm1000.pfb>
+Output written on Literature_Review.pdf (55 pages, 867893 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
+ 227 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

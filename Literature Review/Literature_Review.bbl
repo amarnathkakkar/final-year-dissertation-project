@@ -75,16 +75,6 @@
 \newblock \emph{\bibinfo{title}{Once upon a game}}, \bibinfo{address}{Boston,
   MA}: \bibinfo{publisher}{Springer US}, pp.\bibinfo{pages}{1--22}.
 
-\bibitem[{Braghirolli et~al.(2016)Braghirolli, Ribeiro, Weise and
-  Pizzolato}]{Braghirolli2016}
-\bibinfo{author}{Braghirolli, L.F.}, \bibinfo{author}{Ribeiro, J.L.D.},
-  \bibinfo{author}{Weise, A.D.} and \bibinfo{author}{Pizzolato, M.},
-  \bibinfo{year}{2016}.
-\newblock \bibinfo{title}{Benefits of educational games as an introductory
-  activity in industrial engineering education}.
-\newblock \emph{\bibinfo{journal}{Computers in Human Behavior}},
-  \bibinfo{volume}{58}, pp.\bibinfo{pages}{315--324}.
-
 \bibitem[{Breuer and Bente(2010)}]{Breuer2010}
 \bibinfo{author}{Breuer, J.} and \bibinfo{author}{Bente, G.},
   \bibinfo{year}{2010}.
@@ -379,6 +369,14 @@
   use and game preference}.
 \newblock \emph{\bibinfo{journal}{International Journal of Sports Marketing and
   Sponsorship}}, \bibinfo{volume}{8}, pp.\bibinfo{pages}{213--224}.
+
+\bibitem[{StatCounter(2019)}]{statistabrowser}
+\bibinfo{author}{StatCounter}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Global market share held by the leading web browser
+  versions as of february 2019)} [Online].
+\newblock \bibinfo{note}{Accessed: 2019-04-28}.
+\newblock
+  \urlprefix\url{https://www.statista.com/statistics/268299/most-popular-internet-browsers/}.
 
 \bibitem[{Susi, Johannesson and Backlund(2007)}]{Johann2015}
 \bibinfo{author}{Susi, T.}, \bibinfo{author}{Johannesson, M.} and

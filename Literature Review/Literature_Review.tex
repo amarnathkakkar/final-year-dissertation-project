@@ -191,6 +191,8 @@
 
 \usepackage[official]{eurosym}
 
+\usepackage{enumitem}
+
 
 %\title{
 %Development an Educational Game to Teach SQL Programming
@@ -880,26 +882,103 @@ Games have several characteristics. \citet{roungas2015} argue the following char
 %(CHANGE IT UP) \citeauthor{Barnes2007} ran a project that made University Students create games that would teach basic programming. They carried out evaluations to test participant learning from the game, and made some interesting observations as follows: Clear instructions and game goals must be provided and accessible throughout the game, Learning goals must be clearly tied to in-game feedback that motivates the player (through, e.g. experience points, health), and penalizes guessing, Humor can be a motivation for in-game interaction \citep{Barnes2007}.
 
 %rewards remain controversial in education due to their possible negative side effects on individuals motivation, Despite the controversy concerning the use of external rewards in education (Cameron, Pierce, Banko, \& Gear, 2005). badges in the context of a technology-based innovation in an elementary school can enhance learning without undermining motivation \citep{Filsecker2014}.
- 
- 
-
 
 \afterpage{\blankpage}
+
+
+
+
 
 \chapter{Requirements Specification}
 
-\section{Functional Requirements}
+%This chapter should identify the process of requirements capture and analysis that was adopted (explaining why a particular technique or method was adopted rather than competing techniques, if necessary). The section should identify and discuss key requirements, and focus particularly upon areas of particular challenge, difficulty or conflict. An appropriate scoping of the desired system is a key part of any project, reflecting an appropriate understanding of the resource limitations that impinge on the project. The chapter should be careful to identify areas of the process of requirement analysis and specification which were particularly ?successful? or demonstrate good practice, and be appropriately self-critical of areas where difficult compromises have had to be made.
+
+The literature review highlights several key areas of study that were used to inform the requirements specification. The following parts of the literature review will be considered; benefits of educational games; issues of teaching iterative and conditional control structures; the elements from the example of educational games that had a positive impact, and finally educational game design.
+
+The requirements are split into functional and non-functional sections, and each requirement is given an importance rating of: high, medium or low, which refer to being essential, conditional and optional for the system respectively. 
+
+The aim of the current study is to develop an educational game to teach iterative and conditional control structures. This will be achieved through the following requirements:
+%which part of lit review will requirements spec consider. (pedagogical requirements and gamification requirements.)
+
+
+%The pedagogical requirements were mostly informed by research done in section 2.2, which... these requirements address decisions such as what are the learning objectives of the game, and how much detail should it go into on these topics
+
+
+
+
 
 \section{Non-Functional Requirements}
 
+\begin{enumerate}[label=3.1.\arabic*]
+
+  \item \textbf{Game must be easily accessible from home, work or school.} A key benefit of e-learning over traditional forms is being able to access learning material at any time, given an internet connection, browser, etc \citep{Girard2013}. \newline Priority: High
+
+  \item \textbf{Game must improve player's knowledge on iterative and conditional control structures.} A key requirement of a serious game is to educate the player. \newline Priority: High
+  
+  \item \textbf{Game must not assume player has any existing programming knowledge.} Iterative and conditional constructs are fundamental programming concepts, and the target audience is assumed to have little to no programming knowledge. \newline Priority: High
+  
+  \item \textbf{Game should have a reasonable difficulty curve.} Players should be able to learn the basic game controls early on in the game. Game should then get progressively harder, keeping the player challenged and engaged. \newline Priority: Medium
+  
+  \item \textbf{Game should be fun and enjoyable to play.} Entertainment is not the primary purpose of the game. However experiencing fun and enjoyment whilst playing helps improve players' learning performance \citep{giannakos2013}. \newline Priority: Medium
+  
+  \item \textbf{Player should be motivated throughout the game.} Motivation is a key aspect that drives learning \citep{Gee2003}. \newline Priority: Medium
+  
+  \item \textbf{Player should feel challenged.} Challenge is described as one of the aspects that leads to player engagement \citep{whitton2011}. \newline Priority: Medium
+  
+  \item \textbf{Game may foster player motivation to learn more complex programming.} Player motivation, specifically student motivation in computer science courses is a concern, and can be improved. \newline Priority: Low
+  
+\end{enumerate}
+
+
+\section{Functional Requirements}
+
+\begin{enumerate}[label=3.2.\arabic*]
+
+  \item \textbf{Game rules and goals must be accessible throughout the game.} Players must be able to refer back to the rules and goals throughout the game. \newline Priority: High
+
+  \item \textbf{Game must at least introduce \textit{if} statements and \textit{for} loops.} These constructs can be considered one as one of the basic iterative and conditional control structures. \newline Priority: High
+  
+  \item \textbf{Game must define in-game functions to be used with \textit{if} statements and \textit{for} loops.} This will allow to merge the educational goals of the game with its entertainment aspect. \newline Priority: High
+  
+  \item \textbf{Game must have levels with clear defined goals, that require increasingly difficult solutions.} Clear accessible goals will tell the player what to do each level. Concepts can be introduced at a reasonable pace, that work to limit player overwhelm. \newline Priority: High
+  
+  \item \textbf{Game must give players some control over choice of action.} Learner control is an aspect that is not widely present in most traditional forms of teaching, and control is described to lead to greater engagement \citep{whitton2011}. \newline Priority: High
+
+  \item \textbf{Game must give feedback to player solutions.} Feedback is important as it allows players to assess their performance and deal with any mistakes. \newline Priority: High
+  
+  \item \textbf{Game must use some form of in-game rewards and punishments, such as score points and hit points.} The use of game rewards and punishments foster extrinsic motivations, encouraging player engagement \citep{roungas2015}. \newline Priority: High
+  
+  \item \textbf{Game must have a general help section.} Players could use this as a reference point throughout the game. \newline Priority: High
+  
+  \item \textbf{Game should give feedback in a personal and constructive way.} Impersonal feedback on programming errors can reduce player motivation, whilst constructive feedback can improve motivation. \newline Priority: Medium
+
+  \item \textbf{Game should be web-based, and playable in three most popular web browsers.} These are Chrome, Safari and Firefox \citep{statistabrowser}. Allows the game to be widely accessible.  \newline Priority: Medium
+  
+  \item \textbf{Game should have a tutorial to introduce the game rules, goals and game mechanics.} The tutorial will be able immediately introduce the core concept of the game including the educational aims. \newline Priority: Medium
+  
+  \item \textbf{Game may provide tips to the player about individual level.}  In case player is ever stuck on a level, tips would help the player progress. \newline Priority: Low 
+  
+  \item \textbf{Game may save players progress.} Saving game state would allow players to leave the game for any reason, and return any time they wish. \newline Priority: Low
+  
+  \item \textbf{Game may educate the player about functions and parameters.}  In-game functions of the form of actual programming functions, may familiarise players about the use of functions and passing in parameters. \newline Priority: Low
+  
+\end{enumerate}
+
+
 \afterpage{\blankpage}
+
+
 
 
 
 
 \chapter{Design}
 
-\section{Web-based Environment}
+%The design chapter should indicate how the problem, as specified within the re- quirements, is analysed to create a potential solution, and how the details of the proposed solution are captured using an appropriate method. The design chapter will typically address the problem of method choice, but should not simply regurgitate the well-known details of myriad competing design methods. The chapter should then introduce the overall architec- ture of the design (the high-level design) so that the reader can gain an understanding of the approach being adopted. The chapter should not be allowed to become a catalogue of key classes or design components. Instead, it should select key parts of the design which are particularly important, illustrate the selection of particular approaches from a range ofpossible design decisions, or show the application of particular design patterns for the solution of identified problems. Of particular importance are areas of the design which resolve key viewpoint conflicts that were identified in requirements capture and analysis.
+
+%If the user interface specification and design is an important part of the project, then it may be appropriate to dedicate a separate chapter to this component of the system. It is common for project students to spend considerable time rehearsing principles of user interface design that are readily accessible from key texts. Whilst it is important that these principles are used and applied, extensive regurgitation of this material is often unnecessary and simple reference can be made to the appropriate sources. If, however, the project is investigating new approaches to user interface development, then a more in-depth consideration of the principles of user interface design may be appropriate in the literature and technology survey.
+
+\section{Web-based}
 \section{Game Mechanics} %What I want to achieve (player moves through dungeon through use of programming)
 \section{Game Aesthetics} %How it will look ()
 \section{Game Dynamics} %How it interacts (How the user interacts)
@@ -913,7 +992,13 @@ Games have several characteristics. \citet{roungas2015} argue the following char
 
 \chapter{Implementation}
 
-\section{}
+%This chapter will follow the same approach as the Design chapter, presenting an overview of the software architecture and a high-level discussion of the implementation process. It will reflect on appropriate implementation approaches, algorithm choices and language choice, using the more detailed discussion provided within the literature and technology survey to justify decisions taken. It will include discussion of any ancillary techniques used to ease implementation (such as the use of source code control systems and associated release plans). The discussion should not descend to become a simple catalogue of classes or methods, but should select non-trivial components, interesting implementation techniques, or important algorithm choices to discuss. It is important to take time to decide which design and implementation issues warrant discussion and which do not.
+
+\section{Technologies Used}
+
+\section{System Architecture}
+
+\section{Player Command Functions}
 
 \afterpage{\blankpage}
 
@@ -925,7 +1010,7 @@ Games have several characteristics. \citet{roungas2015} argue the following char
 \section{System Testing}
 
 \section{User Testing}
-\subsection{Interviews} %Think aloud protocol, initial testing
+\subsection{Observed Playthroughs} %Think aloud protocol, initial testing
 \subsection{Questionnaires}
 
 Useful literature:
@@ -937,6 +1022,10 @@ Purposeful by design?: a serious game design assessment framework
 
 
 \chapter{Results}
+
+\section{System Improvement}
+
+\section{Usability}
 
 \section{Learning}
 

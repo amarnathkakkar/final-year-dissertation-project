@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  29 APR 2019 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  29 APR 2019 22:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -982,27 +982,27 @@ Chapter 3.
 
 ]
 Chapter 4.
-[19] [19
+[19] [20] [20
 
 ]
 Chapter 5.
-[20] [20
-
-]
-Chapter 6.
 [21] [21
 
 ]
-Chapter 7.
+Chapter 6.
 [22] [22
 
 ]
-Chapter 8.
+Chapter 7.
 [23] [23
 
 ]
+Chapter 8.
+[24] [24
+
+]
 Chapter 9.
-(./Literature_Review.bbl [24] [24
+(./Literature_Review.bbl [25] [25
 
 ]
 Underfull \hbox (badness 1838) in paragraph at lines 25--30
@@ -1010,29 +1010,29 @@ Underfull \hbox (badness 1838) in paragraph at lines 25--30
 ].  Ac-cessed: 2019-04-02.
  []
 
-[25] [26] [27] [28]) [29] [30
+[26] [27] [28] [29]) [30] [31
 
 ]
 Appendix A.
-[31
-
-]
-Appendix B.
 [32
 
 ]
-Appendix C.
+Appendix B.
 [33
+
+]
+Appendix C.
+[34
 
 ] (./Literature_Review.aux) ) 
 Here is how much of TeX's memory you used:
- 10002 strings out of 492649
- 150678 string characters out of 6129621
- 353593 words of memory out of 5000000
- 13632 multiletter control sequences out of 15000+600000
+ 10009 strings out of 492649
+ 150786 string characters out of 6129621
+ 353702 words of memory out of 5000000
+ 13639 multiletter control sequences out of 15000+600000
  9009 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,12n,92p,1146b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,12n,92p,1146b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvip
 s/cm-super/cm-super-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
@@ -1044,10 +1044,10 @@ msfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-su
 per/sfrm1000.pfb>
-Output written on Literature_Review.pdf (55 pages, 868232 bytes).
+Output written on Literature_Review.pdf (56 pages, 874084 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
+ 230 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

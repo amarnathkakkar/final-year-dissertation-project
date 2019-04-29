@@ -834,7 +834,7 @@ Games have several characteristics. \citet{roungas2015} argue the following char
 
 	\item \textbf{Goals}. Goals allow players to judge their performance. They also act as a motivation for players \citep{roungas2015}. \citep{Barnes2007} found that goals should also be provided and accessible throughout the game. They must be clearly tied to in-game feedback, such as avatar health or score, that either motivates or penalises players \citep{Barnes2007}.
 	
-	\item \textbf{Challenge}. Challenge leads to engagement, if, tasks are optimally balanced between challenge and skill \citep{whitton2011,flow}. Challenges need to be carefully designed in order to not be too boring or too difficult \citep{roungas2015}.
+	\item \textbf{Challenge}. Challenge leads to engagement, if, tasks are optimally balanced between challenge and skill \citep{whitton2011, flow}. Challenges need to be carefully designed in order to not be too boring or too difficult \citep{roungas2015}.
 	
 	\item \textbf{Feedback}. Feedback allows players to assess their performance \citep{roungas2015}. It leads players towards correct answers if their assumptions are wrong, and thus creates learning opportunities. However in programming, feedback in the form of errors can be quite discouraging to novice programmers \citep{lee2011}. Thus care should be taken when designing feedback in a beginner programming game. Feedback should be presented clearly and on time \citep{roungas2015}.
 \end{enumerate}
@@ -910,7 +910,7 @@ The aim of the current study is to develop an educational game to teach iterativ
 
 \begin{enumerate}[label=3.1.\arabic*]
 
-  \item \textbf{Game must be easily accessible from home, work or school.} A key benefit of e-learning over traditional forms is being able to access learning material at any time, given an internet connection, browser, etc \citep{Girard2013}. \newline Priority: High
+  \item \textbf{Game must be easily accessible from home, work or school.} A key benefit of e-learning over traditional forms is being able to access learning material at any time, given a device with an internet connection and a browser \citep{Girard2013}. \newline Priority: High
 
   \item \textbf{Game must improve player's knowledge on iterative and conditional control structures.} A key requirement of a serious game is to educate the player. \newline Priority: High
   
@@ -985,19 +985,42 @@ The aim of the current study is to develop an educational game to teach iterativ
 
 %Aesthetics describes the desirable emotional responses evoked in the player, when she interacts with the game system.
 
-\section{Web-based}
+\section{Game Genre}
+
+Since the start of the project, the idea for the genre of the game was a 2D maze adventure. Researchers have argued which genres are best suited for educational purposes \citep{moreno2008}, however most of the discussion on educational game design does not revolve around the game genre, but instead on which game elements, pedagogical concepts and player feelings aroused by the game are most important. These aspects were discussed in the literature review and influenced the requirements specification, which influenced the design of the game.
+
+\subsection{Web-based}
 
 %Intro + Reason
 %HTML and JavaScript
 
-A web based environment was decided to use as the design for the educational games. 
+A web-based design was adopted to develop the educational game. A web game has several advantages over other forms of video games. Namely, these are:
+
+%Compatibility is another huge advantage HTML5 has. HTML is the lowest common denominator for all web based devices. By using HTML5 you can target a wider array of devices and gadgets without having to specifically port your game to each different platform. Another often forgotten advantage is ease of use. For the technically savvy, downloading, installing, and updating plug-ins is only a minor hassle. However, for less technically savvy users this can be quite a hurdle and just may turn away users altogether.
+
+\begin{itemize}
+
+	\item Accessible on most web browsers, without having to implement different versions of the game for each browser. 
+	\item Widely accessible to multiple users through a number of different web-based devices. Do not have to create different versions of the game or port the game onto each different device. 
+	\item Ease of accessibility. Requires no download, installation or update to plug-ins apart from having a web browser.
+	\item Easy to update web applications once they are deployed. Requires no update from user to get the latest version of the game, apart from perhaps updating their web browser to the latest version.
+	\item Can achieve greater levels of interoperability compared to desktop environments \citep{roungas2015}.
+	
+\end{itemize}
 
 
 \section{Game Mechanics} %What I want to achieve (player moves through dungeon through use of programming)
 
 %Functionality of game.
+%The following subsections will discuss the elements of the game that the user directly interacts with, or interactions that occur through users action.
+
+The following subsections will discuss the elements of the game that either the user directly interacts with, or are influenced by user action.
+
+%The selection of the airfoils will be discussed in the following subsections. The MH45 was used as the primary airfoil and the S822 airfoil, which was used for the model with aerodynamic twist at the tip.
 
 \subsection{Character Functions}
+
+
 
 %The idea of character functions
 %How these tie into the use of if statements and for loops

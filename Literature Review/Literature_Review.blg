@@ -4,10 +4,6 @@ The top-level auxiliary file: Literature_Review.aux
 The style file: bathx.bst
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: litreview.bib
-Warning--entry type for "Thefirstvideogame" isn't style-file defined
---line 135 of file litreview.bib
-Warning--entry type for "TennisForTwo" isn't style-file defined
---line 141 of file litreview.bib
 Warning--entry type for "Statista" isn't style-file defined
 --line 147 of file litreview.bib
 Warning--entry type for "Statistanewzoo" isn't style-file defined
@@ -32,45 +28,45 @@ Warning--empty journal in feurzeig1969
 Warning--empty title in gidgetsite
 Warning--can't use both volume and number fields in muratet2011
 Warning--can't use both author and editor fields in Wilkinson2016
-You've used 63 entries,
+You've used 60 entries,
             5153 wiz_defined-function locations,
-            1268 strings with 16390 characters,
-and the built_in function-call counts, 49989 in all, are:
-= -- 5090
-> -- 1472
+            1248 strings with 15956 characters,
+and the built_in function-call counts, 48094 in all, are:
+= -- 4858
+> -- 1460
 < -- 1
-+ -- 588
-- -- 501
-* -- 4091
-:= -- 6597
-add.period$ -- 203
-call.type$ -- 63
-change.case$ -- 468
-chr.to.int$ -- 64
-cite$ -- 71
-duplicate$ -- 3583
-empty$ -- 4224
-format.name$ -- 605
-if$ -- 11041
++ -- 576
+- -- 497
+* -- 3961
+:= -- 6377
+add.period$ -- 194
+call.type$ -- 60
+change.case$ -- 448
+chr.to.int$ -- 61
+cite$ -- 66
+duplicate$ -- 3443
+empty$ -- 4042
+format.name$ -- 601
+if$ -- 10588
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 523
-newline$ -- 332
-num.names$ -- 244
-pop$ -- 1032
+missing$ -- 506
+newline$ -- 317
+num.names$ -- 240
+pop$ -- 994
 preamble$ -- 1
-purify$ -- 386
+purify$ -- 371
 quote$ -- 0
-skip$ -- 2467
+skip$ -- 2364
 stack$ -- 0
-substring$ -- 1930
-swap$ -- 2391
+substring$ -- 1827
+swap$ -- 2313
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 806
+type$ -- 762
 warning$ -- 6
-while$ -- 363
+while$ -- 353
 width$ -- 0
-write$ -- 843
-(There were 17 warnings)
+write$ -- 804
+(There were 15 warnings)

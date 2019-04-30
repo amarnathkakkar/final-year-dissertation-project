@@ -2,61 +2,59 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {chapter}{\numberline {2}Literature Review}{2}
 \contentsline {section}{\numberline {2.1}Video Games}{2}
-\contentsline {subsection}{\numberline {2.1.1}History}{2}
-\contentsline {subsection}{\numberline {2.1.2}Impacts}{3}
-\contentsline {subsection}{\numberline {2.1.3}Uses}{3}
+\contentsline {subsection}{\numberline {2.1.1}Impacts}{2}
+\contentsline {subsection}{\numberline {2.1.2}Uses}{2}
 \contentsline {section}{\numberline {2.2}Educational Games}{3}
-\contentsline {subsection}{\numberline {2.2.1}Definition}{4}
+\contentsline {subsection}{\numberline {2.2.1}Definition}{3}
 \contentsline {subsection}{\numberline {2.2.2}History}{4}
-\contentsline {subsection}{\numberline {2.2.3}Benefits}{5}
+\contentsline {subsection}{\numberline {2.2.3}Benefits}{4}
 \contentsline {subsubsection}{\numberline {2.2.3.1}E-learning}{5}
-\contentsline {subsubsection}{\numberline {2.2.3.2}Learning Through Games}{6}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Learning Through Games}{5}
 \contentsline {subsubsection}{\numberline {2.2.3.3}Effectiveness of Learning through Games}{6}
-\contentsline {subsection}{\numberline {2.2.4}Examples}{8}
-\contentsline {section}{\numberline {2.3}Teaching Conditional and Iterative Control Structures}{11}
-\contentsline {subsection}{\numberline {2.3.1}Methods}{11}
-\contentsline {subsection}{\numberline {2.3.2}Issues}{12}
-\contentsline {section}{\numberline {2.4}Educational Game Design}{13}
-\contentsline {subsection}{\numberline {2.4.1}Games and Learning}{13}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Motivation}{13}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Repetition}{14}
-\contentsline {subsubsection}{\numberline {2.4.1.3}Rewards}{14}
-\contentsline {subsection}{\numberline {2.4.2}Game Elements}{15}
-\contentsline {chapter}{\numberline {3}Requirements Specification}{16}
-\contentsline {section}{\numberline {3.1}Non-Functional Requirements}{16}
-\contentsline {section}{\numberline {3.2}Functional Requirements}{17}
-\contentsline {chapter}{\numberline {4}Design}{19}
-\contentsline {section}{\numberline {4.1}Game Genre}{19}
-\contentsline {subsection}{\numberline {4.1.1}Web-based}{19}
-\contentsline {section}{\numberline {4.2}Game Mechanics}{20}
-\contentsline {subsection}{\numberline {4.2.1}Character Functions}{20}
-\contentsline {subsection}{\numberline {4.2.2}Scoring}{20}
-\contentsline {subsection}{\numberline {4.2.3}Hit points}{20}
-\contentsline {section}{\numberline {4.3}User Interface}{20}
-\contentsline {subsection}{\numberline {4.3.1}Dungeon}{20}
-\contentsline {subsection}{\numberline {4.3.2}Console}{20}
-\contentsline {subsubsection}{\numberline {4.3.2.1}Player Interaction}{20}
-\contentsline {section}{\numberline {4.4}Level Design}{20}
-\contentsline {subsection}{\numberline {4.4.1}Tutorial}{20}
-\contentsline {chapter}{\numberline {5}Implementation}{21}
-\contentsline {section}{\numberline {5.1}Technologies Used}{21}
-\contentsline {section}{\numberline {5.2}System Architecture}{21}
-\contentsline {section}{\numberline {5.3}Character Functions}{21}
-\contentsline {chapter}{\numberline {6}Testing}{22}
-\contentsline {section}{\numberline {6.1}System Testing}{22}
-\contentsline {section}{\numberline {6.2}User Testing}{22}
-\contentsline {subsection}{\numberline {6.2.1}Observed Playthroughs}{22}
-\contentsline {subsection}{\numberline {6.2.2}Questionnaires}{22}
-\contentsline {chapter}{\numberline {7}Results}{23}
-\contentsline {section}{\numberline {7.1}System Improvement}{23}
-\contentsline {section}{\numberline {7.2}Usability}{23}
-\contentsline {section}{\numberline {7.3}Learning}{23}
-\contentsline {section}{\numberline {7.4}Engagement}{23}
-\contentsline {chapter}{\numberline {8}Discussion}{24}
-\contentsline {chapter}{\numberline {9}Future Work}{25}
-\contentsline {chapter}{Bibliography}{30}
+\contentsline {subsection}{\numberline {2.2.4}Examples}{7}
+\contentsline {section}{\numberline {2.3}Teaching Conditional and Iterative Control Structures}{10}
+\contentsline {subsection}{\numberline {2.3.1}Methods}{10}
+\contentsline {subsection}{\numberline {2.3.2}Issues}{11}
+\contentsline {section}{\numberline {2.4}Educational Game Design}{12}
+\contentsline {subsection}{\numberline {2.4.1}Games and Learning}{12}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Motivation}{12}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Repetition}{13}
+\contentsline {subsubsection}{\numberline {2.4.1.3}Rewards}{13}
+\contentsline {subsection}{\numberline {2.4.2}Game Elements}{14}
+\contentsline {chapter}{\numberline {3}Requirements Specification}{15}
+\contentsline {section}{\numberline {3.1}Non-Functional Requirements}{15}
+\contentsline {section}{\numberline {3.2}Functional Requirements}{16}
+\contentsline {chapter}{\numberline {4}Design}{18}
+\contentsline {section}{\numberline {4.1}Core Idea}{18}
+\contentsline {section}{\numberline {4.2}Web-based}{19}
+\contentsline {section}{\numberline {4.3}Game Mechanics}{19}
+\contentsline {subsection}{\numberline {4.3.1}Functions}{19}
+\contentsline {subsection}{\numberline {4.3.2}Scoring}{20}
+\contentsline {subsection}{\numberline {4.3.3}Hit points}{21}
+\contentsline {section}{\numberline {4.4}User Interface}{21}
+\contentsline {subsection}{\numberline {4.4.1}Dungeon}{21}
+\contentsline {subsection}{\numberline {4.4.2}Console}{21}
+\contentsline {section}{\numberline {4.5}Level Design}{21}
+\contentsline {subsection}{\numberline {4.5.1}Tutorial}{21}
+\contentsline {chapter}{\numberline {5}Implementation}{22}
+\contentsline {section}{\numberline {5.1}Technologies Used}{22}
+\contentsline {section}{\numberline {5.2}System Architecture}{22}
+\contentsline {section}{\numberline {5.3}Functions}{22}
+\contentsline {chapter}{\numberline {6}Testing}{23}
+\contentsline {section}{\numberline {6.1}System Testing}{23}
+\contentsline {section}{\numberline {6.2}User Testing}{23}
+\contentsline {subsection}{\numberline {6.2.1}Observed Playthroughs}{23}
+\contentsline {subsection}{\numberline {6.2.2}Questionnaires}{23}
+\contentsline {chapter}{\numberline {7}Results}{24}
+\contentsline {section}{\numberline {7.1}System Improvement}{24}
+\contentsline {section}{\numberline {7.2}Usability}{24}
+\contentsline {section}{\numberline {7.3}Learning}{24}
+\contentsline {section}{\numberline {7.4}Engagement}{24}
+\contentsline {chapter}{\numberline {8}Discussion}{25}
+\contentsline {chapter}{\numberline {9}Future Work}{26}
+\contentsline {chapter}{Bibliography}{31}
 \setcounter {tocdepth}{-1}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{32}
-\contentsline {chapter}{\numberline {B}Screenshots}{33}
-\contentsline {chapter}{\numberline {C}Ethics Checklist}{34}
+\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{33}
+\contentsline {chapter}{\numberline {B}Screenshots}{34}
+\contentsline {chapter}{\numberline {C}Ethics Checklist}{35}

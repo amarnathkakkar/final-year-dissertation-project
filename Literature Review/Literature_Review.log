@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  1 MAY 2019 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  2 MAY 2019 16:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -981,27 +981,38 @@ Chapter 3.
 
 ]
 Chapter 4.
-[18] [19] [20] [21] [22] [22
+[18] [19] [20] [21] [22]
+<User-Interface-Design.pdf, id=138, 579.12357pt x 420.61137pt>
+File: User-Interface-Design.pdf Graphic file (type pdf)
+<use User-Interface-Design.pdf>
+Package pdftex.def Info: User-Interface-Design.pdf  used on input line 1099.
+(pdftex.def)             Requested size: 296.84094pt x 215.60002pt.
+ [23 <./User-Interface-Design.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./User-Interface-Design.pdf)
+: PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type 
+<array>); ignored.
+>] [24] [24
 
 ]
 Chapter 5.
-[23] [23
-
-]
-Chapter 6.
-[24] [24
-
-]
-Chapter 7.
 [25] [25
 
 ]
-Chapter 8.
+Chapter 6.
 [26] [26
 
 ]
+Chapter 7.
+[27] [27
+
+]
+Chapter 8.
+[28] [28
+
+]
 Chapter 9.
-(./Literature_Review.bbl [27] [27
+(./Literature_Review.bbl [29] [29
 
 ]
 Underfull \hbox (badness 1838) in paragraph at lines 25--30
@@ -1009,29 +1020,29 @@ Underfull \hbox (badness 1838) in paragraph at lines 25--30
 ].  Ac-cessed: 2019-04-02.
  []
 
-[28] [29] [30] [31]) [32] [33
+[30] [31] [32] [33]) [34] [35
 
 ]
 Appendix A.
-[34
+[36
 
 ]
 Appendix B.
-[35
+[37
 
 ]
 Appendix C.
-[36
+[38
 
 ] (./Literature_Review.aux) ) 
 Here is how much of TeX's memory you used:
- 10001 strings out of 492649
- 150614 string characters out of 6129621
- 352599 words of memory out of 5000000
- 13631 multiletter control sequences out of 15000+600000
+ 10007 strings out of 492649
+ 150809 string characters out of 6129621
+ 352612 words of memory out of 5000000
+ 13636 multiletter control sequences out of 15000+600000
  9009 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,12n,92p,1146b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,11n,92p,1146b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvip
 s/cm-super/cm-super-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
@@ -1043,10 +1054,10 @@ msfonts/cm/cmr17.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-su
 per/sfrm1000.pfb>
-Output written on Literature_Review.pdf (58 pages, 880457 bytes).
+Output written on Literature_Review.pdf (60 pages, 966555 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
+ 277 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

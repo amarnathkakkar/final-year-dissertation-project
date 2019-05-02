@@ -926,7 +926,7 @@ The aim of the current study is to develop an educational game to teach iterativ
 
 \begin{enumerate}[label=3.2.\arabic*]
 
-  \item \textbf{Game must introduce \textit{if} statements and \textit{for} loops.} These constructs can be considered essential iterative and conditional control structures, and so the game must cover these. \newline Priority: High
+  \item \textbf{Game must at least introduce \textit{if} statements and \textit{for} loops.} These constructs can be considered essential iterative and conditional control structures, and so the game must cover these. \newline Priority: High
   
   \item \textbf{Game must have levels with their own clear defined mini goals.} Clear defined goals will tell the player what to do each level. This can help to introduce iterative and conditional constructs. \newline Priority: High
   
@@ -1025,28 +1025,27 @@ However as discussed in the literature review, care needs to be taken when tryin
 
 \subsection{Scoring}
 
-Score is an essential aspect in many video games. It provides players feedback based on their performance, and create opportunities for them to want to improve.
+Score is an essential aspect in many video games. It provides players feedback based on their performance, and create opportunities for them to want to improve. It also brings about a sense of challenge, by wanting to achieve a good score. In turn fuelling player motivation and engagement.
 
-Initially the idea was to implement a score system that would score based on players' code. This however would be a complex system to develop, as there is not one way to complete a level. Hence not all code to complete a level would look the same. Instead, a scoring system that scored players based on the time taken to complete a level was more suitable to this type of game.
+Initially the idea was to implement a score system that would score based on players' code. This however would be a complex system to develop, as there is not one fixed way to complete a level and hence not all code solutions will look the same. Instead, a scoring system that scored players based on the time taken to complete a level is more suitable.
 
-The design of this scoring system would be: 
+The design of this scoring system is as follows:
 
 \begin{enumerate}
 	\item Players get a fixed score at the start of the game, which would immediately begin to decrease. 
-	\item Upon completion of a level, the same fixed amount would be added to the players' score, and the player score would continue decreasing.
-	\item This would repeat until the player completed the final level and then would be presented with their final score.
+	\item Upon completion of a level, players' score will increase by a fixed amount, which will then continue decreasing.
+	\item This would repeat until the player completes the final level, upon which they would be presented with their final score.
 \end{enumerate}
 
-This style of scoring system would potentially challenge players to come up with solutions quickly and thus cause the game to be more engaging. However a drawback may be that players get frustrated if they feel forced to come up with a solution quickly. To tackle this, the fixed amount a score would increase by would be a large number, and the score would decrease very gradually. Thus potentially decreasing players' temptation to rush as they are likely to end up with a high score. The aim for this style of scoring system is to get players to feel the joy of achieving a high score, whilst still being engaged and challenged.
+This style of scoring system would potentially challenge players to come up with solutions quickly in the aim for a high score. However a drawback may be that players get frustrated if they feel forced to come up with a solution quickly. To tackle this, the fixed amount a score would increase by would be a large number, and the score would decrease very gradually. Thus players are more likely to end up with a high score, which potentially may decrease any pressure to rush. In conclusion, the overall aim for this style of scoring system is to increase player engagement and bring a sense of challenge.
 
 \subsection{Hit points}
 
-Since the design of the game was for the character to be able to shoot, specifically at enemies. It is also viable that the character is able to get 'hurt' by these enemies. This would occur by the character walking into such enemies, causing its hit points to decrease. Hit points are generally present in games that involve shooting, so it is again viable for this mechanic to be present in this style of game.
+Since the design of the game was for the character to be able to shoot, specifically at enemies. It is viable that the character can get 'hurt' by such enemies. This would involve the characters hit points decreasing. Hit points are generally present in games that involve shooting, so again it is a viable mechanic for this style of game. 
 
-This would give players the incentive to want to avoid such scenarios by planning and creating well-designed and thought-out code. To build upon this idea, players would receive bonus points if they managed to 'kill' one of these enemies, and lost points if their characters hit points reached zero, or in other words their character 'died'. Upon death, the character would be reset to the initial position of the same level. The user would then be able to amend their code and try again. 
+The character will be given a fixed hit point at the start of the game, which will only decrease if the character walks into any enemies. This would only occur when players have not created an optimal solution for the current level. Upon losing all their hit points, or in other words if their character 'dies', the character would be reset to the initial position at the start of the same level. The player will also lose some points from their score. The users code will not reset, as to give them a chance to identify the issues with their code, amend it and try again.
 
-
-
+This style of mechanic would give players the incentive to want to avoid such scenarios by planning and creating well-designed and thought-out code. The more the player thinks about their code, the more understanding they will develop about their code and the constructs they are working with. Specifically how these constructs work. The idea to reset the character upon death adds to this by giving players a chance to figure out where they went wrong, create a different solution and further their understanding.
 
 \section{Level Design} %How game progresses (what is learnt each step of the way)
 
@@ -1079,20 +1078,45 @@ Tutorial  & N/A                & None              \\ \hline
 05 & Create your own & for loop and if statement \\ \hline
 06 & Debug & for loop, if and else if statements \\ \hline
 07 & Unfinished code & nested for loop \\ \hline
-08 & Create your own & All
+08 & Create your own & Most
 \end{tabular}
 \end{table}
 
 
 \subsection{Tutorial}
 
+A tutorials role is to introduce the game to the player. Tutorials commonly entail the introduction of the game goals, game mechanics and rules. They can sometimes also have a walkthrough which leads the user through an example level. However, if a tutorial is too long or contains too much information, players might quickly get bored and lose any motivation they had, to play. Thus which information to present in the tutorial was carefully considered.
 
+The tutorial will comprise of two sections. The first will be a dialogue that explains the educational goals, as they are the main objective of the game, the game goals, game mechanics excluding the functions, and rules. It would be more useful to introduce functions to players during the game when they are actually required. Constructs will also be introduced during the levels for the same reason. The second section will be a walkthrough of an example level. The example level will have already have code required to complete the level, the user will be instructed to execute it. This gives players a feel for how the functions and character interact.
+
+Since the game can be played more than once by the same user, the tutorial will give users the option to skip and continue onto the main game. This is so users who already know how to play, do not have to spend unnecessary time recapping material already known. However throughout the game, the game interface will have a help section that contains a brief summary of the information presented in the tutorial.
 
 \section{User Interface}
 
-\subsection{Dungeon}
 
-\subsection{Console}
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.7\textwidth]{User-Interface-Design}
+       \captionsetup{justification=centering}
+\caption{Design of game layout for Programmer's Dungeon}
+\label{fig:User-Interface-Design}
+\end{figure}
+
+
+Figure \ref{fig:User-Interface-Design} shows the design layout of the game. The elements in the design were selected in order to satisfy the requirements. The description and purpose of each element is explained below:
+
+\begin{itemize}
+
+	\item \textbf{Console.} An updatable console for players write and modify code. Console will also have an execute button to run code. Level requirements will also be displayed here.
+	\item \textbf{Dungeon.} Displays the layout of the current level which includes: character, any enemies and the exit. Character will carry out the code executed in the console.
+	\item \textbf{Pop-up.} This will only ever pop-up to introduce and explain unintroduced constructs and functions as they are required.
+	\item \textbf{Hit points.} Displays the characters hit points.
+	\item \textbf{Score.} Displays the players current score.
+	\item \textbf{Help.} An interactive button which brings up a pop-up containing general help. The general help includes game rules, game goals, brief description of game mechanics including the functions and also constructs.
+	\item \textbf{Level Tips.} An interactive button which brings up a pop-up that contains information to help to complete the current level.
+	\item \textbf{Save.} A button that saves the players' current game state.
+
+\end{itemize}
 
 
 \afterpage{\blankpage}

@@ -32,29 +32,27 @@
 \contentsline {subsection}{\numberline {4.3.2}Scoring}{20}
 \contentsline {subsection}{\numberline {4.3.3}Hit points}{21}
 \contentsline {section}{\numberline {4.4}Level Design}{21}
-\contentsline {subsection}{\numberline {4.4.1}Tutorial}{22}
-\contentsline {section}{\numberline {4.5}User Interface}{22}
-\contentsline {subsection}{\numberline {4.5.1}Dungeon}{22}
-\contentsline {subsection}{\numberline {4.5.2}Console}{22}
-\contentsline {chapter}{\numberline {5}Implementation}{23}
-\contentsline {section}{\numberline {5.1}Technologies Used}{23}
-\contentsline {section}{\numberline {5.2}System Architecture}{23}
-\contentsline {section}{\numberline {5.3}Functions}{23}
-\contentsline {chapter}{\numberline {6}Testing}{24}
-\contentsline {section}{\numberline {6.1}System Testing}{24}
-\contentsline {section}{\numberline {6.2}User Testing}{24}
-\contentsline {subsection}{\numberline {6.2.1}Observed Playthroughs}{24}
-\contentsline {subsection}{\numberline {6.2.2}Questionnaires}{24}
-\contentsline {chapter}{\numberline {7}Results}{25}
-\contentsline {section}{\numberline {7.1}System Improvement}{25}
-\contentsline {section}{\numberline {7.2}Usability}{25}
-\contentsline {section}{\numberline {7.3}Learning}{25}
-\contentsline {section}{\numberline {7.4}Engagement}{25}
-\contentsline {chapter}{\numberline {8}Discussion}{26}
-\contentsline {chapter}{\numberline {9}Future Work}{27}
-\contentsline {chapter}{Bibliography}{32}
+\contentsline {subsection}{\numberline {4.4.1}Tutorial}{23}
+\contentsline {section}{\numberline {4.5}User Interface}{23}
+\contentsline {chapter}{\numberline {5}Implementation}{25}
+\contentsline {section}{\numberline {5.1}Technologies Used}{25}
+\contentsline {section}{\numberline {5.2}System Architecture}{25}
+\contentsline {section}{\numberline {5.3}Functions}{25}
+\contentsline {chapter}{\numberline {6}Testing}{26}
+\contentsline {section}{\numberline {6.1}System Testing}{26}
+\contentsline {section}{\numberline {6.2}User Testing}{26}
+\contentsline {subsection}{\numberline {6.2.1}Observed Playthroughs}{26}
+\contentsline {subsection}{\numberline {6.2.2}Questionnaires}{26}
+\contentsline {chapter}{\numberline {7}Results}{27}
+\contentsline {section}{\numberline {7.1}System Improvement}{27}
+\contentsline {section}{\numberline {7.2}Usability}{27}
+\contentsline {section}{\numberline {7.3}Learning}{27}
+\contentsline {section}{\numberline {7.4}Engagement}{27}
+\contentsline {chapter}{\numberline {8}Discussion}{28}
+\contentsline {chapter}{\numberline {9}Future Work}{29}
+\contentsline {chapter}{Bibliography}{34}
 \setcounter {tocdepth}{-1}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{34}
-\contentsline {chapter}{\numberline {B}Screenshots}{35}
-\contentsline {chapter}{\numberline {C}Ethics Checklist}{36}
+\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{36}
+\contentsline {chapter}{\numberline {B}Screenshots}{37}
+\contentsline {chapter}{\numberline {C}Ethics Checklist}{38}

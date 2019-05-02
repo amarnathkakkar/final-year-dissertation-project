@@ -8,19 +8,19 @@
 \contentsline {subsection}{\numberline {2.2.1}Definition}{3}
 \contentsline {subsection}{\numberline {2.2.2}History}{4}
 \contentsline {subsection}{\numberline {2.2.3}Benefits}{4}
-\contentsline {subsubsection}{\numberline {2.2.3.1}E-learning}{5}
+\contentsline {subsubsection}{\numberline {2.2.3.1}E-learning}{4}
 \contentsline {subsubsection}{\numberline {2.2.3.2}Learning through Games}{5}
-\contentsline {subsubsection}{\numberline {2.2.3.3}Effectiveness for Learning through Games}{6}
+\contentsline {subsubsection}{\numberline {2.2.3.3}Effectiveness of Learning through Games}{6}
 \contentsline {subsection}{\numberline {2.2.4}Examples}{7}
 \contentsline {section}{\numberline {2.3}Teaching Conditional and Iterative Control Structures}{10}
 \contentsline {subsection}{\numberline {2.3.1}Methods}{10}
 \contentsline {subsection}{\numberline {2.3.2}Issues}{11}
-\contentsline {section}{\numberline {2.4}Educational Game Design}{12}
+\contentsline {section}{\numberline {2.4}Educational Game Design}{11}
 \contentsline {subsection}{\numberline {2.4.1}Games and Learning}{12}
 \contentsline {subsubsection}{\numberline {2.4.1.1}Motivation}{12}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Repetition}{13}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Repetition}{12}
 \contentsline {subsubsection}{\numberline {2.4.1.3}Rewards}{13}
-\contentsline {subsection}{\numberline {2.4.2}Game Elements}{14}
+\contentsline {subsection}{\numberline {2.4.2}Game Elements}{13}
 \contentsline {chapter}{\numberline {3}Requirements Specification}{15}
 \contentsline {section}{\numberline {3.1}Non-Functional Requirements}{15}
 \contentsline {section}{\numberline {3.2}Functional Requirements}{16}

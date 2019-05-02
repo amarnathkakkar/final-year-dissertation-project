@@ -22,51 +22,50 @@ Warning--entry type for "gidgetsite" isn't style-file defined
 --line 721 of file litreview.bib
 Warning--entry type for "statistabrowser" isn't style-file defined
 --line 768 of file litreview.bib
-Warning--can't use both author and editor fields in Botturi2009
 Warning--can't use both author and editor fields in Jean
 Warning--empty journal in feurzeig1969
 Warning--empty title in gidgetsite
 Warning--can't use both volume and number fields in muratet2011
 Warning--can't use both author and editor fields in Wilkinson2016
-You've used 60 entries,
+You've used 59 entries,
             5153 wiz_defined-function locations,
-            1248 strings with 15956 characters,
-and the built_in function-call counts, 48094 in all, are:
-= -- 4858
-> -- 1460
+            1239 strings with 15783 characters,
+and the built_in function-call counts, 47291 in all, are:
+= -- 4781
+> -- 1436
 < -- 1
-+ -- 576
-- -- 497
-* -- 3961
-:= -- 6377
-add.period$ -- 194
-call.type$ -- 60
-change.case$ -- 448
-chr.to.int$ -- 61
-cite$ -- 66
-duplicate$ -- 3443
-empty$ -- 4042
-format.name$ -- 601
-if$ -- 10588
++ -- 567
+- -- 489
+* -- 3888
+:= -- 6273
+add.period$ -- 192
+call.type$ -- 59
+change.case$ -- 441
+chr.to.int$ -- 60
+cite$ -- 64
+duplicate$ -- 3386
+empty$ -- 3970
+format.name$ -- 590
+if$ -- 10412
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 506
-newline$ -- 317
-num.names$ -- 240
-pop$ -- 994
+missing$ -- 497
+newline$ -- 313
+num.names$ -- 236
+pop$ -- 972
 preamble$ -- 1
-purify$ -- 371
+purify$ -- 365
 quote$ -- 0
-skip$ -- 2364
+skip$ -- 2327
 stack$ -- 0
-substring$ -- 1827
-swap$ -- 2313
+substring$ -- 1797
+swap$ -- 2275
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 762
-warning$ -- 6
-while$ -- 353
+type$ -- 753
+warning$ -- 5
+while$ -- 346
 width$ -- 0
-write$ -- 804
-(There were 15 warnings)
+write$ -- 792
+(There were 14 warnings)

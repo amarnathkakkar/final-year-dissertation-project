@@ -220,7 +220,7 @@
     
     \vspace{2.5cm}
 %Thesis title
-    {\uppercase{\Large \textbf{An Investigation into the Effectiveness of an Educational Game for Teaching Iterative and Conditional Control Structures} \par}} %Development of an Educational Game to Teach Conditional and Iterative Control Structures
+    {\uppercase{\Large \textbf{Development of an Educational Game to Teach Conditional and Iterative Control Structures} \par}} %An Investigation into the Effectiveness of an Educational Game for Teaching Iterative and Conditional Control Structures
     \vspace{3cm}
 %Author's name
     {\Large \textbf{Amarnath Kakkar}\par}
@@ -267,7 +267,7 @@ Signed:
 %    {\uppercase{\large {Submitted in partial fulfilment for the degree of masters in aerospace engineering} \par}}
     \vspace{0.8cm}
 %%Author's name
-    {\LARGE An Investigation into the Effectiveness of an Educational Game for Teaching Iterative and Conditional Control Structures \par}
+    {\LARGE Development of an Educational Game to Teach Conditional and Iterative Control Structures \par}
     \vspace{1cm}	
     {\large Submitted by: Amarnath Kakkar\par}
 	
@@ -524,7 +524,7 @@ In a study carried out on what university students thought about e-learning, stu
 
 %Games allow players to be producers and not just consumers. Along with the designer, the player's actions co-create the game world \cite{Gee2003}.
 
-\subsubsection{Learning Through Games}
+\subsubsection{Learning through Games}
 
 
 Games can be a great learning environment \citep[see][]{prensky2003, Gee2003}. Despite the vast research on the negative impacts of gaming, playing video games identified for imparting beneficial skills such as, visual attention, spatial skills, problem solving skills and creativity \citep{Granic2014}. 
@@ -539,7 +539,7 @@ Playing games is naturally a fun and pleasurable activity \citep{Prensky2001}, a
 
 %This motivational ?sweet spot? balances optimal levels of challenge and frustration with sufficient experiences of success and accomplishment
 
-\subsection{Effectiveness for Learning} %Effectiveness of Learning through Games
+\subsubsection{Effectiveness for Learning through Games} %Effectiveness of Learning through Games
 
 Evidence of learning through educational games has been demonstrated \citep{Connolly2012, Pieter2013, Girard2013}. However, the effectiveness of educational games is undetermined \citep{Connolly2012, Girard2013}. There are also different viewpoints when it comes to determining their effectiveness. Two such meta-analyses, \citet{Pieter2013} and \citet{Girard2013}, explored at the effectiveness of learning through games, and made different conclusions. These studies are compared in Table \ref{tab:effectivess learning comparison}.
 
@@ -1139,27 +1139,33 @@ An important aspect of the interface is for it to be aesthetically pleasing. It 
 %High-level diagram
 
 
-\section{Implementation Process}
+\section{Technologies Used}
 %Justification of decisions taken w.r.t lit review
 
 The following subsections help to provide a high-level discussion of the implementation process. It aims to reflect and highlight implementation choices, ancillary techniques used and the choice of programming language, while providing justification for such choices.
 
 \subsection{Source Control}
 
-The source control software used for this study was GitHub. Source control has many features that are useful for when developing software. The functionality GitHub source control provides is the ability to, save code locally and in the cloud, which is often backed up by security, manage code updates, 
+Source control is a useful tool to help develop software. The source control system used for this study was GitHub. GitHub's source control system has several features that helped in the development process of the game. These are, the ability to save code locally and in their cloud servers, record and revisit code updates, and check merge changes. Code was committed every time a new functionality was added, or when there was a change to the code. This ensured that code was not committed too often, as this would be time consuming, and that the committed code was fully functioning.
 
 \subsection{Language Choice}
 
+The game was developed using Node.js, a JavaScript runtime environment. The game was written in JavaScript, Jade and CSS, and is entirely client side. Thus there is no game server. This allows quick execution of code, as all execution occurs in the users' browser; time saved sending and receiving messages to and from the server.
+
+JavaScript is a programming language for frontend development. It allows browser control, and it is also possible to animate page elements and create interactive content. The main reason for using it is because of its simplicity and vast functionality. Jade is a markup language that is simpler than HTML and has more functionality. CSS is a style sheet language and was used for describing the presentation of elements in the web page.
+
 \subsection{Character Animations}
+
+
 
 \subsection{Hosting Game}
 
 
-\section{Character-Function Interaction}
+\section{Function-Character Interaction}
 
-\subsubsection*{Player.move()}
+\subsubsection*{player.move()}
 
-\subsubsection*{Player.shoot()}
+\subsubsection*{player.shoot()}
 
 \subsubsection*{wallPosition()}
 
@@ -1171,24 +1177,22 @@ The source control software used for this study was GitHub. Source control has m
 %Two stage testing 
 %Think Aloud Protocol
 
+\section{System Testing}
 
-
+%Maybe useful literature:
+%Purposeful by design: a serious game design assessment framework
 
 \afterpage{\blankpage}
 
 
 
 
-\chapter{Testing}
+\chapter{User Testing}
 
-\section{System Testing}
-
-\section{User Testing}
 \subsection{Observed Playthroughs} %Think aloud protocol, initial testing
 \subsection{Questionnaires}
 
-Useful literature:
-Purposeful by design?: a serious game design assessment framework
+
 
 \afterpage{\blankpage}
 

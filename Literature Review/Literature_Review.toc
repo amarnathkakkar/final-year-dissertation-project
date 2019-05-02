@@ -10,8 +10,8 @@
 \contentsline {subsection}{\numberline {2.2.3}Benefits}{4}
 \contentsline {subsubsection}{\numberline {2.2.3.1}E-learning}{5}
 \contentsline {subsubsection}{\numberline {2.2.3.2}Learning Through Games}{5}
-\contentsline {subsubsection}{\numberline {2.2.3.3}Effectiveness of Learning through Games}{6}
-\contentsline {subsection}{\numberline {2.2.4}Examples}{7}
+\contentsline {subsection}{\numberline {2.2.4}Effectiveness for Learning}{6}
+\contentsline {subsection}{\numberline {2.2.5}Examples}{7}
 \contentsline {section}{\numberline {2.3}Teaching Conditional and Iterative Control Structures}{10}
 \contentsline {subsection}{\numberline {2.3.1}Methods}{10}
 \contentsline {subsection}{\numberline {2.3.2}Issues}{11}
@@ -35,24 +35,28 @@
 \contentsline {subsection}{\numberline {4.4.1}Tutorial}{23}
 \contentsline {section}{\numberline {4.5}User Interface}{23}
 \contentsline {chapter}{\numberline {5}Implementation}{25}
-\contentsline {section}{\numberline {5.1}Technologies Used}{25}
-\contentsline {section}{\numberline {5.2}System Architecture}{25}
-\contentsline {section}{\numberline {5.3}Functions}{25}
-\contentsline {chapter}{\numberline {6}Testing}{26}
-\contentsline {section}{\numberline {6.1}System Testing}{26}
-\contentsline {section}{\numberline {6.2}User Testing}{26}
-\contentsline {subsection}{\numberline {6.2.1}Observed Playthroughs}{26}
-\contentsline {subsection}{\numberline {6.2.2}Questionnaires}{26}
-\contentsline {chapter}{\numberline {7}Results}{27}
-\contentsline {section}{\numberline {7.1}System Improvement}{27}
-\contentsline {section}{\numberline {7.2}Usability}{27}
-\contentsline {section}{\numberline {7.3}Learning}{27}
-\contentsline {section}{\numberline {7.4}Engagement}{27}
-\contentsline {chapter}{\numberline {8}Discussion}{28}
-\contentsline {chapter}{\numberline {9}Future Work}{29}
-\contentsline {chapter}{Bibliography}{34}
+\contentsline {section}{\numberline {5.1}Implementation Process}{25}
+\contentsline {subsection}{\numberline {5.1.1}Source Control}{25}
+\contentsline {subsection}{\numberline {5.1.2}Language Choice}{26}
+\contentsline {subsection}{\numberline {5.1.3}Character Animations}{26}
+\contentsline {subsection}{\numberline {5.1.4}Hosting Game}{26}
+\contentsline {section}{\numberline {5.2}Character-Function Interaction}{26}
+\contentsline {section}{\numberline {5.3}Two-stage Development}{26}
+\contentsline {chapter}{\numberline {6}Testing}{27}
+\contentsline {section}{\numberline {6.1}System Testing}{27}
+\contentsline {section}{\numberline {6.2}User Testing}{27}
+\contentsline {subsection}{\numberline {6.2.1}Observed Playthroughs}{27}
+\contentsline {subsection}{\numberline {6.2.2}Questionnaires}{27}
+\contentsline {chapter}{\numberline {7}Results}{28}
+\contentsline {section}{\numberline {7.1}System Improvement}{28}
+\contentsline {section}{\numberline {7.2}Usability}{28}
+\contentsline {section}{\numberline {7.3}Learning}{28}
+\contentsline {section}{\numberline {7.4}Engagement}{28}
+\contentsline {chapter}{\numberline {8}Discussion}{29}
+\contentsline {chapter}{\numberline {9}Future Work}{30}
+\contentsline {chapter}{Bibliography}{35}
 \setcounter {tocdepth}{-1}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{36}
-\contentsline {chapter}{\numberline {B}Screenshots}{37}
-\contentsline {chapter}{\numberline {C}Ethics Checklist}{38}
+\contentsline {chapter}{\numberline {A}Uncertainty Analysis}{37}
+\contentsline {chapter}{\numberline {B}Screenshots}{38}
+\contentsline {chapter}{\numberline {C}Ethics Checklist}{39}

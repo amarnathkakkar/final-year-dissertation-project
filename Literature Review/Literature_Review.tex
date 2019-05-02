@@ -212,7 +212,7 @@
 %titlepage
 \clearpage\thispagestyle{empty}
 \begin{center}
-\begin{minipage}{0.9\linewidth}
+\begin{minipage}{1\linewidth}
     \centering
 %University logo
     \vspace{0.8cm}
@@ -220,8 +220,7 @@
     
     \vspace{2.5cm}
 %Thesis title
-    \vspace{0.2cm}
-    {\uppercase{\Large \textbf{Development of an Educational Game to Teach Conditional and Iterative Control Structures} \par}}
+    {\uppercase{\Large \textbf{An Investigation into the Effectiveness of an Educational Game for Teaching Iterative and Conditional Control Structures} \par}} %Development of an Educational Game to Teach Conditional and Iterative Control Structures
     \vspace{3cm}
 %Author's name
     {\Large \textbf{Amarnath Kakkar}\par}
@@ -229,7 +228,7 @@
 % $^{\circ}$
     {\large A final year project submitted in partial fulfilment for the degree of Bachelor's in Computer Science and Mathematics with Honours\par}
     {\large University of Bath\par}
-    \vspace{4.5cm}
+    \vspace{4cm}
 %supervisor and date
     {\large \textbf{\monthyeardate\today}\par}
     \vspace{1cm}
@@ -266,13 +265,13 @@ Signed:
 %Thesis title
 %    \vspace{0.2cm}
 %    {\uppercase{\large {Submitted in partial fulfilment for the degree of masters in aerospace engineering} \par}}
-    \vspace{2cm}
+    \vspace{0.8cm}
 %%Author's name
-    {\LARGE Development of an Educational Game to Teach Conditional and Iterative Control Structures \par}
+    {\LARGE An Investigation into the Effectiveness of an Educational Game for Teaching Iterative and Conditional Control Structures \par}
     \vspace{1cm}	
     {\large Submitted by: Amarnath Kakkar\par}
 	
-    \vspace{1.5cm}
+    \vspace{1cm}
     {\Large \textbf{COPYRIGHT}\par}
     \vspace{0.5cm}
     {Attention is drawn to the fact that copyright of this dissertation rests with its author. The Intellectual Property Rights of the products produced as part of the project belong to the author unless otherwise specified below, in accordance with the University of Bath?s policy on intellectual property
@@ -284,7 +283,7 @@ This copy of the dissertation has been supplied on condition that anyone who con
       \vspace{0.5cm}
       {This dissertation is submitted to the University of Bath in accordance with the requirements of the degree of Bachelor of Science in the Department of Computer Science. No portion of the work in this dissertation has been submitted in sup- port of an application for any other degree or qualification of this or any other university or institution of learning. Except where specifically acknowledged, it is the work of the author.\par}
     
-     \vspace{2.5cm}
+     \vspace{3cm}
 %% $^{\circ}$
     {\large Department of Computer Science\par}
     {\large University of Bath\par}
@@ -540,7 +539,7 @@ Playing games is naturally a fun and pleasurable activity \citep{Prensky2001}, a
 
 %This motivational ?sweet spot? balances optimal levels of challenge and frustration with sufficient experiences of success and accomplishment
 
-\subsubsection{Effectiveness of Learning through Games}
+\subsection{Effectiveness for Learning} %Effectiveness of Learning through Games
 
 Evidence of learning through educational games has been demonstrated \citep{Connolly2012, Pieter2013, Girard2013}. However, the effectiveness of educational games is undetermined \citep{Connolly2012, Girard2013}. There are also different viewpoints when it comes to determining their effectiveness. Two such meta-analyses, \citet{Pieter2013} and \citet{Girard2013}, explored at the effectiveness of learning through games, and made different conclusions. These studies are compared in Table \ref{tab:effectivess learning comparison}.
 
@@ -1103,7 +1102,7 @@ Since the game can be played more than once by the same user, the tutorial will 
 \end{figure}
 
 
-Figure \ref{fig:User-Interface-Design} shows the design layout of the game. The elements in the design were selected in order to satisfy the requirements. The description and purpose of each element is explained below:
+An important aspect of the interface is for it to be aesthetically pleasing. It is the first thing a user sees, so it must be designed to encourage motivation. Figure \ref{fig:User-Interface-Design} shows the design layout of the game. The elements in the design were selected in order to satisfy the requirements. The description and purpose of each element is explained below:
 
 \begin{itemize}
 
@@ -1126,11 +1125,37 @@ Figure \ref{fig:User-Interface-Design} shows the design layout of the game. The 
 
 %This chapter will follow the same approach as the Design chapter, presenting an overview of the software architecture and a high-level discussion of the implementation process. It will reflect on appropriate implementation approaches, algorithm choices and language choice, using the more detailed discussion provided within the literature and technology survey to justify decisions taken. It will include discussion of any ancillary techniques used to ease implementation (such as the use of source code control systems and associated release plans). The discussion should not descend to become a simple catalogue of classes or methods, but should select non-trivial components, interesting implementation techniques, or important algorithm choices to discuss. It is important to take time to decide which design and implementation issues warrant discussion and which do not.
 
-\section{Technologies Used}
+%Justification of implementation approach
+	%GitHub
+	%AWS
+	%Domain
+%Two stage feedback
+	%Think Aloud Protocol
+%Console-character interaction
+	%Functions
+%Implementation process
+	%HTML and JavaScript
+	%Sprites
+%High-level diagram
 
-\section{System Architecture}
 
-\section{Functions}
+\section{Implementation Process}
+%Justification of decisions taken w.r.t lit review
+
+The following subsections help to provide a high-level discussion of the implementation process. It aims to reflect and highlight implementation choices, ancillary techniques used and the choice of programming language, while providing justification for such choices.
+
+\subsection{Source Control}
+
+The source control software used for this study was GitHub. Source control has many features that are useful for when developing software. The functionality GitHub source control provides is the ability to, save code locally and in the cloud, which is often backed up by security, manage code updates, 
+
+\subsection{Language Choice}
+
+\subsection{Character Animations}
+
+\subsection{Hosting Game}
+
+
+\section{Character-Function Interaction}
 
 \subsubsection*{Player.move()}
 
@@ -1139,6 +1164,15 @@ Figure \ref{fig:User-Interface-Design} shows the design layout of the game. The 
 \subsubsection*{wallPosition()}
 
 \subsubsection*{enemyPosition()}
+
+
+
+\section{Two-stage Development}
+%Two stage testing 
+%Think Aloud Protocol
+
+
+
 
 \afterpage{\blankpage}
 

@@ -1185,13 +1185,11 @@ There are many different hosting services that are specifically designed Node.js
 
 \section{Overview of System Architecture}
 
-The following subsections provide an overview of the components of the system that were significant in the creation of this game.
+The following subsections provide an overview of the non-trivial components of the game. These are the map, character and console. The user interacts with the console to influence the characters actions, which in turn updates the game state and displays the changes on the map.
 
-\subsection{Map-Character Interaction}
+\subsection{Map}
 
-\subsubsection{Map}
-
-The map is used to refer to the part of the game that shows the current level layout, this includes the walls represented by black lines, the enemies represented by bats, and the exit tile represented by a red square. The implementation of the map is comprised of two elements. One is what the user sees (see Figure \ref{fig:levelsix}), and the second is what the character interacts with. The map that the user sees is created using graphical lines, graphical rectangles and enemy sprite animations. The second element of the map, which the character interacts with, is discussed below.
+The map is used to refer to the part of the game that shows the current level layout, this is the walls represented by black lines, the enemies represented by bats, and the exit tile represented by a red square. The character is not a part of the map, but instead 'within' the map. The implementation of the map is comprised of two elements. One is what the user sees (see Figure \ref{fig:levelsix}), and the second is a co-ordinate system that the character interacts with. This co-ordinate system has X and Y axis, with origin or in other words the 0,0 co-ordinate in the top left corner of the map. The map that the user sees is created using graphical lines, graphical rectangles and enemy sprite animations.
 
 \begin{figure}[H]
  \centering
@@ -1202,35 +1200,51 @@ The map is used to refer to the part of the game that shows the current level la
 \end{figure}
 
 
-
-\subsubsection{Character}
+\subsection{Character}
 
 \begin{wrapfigure}{r}{0cm}
     \includegraphics[width=0.35\textwidth,]{charactercontact}
        \captionsetup{justification=centering}
-\caption{Programmer's Dungeon character contact points}
+\caption{Co-ordinate system for character in Programmer's Dungeon}
 \label{fig:charactercontact}
 \end{wrapfigure}
 
-The character and enemies are given four points of 'contact'. Figure \ref{fig:charactercontact} shows the contact points, represented by the red squares, for the character. Enemies are also set-up with a similar set of contact points. The character is given X and Y co-ordinates that represent its centre. This was needed to help the character move across the map which will be discussed later on. To derive the contact points, a fixed pixel length is added/subtracted from its centre to get the 4 points. The origin, or the 0,0 co-ordinate is the top left corner of the map. 
+The character has X and Y co-ordinates that represent its centre. This allows the character to move across the map. However, the character also needs to be able to interact with its environment. For example, touching an enemy or stopping against a wall. To do this, the character needed a 'contact' point(s). This could have been the centre of the character, but is not a good idea since the character would be able to get nearly half its body across a wall before having to stop. Thus the character was given four points of contact at its edges. This would stop the character just before any wall. 
 
-\subsubsection{Interaction}
+To derive the contact points, a fixed pixel length is added/subtracted to its centre in the X and Y direction. Enemies also have this same set of characteristics. In Figure \ref{fig:charactercontact}, the blue square represents the centre of the character and the red squares represent its contact points. 
 
-The character-enemy interaction is simple, since both have contact points. The code checks if any of the enemies contact points are within the characters contact point, and if so, they must be touching.
+The character is 'touching' an enemy, if any of its contact points are within the enemies.
 
-However, the wall and exit tile interaction 
+\subsection{Console}
+
+\begin{wrapfigure}{l}{0cm}
+    \includegraphics[width=0.5\textwidth]{consolelevelsix}
+       \captionsetup{justification=centering}
+\caption{The default console for level 6 in Programmer's Dungeon}
+\label{fig:consolelevelsix}
+\end{wrapfigure}
+
+
+%\subsubsection*{player.move()}
+
+%\subsubsection*{player.shoot()}
+
+%\subsubsection*{wallPosition()}
+
+%\subsubsection*{enemyPosition()}
 
 
 
-\subsection{Code-Character Interaction}
 
-\subsubsection*{player.move()}
 
-\subsubsection*{player.shoot()}
+%\subsubsection{Interaction}
 
-\subsubsection*{wallPosition()}
+%The character-enemy interaction is simple since both have contact points. To determine an interaction between the two, the code checks if any of the enemies contact points are within the characters contact points.
 
-\subsubsection*{enemyPosition()}
+
+%\subsection{Code-Character Interaction}
+
+
 
 
 

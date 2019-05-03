@@ -1120,7 +1120,7 @@ An important aspect of the interface is for it to be aesthetically pleasing. It 
 \afterpage{\blankpage}
 
 
-\chapter{Implementation}
+\chapter{Implementation and Testing}
 
 %This chapter will follow the same approach as the Design chapter, presenting an overview of the software architecture and a high-level discussion of the implementation process. It will reflect on appropriate implementation approaches, algorithm choices and language choice, using the more detailed discussion provided within the literature and technology survey to justify decisions taken. It will include discussion of any ancillary techniques used to ease implementation (such as the use of source code control systems and associated release plans). The discussion should not descend to become a simple catalogue of classes or methods, but should select non-trivial components, interesting implementation techniques, or important algorithm choices to discuss. It is important to take time to decide which design and implementation issues warrant discussion and which do not.
 
@@ -1141,7 +1141,7 @@ An important aspect of the interface is for it to be aesthetically pleasing. It 
 \section{Technologies Used}
 %Justification of decisions taken w.r.t lit review
 
-The following subsections help to provide a high-level discussion of the implementation process. It aims to reflect and highlight implementation choices, ancillary techniques used and the choice of programming language, while providing justification for such choices.
+The following subsections provide a high-level discussion of the technologies used during the implementation process. It aims to reflect and highlight the implementation choices, any ancillary techniques used and the choice of programming language while providing justification for such choices.
 
 \subsection{Source Control}
 
@@ -1149,18 +1149,80 @@ Source control is a useful tool to help develop software. The source control sys
 
 \subsection{Language Choice}
 
-The game was developed using Node.js, a JavaScript runtime environment. The game was written in JavaScript, Jade and CSS, and is entirely client side. Thus there is no game server. This allows quick execution of code, as all execution occurs in the users' browser; time saved sending and receiving messages to and from the server.
+The game was developed using Node.js, a JavaScript runtime environment. The game was written in JavaScript, Jade and CSS, and is entirely client side; there is no game server. This allows quick execution of code as all execution occurs within the users' browser; time saved sending and receiving messages to and from a server.
 
-JavaScript is a programming language for frontend development. It allows browser control, and it is also possible to animate page elements and create interactive content. The main reason for using it is because of its simplicity and vast functionality. Jade is a markup language that is simpler than HTML and has more functionality. CSS is a style sheet language and was used for describing the presentation of elements in the web page.
+JavaScript is a programming language for frontend development. The main reason for using it is because of its simplicity, vast functionality and because it is supported in many browsers. This includes the three most popular web browsers, Google Chrome, Safari and Firefox \citep{statistabrowser}. JavaScript was used for the entirety of game logic, browser control, animating page elements and creating interactive content.
+
+Jade was used for defining the web page and scripts. It is a markup language that is simpler than HTML and has more functionality. CSS is a style sheet language and was used for describing the presentation of elements, such as positioning, colour, size and more, within the web page.
 
 \subsection{Character Animations}
 
+To increase the entertainment aspect of the game a sprite was created for the character, enemy and bullet using Piskel, a free online sprite editor. A sprite is a two-dimensional image that contains multiple smaller images. These smaller images are used to create an animation. 
 
+
+\begin{figure}[h]
+  \makebox[\textwidth]{
+  \captionsetup{justification=centering}
+  \subfloat[Sprite sheet for character \label{fig:1}]{% 
+    \includegraphics[width=0.4\textwidth]{player} 
+  } 
+  \hspace*{\fill}
+  \subfloat[Sprite sheet for enemy \label{fig:2}]{% 
+    \includegraphics[width=0.4\textwidth]{enemy} 
+  }     
+  }
+  \caption{Sprite sheets for character and enemy in Programmer's Dungeon}\label{fig:sprite}
+\end{figure}
+
+The JavaScript function, drawImage, was used to create the animation. drawImage takes parameters to specify which sections of an image to draw. This function was executed in a loop that updated the parameters with a counter, and thus creating the animation.
 
 \subsection{Hosting Game}
 
+Since one of the requirements was for the game to be accessible from home, work or school, it was necessary to host the game onto the world wide web. Anyone with a device with a browser connected to the internet would be able to access the game. This is not to mean that everyone who satisfies these requirements will play the game, but instead, users who wish to play, can do so from most locations.
 
-\section{Function-Character Interaction}
+There are many different hosting services that are specifically designed Node.js applications. However, I decided to use Amazon Web Services (AWS) as I had most familiarity with this software. AWS also provided a free domain name, with the URL: \textit{http://tutorial-env.4yzpcwhdm6.us-west-2.elasticbeanstalk.com/}. However this URL is fairly long and does not reflect the contents of the web page in any way. So a more suitable URL was chosen through the service, freenom: \textit{http://programmersdungeon.tk/}. This was set-up to do a URL redirect to the URL provided by Amazon, as the game is hosted there. This URL is free for a year and so will be usable throughout the duration of this study. 
+
+
+\section{Overview of System Architecture}
+
+The following subsections provide an overview of the components of the system that were significant in the creation of this game.
+
+\subsection{Map-Character Interaction}
+
+\subsubsection{Map}
+
+The map is used to refer to the part of the game that shows the current level layout, this includes the walls represented by black lines, the enemies represented by bats, and the exit tile represented by a red square. The implementation of the map is comprised of two elements. One is what the user sees (see Figure \ref{fig:levelsix}), and the second is what the character interacts with. The map that the user sees is created using graphical lines, graphical rectangles and enemy sprite animations. The second element of the map, which the character interacts with, is discussed below.
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.65\textwidth]{levelsix}
+       \captionsetup{justification=centering}
+\caption{The map of level 6 in Programmer's Dungeon}
+\label{fig:levelsix}
+\end{figure}
+
+
+
+\subsubsection{Character}
+
+\begin{wrapfigure}{r}{0cm}
+    \includegraphics[width=0.35\textwidth,]{charactercontact}
+       \captionsetup{justification=centering}
+\caption{Programmer's Dungeon character contact points}
+\label{fig:charactercontact}
+\end{wrapfigure}
+
+The character and enemies are given four points of 'contact'. Figure \ref{fig:charactercontact} shows the contact points, represented by the red squares, for the character. Enemies are also set-up with a similar set of contact points. The character is given X and Y co-ordinates that represent its centre. This was needed to help the character move across the map which will be discussed later on. To derive the contact points, a fixed pixel length is added/subtracted from its centre to get the 4 points. The origin, or the 0,0 co-ordinate is the top left corner of the map. 
+
+\subsubsection{Interaction}
+
+The character-enemy interaction is simple, since both have contact points. The code checks if any of the enemies contact points are within the characters contact point, and if so, they must be touching.
+
+However, the wall and exit tile interaction 
+
+
+
+\subsection{Code-Character Interaction}
 
 \subsubsection*{player.move()}
 
@@ -1188,8 +1250,8 @@ JavaScript is a programming language for frontend development. It allows browser
 
 \chapter{User Testing}
 
-\subsection{Observed Playthroughs} %Think aloud protocol, initial testing
-\subsection{Questionnaires}
+\section{Observed Playthroughs} %Think aloud protocol, initial testing
+\section{Questionnaires}
 
 
 
@@ -1200,16 +1262,16 @@ JavaScript is a programming language for frontend development. It allows browser
 
 \chapter{Results}
 
-\section{System Improvement}
-
-\section{Usability}
-
 \section{Learning}
 
 \section{Engagement}
 
-\afterpage{\blankpage}
+\section{Motivation}
 
+
+
+
+\afterpage{\blankpage}
 
 
 

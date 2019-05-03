@@ -7,6 +7,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.5.1}{\ignorespaces Design of game layout for Programmer's Dungeon\relax }}{23}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1.1}{\ignorespaces Sprite sheets for character and enemy in Programmer's Dungeon\relax }}{26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Sprite sheet for character }}}{26}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Sprite sheet for enemy }}}{26}
+\contentsline {figure}{\numberline {5.2.1}{\ignorespaces The map of level 6 in Programmer's Dungeon\relax }}{27}
+\contentsline {figure}{\numberline {5.2.2}{\ignorespaces Programmer's Dungeon character contact points\relax }}{28}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

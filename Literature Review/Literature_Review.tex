@@ -1189,7 +1189,7 @@ The following subsections provide an overview of the non-trivial components of t
 
 \subsection{Map}
 
-The map is used to refer to the part of the game that shows the current level layout, this is the walls represented by black lines, the enemies represented by bats, and the exit tile represented by a red square. The character is not a part of the map, but instead 'within' the map. The implementation of the map is comprised of two elements. One is what the user sees (see Figure \ref{fig:levelsix}), and the second is a co-ordinate system that the character interacts with. This co-ordinate system has X and Y axis, with origin or in other words the 0,0 co-ordinate in the top left corner of the map. The map that the user sees is created using graphical lines, graphical rectangles and enemy sprite animations.
+The 'map' refers to level layout in the dungeon, specifically this is the walls represented by black lines, the enemies represented by bats, and the exit tile represented by a red square. The character is not a part of the map, but instead 'within' the map. The implementation of the map is comprised of two elements. One is what the user sees (see Figure \ref{fig:levelsix}), and the second is a co-ordinate system that the character interacts with. This co-ordinate system has X and Y axis, with origin (the 0,0 co-ordinate) in the top left corner of the map. This co-ordinate system is measured in pixels; one unit of length is one pixel. The map that the user sees is created using graphical lines, graphical rectangles and enemy sprite animations.
 
 \begin{figure}[H]
  \centering
@@ -1200,20 +1200,30 @@ The map is used to refer to the part of the game that shows the current level la
 \end{figure}
 
 
+The dimensions of the map are calculated, in pixels, using the \textit{window.outerHeight} function. This means the map size is determined with regards to the user's browser window size. This allows the map to increase in size for larger screens and decrease in size for smaller screens. The graphical images and enemy size, conform to the size of the map as they take into account the dimensions of the map. This means that they remain in the correct location with appropriate size regardless of user screen size. Thus the game should look the same and be playable on different screen sizes.
+
+The dark grey background and light grey lines in Figure \ref{fig:levelsix}, is present in every level. The light grey lines form the 'tiles' of the map. The character can only move from its current tile to any adjacent tiles, and there are ten tiles across and up the map. The distance the character moves is calculated by map.length/10. Since the map length and height are the same, this is used for the character to travel both horizontally and vertically.
+
 \subsection{Character}
 
 \begin{wrapfigure}{r}{0cm}
-    \includegraphics[width=0.35\textwidth,]{charactercontact}
+    \includegraphics[width=0.5\textwidth,]{charactercontact}
        \captionsetup{justification=centering}
-\caption{Co-ordinate system for character in Programmer's Dungeon}
+\caption{Contact points for character and enemy in Programmer's Dungeon}
 \label{fig:charactercontact}
 \end{wrapfigure}
 
-The character has X and Y co-ordinates that represent its centre. This allows the character to move across the map. However, the character also needs to be able to interact with its environment. For example, touching an enemy or stopping against a wall. To do this, the character needed a 'contact' point(s). This could have been the centre of the character, but is not a good idea since the character would be able to get nearly half its body across a wall before having to stop. Thus the character was given four points of contact at its edges. This would stop the character just before any wall. 
+I have discussed how the character is animated and how it moves. Now I describe how it interacts with its environment, for example; getting hurt by an enemy or stopping against a wall.
 
-To derive the contact points, a fixed pixel length is added/subtracted to its centre in the X and Y direction. Enemies also have this same set of characteristics. In Figure \ref{fig:charactercontact}, the blue square represents the centre of the character and the red squares represent its contact points. 
+The character has X and Y co-ordinates that represent its centre, which is used to move the character across the map. However, for the character to interact with its environment, it needs a 'contact' point(s). This would be used to determine whether the character is 'touching' anything else. The contact point could have easily been the characters centre. However this was not a good idea since the character would have been able to get almost half its body across a wall before having to stop. This would not seem right. So the character was given four points of contact at its edges. In Figure \ref{fig:charactercontact}, the blue square represents the centre of the character and the red squares represent its contact points. The contact points are derived by adding/subtracting a fixed pixel length to its centre in the X and Y direction. Enemies have the same set of characteristics.
 
-The character is 'touching' an enemy, if any of its contact points are within the enemies.
+This means the character would stop just before a wall, as walls run down the middle of two tiles. For enemies, since they also have a similar configuration of contact points, the character and enemy are deemed to be touching if any of the characters's contact points are between all four of the enemys. If they are touching, then the character loses hit points.
+
+
+\subsection{Map Walls}
+
+The walls which are represented as black lines, are just graphical images. For them to interact with and stop objects such as the character, enemy and bullets, they need to be represented in the co-ordinate system. Such that if any of the character's contact point ever touched the contact point of a line, it would have to stop moving in that direction. Instead of defining every pixel in the co-ordinate system where a wall is present, a 2D array was used to define a group of pixels as the former would be very tedious to do. This 2D array represents the whole map and is comprised of three elements. A 0 represents space that could be moved around in, 1 represents a wall, and 2 represents the exit. The character can move around in areas where there is a 0, is stopped from moving if in contact with a 1, and completes the level if in contact with a 2.
+
 
 \subsection{Console}
 
@@ -1224,6 +1234,7 @@ The character is 'touching' an enemy, if any of its contact points are within th
 \label{fig:consolelevelsix}
 \end{wrapfigure}
 
+Console
 
 %\subsubsection*{player.move()}
 

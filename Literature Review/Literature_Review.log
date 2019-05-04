@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  3 MAY 2019 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  4 MAY 2019 14:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1029,43 +1029,40 @@ File: levelsix.png Graphic file (type png)
 <use levelsix.png>
 Package pdftex.def Info: levelsix.png  used on input line 1196.
 (pdftex.def)             Requested size: 275.63663pt x 275.10542pt.
-<charactercontact.png, id=196, 89.33376pt x 85.31876pt>
+ [27 <./levelsix.png>]
+<charactercontact.png, id=200, 112.42pt x 62.2325pt>
 File: charactercontact.png Graphic file (type png)
 <use charactercontact.png>
-Package pdftex.def Info: charactercontact.png  used on input line 1206.
-(pdftex.def)             Requested size: 148.4237pt x 141.76054pt.
- [27 <./levelsix.png>]
-Underfull \hbox (badness 2042) in paragraph at lines 1214--1215
-[]\OT1/cmr/m/n/10 To de-rive the con-tact points, a fixed pixel length is
- []
-
-<consolelevelsix.png, id=201, 405.515pt x 507.8975pt>
+Package pdftex.def Info: charactercontact.png  used on input line 1210.
+(pdftex.def)             Requested size: 212.03017pt x 117.38739pt.
+ [28 <./charactercontact.png>]
+<consolelevelsix.png, id=205, 405.515pt x 507.8975pt>
 File: consolelevelsix.png Graphic file (type png)
 <use consolelevelsix.png>
-Package pdftex.def Info: consolelevelsix.png  used on input line 1221.
+Package pdftex.def Info: consolelevelsix.png  used on input line 1231.
 (pdftex.def)             Requested size: 212.03017pt x 265.5652pt.
 
-Overfull \hbox (33.18456pt too wide) in paragraph at lines 1253--1253
+Overfull \hbox (33.18456pt too wide) in paragraph at lines 1262--1262
 |[]\OT1/cmr/bx/n/14.4 Two-stage De-vel-op-ment| 
  []
 
-[28 <./charactercontact.png> <./consolelevelsix.png>] [28
+[29 <./consolelevelsix.png>] [29
 
 ]
 Chapter 6.
-[29] [29
-
-]
-Chapter 7.
 [30] [30
 
 ]
-Chapter 8.
+Chapter 7.
 [31] [31
 
 ]
+Chapter 8.
+[32] [32
+
+]
 Chapter 9.
-(./Literature_Review.bbl [32] [32
+(./Literature_Review.bbl [33] [33
 
 ]
 Underfull \hbox (badness 1838) in paragraph at lines 25--30
@@ -1073,19 +1070,19 @@ Underfull \hbox (badness 1838) in paragraph at lines 25--30
 ].  Ac-cessed: 2019-04-02.
  []
 
-[33] [34] [35] [36]) [37] [38
+[34] [35] [36] [37]) [38] [39
 
 ]
 Appendix A.
-[39
-
-]
-Appendix B.
 [40
 
 ]
-Appendix C.
+Appendix B.
 [41
+
+]
+Appendix C.
+[42
 
 ] (./Literature_Review.aux) ) 
 Here is how much of TeX's memory you used:
@@ -1095,7 +1092,7 @@ Here is how much of TeX's memory you used:
  13664 multiletter control sequences out of 15000+600000
  9308 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,11n,92p,1146b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,12n,92p,1146b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvip
 s/cm-super/cm-super-ts1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publ
@@ -1108,10 +1105,10 @@ fonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super
 /sfrm1000.pfb>
-Output written on Literature_Review.pdf (63 pages, 1114239 bytes).
+Output written on Literature_Review.pdf (64 pages, 1116980 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
+ 304 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1141,7 +1141,7 @@ An important aspect of the interface is for it to be aesthetically pleasing. It 
 \section{Technologies Used}
 %Justification of decisions taken w.r.t lit review
 
-The following subsections provide a high-level discussion of the technologies used during the implementation process. It aims to highlight and reflect the implementation approaches, any ancillary techniques used and the choice of programming language to develop the game while providing justification for such choices.
+The following subsections provide a high-level discussion of the technologies used during the implementation process. This section aims to highlight and reflect the implementation choices, any ancillary techniques used and the choice of programming language to develop the game while providing justification for such choices.
 
 \subsection{Source Control}
 
@@ -1234,11 +1234,13 @@ The walls which are represented as black lines, are just graphical images. For t
 \label{fig:consolelevelsix}
 \end{wrapfigure}
 
-The console was developed using Ace, an open-source code editor written in JavaScript \citep{ace}, and a 'Run' button. The Ace functionality has a method which execute the code within the code editor. The button was implemented to call this method when clicked. 
+The console is comprised of two components; Ace, an open-source code editor written in JavaScript \citep{ace}, and a 'Run' button. The Ace functionality has a method to execute any code within the code editor. The button was created to call this method when clicked.
 
-The level objectives are given through the comments at the top console. This is explained within the tutorial. Below the objectives, there are usually another set of comments. These are information about constructs. They either describe a new construct, or explain more about a construct that is being used or required in the current level.
+The type of level is defined in the comments at the top console. This is explained within the tutorial. In some levels, there are a second set of comments below the first. These are there to provide additional information. This may be describing a new construct, or providing more information about an already introduced construct (see Figure \ref{fig:consolelevelsix}). This will only occur when the specific construct is required to complete the level.
 
-Once run is clicked on the console, a complex system takes place to turn the code in the editor into actions carried out by the character. This would not be easy to explain without diving into many specifics, of which would not be of much help to this study. Instead, a high-level overview is that 1) all the code in the editor is executed before the character moves, 2) at the end of the execution, the character carries out all the pre-determined actions. Since the enemies do not move, this is no issue.
+Turning the code within the console into actions carried out by the character involves a complex mechanism. The player.move function moves the character to an adjacent tile. The direction the character moves is determined by the parameter within the function. The enemyPosition and wallPosition functions determine if an enemy or wall is adjacent to the character respectively. These functions use the contact points and centre points mentioned above.
+
+%Once run is clicked on the console, a complex system takes place to turn the code in the editor into actions carried out by the character. This would not be easy to explain without diving into many specifics, of which would not be of much help to this study. Instead, a high-level overview is that 1) all the code in the editor is executed before the character moves, 2) at the end of the execution, the character carries out all the pre-determined actions. Since the enemies do not move, this is no issue.
 
 %\subsubsection*{player.move()}
 
@@ -1284,7 +1286,7 @@ Once run is clicked on the console, a complex system takes place to turn the cod
 \chapter{Testing}
 
 
-Throughout development, the game was tested to ensure that it was working as expected. Once implementation was complete, three phases of testing were defined; system testing, obtaining initial feedback from user playthroughs and user testing. This chapter will discuss these testing methods in more detail, specifically why they were chosen and how they will be carried out.
+Throughout development, the game was tested to ensure that it was working as expected. Once implementation was complete, three phases of testing were defined; system testing, obtaining initial feedback from user playthroughs and user testing. This chapter will discuss these testing methods in more detail, specifically justification for their adoption and the proposed methodologies.
 
 
 %The game was tested throughout development to ensure that all functionality worked as expected, and that graphics were represented correctly. This was conducted mainly in Safari. Once implementation was complete, and a game was produced as per the requirements and design
@@ -1297,16 +1299,16 @@ Throughout development, the game was tested to ensure that it was working as exp
 
 Testing was carried out throughout development. This was ensure that the game functionalities were working as expected and graphics were represented correctly. This covered the majority of unit test cases and integration test cases; every time a component was added, it was tested, and every time two components were combined, their input and outputs were tested.
 
-Once implementation is complete, the final independent testing is to carry out system testing. System testing refers to testing the complete and integrated software. For this software this translates to playing through the entire game (or in other words, playthroughs).
-
-To ensure that playthroughs were carried out in order to efficiently test the system, two objectives were determined. The aim of these objectives were to influence the playthroughs conducted. The objectives are:
+Once the game is implemented as per the requirements and design, the game will undergo system testing. System testing refers to testing the complete and integrated software. This translates to conducting test cases involving playing through the entire game (in other words, a playthrough). To determine the focus of the test cases, two objectives were determined:
 
 \begin{enumerate}
-	\item Check if functional requirements are met.
-	\item Conduct certain edge cases were there is a high chance to discover bugs.
+	\item Check if the functional requirements are met.
+	\item Conduct certain test cases and edge cases were there may be a high chance to discover bugs.
 \end{enumerate}
 
-The first objective is clearly essential; the game was developed in order to teach iterative and conditional control structures by following the requirements and design. As the non-functional requirements require input from users in order to check that they were fulfilled, these could only be checked after user testing. With the second objective, since the game was developed independently, I had most familiarity with the software. Thus the focus was on areas of the game that were perhaps overlooked or had resulted in unexpected behaviours due to the implementation of other vital components.
+The first objective is essential; the game was developed for teaching iterative and conditional control structures, and this was captured in the requirements. Determining if the non-functional requirements were fulfilled requires input from users. This can only be achieved after user testing. For the second objective, since the game was solely developed by myself, I could be certain on which areas may require testing. This includes areas that were perhaps not well thought over during the design phase. For this reason, and the time constraints on its development, the creation of a formal test plan was deemed unnecessary.
+
+
 
 %The game was tested throughout its development, to ensure that all functionality worked as expected and that the graphics were represented correctly. During development, the game was mainly tested in Safari and Chrome. 
 
@@ -1322,18 +1324,20 @@ The first objective is clearly essential; the game was developed in order to tea
 
 %Once the game was implemented according to the requirements specification and design. 
 
-Initial feedback from user playthroughs would be used in order to identify and consequently fix any obvious flaws in the game. Since the game was solely implemented by myself, any outside opinions would be very useful for numerous reasons.
+Feedback from initial user playthroughs would be useful in order to identify any overlooked design flaws. Since the game was solely developed by myself, any outside opinions would be very useful. The gathered feedback would then be used to make improvements in the game.
 
-The main objective of the feedback was to determine what users felt about the difficulty, usability and enjoyment of the game. As well as any other suggestions that they had. To conduct these tests, the think-aloud protocol was employed. This protocol is a method of usability testing. Usability testing refers to evaluating a product by testing it on users. It is widely used in the gaming industry and is very effective \citep{desurvire2013}. It involves players verbally expressing thoughts during gameplay. This might include what they are experiencing, their actions or feelings, and then collating this data.
+The main objective of the phase was to determine what users felt about the difficulty, usability and enjoyment of the game. As well as any other suggestions that might have. These tests would be conducted using the think-aloud protocol. This is a method of usability testing. Usability testing refers to evaluating a product by testing it on users. Furthermore, this protocol is claimed to be widely used in the gaming industry and is very effective \citep{desurvire2013}. Thus it was chosen to be used in this stage. The technique involves players verbally expressing their thoughts during gameplay. Participants are advised to say whatever comes into their mind. This might include what they are experiencing, their actions or their feelings. This data is then collated. 
 
-To ensure feedback is as relevant as possible, participants with appropriate backgrounds and interests will be considered. In addition to the think-aloud process, the participants will be asked afterwards to provide suggestions for changes to the game in areas they felt needing improvement.
+To ensure feedback is as relevant as possible, participants with appropriate backgrounds and interests will be considered. In addition to the think-aloud protocol, participants will be asked afterwards to provide suggestions for any changes to the game in areas they felt needing improvement. This was so if the participant provided criticism on the game during the think-aloud protocol, they could also provide suggestions for improvements on those specific aspects.
 
 
 \section{User Testing}
 
-The final phase of testing it to carry out user testing. The aim of this stage is to identify the learning, engagement and motivation of users through playing the game, and measure to which extent the non-functional requirements were fulfilled.
 
-The design of the testing will be pretest-posttest. The testing will be comprised of three parts. Participants will first be given a pretest quesstionnaire, which will aim to gauge their interests, programming experience and some information about themselves. This should take roughly 10minutes to complete. They will then play through the game, without being forced to finish it. Finally they will be given a posttest questionnaire to identify the effects of the game in the domains of learning, engagement and motivation.
+
+Once system testing and initial feedback and improvements is complete, the game can be tested by users. The aim of this stage is to measure to which extent the non-functional requirements were fulfilled.
+
+The testing will have a pretest-posttest design, comprised of three parts. The first part will require participants to complete a pretest questionnaire. This questionnaire will assess participants interests and knowledge in iterative and conditional structures. The second part requires the participant to play the game. They will be asked to try and get as far as they can; completing the game will not be a requirement. This is because participants can get stuck, may lose interest and no longer wish to play or for any other reason. After they finish playing, the final part will require participants to complete a posttest questionnaire. This questionnaire will assess users enjoyment and perceived difficulty of the game, their knowledge on iterative and conditional structures, their motivations and ask for comments for any feedback or suggestions.
 
 
 
@@ -1357,7 +1361,7 @@ The design of the testing will be pretest-posttest. The testing will be comprise
 
 \section{System Testing Results}
 
-All functional requirements were easy to check. Moreover, game functionality was based on these requirements, so these would have been checked during implementation. However to check these were working correctly, they were checked once more.
+All functional requirements were easy to check as game functionality was developed based on these requirements. Moreover, these functionalities would have also been checked during implementation. However, conducting specific test cases allowed to determine whether they were working as expected.
 
 The key playthroughs that were conducted, were, playthroughs in the three most popular browsers; Safari, Google Chrome and Firefox. 
 

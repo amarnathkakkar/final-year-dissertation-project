@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  5 MAY 2019 16:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.23)  5 MAY 2019 22:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1054,7 +1054,7 @@ Chapter 7.
 <tutorialtextbox.png, id=226, 515.9275pt x 215.80624pt>
 File: tutorialtextbox.png Graphic file (type png)
 <use tutorialtextbox.png>
-Package pdftex.def Info: tutorialtextbox.png  used on input line 1395.
+Package pdftex.def Info: tutorialtextbox.png  used on input line 1399.
 (pdftex.def)             Requested size: 339.24957pt x 141.90898pt.
  [33 <./tutorialtextbox.png>] [34] [34
 
@@ -1107,7 +1107,7 @@ e1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pu
 blic/cm-super/sfrm1000.pfb>
-Output written on kakkar-ak-dissertation-2018-19.pdf (67 pages, 1154375 bytes).
+Output written on kakkar-ak-dissertation-2018-19.pdf (67 pages, 1154863 bytes).
 
 PDF statistics:
  317 PDF objects out of 1000 (max. 8388607)

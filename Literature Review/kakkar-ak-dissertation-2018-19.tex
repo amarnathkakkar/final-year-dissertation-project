@@ -909,11 +909,11 @@ The aim of the current study is to develop an educational game to teach iterativ
   
   \item \textbf{Game should be fun to play.} Fun is a key aspect of an educational game as it can helps motivate players \citep{Cordova1996} and improve their learning performance \citep{giannakos2013}. \newline Priority: Medium
   
+    \item \textbf{Player should be engaged throughout the game.} Engagement is key in learning. \newline Priority: Medium
+  
+    \item \textbf{Player should feel challenged.} Challenge is a key aspect that leads to player engagement \citep{whitton2011}. \newline Priority: Medium
+  
   \item \textbf{Game should have a reasonable difficulty curve.} Players should be able to get a reasonable understanding of a concept before being introduced to new ones. The game should also have a balance between challenge and skill. \newline Priority: Medium
-  
-  \item \textbf{Player should be motivated throughout the game.} Motivation is a key aspect that drives learning \citep{Gee2003}. \newline Priority: Medium
-  
-  \item \textbf{Player should feel challenged.} Challenge is a key aspect that leads to player engagement \citep{whitton2011}. \newline Priority: Medium
   
   \item \textbf{Game may foster player motivation to learn more complex programming.} Student motivation in introductory programming courses is very low and can be improved \citep{Koulouri2014}. \newline Priority: Low
   
@@ -1141,7 +1141,7 @@ An important aspect of the interface is for it to be aesthetically pleasing. It 
 \section{Technologies Used}
 %Justification of decisions taken w.r.t lit review
 
-The following subsections provide a high-level discussion of the technologies used during the implementation process. It aims to reflect and highlight the implementation choices, any ancillary techniques used and the choice of programming language while providing justification for such choices.
+The following subsections provide a high-level discussion of the technologies used during the implementation process. It aims to highlight and reflect the implementation approaches, any ancillary techniques used and the choice of programming language to develop the game while providing justification for such choices.
 
 \subsection{Source Control}
 
@@ -1284,14 +1284,84 @@ Once run is clicked on the console, a complex system takes place to turn the cod
 \chapter{Testing}
 
 
+Throughout development, the game was tested to ensure that it was working as expected. Once implementation was complete, three phases of testing were defined; system testing, obtaining initial feedback from user playthroughs and user testing. This chapter will discuss these testing methods in more detail, specifically why they were chosen and how they will be carried out.
+
+
+%The game was tested throughout development to ensure that all functionality worked as expected, and that graphics were represented correctly. This was conducted mainly in Safari. Once implementation was complete, and a game was produced as per the requirements and design
+
+%Throughout development, the game was tested to ensure that all functionality worked as expected and that the graphics were represented correctly. This was carried out mainly in Safari and Google Chrome. 
+
+%, the game was thoroughly tested through numerous playthroughs and some specific test cases. Once testing was completed, the game underwent initial feedback and improvements. This was done through a handful of participants using the think-aloud protocol. When final improvements were made to the game. The game was now ready for user testing. The aim of the user testing was designed to assess the learning, engagement and motivation of users from playing.
+
+\section{System Testing}
+
+Testing was carried out throughout development. This was ensure that the game functionalities were working as expected and graphics were represented correctly. This covered the majority of unit test cases and integration test cases; every time a component was added, it was tested, and every time two components were combined, their input and outputs were tested.
+
+Once implementation is complete, the final independent testing is to carry out system testing. System testing refers to testing the complete and integrated software. For this software this translates to playing through the entire game (or in other words, playthroughs).
+
+To ensure that playthroughs were carried out in order to efficiently test the system, two objectives were determined. The aim of these objectives were to influence the playthroughs conducted. The objectives are:
+
+\begin{enumerate}
+	\item Check if functional requirements are met.
+	\item Conduct certain edge cases were there is a high chance to discover bugs.
+\end{enumerate}
+
+The first objective is clearly essential; the game was developed in order to teach iterative and conditional control structures by following the requirements and design. As the non-functional requirements require input from users in order to check that they were fulfilled, these could only be checked after user testing. With the second objective, since the game was developed independently, I had most familiarity with the software. Thus the focus was on areas of the game that were perhaps overlooked or had resulted in unexpected behaviours due to the implementation of other vital components.
+
+%The game was tested throughout its development, to ensure that all functionality worked as expected and that the graphics were represented correctly. During development, the game was mainly tested in Safari and Chrome. 
+
+%The final game was thoroughly tested 
+
+%What testing I conducted
+%Why I didnt follow a formal spec
+%How I tested
+%Results
+
+
+\section{Initial Feedback}
+
+%Once the game was implemented according to the requirements specification and design. 
+
+Initial feedback from user playthroughs would be used in order to identify and consequently fix any obvious flaws in the game. Since the game was solely implemented by myself, any outside opinions would be very useful for numerous reasons.
+
+The main objective of the feedback was to determine what users felt about the difficulty, usability and enjoyment of the game. As well as any other suggestions that they had. To conduct these tests, the think-aloud protocol was employed. This protocol is a method of usability testing. Usability testing refers to evaluating a product by testing it on users. It is widely used in the gaming industry and is very effective \citep{desurvire2013}. It involves players verbally expressing thoughts during gameplay. This might include what they are experiencing, their actions or feelings, and then collating this data.
+
+To ensure feedback is as relevant as possible, participants with appropriate backgrounds and interests will be considered. In addition to the think-aloud process, the participants will be asked afterwards to provide suggestions for changes to the game in areas they felt needing improvement.
+
+
+\section{User Testing}
+
+The final phase of testing it to carry out user testing. The aim of this stage is to identify the learning, engagement and motivation of users through playing the game, and measure to which extent the non-functional requirements were fulfilled.
+
+The design of the testing will be pretest-posttest. The testing will be comprised of three parts. Participants will first be given a pretest quesstionnaire, which will aim to gauge their interests, programming experience and some information about themselves. This should take roughly 10minutes to complete. They will then play through the game, without being forced to finish it. Finally they will be given a posttest questionnaire to identify the effects of the game in the domains of learning, engagement and motivation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\afterpage{\blankpage}
+
+
+\chapter{Results}
+
+\section{System Testing Results}
+
+All functional requirements were easy to check. Moreover, game functionality was based on these requirements, so these would have been checked during implementation. However to check these were working correctly, they were checked once more.
+
+The key playthroughs that were conducted, were, playthroughs in the three most popular browsers; Safari, Google Chrome and Firefox. 
 
 \section{Initial Feedback and Improvements}
-
-Once the game was implemented according to the requirements specification and design. Initial feedback was obtained from users, which resulted in changes to the game. The aim of the feedback was to identify and potentially fix any obvious flaws.
-
-The main objective from the feedback was to determine what users felt about the difficulty, usability and enjoyment of the game. As well as any other suggestions that would be useful. To gather this feedback, the think-aloud protocol was employed. This protocol is a method of usability testing. It is widely used in the gaming industry and is very effective \citep{desurvire2013}. This involves players verbally expressing thoughts, experiences, actions and feelings during gameplay. After think-aloud, the participants were asked to provide suggestions for changes to the game in areas they felt needing improvement.
-
-To ensure feedback was as relevant as possible, participants with appropriate backgrounds and interests were considered. Two participants were selected.  
 
 \subsection{Feedback}
 
@@ -1341,34 +1411,15 @@ The feedback obtained was very helpful. It identified issues with level difficul
 These changes should result in making the game more aesthetically pleasing, making the difficulty curve smoother and not overwhelming users with too much information.
 
 
-
-
-
-\section{System Testing}
-
-
-
-
-
 \section{User Testing}
 
-\subsection{Questionnaires}
 
 
+\subsection{Learning}
 
+\subsection{Engagement}
 
-
-
-\afterpage{\blankpage}
-
-
-\chapter{Results}
-
-\section{Learning}
-
-\section{Engagement}
-
-\section{Motivation}
+\subsection{Motivation}
 
 
 

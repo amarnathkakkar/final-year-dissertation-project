@@ -704,7 +704,7 @@ tutorialPopups = function () {
 	modalTitle.innerHTML = 'Welcome';
 
 	typewriter = setupTypewriter(tutText, "To Programmer's Dungeon!<br><br>" +
-		"<br><br>Where you will learn about <b>iteration</b> and <b>conditional statements</b>.<br><br>" +
+		"<br><br>Where you will learn about <b>iterative</b> and <b>conditional statements</b>.<br><br>" +
 		"<br><br>Press <b>Next</b> for instructions or <b>X</b> to skip.");
 
 	typewriter.type();

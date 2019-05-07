@@ -1,77 +1,82 @@
 \setstretch {1}
 \contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {chapter}{\numberline {2}Literature Review}{2}
-\contentsline {section}{\numberline {2.1}Video Games}{2}
-\contentsline {subsection}{\numberline {2.1.1}Impacts}{2}
-\contentsline {subsection}{\numberline {2.1.2}Uses}{2}
-\contentsline {section}{\numberline {2.2}Educational Games}{3}
-\contentsline {subsection}{\numberline {2.2.1}Definition}{3}
-\contentsline {subsection}{\numberline {2.2.2}History}{4}
-\contentsline {subsection}{\numberline {2.2.3}Benefits}{4}
-\contentsline {subsubsection}{\numberline {2.2.3.1}E-learning}{4}
-\contentsline {subsubsection}{\numberline {2.2.3.2}Learning through Games}{5}
-\contentsline {subsubsection}{\numberline {2.2.3.3}Effectiveness of Learning through Games}{6}
-\contentsline {subsection}{\numberline {2.2.4}Examples}{7}
-\contentsline {section}{\numberline {2.3}Teaching Conditional and Iterative Control Structures}{10}
-\contentsline {subsection}{\numberline {2.3.1}Methods}{10}
-\contentsline {subsection}{\numberline {2.3.2}Issues}{11}
-\contentsline {section}{\numberline {2.4}Educational Game Design}{11}
-\contentsline {subsection}{\numberline {2.4.1}Games and Learning}{12}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Motivation}{12}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Repetition}{12}
-\contentsline {subsubsection}{\numberline {2.4.1.3}Rewards}{13}
-\contentsline {subsection}{\numberline {2.4.2}Game Elements}{13}
-\contentsline {chapter}{\numberline {3}Requirements Specification}{15}
-\contentsline {section}{\numberline {3.1}Non-Functional Requirements}{15}
-\contentsline {section}{\numberline {3.2}Functional Requirements}{16}
-\contentsline {chapter}{\numberline {4}Design}{18}
-\contentsline {section}{\numberline {4.1}Core Idea}{18}
-\contentsline {section}{\numberline {4.2}Web-based}{19}
-\contentsline {section}{\numberline {4.3}Game Mechanics}{19}
-\contentsline {subsection}{\numberline {4.3.1}Functions}{19}
-\contentsline {subsection}{\numberline {4.3.2}Scoring}{20}
-\contentsline {subsection}{\numberline {4.3.3}Hit points}{21}
-\contentsline {section}{\numberline {4.4}Level Design}{21}
-\contentsline {subsection}{\numberline {4.4.1}Tutorial}{23}
-\contentsline {section}{\numberline {4.5}User Interface}{23}
-\contentsline {chapter}{\numberline {5}Implementation}{25}
-\contentsline {section}{\numberline {5.1}Technologies Used}{25}
-\contentsline {subsection}{\numberline {5.1.1}Source Control}{25}
-\contentsline {subsection}{\numberline {5.1.2}Language Choice}{25}
-\contentsline {subsection}{\numberline {5.1.3}Character Animations}{26}
-\contentsline {subsection}{\numberline {5.1.4}Hosting Game}{26}
-\contentsline {section}{\numberline {5.2}Overview of System Architecture}{27}
-\contentsline {subsection}{\numberline {5.2.1}Map}{27}
-\contentsline {subsection}{\numberline {5.2.2}Character}{28}
-\contentsline {subsection}{\numberline {5.2.3}Map Walls}{29}
-\contentsline {subsection}{\numberline {5.2.4}Console}{29}
-\contentsline {chapter}{\numberline {6}Testing}{31}
-\contentsline {section}{\numberline {6.1}System Testing}{31}
-\contentsline {section}{\numberline {6.2}Initial Feedback}{32}
-\contentsline {section}{\numberline {6.3}User Testing}{32}
-\contentsline {chapter}{\numberline {7}Results}{33}
-\contentsline {section}{\numberline {7.1}System Testing Results}{33}
-\contentsline {section}{\numberline {7.2}Initial Feedback and Improvements}{34}
-\contentsline {subsection}{\numberline {7.2.1}Feedback}{34}
-\contentsline {subsection}{\numberline {7.2.2}Changes}{35}
-\contentsline {section}{\numberline {7.3}User Testing}{35}
-\contentsline {subsection}{\numberline {7.3.1}Learning}{36}
-\contentsline {subsection}{\numberline {7.3.2}Engagement}{37}
-\contentsline {subsection}{\numberline {7.3.3}Motivation}{38}
-\contentsline {subsection}{\numberline {7.3.4}User Feedback}{38}
-\contentsline {subsection}{\numberline {7.3.5}Threats to Validity}{39}
-\contentsline {chapter}{\numberline {8}Conclusions}{40}
-\contentsline {chapter}{\numberline {9}Future Work}{41}
-\contentsline {chapter}{Bibliography}{46}
+\contentsline {section}{\numberline {1.1}Aims and Objectives}{2}
+\contentsline {chapter}{\numberline {2}Literature Review}{3}
+\contentsline {section}{\numberline {2.1}Video Games}{3}
+\contentsline {subsection}{\numberline {2.1.1}Impacts}{3}
+\contentsline {subsection}{\numberline {2.1.2}Uses}{3}
+\contentsline {section}{\numberline {2.2}Educational Games}{4}
+\contentsline {subsection}{\numberline {2.2.1}Definition}{4}
+\contentsline {subsection}{\numberline {2.2.2}History}{5}
+\contentsline {subsection}{\numberline {2.2.3}Benefits}{5}
+\contentsline {subsubsection}{\numberline {2.2.3.1}E-learning}{5}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Learning through Games}{6}
+\contentsline {subsubsection}{\numberline {2.2.3.3}Effectiveness of Learning through Games}{7}
+\contentsline {subsection}{\numberline {2.2.4}Examples}{8}
+\contentsline {section}{\numberline {2.3}Teaching Conditional and Iterative Control Structures}{11}
+\contentsline {subsection}{\numberline {2.3.1}Methods}{11}
+\contentsline {subsection}{\numberline {2.3.2}Issues}{12}
+\contentsline {section}{\numberline {2.4}Educational Game Design}{12}
+\contentsline {subsection}{\numberline {2.4.1}Games and Learning}{13}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Motivation}{13}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Repetition}{13}
+\contentsline {subsubsection}{\numberline {2.4.1.3}Rewards}{14}
+\contentsline {subsection}{\numberline {2.4.2}Game Elements}{14}
+\contentsline {chapter}{\numberline {3}Requirements Specification}{16}
+\contentsline {section}{\numberline {3.1}Non-Functional Requirements}{16}
+\contentsline {section}{\numberline {3.2}Functional Requirements}{17}
+\contentsline {chapter}{\numberline {4}Design}{19}
+\contentsline {section}{\numberline {4.1}Core Idea}{19}
+\contentsline {section}{\numberline {4.2}Web-based}{20}
+\contentsline {section}{\numberline {4.3}Game Mechanics}{20}
+\contentsline {subsection}{\numberline {4.3.1}Functions}{20}
+\contentsline {subsection}{\numberline {4.3.2}Scoring}{21}
+\contentsline {subsection}{\numberline {4.3.3}Hit points}{22}
+\contentsline {section}{\numberline {4.4}Level Design}{22}
+\contentsline {subsection}{\numberline {4.4.1}Tutorial}{24}
+\contentsline {section}{\numberline {4.5}User Interface}{24}
+\contentsline {chapter}{\numberline {5}Implementation}{26}
+\contentsline {section}{\numberline {5.1}Technologies Used}{26}
+\contentsline {subsection}{\numberline {5.1.1}Source Control}{26}
+\contentsline {subsection}{\numberline {5.1.2}Language Choice}{26}
+\contentsline {subsection}{\numberline {5.1.3}Character Animations}{27}
+\contentsline {subsection}{\numberline {5.1.4}Hosting Game}{27}
+\contentsline {section}{\numberline {5.2}Overview of System Architecture}{28}
+\contentsline {subsection}{\numberline {5.2.1}Map}{28}
+\contentsline {subsection}{\numberline {5.2.2}Character}{29}
+\contentsline {subsection}{\numberline {5.2.3}Map Walls}{30}
+\contentsline {subsection}{\numberline {5.2.4}Console}{30}
+\contentsline {chapter}{\numberline {6}Testing}{32}
+\contentsline {section}{\numberline {6.1}System Testing}{32}
+\contentsline {section}{\numberline {6.2}Initial Feedback}{33}
+\contentsline {section}{\numberline {6.3}User Testing}{33}
+\contentsline {chapter}{\numberline {7}Results}{34}
+\contentsline {section}{\numberline {7.1}System Testing Results}{34}
+\contentsline {section}{\numberline {7.2}Initial Feedback and Improvements}{35}
+\contentsline {subsection}{\numberline {7.2.1}Feedback}{35}
+\contentsline {subsection}{\numberline {7.2.2}Changes}{36}
+\contentsline {section}{\numberline {7.3}User Testing}{36}
+\contentsline {subsection}{\numberline {7.3.1}Learning}{37}
+\contentsline {subsection}{\numberline {7.3.2}Engagement}{38}
+\contentsline {subsection}{\numberline {7.3.3}Motivation}{39}
+\contentsline {subsection}{\numberline {7.3.4}User Feedback}{39}
+\contentsline {subsection}{\numberline {7.3.5}Threats to Validity}{40}
+\contentsline {chapter}{\numberline {8}Conclusions}{41}
+\contentsline {chapter}{\numberline {9}Future Work}{42}
+\contentsline {chapter}{Bibliography}{47}
 \setcounter {tocdepth}{-1}
 \setcounter {tocdepth}{0}
-\contentsline {chapter}{\numberline {A}Screenshots}{48}
-\contentsline {chapter}{\numberline {B}Ethics Checklist}{51}
-\contentsline {chapter}{\numberline {C}Initial Playthroughs}{52}
-\contentsline {chapter}{\numberline {D}Questionnaires}{53}
-\contentsline {section}{\numberline {D.1}Pretest}{53}
-\contentsline {section}{\numberline {D.2}Posttest}{53}
-\contentsline {chapter}{\numberline {E}Questionnaire Results}{54}
-\contentsline {section}{\numberline {E.1}Pretest}{54}
-\contentsline {section}{\numberline {E.2}Posttest}{54}
-\contentsline {chapter}{\numberline {F}Code}{55}
+\contentsline {chapter}{\numberline {A}Screenshots}{49}
+\contentsline {chapter}{\numberline {B}Ethics Checklist}{52}
+\contentsline {chapter}{\numberline {C}Initial Playthroughs}{54}
+\contentsline {section}{\numberline {C.1}Brief}{54}
+\contentsline {section}{\numberline {C.2}De-brief}{54}
+\contentsline {chapter}{\numberline {D}User Testing}{55}
+\contentsline {section}{\numberline {D.1}Brief}{55}
+\contentsline {section}{\numberline {D.2}De-brief}{55}
+\contentsline {section}{\numberline {D.3}Pretest Questions}{55}
+\contentsline {section}{\numberline {D.4}Posttest Questions}{56}
+\contentsline {chapter}{\numberline {E}Questionnaire Results}{57}
+\contentsline {section}{\numberline {E.1}Pretest}{57}
+\contentsline {section}{\numberline {E.2}Posttest}{59}
+\contentsline {chapter}{\numberline {F}Code}{63}

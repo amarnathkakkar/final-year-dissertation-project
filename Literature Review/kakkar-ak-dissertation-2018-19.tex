@@ -301,7 +301,16 @@ This copy of the dissertation has been supplied on condition that anyone who con
 
 \section*{\Huge{Abstract}}
 
-To be written.
+This project described the development of an educational game, Programmer's Dungeon, to teach iterative and conditional control structures. Previous research is discussed, focusing on the benefits and effectiveness of educational games. The impacts on learning, engagement and motivation are investigated. Educational game design is considered, with focus on learning techniques and game elements that facilitate learning and engagement.
+
+Based on the literature review and the areas of significance, the functional and non-functional requirements of the game are gathered. The design and implementation discuss and expand on the non-trivial components of the game, highlighting any issues faced. 
+
+Following implementation, the game is tested in three phases. The first two phases focus on independent and user testing and subsequently fixing an issues that arise in the game. To conduct user testing, an experiment is devised with a pretest-posttest design. 
+
+Results concluded that the game improved participant knowledge. The results also described that the game was fun and enjoyable. Participant motivation to learn programming and using educational games was significant. However, player engagement was inconclusive. 
+
+\textit{The game developed in this project can be played online at the following URL: http://tutorial-env.4yzpcwhdm6.us-west-2.elasticbeanstalk.com/}
+
 
 
 
@@ -349,13 +358,57 @@ Chapter 9 summarises the conclusion from all previous chapters, to provide a wal
 \hfill
 \section*{\Huge{Acknowldgements}}
 
-To be written.
+I would like to acknowledge the valuable assistance of the following individuals, as without their continued support and assistance this work would not have been possible:
+
+First and foremost, I would like to start by thanking my supervisor and assessor Dr. Alan Hayes, who provided motivation throughout this project. Without his advice and guidance this work would not have been possible.
+
+I have faced many challenges in order to complete this project; the advice, guidance and input from friends, especially Dan Savage at the university of Bath made this project possible.
+
+Last but by no means least, I would like to thank my parents, Baba Kakkar and Vinay Kakkar who have provided support throughout this project.
  
 \afterpage{\blankpage}
 
 \mainmatter
 
 \chapter{Introduction}
+
+%This section will be relatively short. It should introduce the reader to the problem that is to be tackled and provide a brief indication of the context within which the problem exists. The most important part is an explanation why the problem is worthy of study. It should also include an outline of the structure of the dissertation, providing a framework for the reader.
+
+Educational games have been an area of increasing interest in both the academic and educational fields. The usefulness of such an educational tool has been widely recognized and thoroughly argued. 
+
+%Whilst the majority of research on video games focused on the negative impacts from playing, research has now shifted its focus to the positive impacts. This includes using games as educational tools. 
+
+The support for using games as educational tools is quite clear. More people spend time playing games now than have ever done before. Almost a third of the human population regularly play games. However, despite how familiar the human population may be with games, games are also great tools for learning. The only reason why the number of people who play games can be so high, is that games must be engaging. So why not create educational games that harness this engaging aspect to deliver learning material. 
+
+Educational games can also be played virtually anywhere given an internet connection. This differs from the more traditional methods of learning, where you would have to attend a specific location to listen to a teacher. 
+
+Student motivation in computer science courses at higher education is below ideal. Students argue when starting out on such a course, they struggle in learning to program, and this is acknowledged amongst researches and educators. So why not introduce these engaging games that deliver content in a fun and enjoyable way. 
+
+Many studies have looked into the effects of educational games on learning, engagement and motivation. Overall the results are positive, however determining how effective educational games are when compared to other forms of teaching is inconclusive. There is a lack of studies to deliver a full picture. 
+
+\section{Aims and Objectives}
+
+%games > traditional learning
+%issues student dropping out
+%learning evident, but not effectiveness
+%aims and objectives
+
+The aim of this project is to develop an educational game to teach iterative and conditional control structures. The following subset of statements will be taught: \textit{for} and nested \textit{for} loop, \textit{if}, \textit{else if} and \textit{else} statements. These aims will be achieved through the following objectives:
+
+\begin{enumerate}
+	\item After playing, players should be more familiar with and have a better understanding of such constructs. 
+	\item Must be fun and engaging.
+\end{enumerate}
+
+%introduce educational games
+%Develop educational game
+%Issue with students dropping out
+%Evidence of learning there
+%but Effectiveness undiscovered
+
+
+
+
 
 %use Breuer2010 to define game
 %Platform: Personal Computer
@@ -373,6 +426,8 @@ To be written.
 
 \chapter{Literature Review}
 %\section{Aims of This Section}
+
+
 
 %This Literature Review aims to bring together various studies, and provide an insight into the use of games for educational purposes. It also aims to critically evaluate the material for any consistencies or inconsistencies, and to hopefully provide another perspective on the field.
 
@@ -1653,9 +1708,9 @@ These are screenshots of the game as they were played by users in the experiment
 
 \begin{figure}[H]
  \centering
-    \includegraphics[width=1\textwidth]{helpsection}
+    \includegraphics[width=0.85\textwidth]{helpsection}
        \captionsetup{justification=centering}
-\caption{Screenshot of the a solution to the final level in Programmer's Dungeon}
+\caption{Screenshot of the help section in Programmer's Dungeon}
 \label{fig:helpsection}
 \end{figure}
 
@@ -1680,20 +1735,319 @@ These are screenshots of the game as they were played by users in the experiment
 
 \chapter{Ethics Checklist} \label{app:ethicschecklist}
 
+\textbf{UNIVERSITY OF BATH}
+
+\textbf{Department of Computer Science}
+
+\textbf{13-POINT ETHICS CHECK LIST}
+
+This document describes the 13 issues that were considered carefully before involving other people ('participants') for the collection of information as part of this project.
+
+\textbf{1.}	Have you prepared a briefing script for volunteers?
+	
+\textit{Before participation, participants were explained what they were required to do, the kind of data that will be gathered and how it will be used.}
+	
+\textbf{2.}	Will the participants be using any non-standard hardware? 
+
+\textit{Participants completed the tests either in their own homes, school or work. They chose their own form of hardware in order to carry out the tests. There is no requirement of special hardware in order to carry out any of the tests.}
+
+\textbf{3.}	Is there any intentional deception of the participants?  
+
+\textit{To my understanding, no crucial information was withheld from participants. The information provided was of relevance to the study and their participation.}
+
+\textbf{4.}	How will participants voluntarily give consent?                       
+
+\textit{Participants were asked over email if they would like to partake in the tests. The only requirement to partake was to have a computer, internet connection and browser. The game could be played straight away by following a URL. The results were gathered through Google Forms, which again was accessed by following a URL.}
+
+\textbf{5.}	Will the participants be exposed to any risks greater than those encountered in their normal work life? 
+
+\textit{The tests only required participants to use a computer for a short period of time. This risk of harm from this is deemed greater than in ordinary life.}
+
+\textbf{6.}	Are you offering any incentive to the participants? 
+
+\textit{No incentive was offered to the participants for their participation.}
+
+\textbf{7.}	Are any of your participants under the age of 16?             
+
+\textit{No participants were under the age of 16.}
+
+\textbf{8.}	Do any of your participants have an impairment that will limit their understanding or communication?  
+
+\textit{No participants reported any impairments that would limit their understanding or communication. Participants were asked if they had any such impairments before their participation.}
+
+\textbf{9.}	Are you in a position of authority or influence over any of your participants?                                                                               
+
+\textit{No authority or influence was demonstrated over the participants. This includes to their participation and their continued participation.}
+
+\textbf{10.}	Will the participants be informed that they could withdraw at any time?
+
+\textit{Participants were informed during the brief that they could withdraw from the entire test at any time.}
+                                                                                 
+\textbf{11.}	 Will the participants be informed of your contact details?   
+
+\textit{Participants were given my name, email and the University I attend.}    
+	All participants must be able to contact the investigator after the investigation. They should be given the details of the Unit Lecturer or Supervisor as part of the debriefing.
+
+\textbf{12.}	Will participants be de-briefed?             
+
+\textit{The participants were de-briefed after the tests, in order to enable them to understand the nature of the investigation. There were also given mine and my Supervisor, Dr Alan Hayes' contacts details.}                                  
+
+
+\textbf{13.}	Will the data collected from the participants be stored in an anonymous form?                                                                       
+
+\textit{Results from the observed playthroughs will be stored on Microsoft Word. This document will saved only on my local machine. No personal information will be collected. Results from the user testing were collected and stored in Google Forms. The form did not collect information that could identify particiapnts.}
+
 \chapter{Initial Playthroughs} \label{app:initialplaythroughs}
 
-\chapter{Questionnaires} \label{app:questionnaires}
+\section{Brief}
 
-\section{Pretest}
+Thank you for volunteering to take part in this initial playthrough. The game you will be playing is an educational game designed to teach iterative and conditional control structures. 
 
-\section{Posttest}
+You will be asked to play this educational game and think aloud any thoughts that come up while playing. I will be writing up notes on Microsoft Word, based on your thoughts and performance. After playing, you will be given the opportunity to express any feedback and suggestions you may have. You will be given the chance to review the information collected at the end.
+
+Your results will be used to assess the game and make any changes if it improves the game. You can withdraw from this test at any point. The data will be entirely anonymous, no personal information will be collected or used. The results collected will only be used for the purpose of this dissertation. Afterwards I will give you mine and my supervisors contact details, if you wish to get in touch for any reason.
+
+\section{De-brief}
+
+Thank you for taking part in this test. I hope you enjoyed the game. You will now be given the opportunity to go over the notes taken. 
+
+The data will be entirely anonymous, no personal information will be collected or used. Your results will be used to assess the game and make any changes if it improves the game. The results collected will only be used for the purpose of this dissertation. If you would like to contact me or my supervisor, our emails are ak2022@bath.ac.uk and ah347@bath.ac.uk. 
+
+
+\chapter{User Testing} \label{app:usertesting}
+
+\section{Brief}
+
+Thank you for volunteering to take part in this test. The test is comprised of three parts. The game you will be playing is an educational game designed to teach iterative and conditional control structures.
+
+First you will be asked to complete a questionnaire, designed to assess your knowledge on iterative and conditional control structures. This should take roughly two minutes. You will then be asked to played to play the educational game. Try to get as far as you can. You are not forced to complete the game. Finally, you will be asked to complete another questionnaire, designed to assess the impacts and your thought about the game.
+
+You can withdraw from this test at any point. The data will be entirely anonymous, no personal information apart from your age will be collected. The results collected will only be used for the purpose of this dissertation. Afterwards I will give you mine and my supervisors contact details, if you wish to get in touch for any reason.
+
+\section{De-brief}
+
+Thank you for taking part in this test. I hope you enjoyed the game. The data collected will be used to inform the effectiveness of the game in terms of learning, engagement and motivation. The results collected will only be used for the purpose of this dissertation. 
+
+If you would like to contact me or my supervisor, our emails are ak2022@bath.ac.uk and ah347@bath.ac.uk. 
+
+\section{Pretest Questions}
+
+\begin{enumerate}
+	
+	\item How old are you?
+	\item Have you come across iterative and conditional statements before? For example for loops and if statements.
+	\item What would you rate your interest in iterative and conditional statements?
+	\item What would you rate your ability in using iterative and conditional statements?
+	\item Which of the following are used to create conditional statements
+	\item Which of the following are used to create iterative statements
+	\item Are you motivated to learn programming?
+
+\end{enumerate}
+
+\section{Posttest Questions}
+
+\begin{enumerate}
+	
+	\item Was the game fun to play?
+	\item How many levels did you complete?
+	\item How did you find the overall difficulty?
+	\item What would you rate your interest in iterative and conditional statements now?
+	\item What would you rate your ability in using iterative and conditional statements now?
+	\item Which of the following are used to create conditional statements
+	\item Which of the following are used to create iterative statements
+	\item Would you consider learning more complex iterative and conditional statements?
+	\item Would you consider playing games to learn more complex iterative and conditional statements?
+	\item Was the interface clear and easy to use?
+	\item Do you have any feedbacks or suggestions?
+	
+
+\end{enumerate}
+
+\begin{landscape}
 
 \chapter{Questionnaire Results} \label{app:questionnaires}
 
+
+
 \section{Pretest}
+
+\begin{table}[H]
+\centering
+\caption{Individual participant results from pretest questionnaire}
+\label{tab:pretestresults}
+\begin{tabular}{|l|l|l|l|l|l|l|l|} 
+ \hline        Participant & Q1 & Q2 & Q3 & Q4 & Q5 & Q6 & Q7 \\ \hline
+
+
+A &16 - 18	&Yes	&3	&3	&if, if else	&while, nested for, do while	&Yes
+\\ \hline
+B &19 - 21	&Yes	&3	&3	&for, if, if else, nested for	&nested for, for	&Unsure
+\\ \hline
+C &19 - 21	&Yes	&3	&4	&for, if, if else, nested for	&if else, nested for, for	&Yes
+\\ \hline
+D &16 - 18	&Yes	&2	&3	&if, if else	& nested for, for	&Yes
+\\ \hline
+E &19 - 21	&Yes	&2	&3	&if, if else	&nested for, for	& Unsure
+\\ \hline
+F &19 - 21	&Yes	&5	&4	&for, nested for	&if else, if	&Yes
+\\ \hline
+G&16 - 18	&Maybe	&1	&2	&if, if else	&nested for, for	&No
+\\ \hline
+H&22 - 24	&Yes	&3	&5	&if, if else	&nested for, for	&Somewhat
+\\ \hline
+I&19 - 21	&Yes	&4	&4	&if, if else	&nested for, for	&Yes
+\\ \hline
+J&16 - 18	&Yes	&2	&2	&if, if else, nested for	&for	&Somewhat
+\\ \hline
+K&19 - 21	&No	&3	&1	&if	&if	&Yes
+\\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|l|} 
+ \hline        Participant & Q1 & Q2 & Q3 & Q4 & Q5 & Q6 & Q7  \\ \hline
+L&16 - 18	&No	&1	&1	&if, if else	&nested for, for	&Somewhat
+\\ \hline
+M&19 - 21	&Maybe	&4	&2	&if	&for	&No
+\\ \hline
+N&19 - 21	&Yes	&4	&4	&if, if else	&nested for, for	&Yes
+\\ \hline
+O&19 - 21	&No	&2	&1	&if else	&for	&Somewhat
+\\ \hline
+P&19 - 21	&Yes	&3	&3	&if, if else	&nested for, for	&Yes
+\\ \hline
+Q&16 - 18	&Maybe	&2	&2	&for, if, if else, nested for	&if else, nested for, if, for	&Somewhat
+\\ \hline
+R&16 - 18	&Yes	&3	&3	&if, if else	&nested for, for	&Somewhat
+\\ \hline
+S&16 - 18	&No	&3	&2	&for, nested for	&if else, if	&No
+\\ \hline
+T&16 - 18	&Yes	&4	&5	&for, nested for	&if else, if	&Yes
+\\ \hline
+U&19 - 21	&Yes	&2	&1	&if, if else	&nested for, for	&Yes
+\\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+\end{landscape}
+
+\begin{landscape}
 
 \section{Posttest}
 
+
+
+\begin{table}[H]
+\centering
+\caption{Individual participant results from posttest questionnaire}
+\label{tab:pretestresults}
+\begin{tabular}{|l|l|l|l|l|l| p{2cm} | p{2cm} | p{1cm} | p{1cm} | p{2cm} | p{7cm}|} 
+ \hline        Participant & Q1 & Q2 & Q3 & Q4 & Q5 & Q6 & Q7 &Q8 &Q9 & Q10&Q11 \\ \hline
+
+A & 4&	8&	4&	4&	4&	if, if else	&do while, nested for, while	&Maybe&	Yes&	Yes&	Add Music
+\\ \hline
+B&3&	3&	4&	3&	3&	nested for, if, if else, for	&nested for, if else, for	&Maybe&	Maybe&	Yes	&
+\\ \hline
+C&2&	8&	1&	4&	4&	nested for, if, if else, for&	if, nested for, if else, for&	Maybe&	Maybe&	Yes&	You need to add a code, that forces the user to use for loop, if and etc. As midway through the game, I decided to test whether i can just copy a paste player.move("right") multiple time. This allowed to completes level quicker. But I only tried this for one level. Game was overall good, but could use more instruction to make it easier for people who do not know this.
+\\ \hline
+D&4&	6&	3&	4&	4&	if, if else&	nested for, for&	Maybe&	Yes&	Yes	&
+\\ \hline
+E&5&	4&	1&	4&	5&	if, if else&	nested for, for&	Yes&	Yes&	Yes	&
+\\ \hline
+
+\end{tabular}
+\end{table}
+
+
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|l| p{2cm} | p{2cm} | p{1cm} | p{1cm} | p{2cm} | p{7cm}|} 
+ \hline        Participant & Q1 & Q2 & Q3 & Q4 & Q5 & Q6 & Q7 &Q8 &Q9 & Q10&Q11 \\ \hline
+ 
+ F&4&	7&	3&	5&	5&	if, if else&	nested for, for&	Yes&	Yes&	Somewhat&	The tutorial was long and I didn't want to read multitudes of text. Using arrows and small messages that point to various parts of the UI instead of a big paragraph would have been appreciated (example: coolors.co). The IDE was pretty nice, Alt+upp/down arrow key to move lines of text was nice but the tab could have been adjusted to match the current scope. The game itself was pretty cool although I think having fixed lines of code that the player is not able to change would have added a level of difficulty, as it forces iterative over purely procedural programming. A tips section would have been cool in case there was a difficult programming puzzle, and an introduction to each function would have been better than needing to click "Help" to find out shooting an enemy is a thing. Overall pretty dope game.
+\\ \hline
+G&4&	8&	3&	3&	4&	if, if else&	nested for, for&	Yes&	Yes&	Somewhat&	Help section was very useful.
+\\ \hline
+H&2&	5&	5&	2&	2&	if, if else&	nested for, for&	No&	Maybe&	Somewhat&	Alright game
+\\ \hline
+
+
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|l| p{2cm} | p{2cm} | p{1cm} | p{1cm} | p{2cm} | p{7cm}|} 
+ \hline        Participant & Q1 & Q2 & Q3 & Q4 & Q5 & Q6 & Q7 &Q8 &Q9 & Q10&Q11 \\ \hline
+ 
+I&5&	8&	2&	3&	4&	if, if else&	nested for, for&	No&	Maybe&	Yes&	Should force user to use for loops and if statements
+\\ \hline
+J&4&	7&	4&	4&	4&	if, if else&	nested for, for&	Yes&	Yes&	Somewhat &	
+\\ \hline
+K&2&	3&	5&	2&	2&	if, if else&	nested for, for&	Maybe&	Yes&	Somewhat&	It was very helpful to learn the iteration and conditional but it does get boring after a while.
+\\ \hline
+
+L&4&	3&	4&	4&	3&	if&	if&	Maybe&	Yes&	Somewhat&	Good game, fun to play, really made me want to learn more about programming
+\\ \hline
+M&1&	1&	5&	1&	1&	if&	for&	No&	Yes&	No&	What I was supposed to do was unclear. Though I was told to get the player to the red square, I couldn't see the red player until I clicked run. The second time I got to click run, it wouldn't work
+\\ \hline
+N&3&	4&	4&	4&	3&	if, if else&	nested for, for&	Maybe&	Yes&	Not very	&
+\\ \hline
+O&5&	7&	1&	5&	5&	if, if else&	nested for, for&	Yes&	Yes&	Yes&	Sometimes I had to restart because of the website not responding after clicking the 'run' button. Other than that the game seems both helpful and makes the player want to learn more about iterative and conditional statements!
+\\ \hline
+
+
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|l|l| p{2cm} | p{2cm} | p{1cm} | p{1cm} | p{2cm} | p{7cm}|} 
+ \hline        Participant & Q1 & Q2 & Q3 & Q4 & Q5 & Q6 & Q7 &Q8 &Q9 & Q10&Q11 \\ \hline
+ P&4&	8&	3&	3&	3&	if else&	for&	Maybe&	Maybe&	Yes&	Perhaps the text could have been more concise during the step to step guide at the beginning of the game.
+\\ \hline
+Q&4&	5&	5&	4&	3&	nested for, if&	nested for, if else&	Yes	&Yes&	Somewhat&	was hard but has made me interested
+\\ \hline
+R&2&	2&	4&	4&	4&	if, if else&	nested for, for&	No&	Yes&	Yes&	\\ \hline
+S&5&	7&	3&	3&	3&	if, if else&	nested for, for&	Yes	&Maybe&	Not very&	\\ \hline
+T&3&	5&	2&	4&	2&	nested for, if, if else, for&	if, nested for, if else, for&	Maybe&	Yes&	Not very&	\\ \hline
+U&4&	8&	4&	3&	5&	if, if else&	nested for, for&	No&	Yes&	Somewhat&	\\ \hline
+
+
+\end{tabular}
+\end{table}
+
+
+
+\end{landscape}
+
 \chapter{Code} \label{app:code}
+
+The source code for the game contains the following six vital JavaScript files. These define the map layout, the game logic and and draw functions:
+
+\begin{enumerate}
+	\item	 Canvas.js - Defines the the layout of entire website. This includes map, console and button positions.
+	\item createLevel.js - Defines the map co-ordinate system (2D array), character and enemy position, and the text within the console at the start of a level.
+	\item Entities.js - Defines the character, enemy and bullets, and their corresponding methods. This contains main game logic, such as checking collisions and drawing entities.
+	\item ifLogic.js - Defines the logic for wallPosition and enemyPosition functions.
+	\item Main.js - Contains main update loop. Also contains method of executing the code within the console.
+	\item Map.js - Defines the graphical layout of the game. This includes the map walls and exit tile.
+\end{enumerate}
+
+
+The entire source code can be found on GitHub, using the following URL: 
+
+\textit{https://github.com/amarnathkakkar/programmersdungeon}
 
 \end{document}  

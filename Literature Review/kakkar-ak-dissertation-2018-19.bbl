@@ -1,4 +1,4 @@
-\begin{thebibliography}{61}
+\begin{thebibliography}{62}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{Available from: }
@@ -132,6 +132,15 @@
   \bibinfo{year}{2011}.
 \newblock \emph{\bibinfo{title}{Origins of serious games}},
   \bibinfo{publisher}{Springer London}, pp.\bibinfo{pages}{25--43}.
+
+\bibitem[{Dunning(2011)}]{dunning2011}
+\bibinfo{author}{Dunning, D.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{The dunning--kruger effect: On being ignorant of
+  one's own ignorance}.
+\newblock \emph{\bibinfo{booktitle}{Advances in experimental social
+  psychology}}.
+\newblock \bibinfo{publisher}{Elsevier}, vol.~\bibinfo{volume}{44},
+  pp.\bibinfo{pages}{247--296}.
 
 \bibitem[{Ferguson(2007)}]{Ferguson2007}
 \bibinfo{author}{Ferguson, C.J.}, \bibinfo{year}{2007}.
@@ -384,11 +393,9 @@
 
 \bibitem[{StatCounter(2019)}]{statistabrowser}
 \bibinfo{author}{StatCounter}, \bibinfo{year}{2019}.
-\newblock \bibinfo{title}{Global market share held by the leading web browser
-  versions as of february 2019)} [Online].
+\newblock \bibinfo{title}{Browser market share worldwide} [Online].
 \newblock \bibinfo{note}{Accessed: 2019-04-28}.
-\newblock
-  \urlprefix\url{https://www.statista.com/statistics/268299/most-popular-internet-browsers/}.
+\newblock \urlprefix\url{http://gs.statcounter.com/browser-market-share}.
 
 \bibitem[{Susi, Johannesson and Backlund(2007)}]{Johann2015}
 \bibinfo{author}{Susi, T.}, \bibinfo{author}{Johannesson, M.} and

@@ -325,7 +325,25 @@ To be written.
 
 \section*{\Huge{Outline of Project}}
 
-To be written.
+This project describes the development of an educational game to teach iterative and conditional control structures.
+
+First, the project description will be highlighted. This will identify the need to conduct the research and its relevance to educational games. This will include the project aims and objectives.
+
+Chapter 2 will provide an overview of educational games, teaching iterative and conditional constructs and educational game design. Current research and state of educational games will be explained. A description of the definition of an educational game. The benefits of educational games will then be identified, regarding the learning, engagement and motivation. Some examples of educational games and their applications will be discussed. Method of teaching iterative and conditional statements will be identified, along with any issues. Finally those aspects of games that foster learning will be discussed.
+
+Chapter 3 will identify the functional and non-functional requirements of the game. These requirements will reflect the areas of significance that were discussed in chapter 2.
+
+Chapter 4 describes the design. The core idea, platform for the game, game mechanics, level design and user interface will be covered. 
+
+Chapter 5 will discuss the implementation. The implementation approaches and choices, non-trivial components of the system will be highlighted and explained.
+
+Chapter 6 describes the proposed testing of the game. The system testing, initial feedback and user testing will all be explained.  
+
+Chapter 7 highlights the results from system testing, initial feedback and user testing. Any improvements and changes to the game will be discussed. Results from user testing will describe which non-functional requirements were fulfilled.
+
+Chapter 8 will give an overview of the entire project. Conclude any results. 
+
+Chapter 9 summarises the conclusion from all previous chapters, to provide a walkway to future research.
 
 \newpage
 \hfill
@@ -1217,7 +1235,7 @@ I have discussed how the character is animated and how it moves. Now I describe 
 
 The character has X and Y co-ordinates that represent its centre, which is used to move the character across the map. However, for the character to interact with its environment, it needs a 'contact' point(s). This would be used to determine whether the character is 'touching' anything else. The contact point could have easily been the characters centre. However this was not a good idea since the character would have been able to get almost half its body across a wall before having to stop. This would not seem right. So the character was given four points of contact at its edges. In Figure \ref{fig:charactercontact}, the blue square represents the centre of the character and the red squares represent its contact points. The contact points are derived by adding/subtracting a fixed pixel length to its centre in the X and Y direction. Enemies have the same set of characteristics.
 
-This means the character would stop just before a wall, as walls run down the middle of two tiles. For enemies, since they also have a similar configuration of contact points, the character and enemy are deemed to be touching if any of the characters's contact points are between all four of the enemys. If they are touching, then the character loses hit points.
+This means the character would stop just before a wall, as walls run down the middle of two tiles. For enemies, since they also have a similar configuration of contact points, the character and enemy are deemed to be touching if any of the characters's contact points are between all four of the enemys. If they are touching, then the characters hit points decrease.
 
 
 \subsection{Map Walls}
@@ -1239,6 +1257,8 @@ The console is comprised of two components; Ace, an open-source code editor writ
 The type of level is defined in the comments at the top console. This is explained within the tutorial. In some levels, there are a second set of comments below the first. These are there to provide additional information. This may be describing a new construct, or providing more information about an already introduced construct (see Figure \ref{fig:consolelevelsix}). This will only occur when the specific construct is required to complete the level.
 
 Turning the code within the console into actions carried out by the character involves a complex mechanism. The player.move function moves the character to an adjacent tile. The direction the character moves is determined by the parameter within the function. The enemyPosition and wallPosition functions determine if an enemy or wall is adjacent to the character respectively. These functions use the contact points and centre points mentioned above.
+
+A potentially issue with this implementation is that even though the level type is defined, it is not enforced. This is because the console is completely editable. A consequence of this is that any code that is present at the start of a level can be removed, and the level can subsequently be completed by using functions without any control structures. All levels can be completed this way. To resolve this, two solutions would be required. In the levels which require debugging or completing code, certain parts of the code must not be editable. Thus forcing users to use the control structures presented. On top of this, any solution that the user tries to run can only be executed if the solution contains a control structure. Thus levels that require users to create their own solutions, must have at least one construct. However this could still be worked around, and so is not an ideal solution. These solutions were not implemented as they are complex. They would take a considerable amount of time to implement. Instead, users are told within the tutorial to complete the levels as per the type of level specified within the comments. There is no mention anywhere in the game that the levels can be completed just by using functions.
 
 %Once run is clicked on the console, a complex system takes place to turn the code in the editor into actions carried out by the character. This would not be easy to explain without diving into many specifics, of which would not be of much help to this study. Instead, a high-level overview is that 1) all the code in the editor is executed before the character moves, 2) at the end of the execution, the character carries out all the pre-determined actions. Since the enemies do not move, this is no issue.
 
@@ -1286,7 +1306,7 @@ Turning the code within the console into actions carried out by the character in
 \chapter{Testing}
 
 
-Throughout development, the game was tested to ensure that it was working as expected. Once implementation was complete, three phases of testing were defined; system testing, obtaining initial feedback from user playthroughs and user testing. This chapter will discuss these testing methods in more detail, specifically justification for their adoption and the proposed methodologies.
+Throughout development, the game was tested to ensure that it was working as expected. Once implementation was complete, three stages of testing were defined. First system testing, then obtaining initial feedback from user playthroughs, and finally user testing. This chapter will discuss these testing methods in more detail, specifically justification for their adoption and the proposed methodologies.
 
 
 %The game was tested throughout development to ensure that all functionality worked as expected, and that graphics were represented correctly. This was conducted mainly in Safari. Once implementation was complete, and a game was produced as per the requirements and design
@@ -1324,7 +1344,7 @@ The first objective is essential; the game was developed for teaching iterative 
 
 %Once the game was implemented according to the requirements specification and design. 
 
-Feedback from initial user playthroughs would be useful in order to identify any overlooked design flaws. Since the game was solely developed by myself, any outside opinions would be very useful. The gathered feedback would then be used to make improvements in the game.
+Feedback from initial user playthroughs would be useful in order to identify any obvious overlooked design flaws. Since the game was solely developed by myself, any outside opinions would be very useful. The gathered feedback would then be used to make improvements in the game.
 
 The main objective of the phase was to determine what users felt about the difficulty, usability and enjoyment of the game. As well as any other suggestions that might have. These tests would be conducted using the think-aloud protocol. This is a method of usability testing. Usability testing refers to evaluating a product by testing it on users. Furthermore, this protocol is claimed to be widely used in the gaming industry and is very effective \citep{desurvire2013}. Thus it was chosen to be used in this stage. The technique involves players verbally expressing their thoughts during gameplay. Participants are advised to say whatever comes into their mind. This might include what they are experiencing, their actions or their feelings. This data is then collated. 
 
@@ -1337,20 +1357,11 @@ To ensure feedback is as relevant as possible, participants with appropriate bac
 
 Once system testing and initial feedback and improvements is complete, the game can be tested by users. The aim of this stage is to measure to which extent the non-functional requirements were fulfilled.
 
-The testing will have a pretest-posttest design, comprised of three parts. The first part will require participants to complete a pretest questionnaire. This questionnaire will assess participants interests and knowledge in iterative and conditional structures. The second part requires the participant to play the game. They will be asked to try and get as far as they can; completing the game will not be a requirement. This is because participants can get stuck, may lose interest and no longer wish to play or for any other reason. After they finish playing, the final part will require participants to complete a posttest questionnaire. This questionnaire will assess users enjoyment and perceived difficulty of the game, their knowledge on iterative and conditional structures, their motivations and ask for comments for any feedback or suggestions.
+The experiment is a pretest-posttest design, comprised of three parts. The first part will require participants to complete a pretest questionnaire. This questionnaire will assess participants interests and knowledge in iterative and conditional structures. The second part requires the participant to play the game. They will be asked to try and get as far as they can; completing the game will not be a requirement. This is because participants can get stuck and can not continue, may lose interest and no longer wish to play or any other reason. After they finish playing, the final part of the experiment will require participants to complete a posttest questionnaire. This questionnaire will assess users enjoyment and perceived difficulty of the game, their knowledge on iterative and conditional structures, their motivations and ask for any possible feedback or suggestions.
 
 
 
-
-
-
-
-
-
-
-
-
-
+%\subsection{Participants}
 
 
 
@@ -1363,9 +1374,20 @@ The testing will have a pretest-posttest design, comprised of three parts. The f
 
 All functional requirements were easy to check as game functionality was developed based on these requirements. Moreover, these functionalities would have also been checked during implementation. However, conducting specific test cases allowed to determine whether they were working as expected.
 
-The key playthroughs that were conducted, were, playthroughs in the three most popular browsers; Safari, Google Chrome and Firefox. 
+Playthroughs were very useful as they identified several issues, of which all were resolved. These were:
+
+\begin{enumerate}
+	\item When played on a larger screen size than the one used for development, the character did not increase in size, whilst the map did. The character was able to get extremely close to the map walls, as its contact points remained close around the character. The characters size was changed to increase according to map size.
+	\item Some features of the game did not work in Firefox. Corresponding JavaScript functions were changed in order to support Firefox.
+	\item Clicking play again at the end of the game resulted in duplicate texts in the tutorial box. 
+	\item In larger screen sizes, help section extends outside browser screen size. Text box was made wider to shorten text box height.
+\end{enumerate}
+
+The game was also tested on Internet Explorer (IE), although this was not part of the requirements. IE is the fourth most popular non-mobile browser \citep{statistabrowser}. However the game did not display correctly; the console was overlapping the map. This may be due to IE reading and interpreting some JavaScript code differently compared to the three most popular browsers. Since only 2.58\% of browser users use IE and time constraints, this was deemed unnecessary to fix.
 
 \section{Initial Feedback and Improvements}
+
+Two participants were selected to conduct playthroughs using the think-aloud protocol. Results from the think-aloud and suggestions were collated and some improvements were made to the game.
 
 \subsection{Feedback}
 
@@ -1402,46 +1424,197 @@ The second participant was an aerospace engineer graduate who was interested in 
 \label{fig:tutorialtextbox}
 \end{figure}
 
-The feedback obtained was very helpful. It identified issues with level difficulty, game appearance and information provided throughout the game. Most changes were easy to implement as they only required changes to colour or text. Making the tutorial text scroll was a more complex task. This change was implemented because this made the tutorial more interesting and gave the game a more programming feel. The following changes were implemented:
+The feedback obtained was extremely helpful. Feedback obtained identified issues to do with level difficulty, game appearance and the information provided in the game. Most suggestions only required changing some colour or text, so this was simple to do. However, making the tutorial text scroll was a more complex task. This was implemented because this was deemed to make the tutorial more interesting and engaing. The following changes were made:
 
 \begin{itemize}
 	\item Tutorial text is more concise; only provides information to introduce the game. Some information was moved to the help section.
 	\item Colour scheme of tutorial now matches the colour scheme of the console (see Figure \ref{fig:tutorialtextbox}).
 	\item Tutorial text scrolls across the text box.
-	\item Comments in the console about level information and construct information was thought over and made more concise.
+	\item Comments in the console about type of level and construct information was thought over and made more concise.
 	\item In level 6 and 7, constructs were kept the same, but the code was changed to make the level easier by making solutions more obvious.
 \end{itemize}
 
-These changes should result in making the game more aesthetically pleasing, making the difficulty curve smoother and not overwhelming users with too much information.
+These changes should result in making the game look more aesthetically pleasing, the difficulty curve smoother, and not overwhelm users with too much information.
 
 
 \section{User Testing}
+
+%General participant info - age, experience, motivation
+
+
+The experiment was completed by 21 participants. The mean age of participants was 19 with a standard deviation (SD) of 1.7 years. 66\% of participants already had experience with iterative and conditional constructs.
 
 
 
 \subsection{Learning}
 
+In the pretest and posttest questionnaire, participants were asked to rate their perceived ability using iterative and conditional constructs. In addition to this, both questionnaires contained two questions in order to test participants actual knowledge on iterative and conditional constructs respectively. These questions were designed to assess how participants perceived and actual learning on iterative and conditional constructs had been affected through playing the game.
+
+Participants to rate their perceived ability on a scale between 1 to 5, with 1 being not confident and 5 being very confident. Before playing the game, the mean perceived ability was 2.76 (SD = 1.26). After playing the game, the mean perceived ability was 3.48 (SD = 1.12). A paired t test showed t(20) = 2.904, with p = 0.0076 less than 0.05. Therefore there is a significant increase in perceived confidence after playing the game.
+
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.9\textwidth]{preability}
+       \captionsetup{justification=centering}
+\caption{Results of participant confidence in iterative and conditional constructs pretest}
+\label{fig:preability}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=0.9\textwidth]{postability}
+       \captionsetup{justification=centering}
+\caption{Results of participant confidence in iterative and conditional constructs posttest}
+\label{fig:postability}
+\end{figure}
+
+
+Participants were also asked questions which tested their knowledge on iterative and conditional constructs. These were multiple choice questions; a) which of the following are used to create conditional statements, b) which of the following are used to create iterative statements. To both these questions they were given four options: for, if, if else and nested for. Table \ref{tab:iterativeknowledge} highlights pretest posttest results for iterative question. Table \ref{tab:conditionalknowledge} highlights pretest posttest results for conditional question.
+
+\begin{table}[H]
+\parbox{.45\linewidth}{
+\centering
+\caption{Results from pretest posttest questionnaires on iterative constructs}
+\label{tab:iterativeknowledge}
+\begin{tabular}{l|cccc}
+          & Pretest & Posttest \\ \hline
+\textbf{for}     & 17                                     & 19
+\\ \hline
+\textbf{nested for} & 15                                     & 19 
+\\ \hline
+\textbf{if} & 5                                     & 3                       
+\\ \hline
+\textbf{if else} & 5                                     & 4
+\end{tabular}
+}
+\hfill
+\parbox{.45\linewidth}{
+\centering
+\caption{Results from pretest posttest questionnaires on conditional constructs}
+\label{tab:conditionalknowledge}
+\begin{tabular}{l|cccc}
+          & Pretest & Posttest  \\ \hline
+\textbf{for}     & 6                                     & 3                         
+\\ \hline
+\textbf{nested for} & 7                                     & 4                        
+\\ \hline
+\textbf{if} & 17                                     & 20                         
+\\ \hline
+\textbf{if else} & 16                                     & 18  
+\end{tabular}
+}
+\end{table}
+
+Results from these tables show that after playing the game, the number of correct answers increased. This supports the result of increase perceived ability in correctly using iterative and conditional constructs.  Thus players did actually further their knowledge through playing the game. This indicates that the game fulfils requirement 3.1.1 "Game must improve novice programmers' knowledge on iterative and conditional control structures". 
+
+However, when asking participants to assess their knowledge on a given topic, participants can mistakenly assess their understanding of a topic to be better than it really is. This is called the Dunning-Kruger effect \citep{dunning2011}, and participants are more susceptible to this bias before learning a topic compared to afterwards. This could explain how some participants rated their ability lower after playing the game, specifically 2 participants, as from playing the game their knowledge of iterative and conditional constructs is not likely to decrease.
+
+%Perceived learning
+%Actual learning
+
 \subsection{Engagement}
+
+%Difficulty
+
+To assess participant engagement in the game, two questions were asked. The first asked participants how many levels they completed. There was a total of eight levels. The second asked how they found the game in terms of enjoyment. This does not give a precise picture in terms of player engagement, however, it is still helpful. 
+
+The mean number of levels completed was 5, with the majority of participants, 28.6\% having completed all 8 levels. The questionnaire asked participants to rate their enjoyment from a scale of 1 to 5, with 1 being not enjoyable and 5 being very enjoyable. The mean enjoyment felt was 3.52 with a standard deviation of 1.14. It is clear from this that participants somewhat enjoyed the game.
+
+In addition, participants were also asked to rate on a scale between 1 to 5, how difficult they felt the game was. The mean score was 3.33 (SD = 1.28). The majority of participants, 33.3\% rated the game at a 4. This suggests that the game is slightly difficult.
+
+Given the majority of participants felt the game was difficult, but on average completed more than half the levels, coupled with the fact the game was enjoyable, indicates that the game was challenging yet participants were also engaged. Thus this partially fulfils requirements 3.1.6 "Player should be engaged throughout the game" and 3.1.7 "Player should feel challenged".
+%How many levels did they complete
+%How did they find it
 
 \subsection{Motivation}
 
+A few different questions were asked to assess participant motivation. Specifically, if their interest in iterative and conditional constructs increase after playing the game, if they would consider learning more complex iterative and conditional constructs, and if they would consider playing games to learn iterative and conditional constructs. The aim of these questions were assess how the game affected their motivation for continued learning on specific subject.
 
+Both questionnaires asked participants to rate their interest in iterative and conditional statements. Participants had to rate between 1 and 5, with 1 being not interested and 5 very interested. The mean interest score was 2.81 pretest (SD = 1.03) and 3.48 posttest (SD = 0.98), with a paired t test, t(20) = 2.697 and p = 0.0095 which is less than 0.05. Therefore there is a significant increase in participant interest in iterative and conditional constructs after playing the game. 
+
+When asked whether participants would consider learning more complex iterative and conditional constructs, 7 said yes, 9 said maybe and 5 said no. However when asked whether they would consider learning the same thing by playing games, 15 said yes, 6 said no and none said no. 
+
+Participants motivation to learn more complex programming increased, but only if the material was being taught in the form of a game. Otherwise, it is inconclusive if participants would consider learning if material was taught by other means. This indicates that the game fulfils requirement 3.1.9 "Game may foster player motivation to learn more complex programming" if the material is taught through games. 
+
+
+
+
+%Interest pretest-posttest
+%Complex ICS
+%Complex ICS through game?
+
+\subsection{User Feedback}
+
+%Criticism
+%Suggestion
+
+Participants at the end of the posttest questionnaire, were asked to make any comments on any feedback or suggestions. Of the 21 participants, only 12 left comments. 
+
+Three participants made comments about the console being completely editable. All three suggested either forcing users to use for loops and if statements or making parts of the code not editable. These issues and solutions were already discussed previously. No different solutions were provided. 
+
+Another three participants mentioned that made them want to learn more about programming and iterative and conditional constructs. 
+
+One participant only managed to complete the first level. Their comment mentioned that what was required from them in the game was unclear. Two other participant mentioned that there was too much information in the tutorial and that it could have been made more concise. 
+
+
+
+\subsection{Threats to Validity}
+
+This experiment has a number of limitations that limit its generalisability. First the sample size of participants was not very large. A larger sample size would provide a more accurate result, more easily identify outliers and provide a smaller margin of error. All of which would help confirm or reject the findings of this experiment.
+
+The second threat to validity is that participants were comprised of people with and without prior experience to iterative and conditional constructs. Results may be more accurate and perhaps different if two experiments were carried out with these two groups separately. The experiment with the experienced group could be further separated based on how familiar participants were with iterative and conditional constructs. Another consequence is that some participants could have been be very experienced, and in turn may have not learn much, if not nothing, from the game. Moreover, two participants rated their perceived ability as 5 in both the pretest and posttest.
+
+Finally, participants were also asked in the pretest if they were motivated to learn programming. Three participants answered no, two answered unsure and six answered somewhat. This is not ideal, as they went on to play a game involving programming. This may have produced a bias within the results. Again splitting these groups up into different experiments would provide more accurate results.
 
 
 \afterpage{\blankpage}
 
 
 
-\chapter{Discussion}
+\chapter{Conclusions}
+
+
+This study first set out an aim to produce an educational game for the purpose of teaching iterative and conditional control structures. The topics that were deemed necessary in order to gain an understanding to the current field of educational games, were researched and discussed and formed the literature review. Through the literature review, several areas of significance were highlighted which helped inform the requirements specification for the proposed game.
+
+The requirements and the literature review were used to help inform elements of the game. The design focused on describing the core mechanics and layout of the game. Implementation used the elements described within the design to produce an entertaining and educational game. The implementation focused on three vital parts of the game; the map, interactions and console. An issue was also identified with the implementation of the console, although this was not fixed due complexity, a work around was presented.
+
+After implementation, the game underwent three phases of testing. This involved system testing, initial playthroughs and improvements and finally user testing. System testing and initial playthroughs were very useful as they helped identify game bugs, which were consequently fixed. System testing also used to check whether functional requirements were fulfilled.  The final phase of testing was carried out through an experiment. The experiment aimed to identify the non-functional requirements that were fulfilled in the game. The experiment had a pretest-posttest design and involved 21 participants. The results help to assess participant learning, engagement and motivation. 
+
+The results showed that users' knowledge of iterative and conditional constructs was significantly increased after playing the game. This was the main objective for this study. Users also enjoyed the game. The results suggested that game was engaging, but no conclusions could be made. The game also worked to increase participant motivation to learn more complex programming, which was deemed an issue for students in first year computer sciences courses in higher education. Thus the use of a game to teach material could work to improving student motivation.
+
+
+
+%aim and lit review
+%req, design, impl
+%testing
+%results
+
+
+%results general
+%results specific
+%obj met
+
+
+
+
+
+
+
 \afterpage{\blankpage}
 
 
 
 \chapter{Future Work}
 
-Here, it is important that not only the final outcomes are assessed, but also that the learning and training process itself is monitored continuously without impairing the playing/learning experiences (e.g. via psycho physiological measurements or automated logs/recordings of player behaviour). This is especially beneficial as it can inform new ways to make learning games more adaptive so that they can always offer help or additional information when the players need it (e.g. when they get stuck at a certain point of a game) \citep{Breuer2010}.
+%longitudinal study - how much knowledge retained
+It would be interesting to find out how much knowledge was retained in participants after longer periods of time. This would require conducting longitudinal studies. 
+
+Another aspect that can be monitored during user testing, would be to assess the learning and training process during playthroughs. This information could be used to inform ways to make educational games more interesting and engaging.
+
 
 \afterpage{\blankpage}
+
 
 
 \bibliography{litreview}
@@ -1457,10 +1630,70 @@ Here, it is important that not only the final outcomes are assessed, but also th
 %\chapter{Technical Specification and GA of the Skyseeker}\label{app:techspec}
 
 \newpage
-\chapter{Uncertainty Analysis} \label{app:errors}
 
 \chapter{Screenshots} \label{app:screenshots}
 
+These are screenshots of the game as they were played by users in the experiment. 
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=1\textwidth]{startgame}
+       \captionsetup{justification=centering}
+\caption{Screenshot of the start of Programmer's Dungeon}
+\label{fig:startgame}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=1\textwidth]{tutorialconsole}
+       \captionsetup{justification=centering}
+\caption{Screenshot of the tutorial explaining the console in Programmer's Dungeon}
+\label{fig:tutorialconsole}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=1\textwidth]{helpsection}
+       \captionsetup{justification=centering}
+\caption{Screenshot of the a solution to the final level in Programmer's Dungeon}
+\label{fig:helpsection}
+\end{figure}
+
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=1\textwidth]{finallevel}
+       \captionsetup{justification=centering}
+\caption{Screenshot of the a solution to the final level in Programmer's Dungeon}
+\label{fig:finallevel}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+    \includegraphics[width=1\textwidth]{endgame}
+       \captionsetup{justification=centering}
+\caption{Screenshot of end game state in Programmer's Dungeon}
+\label{fig:endgame}
+\end{figure}
+
+
+
 \chapter{Ethics Checklist} \label{app:ethicschecklist}
+
+\chapter{Initial Playthroughs} \label{app:initialplaythroughs}
+
+\chapter{Questionnaires} \label{app:questionnaires}
+
+\section{Pretest}
+
+\section{Posttest}
+
+\chapter{Questionnaire Results} \label{app:questionnaires}
+
+\section{Pretest}
+
+\section{Posttest}
+
+\chapter{Code} \label{app:code}
 
 \end{document}  
